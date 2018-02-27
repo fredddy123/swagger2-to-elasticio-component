@@ -1,0 +1,66 @@
+{
+	"description": "Document representing a site.",
+	"properties": {
+		"customer_list_link": {
+			"description": "The link to the customer list.",
+			"properties": {
+				"customer_list_id": {
+					"description": "The customerlist id.",
+					"type": "string"
+				},
+				"link": {
+					"description": "The target of the link.",
+					"type": "string"
+				},
+				"title": {
+					"additionalProperties": {
+						"type": "string"
+					},
+					"description": "The link title.",
+					"format": "localized",
+					"type": "object"
+				}
+			}
+		},
+		"description": {
+			"additionalProperties": {
+				"type": "string"
+			},
+			"description": "The description of this site.",
+			"format": "localized",
+			"type": "object"
+		},
+		"display_name": {
+			"additionalProperties": {
+				"type": "string"
+			},
+			"description": "The display name entered by the user.",
+			"format": "localized",
+			"type": "object"
+		},
+		"id": {
+			"description": "The id of this site.",
+			"minLength": 1,
+			"type": "string",
+			"required": true
+		},
+		"in_deletion": {
+			"description": "The deletion status of this site, true if in deletion",
+			"type": "boolean"
+		},
+		"link": {
+			"description": "A link directly to the site",
+			"type": "string"
+		},
+		"storefront_status": {
+			"description": "",
+			"enum": [
+				"online",
+				"maintenance",
+				"to_be_deleted",
+				"protected"
+			],
+			"type": "string"
+		}
+	}
+}

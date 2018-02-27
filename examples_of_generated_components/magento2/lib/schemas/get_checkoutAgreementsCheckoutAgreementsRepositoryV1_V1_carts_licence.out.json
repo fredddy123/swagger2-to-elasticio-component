@@ -1,0 +1,52 @@
+{
+	"type": "array",
+	"items": {
+		"type": "object",
+		"description": "Interface AgreementInterface",
+		"properties": {
+			"agreement_id": {
+				"type": "integer",
+				"description": "Agreement ID.",
+				"required": true
+			},
+			"name": {
+				"type": "string",
+				"description": "Agreement name.",
+				"required": true
+			},
+			"content": {
+				"type": "string",
+				"description": "Agreement content.",
+				"required": true
+			},
+			"content_height": {
+				"type": "string",
+				"description": "Agreement content height. Otherwise, null."
+			},
+			"checkbox_text": {
+				"type": "string",
+				"description": "Agreement checkbox text.",
+				"required": true
+			},
+			"is_active": {
+				"type": "boolean",
+				"description": "Agreement status.",
+				"required": true
+			},
+			"is_html": {
+				"type": "boolean",
+				"description": "* true - HTML. * false - plain text.",
+				"required": true
+			},
+			"mode": {
+				"type": "integer",
+				"description": "The agreement applied mode.",
+				"required": true
+			},
+			"extension_attributes": {
+				"type": "object",
+				"description": "ExtensionInterface class for @see \\Magento\\CheckoutAgreements\\Api\\Data\\AgreementInterface"
+			}
+		}
+	}
+}

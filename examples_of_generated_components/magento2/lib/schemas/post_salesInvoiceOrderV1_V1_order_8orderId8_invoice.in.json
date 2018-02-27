@@ -1,0 +1,95 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"path": {
+			"type": "object",
+			"properties": {
+				"orderId": {
+					"type": "integer",
+					"required": true
+				}
+			}
+		},
+		"body": {
+			"properties": {
+				"capture": {
+					"type": "boolean"
+				},
+				"items": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"description": "Input argument for invoice creation Interface InvoiceItemCreationInterface",
+						"properties": {
+							"extension_attributes": {
+								"type": "object",
+								"description": "ExtensionInterface class for @see \\Magento\\Sales\\Api\\Data\\InvoiceItemCreationInterface"
+							},
+							"order_item_id": {
+								"type": "integer",
+								"description": "Order item ID.",
+								"required": true
+							},
+							"qty": {
+								"type": "number",
+								"description": "Quantity.",
+								"required": true
+							}
+						}
+					}
+				},
+				"notify": {
+					"type": "boolean"
+				},
+				"appendComment": {
+					"type": "boolean"
+				},
+				"comment": {
+					"type": "object",
+					"description": "Interface InvoiceCommentCreationInterface",
+					"properties": {
+						"extension_attributes": {
+							"type": "object",
+							"description": "ExtensionInterface class for @see \\Magento\\Sales\\Api\\Data\\InvoiceCommentCreationInterface"
+						},
+						"comment": {
+							"type": "string",
+							"description": "Comment.",
+							"required": true
+						},
+						"is_visible_on_front": {
+							"type": "integer",
+							"description": "Is-visible-on-storefront flag value.",
+							"required": true
+						}
+					}
+				},
+				"arguments": {
+					"type": "object",
+					"description": "Interface for creation arguments for Invoice.",
+					"properties": {
+						"extension_attributes": {
+							"type": "object",
+							"description": "ExtensionInterface class for @see \\Magento\\Sales\\Api\\Data\\InvoiceCreationArgumentsInterface"
+						}
+					}
+				}
+			},
+			"type": "object"
+		}
+	}
+}

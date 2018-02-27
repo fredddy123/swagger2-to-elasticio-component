@@ -1,0 +1,863 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"body": {
+			"properties": {
+				"product": {
+					"type": "object",
+					"description": "",
+					"properties": {
+						"id": {
+							"type": "integer",
+							"description": "Id"
+						},
+						"sku": {
+							"type": "string",
+							"description": "Sku",
+							"required": true
+						},
+						"name": {
+							"type": "string",
+							"description": "Name"
+						},
+						"attribute_set_id": {
+							"type": "integer",
+							"description": "Attribute set id"
+						},
+						"price": {
+							"type": "number",
+							"description": "Price"
+						},
+						"status": {
+							"type": "integer",
+							"description": "Status"
+						},
+						"visibility": {
+							"type": "integer",
+							"description": "Visibility"
+						},
+						"type_id": {
+							"type": "string",
+							"description": "Type id"
+						},
+						"created_at": {
+							"type": "string",
+							"description": "Created date"
+						},
+						"updated_at": {
+							"type": "string",
+							"description": "Updated date"
+						},
+						"weight": {
+							"type": "number",
+							"description": "Weight"
+						},
+						"extension_attributes": {
+							"type": "object",
+							"description": "ExtensionInterface class for @see \\Magento\\Catalog\\Api\\Data\\ProductInterface",
+							"properties": {
+								"bundle_product_options": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"description": "Interface OptionInterface",
+										"properties": {
+											"option_id": {
+												"type": "integer",
+												"description": "Option id"
+											},
+											"title": {
+												"type": "string",
+												"description": "Option title"
+											},
+											"required": {
+												"type": "boolean",
+												"description": "Is required option"
+											},
+											"type": {
+												"type": "string",
+												"description": "Input type"
+											},
+											"position": {
+												"type": "integer",
+												"description": "Option position"
+											},
+											"sku": {
+												"type": "string",
+												"description": "Product sku"
+											},
+											"product_links": {
+												"type": "array",
+												"description": "Product links",
+												"items": {
+													"type": "object",
+													"description": "Interface LinkInterface",
+													"properties": {
+														"id": {
+															"type": "string",
+															"description": "The identifier"
+														},
+														"sku": {
+															"type": "string",
+															"description": "Linked product sku"
+														},
+														"option_id": {
+															"type": "integer",
+															"description": "Option id"
+														},
+														"qty": {
+															"type": "number",
+															"description": "Qty"
+														},
+														"position": {
+															"type": "integer",
+															"description": "Position"
+														},
+														"is_default": {
+															"type": "boolean",
+															"description": "Is default",
+															"required": true
+														},
+														"price": {
+															"type": "number",
+															"description": "Price",
+															"required": true
+														},
+														"price_type": {
+															"type": "integer",
+															"description": "Price type",
+															"required": true
+														},
+														"can_change_quantity": {
+															"type": "integer",
+															"description": "Whether quantity could be changed"
+														},
+														"extension_attributes": {
+															"type": "object",
+															"description": "ExtensionInterface class for @see \\Magento\\Bundle\\Api\\Data\\LinkInterface"
+														}
+													}
+												}
+											},
+											"extension_attributes": {
+												"type": "object",
+												"description": "ExtensionInterface class for @see \\Magento\\Bundle\\Api\\Data\\OptionInterface"
+											}
+										}
+									}
+								},
+								"downloadable_product_links": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"description": "",
+										"properties": {
+											"id": {
+												"type": "integer",
+												"description": "Sample(or link) id"
+											},
+											"title": {
+												"type": "string"
+											},
+											"sort_order": {
+												"type": "integer",
+												"required": true
+											},
+											"is_shareable": {
+												"type": "integer",
+												"description": "Shareable status",
+												"required": true
+											},
+											"price": {
+												"type": "number",
+												"description": "Price",
+												"required": true
+											},
+											"number_of_downloads": {
+												"type": "integer",
+												"description": "Of downloads per user"
+											},
+											"link_type": {
+												"type": "string",
+												"required": true
+											},
+											"link_file": {
+												"type": "string",
+												"description": "relative file path"
+											},
+											"link_file_content": {
+												"type": "object",
+												"description": "",
+												"properties": {
+													"file_data": {
+														"type": "string",
+														"description": "Data (base64 encoded content)",
+														"required": true
+													},
+													"name": {
+														"type": "string",
+														"description": "File name",
+														"required": true
+													},
+													"extension_attributes": {
+														"type": "object",
+														"description": "ExtensionInterface class for @see \\Magento\\Downloadable\\Api\\Data\\File\\ContentInterface"
+													}
+												}
+											},
+											"link_url": {
+												"type": "string",
+												"description": "Link url or null when type is 'file'"
+											},
+											"sample_type": {
+												"type": "string",
+												"required": true
+											},
+											"sample_file": {
+												"type": "string",
+												"description": "relative file path"
+											},
+											"sample_file_content": {
+												"type": "object",
+												"description": "",
+												"properties": {
+													"file_data": {
+														"type": "string",
+														"description": "Data (base64 encoded content)",
+														"required": true
+													},
+													"name": {
+														"type": "string",
+														"description": "File name",
+														"required": true
+													},
+													"extension_attributes": {
+														"type": "object",
+														"description": "ExtensionInterface class for @see \\Magento\\Downloadable\\Api\\Data\\File\\ContentInterface"
+													}
+												}
+											},
+											"sample_url": {
+												"type": "string",
+												"description": "file URL"
+											},
+											"extension_attributes": {
+												"type": "object",
+												"description": "ExtensionInterface class for @see \\Magento\\Downloadable\\Api\\Data\\LinkInterface"
+											}
+										}
+									}
+								},
+								"downloadable_product_samples": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"description": "",
+										"properties": {
+											"id": {
+												"type": "integer",
+												"description": "Sample(or link) id"
+											},
+											"title": {
+												"type": "string",
+												"description": "Title",
+												"required": true
+											},
+											"sort_order": {
+												"type": "integer",
+												"description": "Order index for sample",
+												"required": true
+											},
+											"sample_type": {
+												"type": "string",
+												"required": true
+											},
+											"sample_file": {
+												"type": "string",
+												"description": "relative file path"
+											},
+											"sample_file_content": {
+												"type": "object",
+												"description": "",
+												"properties": {
+													"file_data": {
+														"type": "string",
+														"description": "Data (base64 encoded content)",
+														"required": true
+													},
+													"name": {
+														"type": "string",
+														"description": "File name",
+														"required": true
+													},
+													"extension_attributes": {
+														"type": "object",
+														"description": "ExtensionInterface class for @see \\Magento\\Downloadable\\Api\\Data\\File\\ContentInterface"
+													}
+												}
+											},
+											"sample_url": {
+												"type": "string",
+												"description": "file URL"
+											},
+											"extension_attributes": {
+												"type": "object",
+												"description": "ExtensionInterface class for @see \\Magento\\Downloadable\\Api\\Data\\SampleInterface"
+											}
+										}
+									}
+								},
+								"stock_item": {
+									"type": "object",
+									"description": "Interface StockItem",
+									"properties": {
+										"item_id": {
+											"type": "integer"
+										},
+										"product_id": {
+											"type": "integer"
+										},
+										"stock_id": {
+											"type": "integer",
+											"description": "Stock identifier"
+										},
+										"qty": {
+											"type": "number",
+											"required": true
+										},
+										"is_in_stock": {
+											"type": "boolean",
+											"description": "Stock Availability",
+											"required": true
+										},
+										"is_qty_decimal": {
+											"type": "boolean",
+											"required": true
+										},
+										"show_default_notification_message": {
+											"type": "boolean",
+											"required": true
+										},
+										"use_config_min_qty": {
+											"type": "boolean",
+											"required": true
+										},
+										"min_qty": {
+											"type": "number",
+											"description": "Minimal quantity available for item status in stock",
+											"required": true
+										},
+										"use_config_min_sale_qty": {
+											"type": "integer",
+											"required": true
+										},
+										"min_sale_qty": {
+											"type": "number",
+											"description": "Minimum Qty Allowed in Shopping Cart or NULL when there is no limitation",
+											"required": true
+										},
+										"use_config_max_sale_qty": {
+											"type": "boolean",
+											"required": true
+										},
+										"max_sale_qty": {
+											"type": "number",
+											"description": "Maximum Qty Allowed in Shopping Cart data wrapper",
+											"required": true
+										},
+										"use_config_backorders": {
+											"type": "boolean",
+											"required": true
+										},
+										"backorders": {
+											"type": "integer",
+											"description": "Backorders status",
+											"required": true
+										},
+										"use_config_notify_stock_qty": {
+											"type": "boolean",
+											"required": true
+										},
+										"notify_stock_qty": {
+											"type": "number",
+											"description": "Notify for Quantity Below data wrapper",
+											"required": true
+										},
+										"use_config_qty_increments": {
+											"type": "boolean",
+											"required": true
+										},
+										"qty_increments": {
+											"type": "number",
+											"description": "Quantity Increments data wrapper",
+											"required": true
+										},
+										"use_config_enable_qty_inc": {
+											"type": "boolean",
+											"required": true
+										},
+										"enable_qty_increments": {
+											"type": "boolean",
+											"description": "Whether Quantity Increments is enabled",
+											"required": true
+										},
+										"use_config_manage_stock": {
+											"type": "boolean",
+											"required": true
+										},
+										"manage_stock": {
+											"type": "boolean",
+											"description": "Can Manage Stock",
+											"required": true
+										},
+										"low_stock_date": {
+											"type": "string",
+											"required": true
+										},
+										"is_decimal_divided": {
+											"type": "boolean",
+											"required": true
+										},
+										"stock_status_changed_auto": {
+											"type": "integer",
+											"required": true
+										},
+										"extension_attributes": {
+											"type": "object",
+											"description": "ExtensionInterface class for @see \\Magento\\CatalogInventory\\Api\\Data\\StockItemInterface"
+										}
+									}
+								},
+								"configurable_product_options": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"description": "Interface OptionInterface",
+										"properties": {
+											"id": {
+												"type": "integer"
+											},
+											"attribute_id": {
+												"type": "string"
+											},
+											"label": {
+												"type": "string"
+											},
+											"position": {
+												"type": "integer"
+											},
+											"is_use_default": {
+												"type": "boolean"
+											},
+											"values": {
+												"type": "array",
+												"items": {
+													"type": "object",
+													"description": "Interface OptionValueInterface",
+													"properties": {
+														"value_index": {
+															"type": "integer",
+															"required": true
+														},
+														"extension_attributes": {
+															"type": "object",
+															"description": "ExtensionInterface class for @see \\Magento\\ConfigurableProduct\\Api\\Data\\OptionValueInterface"
+														}
+													}
+												}
+											},
+											"extension_attributes": {
+												"type": "object",
+												"description": "ExtensionInterface class for @see \\Magento\\ConfigurableProduct\\Api\\Data\\OptionInterface"
+											},
+											"product_id": {
+												"type": "integer"
+											}
+										}
+									}
+								},
+								"configurable_product_links": {
+									"type": "array",
+									"items": {
+										"type": "integer"
+									}
+								}
+							}
+						},
+						"product_links": {
+							"type": "array",
+							"description": "Product links info",
+							"items": {
+								"type": "object",
+								"description": "",
+								"properties": {
+									"sku": {
+										"type": "string",
+										"description": "SKU",
+										"required": true
+									},
+									"link_type": {
+										"type": "string",
+										"description": "Link type",
+										"required": true
+									},
+									"linked_product_sku": {
+										"type": "string",
+										"description": "Linked product sku",
+										"required": true
+									},
+									"linked_product_type": {
+										"type": "string",
+										"description": "Linked product type (simple, virtual, etc)",
+										"required": true
+									},
+									"position": {
+										"type": "integer",
+										"description": "Linked item position",
+										"required": true
+									},
+									"extension_attributes": {
+										"type": "object",
+										"description": "ExtensionInterface class for @see \\Magento\\Catalog\\Api\\Data\\ProductLinkInterface",
+										"properties": {
+											"qty": {
+												"type": "number"
+											}
+										}
+									}
+								}
+							}
+						},
+						"options": {
+							"type": "array",
+							"description": "List of product options",
+							"items": {
+								"type": "object",
+								"description": "",
+								"properties": {
+									"product_sku": {
+										"type": "string",
+										"description": "Product SKU",
+										"required": true
+									},
+									"option_id": {
+										"type": "integer",
+										"description": "Option id"
+									},
+									"title": {
+										"type": "string",
+										"description": "Option title",
+										"required": true
+									},
+									"type": {
+										"type": "string",
+										"description": "Option type",
+										"required": true
+									},
+									"sort_order": {
+										"type": "integer",
+										"description": "Sort order",
+										"required": true
+									},
+									"is_require": {
+										"type": "boolean",
+										"description": "Is require",
+										"required": true
+									},
+									"price": {
+										"type": "number",
+										"description": "Price"
+									},
+									"price_type": {
+										"type": "string",
+										"description": "Price type"
+									},
+									"sku": {
+										"type": "string",
+										"description": "Sku"
+									},
+									"file_extension": {
+										"type": "string"
+									},
+									"max_characters": {
+										"type": "integer"
+									},
+									"image_size_x": {
+										"type": "integer"
+									},
+									"image_size_y": {
+										"type": "integer"
+									},
+									"values": {
+										"type": "array",
+										"items": {
+											"type": "object",
+											"description": "",
+											"properties": {
+												"title": {
+													"type": "string",
+													"description": "Option title",
+													"required": true
+												},
+												"sort_order": {
+													"type": "integer",
+													"description": "Sort order",
+													"required": true
+												},
+												"price": {
+													"type": "number",
+													"description": "Price",
+													"required": true
+												},
+												"price_type": {
+													"type": "string",
+													"description": "Price type",
+													"required": true
+												},
+												"sku": {
+													"type": "string",
+													"description": "Sku"
+												},
+												"option_type_id": {
+													"type": "integer",
+													"description": "Option type id"
+												}
+											}
+										}
+									},
+									"extension_attributes": {
+										"type": "object",
+										"description": "ExtensionInterface class for @see \\Magento\\Catalog\\Api\\Data\\ProductCustomOptionInterface"
+									}
+								}
+							}
+						},
+						"media_gallery_entries": {
+							"type": "array",
+							"description": "Media gallery entries",
+							"items": {
+								"type": "object",
+								"description": "",
+								"properties": {
+									"id": {
+										"type": "integer",
+										"description": "Gallery entry ID"
+									},
+									"media_type": {
+										"type": "string",
+										"description": "Media type",
+										"required": true
+									},
+									"label": {
+										"type": "string",
+										"description": "Gallery entry alternative text",
+										"required": true
+									},
+									"position": {
+										"type": "integer",
+										"description": "Gallery entry position (sort order)",
+										"required": true
+									},
+									"disabled": {
+										"type": "boolean",
+										"description": "If gallery entry is hidden from product page",
+										"required": true
+									},
+									"types": {
+										"type": "array",
+										"description": "Gallery entry image types (thumbnail, image, small_image etc)",
+										"items": {
+											"type": "string"
+										},
+										"required": true
+									},
+									"file": {
+										"type": "string",
+										"description": "File path"
+									},
+									"content": {
+										"type": "object",
+										"description": "Image Content data interface",
+										"properties": {
+											"base64_encoded_data": {
+												"type": "string",
+												"description": "Media data (base64 encoded content)",
+												"required": true
+											},
+											"type": {
+												"type": "string",
+												"description": "MIME type",
+												"required": true
+											},
+											"name": {
+												"type": "string",
+												"description": "Image name",
+												"required": true
+											}
+										}
+									},
+									"extension_attributes": {
+										"type": "object",
+										"description": "ExtensionInterface class for @see \\Magento\\Catalog\\Api\\Data\\ProductAttributeMediaGalleryEntryInterface",
+										"properties": {
+											"video_content": {
+												"type": "object",
+												"description": "Video Content data interface",
+												"properties": {
+													"media_type": {
+														"type": "string",
+														"description": "MIME type",
+														"required": true
+													},
+													"video_provider": {
+														"type": "string",
+														"description": "Provider",
+														"required": true
+													},
+													"video_url": {
+														"type": "string",
+														"description": "Video URL",
+														"required": true
+													},
+													"video_title": {
+														"type": "string",
+														"description": "Title",
+														"required": true
+													},
+													"video_description": {
+														"type": "string",
+														"description": "Video Description",
+														"required": true
+													},
+													"video_metadata": {
+														"type": "string",
+														"description": "Metadata",
+														"required": true
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						},
+						"tier_prices": {
+							"type": "array",
+							"description": "List of product tier prices",
+							"items": {
+								"type": "object",
+								"description": "",
+								"properties": {
+									"customer_group_id": {
+										"type": "integer",
+										"description": "Customer group id",
+										"required": true
+									},
+									"qty": {
+										"type": "number",
+										"description": "Tier qty",
+										"required": true
+									},
+									"value": {
+										"type": "number",
+										"description": "Price value",
+										"required": true
+									},
+									"extension_attributes": {
+										"type": "object",
+										"description": "ExtensionInterface class for @see \\Magento\\Catalog\\Api\\Data\\ProductTierPriceInterface"
+									}
+								}
+							}
+						},
+						"custom_attributes": {
+							"type": "array",
+							"description": "Custom attributes values.",
+							"items": {
+								"type": "object",
+								"description": "Interface for custom attribute value.",
+								"properties": {
+									"attribute_code": {
+										"type": "string",
+										"description": "Attribute code",
+										"required": true
+									},
+									"value": {
+										"type": "string",
+										"description": "Attribute value",
+										"required": true
+									}
+								}
+							}
+						}
+					},
+					"required": true
+				},
+				"options": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"description": "Interface OptionInterface",
+						"properties": {
+							"id": {
+								"type": "integer"
+							},
+							"attribute_id": {
+								"type": "string"
+							},
+							"label": {
+								"type": "string"
+							},
+							"position": {
+								"type": "integer"
+							},
+							"is_use_default": {
+								"type": "boolean"
+							},
+							"values": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"description": "Interface OptionValueInterface",
+									"properties": {
+										"value_index": {
+											"type": "integer",
+											"required": true
+										},
+										"extension_attributes": {
+											"type": "object",
+											"description": "ExtensionInterface class for @see \\Magento\\ConfigurableProduct\\Api\\Data\\OptionValueInterface"
+										}
+									}
+								}
+							},
+							"extension_attributes": {
+								"type": "object",
+								"description": "ExtensionInterface class for @see \\Magento\\ConfigurableProduct\\Api\\Data\\OptionInterface"
+							},
+							"product_id": {
+								"type": "integer"
+							}
+						}
+					},
+					"required": true
+				}
+			},
+			"type": "object"
+		}
+	}
+}

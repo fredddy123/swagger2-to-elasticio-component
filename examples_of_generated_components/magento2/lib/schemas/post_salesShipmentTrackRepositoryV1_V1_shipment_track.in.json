@@ -1,0 +1,87 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"body": {
+			"properties": {
+				"entity": {
+					"type": "object",
+					"description": "Shipment track interface. A shipment is a delivery package that contains products. A shipment document accompanies the shipment. This document lists the products and their quantities in the delivery package. Merchants and customers can track shipments.",
+					"properties": {
+						"order_id": {
+							"type": "integer",
+							"description": "The order_id for the shipment package.",
+							"required": true
+						},
+						"created_at": {
+							"type": "string",
+							"description": "Created-at timestamp."
+						},
+						"entity_id": {
+							"type": "integer",
+							"description": "Shipment package ID."
+						},
+						"parent_id": {
+							"type": "integer",
+							"description": "Parent ID.",
+							"required": true
+						},
+						"updated_at": {
+							"type": "string",
+							"description": "Updated-at timestamp."
+						},
+						"weight": {
+							"type": "number",
+							"description": "Weight.",
+							"required": true
+						},
+						"qty": {
+							"type": "number",
+							"description": "Quantity.",
+							"required": true
+						},
+						"description": {
+							"type": "string",
+							"description": "Description.",
+							"required": true
+						},
+						"extension_attributes": {
+							"type": "object",
+							"description": "ExtensionInterface class for @see \\Magento\\Sales\\Api\\Data\\ShipmentTrackInterface"
+						},
+						"track_number": {
+							"type": "string",
+							"description": "Track number.",
+							"required": true
+						},
+						"title": {
+							"type": "string",
+							"description": "Title.",
+							"required": true
+						},
+						"carrier_code": {
+							"type": "string",
+							"description": "Carrier code.",
+							"required": true
+						}
+					},
+					"required": true
+				}
+			},
+			"type": "object"
+		}
+	}
+}

@@ -1,0 +1,87 @@
+{
+	"type": "object",
+	"description": "Interface OptionInterface",
+	"properties": {
+		"option_id": {
+			"type": "integer",
+			"description": "Option id"
+		},
+		"title": {
+			"type": "string",
+			"description": "Option title"
+		},
+		"required": {
+			"type": "boolean",
+			"description": "Is required option"
+		},
+		"type": {
+			"type": "string",
+			"description": "Input type"
+		},
+		"position": {
+			"type": "integer",
+			"description": "Option position"
+		},
+		"sku": {
+			"type": "string",
+			"description": "Product sku"
+		},
+		"product_links": {
+			"type": "array",
+			"description": "Product links",
+			"items": {
+				"type": "object",
+				"description": "Interface LinkInterface",
+				"properties": {
+					"id": {
+						"type": "string",
+						"description": "The identifier"
+					},
+					"sku": {
+						"type": "string",
+						"description": "Linked product sku"
+					},
+					"option_id": {
+						"type": "integer",
+						"description": "Option id"
+					},
+					"qty": {
+						"type": "number",
+						"description": "Qty"
+					},
+					"position": {
+						"type": "integer",
+						"description": "Position"
+					},
+					"is_default": {
+						"type": "boolean",
+						"description": "Is default",
+						"required": true
+					},
+					"price": {
+						"type": "number",
+						"description": "Price",
+						"required": true
+					},
+					"price_type": {
+						"type": "integer",
+						"description": "Price type",
+						"required": true
+					},
+					"can_change_quantity": {
+						"type": "integer",
+						"description": "Whether quantity could be changed"
+					},
+					"extension_attributes": {
+						"type": "object",
+						"description": "ExtensionInterface class for @see \\Magento\\Bundle\\Api\\Data\\LinkInterface"
+					}
+				}
+			}
+		},
+		"extension_attributes": {
+			"type": "object",
+			"description": "ExtensionInterface class for @see \\Magento\\Bundle\\Api\\Data\\OptionInterface"
+		}
+	}
+}

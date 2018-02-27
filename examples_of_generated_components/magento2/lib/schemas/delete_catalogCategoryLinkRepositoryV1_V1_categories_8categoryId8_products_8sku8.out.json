@@ -1,0 +1,4 @@
+{
+	"type": "boolean",
+	"description": "will returned True if products successfully deleted"
+}

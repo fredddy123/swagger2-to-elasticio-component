@@ -1,0 +1,19 @@
+{
+	"type": "object",
+	"description": "Validation results interface.",
+	"properties": {
+		"valid": {
+			"type": "boolean",
+			"description": "If the provided data is valid.",
+			"required": true
+		},
+		"messages": {
+			"type": "array",
+			"description": "Error messages as array in case of validation failure, else return empty array.",
+			"items": {
+				"type": "string"
+			},
+			"required": true
+		}
+	}
+}

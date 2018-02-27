@@ -1,0 +1,43 @@
+{
+	"type": "array",
+	"items": {
+		"type": "object",
+		"description": "",
+		"properties": {
+			"sku": {
+				"type": "string",
+				"description": "SKU",
+				"required": true
+			},
+			"link_type": {
+				"type": "string",
+				"description": "Link type",
+				"required": true
+			},
+			"linked_product_sku": {
+				"type": "string",
+				"description": "Linked product sku",
+				"required": true
+			},
+			"linked_product_type": {
+				"type": "string",
+				"description": "Linked product type (simple, virtual, etc)",
+				"required": true
+			},
+			"position": {
+				"type": "integer",
+				"description": "Linked item position",
+				"required": true
+			},
+			"extension_attributes": {
+				"type": "object",
+				"description": "ExtensionInterface class for @see \\Magento\\Catalog\\Api\\Data\\ProductLinkInterface",
+				"properties": {
+					"qty": {
+						"type": "number"
+					}
+				}
+			}
+		}
+	}
+}

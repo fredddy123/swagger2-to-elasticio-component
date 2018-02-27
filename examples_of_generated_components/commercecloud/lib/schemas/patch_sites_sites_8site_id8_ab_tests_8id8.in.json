@@ -1,0 +1,2201 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"path": {
+			"type": "object",
+			"properties": {
+				"site_id": {
+					"type": "string",
+					"required": true
+				},
+				"id": {
+					"type": "string",
+					"required": true
+				}
+			}
+		},
+		"body": {
+			"description": "Document representing an A/B Test",
+			"properties": {
+				"customer_groups": {
+					"description": "The list of customer group ids assigned to the A/B Test. Defaults to 'Everyone' if not specified on create",
+					"items": {
+						"type": "string"
+					},
+					"maxItems": 50,
+					"type": "array"
+				},
+				"description": {
+					"description": "The optional description of the A/B Test",
+					"maxLength": 4000,
+					"type": "string"
+				},
+				"email_addresses": {
+					"description": "The optional list of email addresses to send A/B Test results",
+					"items": {
+						"type": "string"
+					},
+					"maxItems": 50,
+					"type": "array"
+				},
+				"enabled": {
+					"description": "The flag representing the enabled state of the A/B Test. Defaults to false if not specified on create",
+					"type": "boolean"
+				},
+				"end_date": {
+					"description": "The date that the A/B Test ends. Defaults to two weeks from creation date if both start and end dates are not specified on create",
+					"format": "date-time",
+					"type": "string"
+				},
+				"expiration_type": {
+					"description": "The participant expiration type of the A/B Test. Defaults to 'never' if not specified on create",
+					"enum": [
+						"session",
+						"never"
+					],
+					"type": "string"
+				},
+				"id": {
+					"description": "The id of the A/B Test",
+					"maxLength": 40,
+					"minLength": 1,
+					"type": "string"
+				},
+				"key_metric_id": {
+					"description": "The key metric that is most important to the A/B Test, among the metrics collected.\n Defaults to 'Revenue' if not specified\n from test participant activity",
+					"maxLength": 256,
+					"type": "string"
+				},
+				"link": {
+					"description": "The URL to get the A/B test. This is a computed attribute and cannot be modified",
+					"type": "string"
+				},
+				"paused": {
+					"description": "The flag representing the paused state of the A/B Test. Defaults to false if not specified on create",
+					"type": "boolean"
+				},
+				"start_date": {
+					"description": "The date that the A/B Test begins. Defaults to a week from creation date if both start and end dates are not specified on create",
+					"format": "date-time",
+					"type": "string"
+				},
+				"tags": {
+					"description": "The optional list of tags to group similar A/B Tests so that they can be searched easily.",
+					"items": {
+						"type": "string"
+					},
+					"maxItems": 50,
+					"type": "array"
+				},
+				"test_groups": {
+					"description": "Test Groups created for an A/B Test. This is a read only attribute for now.",
+					"items": {
+						"description": "Document representing an A/B Test Group",
+						"properties": {
+							"allocation": {
+								"description": "Test Group percentage allocation",
+								"format": "int32",
+								"type": "integer"
+							},
+							"custom_experience": {
+								"description": "Flag to determine if this Test Group is a customer experience",
+								"type": "boolean"
+							},
+							"description": {
+								"description": "Test Group description",
+								"maxLength": 4000,
+								"type": "string"
+							},
+							"id": {
+								"description": "Test group id",
+								"maxLength": 40,
+								"minLength": 1,
+								"type": "string"
+							}
+						}
+					},
+					"type": "array"
+				},
+				"test_segments": {
+					"description": "Test Segments created for an A/B Test. This is a read only attribute for now",
+					"items": {
+						"description": "Document representing an A/B Test Segment",
+						"properties": {
+							"allocation": {
+								"description": "Test Segment percentage allocation",
+								"format": "int32",
+								"type": "integer"
+							},
+							"custom_experience": {
+								"description": "Flag to determine if this Test Segment is a customer experience",
+								"type": "boolean"
+							},
+							"description": {
+								"description": "Test Segment description",
+								"maxLength": 4000,
+								"type": "string"
+							},
+							"id": {
+								"description": "Test segment id",
+								"maxLength": 40,
+								"minLength": 1,
+								"type": "string"
+							},
+							"link": {
+								"description": "A link to the segment",
+								"type": "string"
+							},
+							"promotions": {
+								"description": "Promotions which this segment has as experiences",
+								"items": {
+									"description": "Document representing a promotion. Unless otherwise stated, attributes of this document are not supported when using\n the Open Commerce API to update multiple promotions at once.",
+									"properties": {
+										"archived": {
+											"description": "Determines whether or not this promotion is archived. This attribute is allowed to be updated when using the Open\n Commerce API to update multiple promotions at once.",
+											"type": "boolean"
+										},
+										"assignment_information": {
+											"properties": {
+												"abtest_id": {
+													"description": "If there is only one assignment, and that assignment is an A/B test segment, the id of the A/B test the segment\n belongs to. Otherwise, empty.",
+													"type": "string"
+												},
+												"abtest_segment_id": {
+													"description": "If there is only one assignment, and that assignment is an A/B test segment, the id of the A/B test segment.\n Otherwise, empty.",
+													"type": "string"
+												},
+												"active": {
+													"description": "true if the individual assignment or the multiple assignments are currently active.",
+													"type": "boolean"
+												},
+												"active_abtest_assignments": {
+													"description": "A list of currently active A/B tests this is assigned to.",
+													"items": {
+														"properties": {
+															"abtest_description": {
+																"type": "string"
+															},
+															"abtest_id": {
+																"type": "string"
+															},
+															"enabled": {
+																"type": "boolean"
+															},
+															"schedule": {
+																"description": "Document representing a time schedule for slots.",
+																"properties": {
+																	"end_date": {
+																		"description": "The date to end of validity. ISO8601 date time format: yyyy-MM-dd'T'HH:mm:ssZ.",
+																		"format": "date-time",
+																		"type": "string"
+																	},
+																	"recurrence": {
+																		"description": "The recurrence of the schedule by day of week and time of day. Not all schedules will support a recurrence.",
+																		"properties": {
+																			"day_of_week": {
+																				"description": "The days of week for recurrence.",
+																				"enum": [
+																					"monday",
+																					"tuesday",
+																					"wednesday",
+																					"thursday",
+																					"friday",
+																					"saturday",
+																					"sunday"
+																				],
+																				"items": {
+																					"enum": [
+																						"monday",
+																						"tuesday",
+																						"wednesday",
+																						"thursday",
+																						"friday",
+																						"saturday",
+																						"sunday"
+																					],
+																					"type": "string"
+																				},
+																				"type": "array"
+																			},
+																			"time_of_day": {
+																				"description": "The time of the day for recurrence.",
+																				"properties": {
+																					"time_from": {
+																						"description": "The time to start from. Time format: HH:mm:ss. Seconds\n are ignored and set to 0.",
+																						"format": "time",
+																						"type": "string"
+																					},
+																					"time_to": {
+																						"description": "The time to end on. Time format: HH:mm:ss. Seconds\n are ignored and set to 0.",
+																						"format": "time",
+																						"type": "string"
+																					}
+																				}
+																			}
+																		}
+																	},
+																	"start_date": {
+																		"description": "The date to start validity. ISO8601 date time format: yyyy-MM-dd'T'HH:mm:ssZ.",
+																		"format": "date-time",
+																		"type": "string"
+																	}
+																}
+															},
+															"segment_description": {
+																"type": "string"
+															},
+															"segment_id": {
+																"type": "string"
+															}
+														}
+													},
+													"type": "array"
+												},
+												"active_campaign_assignments": {
+													"description": "A list of currently active campaigns this is assigned to.",
+													"items": {
+														"description": "Document representing a promotion campaign assignment.",
+														"properties": {
+															"campaign": {
+																"description": "The campaign",
+																"properties": {
+																	"campaign_id": {
+																		"description": "The ID of the campaign.",
+																		"x-label": {
+																			"default": "ID"
+																		},
+																		"maxLength": 256,
+																		"minLength": 1,
+																		"type": "string"
+																	},
+																	"coupons": {
+																		"description": "The array of assigned coupon IDs, not sorted",
+																		"items": {
+																			"type": "string"
+																		},
+																		"type": "array"
+																	},
+																	"creation_date": {
+																		"description": "Returns the value of attribute 'creationDate'.",
+																		"format": "date-time",
+																		"x-label": {
+																			"default": "Creation Date"
+																		},
+																		"type": "string"
+																	},
+																	"customer_groups": {
+																		"description": "The array of assigned customer groups, not sorted",
+																		"items": {
+																			"type": "string"
+																		},
+																		"type": "array"
+																	},
+																	"description": {
+																		"description": "The description of the campaign.",
+																		"format": "text",
+																		"x-label": {
+																			"default": "Description"
+																		},
+																		"maxLength": 4000,
+																		"type": "string"
+																	},
+																	"enabled": {
+																		"description": "The enabled flag for campaign.",
+																		"type": "boolean"
+																	},
+																	"end_date": {
+																		"description": "The date that the Scenario ends",
+																		"format": "date-time",
+																		"x-label": {
+																			"default": "End Date"
+																		},
+																		"type": "string"
+																	},
+																	"last_modified": {
+																		"description": "Returns the value of attribute 'lastModified'.",
+																		"format": "date-time",
+																		"x-label": {
+																			"default": "Last Modified"
+																		},
+																		"type": "string"
+																	},
+																	"link": {
+																		"description": "link for convenience",
+																		"type": "string"
+																	},
+																	"source_code_groups": {
+																		"description": "The array of assigned source code groups, not sorted",
+																		"items": {
+																			"type": "string"
+																		},
+																		"type": "array"
+																	},
+																	"start_date": {
+																		"description": "The date that the Scenario begins",
+																		"format": "date-time",
+																		"x-label": {
+																			"default": "Start Date"
+																		},
+																		"type": "string"
+																	}
+																}
+															},
+															"campaign_id": {
+																"description": "The id of the campaign.",
+																"maxLength": 256,
+																"minLength": 1,
+																"type": "string"
+															},
+															"coupons": {
+																"description": "The sorted array of assigned coupon ids.",
+																"items": {
+																	"type": "string"
+																},
+																"type": "array"
+															},
+															"customer_groups": {
+																"description": "The sorted array of assigned customer groups.",
+																"items": {
+																	"type": "string"
+																},
+																"type": "array"
+															},
+															"description": {
+																"description": "The description of the promotion campaign assignment.",
+																"maxLength": 4000,
+																"type": "string"
+															},
+															"enabled": {
+																"description": "True if the assignment resource is enabled",
+																"type": "boolean"
+															},
+															"link": {
+																"description": "link for convenience",
+																"type": "string"
+															},
+															"promotion": {
+																"description": "The promotion"
+															},
+															"promotion_id": {
+																"description": "The id of the Promotion.",
+																"maxLength": 256,
+																"minLength": 1,
+																"type": "string"
+															},
+															"rank": {
+																"description": "The rank of promotion campaign assignment",
+																"format": "int32",
+																"type": "integer"
+															},
+															"schedule": {
+																"description": "The schedule of the assignment resource",
+																"properties": {
+																	"end_date": {
+																		"description": "The date to end of validity. ISO8601 date time format: yyyy-MM-dd'T'HH:mm:ssZ.",
+																		"format": "date-time",
+																		"type": "string"
+																	},
+																	"recurrence": {
+																		"description": "The recurrence of the schedule by day of week and time of day. Not all schedules will support a recurrence.",
+																		"properties": {
+																			"day_of_week": {
+																				"description": "The days of week for recurrence.",
+																				"enum": [
+																					"monday",
+																					"tuesday",
+																					"wednesday",
+																					"thursday",
+																					"friday",
+																					"saturday",
+																					"sunday"
+																				],
+																				"items": {
+																					"enum": [
+																						"monday",
+																						"tuesday",
+																						"wednesday",
+																						"thursday",
+																						"friday",
+																						"saturday",
+																						"sunday"
+																					],
+																					"type": "string"
+																				},
+																				"type": "array"
+																			},
+																			"time_of_day": {
+																				"description": "The time of the day for recurrence.",
+																				"properties": {
+																					"time_from": {
+																						"description": "The time to start from. Time format: HH:mm:ss. Seconds\n are ignored and set to 0.",
+																						"format": "time",
+																						"type": "string"
+																					},
+																					"time_to": {
+																						"description": "The time to end on. Time format: HH:mm:ss. Seconds\n are ignored and set to 0.",
+																						"format": "time",
+																						"type": "string"
+																					}
+																				}
+																			}
+																		}
+																	},
+																	"start_date": {
+																		"description": "The date to start validity. ISO8601 date time format: yyyy-MM-dd'T'HH:mm:ssZ.",
+																		"format": "date-time",
+																		"type": "string"
+																	}
+																}
+															},
+															"source_code_groups": {
+																"description": "The sorted array of assigned source code groups.",
+																"items": {
+																	"type": "string"
+																},
+																"type": "array"
+															}
+														}
+													},
+													"type": "array"
+												},
+												"campaign_id": {
+													"description": "If there is only one assignment, and that assignment is a campaign, the id of the campaign. Otherwise, empty.",
+													"type": "string"
+												},
+												"enabled": {
+													"type": "boolean"
+												},
+												"end_date": {
+													"description": "The end date of the container of the assignment (a Campaign or ABTest). If schedule_type is\n schedule_type : \"multiple\" or schedule_type : \"none\", then then result will be null. Also, a null\n date will also return null.",
+													"format": "date-time",
+													"type": "string"
+												},
+												"schedule": {
+													"description": "The schedule of the assignment (a Campaign or ABTest). If schedule_type is\n schedule_type : \"multiple\" or schedule_type : \"none\", then then result will be null.",
+													"properties": {
+														"end_date": {
+															"description": "The date to end of validity. ISO8601 date time format: yyyy-MM-dd'T'HH:mm:ssZ.",
+															"format": "date-time",
+															"type": "string"
+														},
+														"recurrence": {
+															"description": "The recurrence of the schedule by day of week and time of day. Not all schedules will support a recurrence.",
+															"properties": {
+																"day_of_week": {
+																	"description": "The days of week for recurrence.",
+																	"enum": [
+																		"monday",
+																		"tuesday",
+																		"wednesday",
+																		"thursday",
+																		"friday",
+																		"saturday",
+																		"sunday"
+																	],
+																	"items": {
+																		"enum": [
+																			"monday",
+																			"tuesday",
+																			"wednesday",
+																			"thursday",
+																			"friday",
+																			"saturday",
+																			"sunday"
+																		],
+																		"type": "string"
+																	},
+																	"type": "array"
+																},
+																"time_of_day": {
+																	"description": "The time of the day for recurrence.",
+																	"properties": {
+																		"time_from": {
+																			"description": "The time to start from. Time format: HH:mm:ss. Seconds\n are ignored and set to 0.",
+																			"format": "time",
+																			"type": "string"
+																		},
+																		"time_to": {
+																			"description": "The time to end on. Time format: HH:mm:ss. Seconds\n are ignored and set to 0.",
+																			"format": "time",
+																			"type": "string"
+																		}
+																	}
+																}
+															}
+														},
+														"start_date": {
+															"description": "The date to start validity. ISO8601 date time format: yyyy-MM-dd'T'HH:mm:ssZ.",
+															"format": "date-time",
+															"type": "string"
+														}
+													}
+												},
+												"schedule_type": {
+													"description": "If there is only one active assignment, or no active assignments and one upcoming assignment, this is that type\n of assignment (schedule_type : \"campaign\" or schedule_type : \"abtest\"). If there are no\n assignments, it will be schedule_type : \"none\", otherwise, schedule_type : \"multiple\".",
+													"enum": [
+														"none",
+														"campaign",
+														"abtest",
+														"multiple"
+													],
+													"type": "string"
+												},
+												"start_date": {
+													"description": "The start date of the container of the assignment (a Campaign or ABTest). If schedule_type is\n schedule_type : \"multiple\" or schedule_type : \"none\", then then result will be null. Also, a null\n date will also return null.",
+													"format": "date-time",
+													"type": "string"
+												},
+												"upcoming_abtest_assignments": {
+													"description": "A list of upcoming A/B tests this is assigned to.",
+													"items": {
+														"properties": {
+															"abtest_description": {
+																"type": "string"
+															},
+															"abtest_id": {
+																"type": "string"
+															},
+															"enabled": {
+																"type": "boolean"
+															},
+															"schedule": {
+																"description": "Document representing a time schedule for slots.",
+																"properties": {
+																	"end_date": {
+																		"description": "The date to end of validity. ISO8601 date time format: yyyy-MM-dd'T'HH:mm:ssZ.",
+																		"format": "date-time",
+																		"type": "string"
+																	},
+																	"recurrence": {
+																		"description": "The recurrence of the schedule by day of week and time of day. Not all schedules will support a recurrence.",
+																		"properties": {
+																			"day_of_week": {
+																				"description": "The days of week for recurrence.",
+																				"enum": [
+																					"monday",
+																					"tuesday",
+																					"wednesday",
+																					"thursday",
+																					"friday",
+																					"saturday",
+																					"sunday"
+																				],
+																				"items": {
+																					"enum": [
+																						"monday",
+																						"tuesday",
+																						"wednesday",
+																						"thursday",
+																						"friday",
+																						"saturday",
+																						"sunday"
+																					],
+																					"type": "string"
+																				},
+																				"type": "array"
+																			},
+																			"time_of_day": {
+																				"description": "The time of the day for recurrence.",
+																				"properties": {
+																					"time_from": {
+																						"description": "The time to start from. Time format: HH:mm:ss. Seconds\n are ignored and set to 0.",
+																						"format": "time",
+																						"type": "string"
+																					},
+																					"time_to": {
+																						"description": "The time to end on. Time format: HH:mm:ss. Seconds\n are ignored and set to 0.",
+																						"format": "time",
+																						"type": "string"
+																					}
+																				}
+																			}
+																		}
+																	},
+																	"start_date": {
+																		"description": "The date to start validity. ISO8601 date time format: yyyy-MM-dd'T'HH:mm:ssZ.",
+																		"format": "date-time",
+																		"type": "string"
+																	}
+																}
+															},
+															"segment_description": {
+																"type": "string"
+															},
+															"segment_id": {
+																"type": "string"
+															}
+														}
+													},
+													"type": "array"
+												},
+												"upcoming_campaign_assignments": {
+													"description": "A list of upcoming campaigns this is assigned to.",
+													"items": {
+														"description": "Document representing a promotion campaign assignment.",
+														"properties": {
+															"campaign": {
+																"description": "The campaign",
+																"properties": {
+																	"campaign_id": {
+																		"description": "The ID of the campaign.",
+																		"x-label": {
+																			"default": "ID"
+																		},
+																		"maxLength": 256,
+																		"minLength": 1,
+																		"type": "string"
+																	},
+																	"coupons": {
+																		"description": "The array of assigned coupon IDs, not sorted",
+																		"items": {
+																			"type": "string"
+																		},
+																		"type": "array"
+																	},
+																	"creation_date": {
+																		"description": "Returns the value of attribute 'creationDate'.",
+																		"format": "date-time",
+																		"x-label": {
+																			"default": "Creation Date"
+																		},
+																		"type": "string"
+																	},
+																	"customer_groups": {
+																		"description": "The array of assigned customer groups, not sorted",
+																		"items": {
+																			"type": "string"
+																		},
+																		"type": "array"
+																	},
+																	"description": {
+																		"description": "The description of the campaign.",
+																		"format": "text",
+																		"x-label": {
+																			"default": "Description"
+																		},
+																		"maxLength": 4000,
+																		"type": "string"
+																	},
+																	"enabled": {
+																		"description": "The enabled flag for campaign.",
+																		"type": "boolean"
+																	},
+																	"end_date": {
+																		"description": "The date that the Scenario ends",
+																		"format": "date-time",
+																		"x-label": {
+																			"default": "End Date"
+																		},
+																		"type": "string"
+																	},
+																	"last_modified": {
+																		"description": "Returns the value of attribute 'lastModified'.",
+																		"format": "date-time",
+																		"x-label": {
+																			"default": "Last Modified"
+																		},
+																		"type": "string"
+																	},
+																	"link": {
+																		"description": "link for convenience",
+																		"type": "string"
+																	},
+																	"source_code_groups": {
+																		"description": "The array of assigned source code groups, not sorted",
+																		"items": {
+																			"type": "string"
+																		},
+																		"type": "array"
+																	},
+																	"start_date": {
+																		"description": "The date that the Scenario begins",
+																		"format": "date-time",
+																		"x-label": {
+																			"default": "Start Date"
+																		},
+																		"type": "string"
+																	}
+																}
+															},
+															"campaign_id": {
+																"description": "The id of the campaign.",
+																"maxLength": 256,
+																"minLength": 1,
+																"type": "string"
+															},
+															"coupons": {
+																"description": "The sorted array of assigned coupon ids.",
+																"items": {
+																	"type": "string"
+																},
+																"type": "array"
+															},
+															"customer_groups": {
+																"description": "The sorted array of assigned customer groups.",
+																"items": {
+																	"type": "string"
+																},
+																"type": "array"
+															},
+															"description": {
+																"description": "The description of the promotion campaign assignment.",
+																"maxLength": 4000,
+																"type": "string"
+															},
+															"enabled": {
+																"description": "True if the assignment resource is enabled",
+																"type": "boolean"
+															},
+															"link": {
+																"description": "link for convenience",
+																"type": "string"
+															},
+															"promotion": {
+																"description": "The promotion"
+															},
+															"promotion_id": {
+																"description": "The id of the Promotion.",
+																"maxLength": 256,
+																"minLength": 1,
+																"type": "string"
+															},
+															"rank": {
+																"description": "The rank of promotion campaign assignment",
+																"format": "int32",
+																"type": "integer"
+															},
+															"schedule": {
+																"description": "The schedule of the assignment resource",
+																"properties": {
+																	"end_date": {
+																		"description": "The date to end of validity. ISO8601 date time format: yyyy-MM-dd'T'HH:mm:ssZ.",
+																		"format": "date-time",
+																		"type": "string"
+																	},
+																	"recurrence": {
+																		"description": "The recurrence of the schedule by day of week and time of day. Not all schedules will support a recurrence.",
+																		"properties": {
+																			"day_of_week": {
+																				"description": "The days of week for recurrence.",
+																				"enum": [
+																					"monday",
+																					"tuesday",
+																					"wednesday",
+																					"thursday",
+																					"friday",
+																					"saturday",
+																					"sunday"
+																				],
+																				"items": {
+																					"enum": [
+																						"monday",
+																						"tuesday",
+																						"wednesday",
+																						"thursday",
+																						"friday",
+																						"saturday",
+																						"sunday"
+																					],
+																					"type": "string"
+																				},
+																				"type": "array"
+																			},
+																			"time_of_day": {
+																				"description": "The time of the day for recurrence.",
+																				"properties": {
+																					"time_from": {
+																						"description": "The time to start from. Time format: HH:mm:ss. Seconds\n are ignored and set to 0.",
+																						"format": "time",
+																						"type": "string"
+																					},
+																					"time_to": {
+																						"description": "The time to end on. Time format: HH:mm:ss. Seconds\n are ignored and set to 0.",
+																						"format": "time",
+																						"type": "string"
+																					}
+																				}
+																			}
+																		}
+																	},
+																	"start_date": {
+																		"description": "The date to start validity. ISO8601 date time format: yyyy-MM-dd'T'HH:mm:ssZ.",
+																		"format": "date-time",
+																		"type": "string"
+																	}
+																}
+															},
+															"source_code_groups": {
+																"description": "The sorted array of assigned source code groups.",
+																"items": {
+																	"type": "string"
+																},
+																"type": "array"
+															}
+														}
+													},
+													"type": "array"
+												}
+											},
+											"description": "Information about the assignments and assignment schedules of this promotion"
+										},
+										"creation_date": {
+											"description": "Returns the value of attribute 'creationDate'.",
+											"format": "date-time",
+											"x-label": {
+												"default": "Creation Date"
+											},
+											"type": "string"
+										},
+										"currency_code": {
+											"description": "The ISO 4217 mnemonic code of the currency this promotion is restricted to. If not populated, then there is no\n currency restriction on the promotion.",
+											"maxLength": 3,
+											"type": "string"
+										},
+										"disable_globally_excluded": {
+											"description": "Determines whether or not this promotion ignores the global product exclusions for promotions.",
+											"type": "boolean"
+										},
+										"enabled": {
+											"description": "Determines whether or not this promotion is enabled. This attribute is allowed to be updated when using the Open\n Commerce API to update multiple promotions at once.",
+											"type": "boolean"
+										},
+										"exclusivity": {
+											"description": "Determines if the promotion can be combined with other promotions of the same promotion class or if it cannot be\n combined with any other promotions. This attribute is allowed to be updated when using the Open Commerce API to\n update multiple promotions at once.",
+											"enum": [
+												"no",
+												"class",
+												"global"
+											],
+											"x-enum-labels": [
+												{
+													"default": "Can be combined with any promotion"
+												},
+												{
+													"default": "Cannot be combined with promotions of same class"
+												},
+												{
+													"default": "Cannot be combined with any promotion"
+												}
+											],
+											"x-label": {
+												"default": "Exclusivity"
+											},
+											"type": "string"
+										},
+										"id": {
+											"description": "The id for the promotion.",
+											"x-label": {
+												"default": "ID"
+											},
+											"type": "string"
+										},
+										"last_modified": {
+											"description": "Returns the value of attribute 'lastModified'.",
+											"format": "date-time",
+											"x-label": {
+												"default": "Last Modified"
+											},
+											"type": "string"
+										},
+										"link": {
+											"description": "A URL that is used to get the details of this promotion.",
+											"type": "string"
+										},
+										"name": {
+											"additionalProperties": {
+												"type": "string"
+											},
+											"description": "The user supplied name of this promotion, which can be localized",
+											"format": "localized",
+											"x-label": {
+												"default": "Name"
+											},
+											"type": "object"
+										},
+										"promotion_class": {
+											"description": "The class of the promotion. If the promotion class is modified, then the promotion rule and all of its values,\n such as whether or not to disable global product exclusions, will be reset.",
+											"enum": [
+												"product",
+												"shipping",
+												"order"
+											],
+											"type": "string"
+										},
+										"tags": {
+											"description": "Returns the list of tags assigned to this promotion. If used to set the tags on a promotion, the promotion will\n only have the tags passed in the input. Any existing tags will be removed.",
+											"items": {
+												"description": "Document representing a tag",
+												"properties": {
+													"tag_id": {
+														"description": "The id of the tag.",
+														"type": "string"
+													}
+												}
+											},
+											"x-label": {
+												"default": "Tags"
+											},
+											"type": "array"
+										}
+									}
+								},
+								"type": "array"
+							},
+							"slot_configs": {
+								"description": "Slot configurations which this segment has as experiences",
+								"items": {
+									"description": "Document representing a slot configuration.",
+									"properties": {
+										"assignment_information": {
+											"properties": {
+												"abtest_id": {
+													"description": "If there is only one assignment, and that assignment is an A/B test segment, the id of the A/B test the segment\n belongs to. Otherwise, empty.",
+													"type": "string"
+												},
+												"abtest_segment_id": {
+													"description": "If there is only one assignment, and that assignment is an A/B test segment, the id of the A/B test segment.\n Otherwise, empty.",
+													"type": "string"
+												},
+												"active": {
+													"description": "true if the individual assignment or the multiple assignments are currently active.",
+													"type": "boolean"
+												},
+												"active_abtest_assignments": {
+													"description": "A list of currently active A/B tests this is assigned to.",
+													"items": {
+														"properties": {
+															"abtest_description": {
+																"type": "string"
+															},
+															"abtest_id": {
+																"type": "string"
+															},
+															"enabled": {
+																"type": "boolean"
+															},
+															"schedule": {
+																"description": "Document representing a time schedule for slots.",
+																"properties": {
+																	"end_date": {
+																		"description": "The date to end of validity. ISO8601 date time format: yyyy-MM-dd'T'HH:mm:ssZ.",
+																		"format": "date-time",
+																		"type": "string"
+																	},
+																	"recurrence": {
+																		"description": "The recurrence of the schedule by day of week and time of day. Not all schedules will support a recurrence.",
+																		"properties": {
+																			"day_of_week": {
+																				"description": "The days of week for recurrence.",
+																				"enum": [
+																					"monday",
+																					"tuesday",
+																					"wednesday",
+																					"thursday",
+																					"friday",
+																					"saturday",
+																					"sunday"
+																				],
+																				"items": {
+																					"enum": [
+																						"monday",
+																						"tuesday",
+																						"wednesday",
+																						"thursday",
+																						"friday",
+																						"saturday",
+																						"sunday"
+																					],
+																					"type": "string"
+																				},
+																				"type": "array"
+																			},
+																			"time_of_day": {
+																				"description": "The time of the day for recurrence.",
+																				"properties": {
+																					"time_from": {
+																						"description": "The time to start from. Time format: HH:mm:ss. Seconds\n are ignored and set to 0.",
+																						"format": "time",
+																						"type": "string"
+																					},
+																					"time_to": {
+																						"description": "The time to end on. Time format: HH:mm:ss. Seconds\n are ignored and set to 0.",
+																						"format": "time",
+																						"type": "string"
+																					}
+																				}
+																			}
+																		}
+																	},
+																	"start_date": {
+																		"description": "The date to start validity. ISO8601 date time format: yyyy-MM-dd'T'HH:mm:ssZ.",
+																		"format": "date-time",
+																		"type": "string"
+																	}
+																}
+															},
+															"segment_description": {
+																"type": "string"
+															},
+															"segment_id": {
+																"type": "string"
+															}
+														}
+													},
+													"type": "array"
+												},
+												"active_campaign_assignments": {
+													"description": "A list of currently active campaigns this is assigned to.",
+													"items": {
+														"description": "Document representing a slot_configuration_campaign_assignment",
+														"properties": {
+															"campaign": {
+																"description": "The campaign.",
+																"properties": {
+																	"campaign_id": {
+																		"description": "The ID of the campaign.",
+																		"x-label": {
+																			"default": "ID"
+																		},
+																		"maxLength": 256,
+																		"minLength": 1,
+																		"type": "string"
+																	},
+																	"coupons": {
+																		"description": "The array of assigned coupon IDs, not sorted",
+																		"items": {
+																			"type": "string"
+																		},
+																		"type": "array"
+																	},
+																	"creation_date": {
+																		"description": "Returns the value of attribute 'creationDate'.",
+																		"format": "date-time",
+																		"x-label": {
+																			"default": "Creation Date"
+																		},
+																		"type": "string"
+																	},
+																	"customer_groups": {
+																		"description": "The array of assigned customer groups, not sorted",
+																		"items": {
+																			"type": "string"
+																		},
+																		"type": "array"
+																	},
+																	"description": {
+																		"description": "The description of the campaign.",
+																		"format": "text",
+																		"x-label": {
+																			"default": "Description"
+																		},
+																		"maxLength": 4000,
+																		"type": "string"
+																	},
+																	"enabled": {
+																		"description": "The enabled flag for campaign.",
+																		"type": "boolean"
+																	},
+																	"end_date": {
+																		"description": "The date that the Scenario ends",
+																		"format": "date-time",
+																		"x-label": {
+																			"default": "End Date"
+																		},
+																		"type": "string"
+																	},
+																	"last_modified": {
+																		"description": "Returns the value of attribute 'lastModified'.",
+																		"format": "date-time",
+																		"x-label": {
+																			"default": "Last Modified"
+																		},
+																		"type": "string"
+																	},
+																	"link": {
+																		"description": "link for convenience",
+																		"type": "string"
+																	},
+																	"source_code_groups": {
+																		"description": "The array of assigned source code groups, not sorted",
+																		"items": {
+																			"type": "string"
+																		},
+																		"type": "array"
+																	},
+																	"start_date": {
+																		"description": "The date that the Scenario begins",
+																		"format": "date-time",
+																		"x-label": {
+																			"default": "Start Date"
+																		},
+																		"type": "string"
+																	}
+																}
+															},
+															"campaign_id": {
+																"description": "The id of the campaign that has the slot configuration assigned to it.",
+																"maxLength": 256,
+																"minLength": 1,
+																"type": "string"
+															},
+															"context": {
+																"description": "The slot context.",
+																"enum": [
+																	"global",
+																	"category",
+																	"folder"
+																],
+																"type": "string",
+																"required": true
+															},
+															"customer_groups": {
+																"description": "The list of customer groups.",
+																"items": {
+																	"type": "string"
+																},
+																"type": "array"
+															},
+															"description": {
+																"description": "The description of the slot configuration.",
+																"maxLength": 4000,
+																"type": "string"
+															},
+															"enabled": {
+																"description": "True if the assignment resource is enabled",
+																"type": "boolean"
+															},
+															"link": {
+																"description": "The URL to the slot configuration-campaign assignment.",
+																"type": "string"
+															},
+															"rank": {
+																"description": "The rank of the slot confiuration-campaign assignment.\n This is different than the rank of the slot configuration.",
+																"format": "int32",
+																"minimum": 1,
+																"type": "integer"
+															},
+															"schedule": {
+																"description": "The schedule of the assignment resource",
+																"properties": {
+																	"end_date": {
+																		"description": "The date to end of validity. ISO8601 date time format: yyyy-MM-dd'T'HH:mm:ssZ.",
+																		"format": "date-time",
+																		"type": "string"
+																	},
+																	"recurrence": {
+																		"description": "The recurrence of the schedule by day of week and time of day. Not all schedules will support a recurrence.",
+																		"properties": {
+																			"day_of_week": {
+																				"description": "The days of week for recurrence.",
+																				"enum": [
+																					"monday",
+																					"tuesday",
+																					"wednesday",
+																					"thursday",
+																					"friday",
+																					"saturday",
+																					"sunday"
+																				],
+																				"items": {
+																					"enum": [
+																						"monday",
+																						"tuesday",
+																						"wednesday",
+																						"thursday",
+																						"friday",
+																						"saturday",
+																						"sunday"
+																					],
+																					"type": "string"
+																				},
+																				"type": "array"
+																			},
+																			"time_of_day": {
+																				"description": "The time of the day for recurrence.",
+																				"properties": {
+																					"time_from": {
+																						"description": "The time to start from. Time format: HH:mm:ss. Seconds\n are ignored and set to 0.",
+																						"format": "time",
+																						"type": "string"
+																					},
+																					"time_to": {
+																						"description": "The time to end on. Time format: HH:mm:ss. Seconds\n are ignored and set to 0.",
+																						"format": "time",
+																						"type": "string"
+																					}
+																				}
+																			}
+																		}
+																	},
+																	"start_date": {
+																		"description": "The date to start validity. ISO8601 date time format: yyyy-MM-dd'T'HH:mm:ssZ.",
+																		"format": "date-time",
+																		"type": "string"
+																	}
+																}
+															},
+															"slot_configuration": {
+																"description": "The slotConfiguration"
+															},
+															"slot_configuration_id": {
+																"description": "The ID of the slot configuration.",
+																"maxLength": 256,
+																"minLength": 1,
+																"type": "string",
+																"required": true
+															},
+															"slot_configuration_uuid": {
+																"description": "The UUID of the slot configuration.",
+																"maxLength": 28,
+																"type": "string"
+															},
+															"slot_context_id": {
+																"description": "The ID of the slot's context, for example, the category ID for a slot with category context.",
+																"maxLength": 256,
+																"type": "string"
+															},
+															"slot_id": {
+																"description": "The ID of the slot.",
+																"maxLength": 256,
+																"minLength": 1,
+																"type": "string",
+																"required": true
+															}
+														}
+													},
+													"type": "array"
+												},
+												"campaign_id": {
+													"description": "If there is only one assignment, and that assignment is a campaign, the id of the campaign. Otherwise, empty.",
+													"type": "string"
+												},
+												"enabled": {
+													"type": "boolean"
+												},
+												"end_date": {
+													"description": "The end date of the container of the assignment (a Campaign or ABTest). If schedule_type is\n schedule_type : \"multiple\" or schedule_type : \"none\", then then result will be null. Also, a null\n date will also return null.",
+													"format": "date-time",
+													"type": "string"
+												},
+												"schedule": {
+													"description": "The schedule of the assignment (a Campaign or ABTest). If schedule_type is\n schedule_type : \"multiple\" or schedule_type : \"none\", then then result will be null.",
+													"properties": {
+														"end_date": {
+															"description": "The date to end of validity. ISO8601 date time format: yyyy-MM-dd'T'HH:mm:ssZ.",
+															"format": "date-time",
+															"type": "string"
+														},
+														"recurrence": {
+															"description": "The recurrence of the schedule by day of week and time of day. Not all schedules will support a recurrence.",
+															"properties": {
+																"day_of_week": {
+																	"description": "The days of week for recurrence.",
+																	"enum": [
+																		"monday",
+																		"tuesday",
+																		"wednesday",
+																		"thursday",
+																		"friday",
+																		"saturday",
+																		"sunday"
+																	],
+																	"items": {
+																		"enum": [
+																			"monday",
+																			"tuesday",
+																			"wednesday",
+																			"thursday",
+																			"friday",
+																			"saturday",
+																			"sunday"
+																		],
+																		"type": "string"
+																	},
+																	"type": "array"
+																},
+																"time_of_day": {
+																	"description": "The time of the day for recurrence.",
+																	"properties": {
+																		"time_from": {
+																			"description": "The time to start from. Time format: HH:mm:ss. Seconds\n are ignored and set to 0.",
+																			"format": "time",
+																			"type": "string"
+																		},
+																		"time_to": {
+																			"description": "The time to end on. Time format: HH:mm:ss. Seconds\n are ignored and set to 0.",
+																			"format": "time",
+																			"type": "string"
+																		}
+																	}
+																}
+															}
+														},
+														"start_date": {
+															"description": "The date to start validity. ISO8601 date time format: yyyy-MM-dd'T'HH:mm:ssZ.",
+															"format": "date-time",
+															"type": "string"
+														}
+													}
+												},
+												"schedule_type": {
+													"description": "If there is only one active assignment, or no active assignments and one upcoming assignment, this is that type\n of assignment (schedule_type : \"campaign\" or schedule_type : \"abtest\"). If there are no\n assignments, it will be schedule_type : \"none\", otherwise, schedule_type : \"multiple\".",
+													"enum": [
+														"none",
+														"campaign",
+														"abtest",
+														"multiple"
+													],
+													"type": "string"
+												},
+												"start_date": {
+													"description": "The start date of the container of the assignment (a Campaign or ABTest). If schedule_type is\n schedule_type : \"multiple\" or schedule_type : \"none\", then then result will be null. Also, a null\n date will also return null.",
+													"format": "date-time",
+													"type": "string"
+												},
+												"upcoming_abtest_assignments": {
+													"description": "A list of upcoming A/B tests this is assigned to.",
+													"items": {
+														"properties": {
+															"abtest_description": {
+																"type": "string"
+															},
+															"abtest_id": {
+																"type": "string"
+															},
+															"enabled": {
+																"type": "boolean"
+															},
+															"schedule": {
+																"description": "Document representing a time schedule for slots.",
+																"properties": {
+																	"end_date": {
+																		"description": "The date to end of validity. ISO8601 date time format: yyyy-MM-dd'T'HH:mm:ssZ.",
+																		"format": "date-time",
+																		"type": "string"
+																	},
+																	"recurrence": {
+																		"description": "The recurrence of the schedule by day of week and time of day. Not all schedules will support a recurrence.",
+																		"properties": {
+																			"day_of_week": {
+																				"description": "The days of week for recurrence.",
+																				"enum": [
+																					"monday",
+																					"tuesday",
+																					"wednesday",
+																					"thursday",
+																					"friday",
+																					"saturday",
+																					"sunday"
+																				],
+																				"items": {
+																					"enum": [
+																						"monday",
+																						"tuesday",
+																						"wednesday",
+																						"thursday",
+																						"friday",
+																						"saturday",
+																						"sunday"
+																					],
+																					"type": "string"
+																				},
+																				"type": "array"
+																			},
+																			"time_of_day": {
+																				"description": "The time of the day for recurrence.",
+																				"properties": {
+																					"time_from": {
+																						"description": "The time to start from. Time format: HH:mm:ss. Seconds\n are ignored and set to 0.",
+																						"format": "time",
+																						"type": "string"
+																					},
+																					"time_to": {
+																						"description": "The time to end on. Time format: HH:mm:ss. Seconds\n are ignored and set to 0.",
+																						"format": "time",
+																						"type": "string"
+																					}
+																				}
+																			}
+																		}
+																	},
+																	"start_date": {
+																		"description": "The date to start validity. ISO8601 date time format: yyyy-MM-dd'T'HH:mm:ssZ.",
+																		"format": "date-time",
+																		"type": "string"
+																	}
+																}
+															},
+															"segment_description": {
+																"type": "string"
+															},
+															"segment_id": {
+																"type": "string"
+															}
+														}
+													},
+													"type": "array"
+												},
+												"upcoming_campaign_assignments": {
+													"description": "A list of upcoming campaigns this is assigned to.",
+													"items": {
+														"description": "Document representing a slot_configuration_campaign_assignment",
+														"properties": {
+															"campaign": {
+																"description": "The campaign.",
+																"properties": {
+																	"campaign_id": {
+																		"description": "The ID of the campaign.",
+																		"x-label": {
+																			"default": "ID"
+																		},
+																		"maxLength": 256,
+																		"minLength": 1,
+																		"type": "string"
+																	},
+																	"coupons": {
+																		"description": "The array of assigned coupon IDs, not sorted",
+																		"items": {
+																			"type": "string"
+																		},
+																		"type": "array"
+																	},
+																	"creation_date": {
+																		"description": "Returns the value of attribute 'creationDate'.",
+																		"format": "date-time",
+																		"x-label": {
+																			"default": "Creation Date"
+																		},
+																		"type": "string"
+																	},
+																	"customer_groups": {
+																		"description": "The array of assigned customer groups, not sorted",
+																		"items": {
+																			"type": "string"
+																		},
+																		"type": "array"
+																	},
+																	"description": {
+																		"description": "The description of the campaign.",
+																		"format": "text",
+																		"x-label": {
+																			"default": "Description"
+																		},
+																		"maxLength": 4000,
+																		"type": "string"
+																	},
+																	"enabled": {
+																		"description": "The enabled flag for campaign.",
+																		"type": "boolean"
+																	},
+																	"end_date": {
+																		"description": "The date that the Scenario ends",
+																		"format": "date-time",
+																		"x-label": {
+																			"default": "End Date"
+																		},
+																		"type": "string"
+																	},
+																	"last_modified": {
+																		"description": "Returns the value of attribute 'lastModified'.",
+																		"format": "date-time",
+																		"x-label": {
+																			"default": "Last Modified"
+																		},
+																		"type": "string"
+																	},
+																	"link": {
+																		"description": "link for convenience",
+																		"type": "string"
+																	},
+																	"source_code_groups": {
+																		"description": "The array of assigned source code groups, not sorted",
+																		"items": {
+																			"type": "string"
+																		},
+																		"type": "array"
+																	},
+																	"start_date": {
+																		"description": "The date that the Scenario begins",
+																		"format": "date-time",
+																		"x-label": {
+																			"default": "Start Date"
+																		},
+																		"type": "string"
+																	}
+																}
+															},
+															"campaign_id": {
+																"description": "The id of the campaign that has the slot configuration assigned to it.",
+																"maxLength": 256,
+																"minLength": 1,
+																"type": "string"
+															},
+															"context": {
+																"description": "The slot context.",
+																"enum": [
+																	"global",
+																	"category",
+																	"folder"
+																],
+																"type": "string",
+																"required": true
+															},
+															"customer_groups": {
+																"description": "The list of customer groups.",
+																"items": {
+																	"type": "string"
+																},
+																"type": "array"
+															},
+															"description": {
+																"description": "The description of the slot configuration.",
+																"maxLength": 4000,
+																"type": "string"
+															},
+															"enabled": {
+																"description": "True if the assignment resource is enabled",
+																"type": "boolean"
+															},
+															"link": {
+																"description": "The URL to the slot configuration-campaign assignment.",
+																"type": "string"
+															},
+															"rank": {
+																"description": "The rank of the slot confiuration-campaign assignment.\n This is different than the rank of the slot configuration.",
+																"format": "int32",
+																"minimum": 1,
+																"type": "integer"
+															},
+															"schedule": {
+																"description": "The schedule of the assignment resource",
+																"properties": {
+																	"end_date": {
+																		"description": "The date to end of validity. ISO8601 date time format: yyyy-MM-dd'T'HH:mm:ssZ.",
+																		"format": "date-time",
+																		"type": "string"
+																	},
+																	"recurrence": {
+																		"description": "The recurrence of the schedule by day of week and time of day. Not all schedules will support a recurrence.",
+																		"properties": {
+																			"day_of_week": {
+																				"description": "The days of week for recurrence.",
+																				"enum": [
+																					"monday",
+																					"tuesday",
+																					"wednesday",
+																					"thursday",
+																					"friday",
+																					"saturday",
+																					"sunday"
+																				],
+																				"items": {
+																					"enum": [
+																						"monday",
+																						"tuesday",
+																						"wednesday",
+																						"thursday",
+																						"friday",
+																						"saturday",
+																						"sunday"
+																					],
+																					"type": "string"
+																				},
+																				"type": "array"
+																			},
+																			"time_of_day": {
+																				"description": "The time of the day for recurrence.",
+																				"properties": {
+																					"time_from": {
+																						"description": "The time to start from. Time format: HH:mm:ss. Seconds\n are ignored and set to 0.",
+																						"format": "time",
+																						"type": "string"
+																					},
+																					"time_to": {
+																						"description": "The time to end on. Time format: HH:mm:ss. Seconds\n are ignored and set to 0.",
+																						"format": "time",
+																						"type": "string"
+																					}
+																				}
+																			}
+																		}
+																	},
+																	"start_date": {
+																		"description": "The date to start validity. ISO8601 date time format: yyyy-MM-dd'T'HH:mm:ssZ.",
+																		"format": "date-time",
+																		"type": "string"
+																	}
+																}
+															},
+															"slot_configuration": {
+																"description": "The slotConfiguration"
+															},
+															"slot_configuration_id": {
+																"description": "The ID of the slot configuration.",
+																"maxLength": 256,
+																"minLength": 1,
+																"type": "string",
+																"required": true
+															},
+															"slot_configuration_uuid": {
+																"description": "The UUID of the slot configuration.",
+																"maxLength": 28,
+																"type": "string"
+															},
+															"slot_context_id": {
+																"description": "The ID of the slot's context, for example, the category ID for a slot with category context.",
+																"maxLength": 256,
+																"type": "string"
+															},
+															"slot_id": {
+																"description": "The ID of the slot.",
+																"maxLength": 256,
+																"minLength": 1,
+																"type": "string",
+																"required": true
+															}
+														}
+													},
+													"type": "array"
+												}
+											},
+											"description": "Information about the assignments and assignment schedules of this slot configuration"
+										},
+										"callout_msg": {
+											"additionalProperties": {
+												"properties": {
+													"markup": {
+														"description": "The rendered HTML",
+														"type": "string"
+													},
+													"source": {
+														"description": "The raw markup text",
+														"type": "string"
+													}
+												}
+											},
+											"description": "The call out message.",
+											"format": "localized",
+											"x-label": {
+												"default": "Callout"
+											},
+											"type": "object"
+										},
+										"configuration_id": {
+											"description": "The id of this configuration.",
+											"x-label": {
+												"default": "ID"
+											},
+											"maxLength": 256,
+											"minLength": 1,
+											"type": "string"
+										},
+										"context": {
+											"description": "The context of the slot. Ignored in input documents.",
+											"enum": [
+												"global",
+												"category",
+												"folder"
+											],
+											"type": "string"
+										},
+										"context_id": {
+											"description": "When the context is category, this is a category_id; when\n the context is folder, this is a folder_id; and when the\n context is global, this is obsolete. This is ignored in input documents.",
+											"type": "string"
+										},
+										"creation_date": {
+											"description": "Returns the value of attribute 'creationDate'.",
+											"format": "date-time",
+											"x-label": {
+												"default": "Creation Date"
+											},
+											"type": "string"
+										},
+										"customer_groups": {
+											"description": "The customer groups ids.",
+											"items": {
+												"type": "string"
+											},
+											"type": "array"
+										},
+										"default": {
+											"description": "A flag indicating whether the configuration is the default one for the slot.",
+											"type": "boolean"
+										},
+										"description": {
+											"description": "The configuration description.",
+											"maxLength": 4000,
+											"type": "string"
+										},
+										"enabled": {
+											"description": "A flag indicating whether the slot is enabled.",
+											"type": "boolean"
+										},
+										"last_modified": {
+											"description": "Returns the value of attribute 'lastModified'.",
+											"format": "date-time",
+											"x-label": {
+												"default": "Last Modified"
+											},
+											"type": "string"
+										},
+										"link": {
+											"description": "The link.",
+											"type": "string"
+										},
+										"rank": {
+											"description": "The rank of the slot configuration on its slot. This rank has nothing to do with the rank\n on any campaign-assignment, because these are completely different objects. These must be\n updated separately.",
+											"enum": [
+												10,
+												20,
+												30,
+												40,
+												50,
+												60,
+												70,
+												80,
+												90,
+												100
+											],
+											"format": "int32",
+											"x-label": {
+												"default": "Rank"
+											},
+											"minimum": 1,
+											"type": "integer"
+										},
+										"schedule": {
+											"description": "The schedule for the slot.",
+											"properties": {
+												"end_date": {
+													"description": "The date to end of validity. ISO8601 date time format: yyyy-MM-dd'T'HH:mm:ssZ.",
+													"format": "date-time",
+													"type": "string"
+												},
+												"recurrence": {
+													"description": "The recurrence of the schedule by day of week and time of day. Not all schedules will support a recurrence.",
+													"properties": {
+														"day_of_week": {
+															"description": "The days of week for recurrence.",
+															"enum": [
+																"monday",
+																"tuesday",
+																"wednesday",
+																"thursday",
+																"friday",
+																"saturday",
+																"sunday"
+															],
+															"items": {
+																"enum": [
+																	"monday",
+																	"tuesday",
+																	"wednesday",
+																	"thursday",
+																	"friday",
+																	"saturday",
+																	"sunday"
+																],
+																"type": "string"
+															},
+															"type": "array"
+														},
+														"time_of_day": {
+															"description": "The time of the day for recurrence.",
+															"properties": {
+																"time_from": {
+																	"description": "The time to start from. Time format: HH:mm:ss. Seconds\n are ignored and set to 0.",
+																	"format": "time",
+																	"type": "string"
+																},
+																"time_to": {
+																	"description": "The time to end on. Time format: HH:mm:ss. Seconds\n are ignored and set to 0.",
+																	"format": "time",
+																	"type": "string"
+																}
+															}
+														}
+													}
+												},
+												"start_date": {
+													"description": "The date to start validity. ISO8601 date time format: yyyy-MM-dd'T'HH:mm:ssZ.",
+													"format": "date-time",
+													"type": "string"
+												}
+											}
+										},
+										"slot_content": {
+											"description": "The content of the slot.",
+											"properties": {
+												"body": {
+													"additionalProperties": {
+														"properties": {
+															"markup": {
+																"description": "The rendered HTML",
+																"type": "string"
+															},
+															"source": {
+																"description": "The raw markup text",
+																"type": "string"
+															}
+														}
+													},
+													"description": "The HTML body (valid only for type 'html').",
+													"format": "localized",
+													"type": "object"
+												},
+												"category_ids": {
+													"description": "The category ids (valid only for type 'categories').",
+													"items": {
+														"type": "string"
+													},
+													"type": "array"
+												},
+												"content_asset_ids": {
+													"description": "The content asset ids (valid only for type 'content_assets').",
+													"items": {
+														"type": "string"
+													},
+													"type": "array"
+												},
+												"product_ids": {
+													"description": "The product ids (valid only for type 'products').",
+													"items": {
+														"type": "string"
+													},
+													"type": "array"
+												},
+												"type": {
+													"description": "The type of content in the slot.",
+													"enum": [
+														"products",
+														"categories",
+														"content_assets",
+														"html",
+														"recommended_products"
+													],
+													"type": "string",
+													"required": true
+												}
+											},
+											"required": true
+										},
+										"slot_id": {
+											"description": "The ID of the slot. Ignored in input documents.",
+											"maxLength": 256,
+											"minLength": 1,
+											"type": "string"
+										},
+										"template": {
+											"description": "The template.",
+											"maxLength": 256,
+											"type": "string"
+										},
+										"uuid": {
+											"description": "The uuid of the slot configuration. This property cannot be written\n and is ignored in input documents.",
+											"x-label": {
+												"default": "UUID"
+											},
+											"maxLength": 28,
+											"minLength": 1,
+											"type": "string"
+										}
+									}
+								},
+								"type": "array"
+							},
+							"sorting_rules": {
+								"description": "Sorting rules which this segment has as experiences",
+								"items": {
+									"description": "Document representing a product sorting rule",
+									"properties": {
+										"creation_date": {
+											"description": "The creation date, read only",
+											"format": "date-time",
+											"type": "string"
+										},
+										"description": {
+											"description": "The description of the product sorting rule.",
+											"maxLength": 4000,
+											"type": "string"
+										},
+										"id": {
+											"description": "the id of product sorting rule.",
+											"type": "string"
+										},
+										"product_sorting_rule_steps": {
+											"description": "the steps involved in sorting by this rule.",
+											"items": {
+												"description": "Document representing a product sorting rule step",
+												"properties": {
+													"attribute_id": {
+														"description": "the id for sorting attribute.",
+														"type": "string"
+													},
+													"direction": {
+														"description": "the direction of the sorting attribute",
+														"enum": [
+															"asc",
+															"desc"
+														],
+														"type": "string"
+													},
+													"is_system": {
+														"description": "whether or not the attribute is a system attribute.",
+														"type": "boolean"
+													},
+													"position": {
+														"description": "the position of product sorting rule step.",
+														"format": "int32",
+														"type": "integer"
+													},
+													"text_relevance_included": {
+														"description": "The text relevance included.",
+														"type": "boolean"
+													},
+													"type_id": {
+														"description": "the sorting type for sorting attribute.",
+														"type": "string"
+													}
+												}
+											},
+											"type": "array"
+										},
+										"site": {
+											"description": "",
+											"type": "string"
+										}
+									}
+								},
+								"type": "array"
+							},
+							"stats": {
+								"properties": {
+									"adds_to_baskets": {
+										"description": "The total number of baskets created",
+										"format": "double",
+										"type": "number"
+									},
+									"average_adds_per_basket": {
+										"description": "The average adds per baskets over time",
+										"format": "double",
+										"type": "number"
+									},
+									"average_adds_per_basket_std_error": {
+										"description": "The standard error for the average adds per baskets over time",
+										"format": "double",
+										"type": "number"
+									},
+									"average_discount_amount": {
+										"description": "The total amount discounted divided by the number of orders",
+										"format": "double",
+										"type": "number"
+									},
+									"average_discount_amount_std_error": {
+										"description": "The standard error for the average discount amount",
+										"format": "double",
+										"type": "number"
+									},
+									"average_discount_amount_with_coupon": {
+										"description": "The average amount discounted for orders using coupons",
+										"format": "double",
+										"type": "number"
+									},
+									"average_discount_amount_with_coupon_std_error": {
+										"description": "The standard error for the average amount discounted for orders using coupons",
+										"format": "double",
+										"type": "number"
+									},
+									"average_discount_amount_without_coupon": {
+										"description": "The average amount discounted for orders without using a coupon",
+										"format": "double",
+										"type": "number"
+									},
+									"average_discount_amount_without_coupon_std_error": {
+										"description": "The standard error for the average amount discounted for orders without using a coupon",
+										"format": "double",
+										"type": "number"
+									},
+									"average_order_value": {
+										"description": "The total revenue divided by the number of orders",
+										"format": "double",
+										"type": "number"
+									},
+									"average_order_value_std_error": {
+										"description": "The standard error for the total revenue divided by the number of orders",
+										"format": "double",
+										"type": "number"
+									},
+									"average_revenue_per_visit": {
+										"description": "The average revenue earned per visit",
+										"format": "double",
+										"type": "number"
+									},
+									"average_revenue_per_visit_std_error": {
+										"description": "The standard error for the average revenue earned per visit",
+										"format": "double",
+										"type": "number"
+									},
+									"average_units_added_per_basket": {
+										"description": "The standard error for the average number of units added per basket",
+										"format": "double",
+										"type": "number"
+									},
+									"average_units_added_per_basket_std_error": {
+										"description": "The average number of units added per basket",
+										"format": "double",
+										"type": "number"
+									},
+									"average_units_per_order": {
+										"description": "The average number of units per order",
+										"format": "double",
+										"type": "number"
+									},
+									"average_units_per_order_std_error": {
+										"description": "The standard error for the average number of units per order",
+										"format": "double",
+										"type": "number"
+									},
+									"average_units_per_visit": {
+										"description": "The average number of units per visit",
+										"format": "double",
+										"type": "number"
+									},
+									"average_units_per_visit_std_error": {
+										"description": "The standard error for the average number of units per visit",
+										"format": "double",
+										"type": "number"
+									},
+									"basket_rate": {
+										"description": "The conversion rate of baskets",
+										"format": "double",
+										"type": "number"
+									},
+									"baskets": {
+										"description": "The total number of baskets created",
+										"format": "int32",
+										"type": "integer"
+									},
+									"checkout_rate": {
+										"description": "The number of checkouts per visit",
+										"format": "double",
+										"type": "number"
+									},
+									"checkouts": {
+										"description": "The number of checkouts",
+										"format": "int32",
+										"type": "integer"
+									},
+									"conversion_rate": {
+										"description": "The number of orders per visit",
+										"format": "double",
+										"type": "number"
+									},
+									"discount_amount_with_coupon": {
+										"description": "The amount discounted by coupons",
+										"format": "double",
+										"type": "number"
+									},
+									"discount_amount_without_coupon": {
+										"description": "The amount discounted not by coupons",
+										"format": "double",
+										"type": "number"
+									},
+									"orders": {
+										"description": "The number of orders",
+										"format": "int32",
+										"type": "integer"
+									},
+									"revenue": {
+										"description": "The total revenue",
+										"format": "double",
+										"type": "number"
+									},
+									"sales_velocity": {
+										"description": "Units sold per hour",
+										"format": "double",
+										"type": "number"
+									},
+									"total_discount_amount": {
+										"description": "The total amount discounted",
+										"format": "double",
+										"type": "number"
+									},
+									"units": {
+										"description": "The total number of units",
+										"format": "double",
+										"type": "number"
+									},
+									"units_added_to_baskets": {
+										"description": "Units added to baskets",
+										"format": "int32",
+										"type": "integer"
+									},
+									"visitors": {
+										"description": "The number of unique visitors",
+										"format": "int32",
+										"type": "integer"
+									},
+									"visits": {
+										"description": "The number of visits",
+										"format": "int32",
+										"type": "integer"
+									}
+								},
+								"description": "Statistics about the segment"
+							}
+						}
+					},
+					"type": "array"
+				},
+				"trigger": {
+					"description": "The trigger that allows the test participant to be considered for an A/B Test",
+					"properties": {
+						"categories": {
+							"description": "The list of categories. This is a modifiable attribute when trigger type is 'category_page_view' only",
+							"items": {
+								"type": "string"
+							},
+							"type": "array"
+						},
+						"is_pipeline_based": {
+							"description": "The flag indicating if the trigger is based on pipelines. This is a computed attribute and cannot be modified",
+							"type": "boolean"
+						},
+						"pipeline_calls": {
+							"description": "The list of pipeline name and start node combinations (for example, Account-Show). This is a modifiable attribute\n when trigger type is 'pipeline_calls' only",
+							"items": {
+								"type": "string"
+							},
+							"type": "array"
+						},
+						"trigger_type": {
+							"description": "The type of the trigger. Defaults to 'immediately' if not specified on create",
+							"enum": [
+								"immediately",
+								"category_page_view",
+								"home_page_view",
+								"pipeline_call"
+							],
+							"type": "string"
+						}
+					}
+				}
+			},
+			"type": "object"
+		}
+	}
+}

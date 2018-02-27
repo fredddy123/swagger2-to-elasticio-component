@@ -1,0 +1,138 @@
+{
+	"description": "Document representing a product option",
+	"properties": {
+		"custom_name": {
+			"additionalProperties": {
+				"type": "string"
+			},
+			"description": "The localized custom name of the product option.",
+			"format": "localized",
+			"type": "object"
+		},
+		"default_product_option_value": {
+			"description": "The default product option value.",
+			"type": "string"
+		},
+		"description": {
+			"additionalProperties": {
+				"type": "string"
+			},
+			"description": "The localized description of the product option.",
+			"format": "localized",
+			"type": "object"
+		},
+		"id": {
+			"description": "The object attribute definition id which is also the identifier for the product option.",
+			"minLength": 1,
+			"type": "string"
+		},
+		"image": {
+			"properties": {
+				"abs_url": {
+					"description": "The absolute URL with request protocol",
+					"type": "string"
+				},
+				"alt": {
+					"additionalProperties": {
+						"type": "string"
+					},
+					"description": "The alternative image text",
+					"format": "localized",
+					"type": "object"
+				},
+				"dis_base_url": {
+					"description": "The DIS base URL only for product images",
+					"type": "string"
+				},
+				"path": {
+					"description": "The raw media file path",
+					"type": "string"
+				},
+				"title": {
+					"additionalProperties": {
+						"type": "string"
+					},
+					"description": "The image title",
+					"format": "localized",
+					"type": "object"
+				}
+			},
+			"description": "The image assigned to the product option."
+		},
+		"link": {
+			"description": "The URL link to the product option.",
+			"type": "string"
+		},
+		"name": {
+			"description": "The name of the object attribute definition.",
+			"type": "string"
+		},
+		"selected_option_value": {
+			"description": "The selected option value of the product option.",
+			"type": "string"
+		},
+		"shared": {
+			"description": "The flag that indicates if the product option is shared or local.",
+			"type": "boolean"
+		},
+		"sorting_mode": {
+			"description": "The sorting mode for the product option values.",
+			"enum": [
+				"byexplicitorder",
+				"byoptionprice"
+			],
+			"type": "string"
+		},
+		"values": {
+			"description": "The sorted array of values of the product option.",
+			"items": {
+				"description": "Document representing a product option Value",
+				"properties": {
+					"default_product_option_value": {
+						"description": "Flag indicating if the product option value is the default value for the product option.",
+						"type": "boolean"
+					},
+					"id": {
+						"description": "The id of the product option value.",
+						"minLength": 1,
+						"type": "string"
+					},
+					"link": {
+						"description": "The URL link to the product option value.",
+						"type": "string"
+					},
+					"option_prices": {
+						"description": "The list of prices in the product option value.",
+						"items": {
+							"properties": {
+								"currency_mnemonic": {
+									"description": "The mnemonic for the money.",
+									"type": "string"
+								},
+								"value": {
+									"description": "The value for the money.",
+									"format": "double",
+									"type": "number"
+								}
+							}
+						},
+						"type": "array"
+					},
+					"sku_extension": {
+						"description": "The sku extension of the product option value.",
+						"type": "string"
+					},
+					"value": {
+						"additionalProperties": {
+							"type": "string"
+						},
+						"description": "The localized value of the product option.",
+						"format": "localized",
+						"type": "object"
+					}
+				}
+			},
+			"type": "array"
+		}
+	}
+}

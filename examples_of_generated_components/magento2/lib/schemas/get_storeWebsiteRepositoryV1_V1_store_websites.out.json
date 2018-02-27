@@ -1,0 +1,30 @@
+{
+	"type": "array",
+	"items": {
+		"type": "object",
+		"description": "Website interface",
+		"properties": {
+			"id": {
+				"type": "integer",
+				"required": true
+			},
+			"code": {
+				"type": "string",
+				"required": true
+			},
+			"name": {
+				"type": "string",
+				"description": "Website name",
+				"required": true
+			},
+			"default_group_id": {
+				"type": "integer",
+				"required": true
+			},
+			"extension_attributes": {
+				"type": "object",
+				"description": "ExtensionInterface class for @see \\Magento\\Store\\Api\\Data\\WebsiteInterface"
+			}
+		}
+	}
+}

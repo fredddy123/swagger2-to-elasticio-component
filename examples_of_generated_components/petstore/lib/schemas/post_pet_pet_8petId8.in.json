@@ -1,0 +1,41 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"path": {
+			"type": "object",
+			"properties": {
+				"petId": {
+					"type": "integer",
+					"required": true
+				}
+			}
+		},
+		"formData": {
+			"type": "object",
+			"properties": {
+				"name": {
+					"type": "string",
+					"required": false
+				},
+				"status": {
+					"type": "string",
+					"required": false
+				}
+			}
+		}
+	}
+}

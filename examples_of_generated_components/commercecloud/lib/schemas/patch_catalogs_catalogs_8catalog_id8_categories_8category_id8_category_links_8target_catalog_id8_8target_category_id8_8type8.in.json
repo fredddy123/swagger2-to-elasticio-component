@@ -1,0 +1,124 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"path": {
+			"type": "object",
+			"properties": {
+				"catalog_id": {
+					"type": "string",
+					"required": true
+				},
+				"category_id": {
+					"type": "string",
+					"required": true
+				},
+				"target_catalog_id": {
+					"type": "string",
+					"required": true
+				},
+				"target_category_id": {
+					"type": "string",
+					"required": true
+				},
+				"type": {
+					"type": "string",
+					"required": true
+				}
+			}
+		},
+		"body": {
+			"description": "Document representing a category link",
+			"properties": {
+				"last_modified": {
+					"description": "The date the link was last modified",
+					"format": "date-time",
+					"type": "string"
+				},
+				"link": {
+					"description": "URL that is used to get this instance",
+					"type": "string"
+				},
+				"position": {
+					"description": "The position in the source catalog / category for this link relative to the other links in the same category.",
+					"format": "double",
+					"minimum": 0,
+					"type": "number"
+				},
+				"source_catalog_id": {
+					"description": "The source catalog for the link",
+					"type": "string"
+				},
+				"source_catalog_name": {
+					"additionalProperties": {
+						"type": "string"
+					},
+					"description": "The name of the source catalog",
+					"format": "localized",
+					"type": "object"
+				},
+				"source_category_id": {
+					"description": "The source category for the link",
+					"type": "string"
+				},
+				"source_category_name": {
+					"additionalProperties": {
+						"type": "string"
+					},
+					"description": "The name of the source category",
+					"format": "localized",
+					"type": "object"
+				},
+				"target_catalog_id": {
+					"description": "The target category for the link",
+					"type": "string"
+				},
+				"target_catalog_name": {
+					"additionalProperties": {
+						"type": "string"
+					},
+					"description": "The name of the target catalog",
+					"format": "localized",
+					"type": "object"
+				},
+				"target_category_id": {
+					"description": "The target category for the link",
+					"type": "string"
+				},
+				"target_category_name": {
+					"additionalProperties": {
+						"type": "string"
+					},
+					"description": "The name of the target category",
+					"format": "localized",
+					"type": "object"
+				},
+				"type": {
+					"description": "The link type",
+					"enum": [
+						"other",
+						"accessories",
+						"cross_selling",
+						"up_selling",
+						"spare_parts"
+					],
+					"type": "string"
+				}
+			},
+			"type": "object"
+		}
+	}
+}

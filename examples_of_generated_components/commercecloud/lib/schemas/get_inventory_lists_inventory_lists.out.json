@@ -1,0 +1,102 @@
+{
+	"description": "Document representing an unfiltered list of inventory lists.",
+	"properties": {
+		"count": {
+			"description": "The number of returned documents.",
+			"format": "int32",
+			"type": "integer"
+		},
+		"data": {
+			"description": "",
+			"items": {
+				"description": "Document representing a inventorylist",
+				"properties": {
+					"assigned_sites": {
+						"description": "The list of sites this inventory list is assigned to.  The assigned sites is a computed attribute, and cannot be\n directly modified.",
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"creation_date": {
+						"description": "Returns the value of attribute 'creationDate'.",
+						"format": "date-time",
+						"x-label": {
+							"default": "Creation Date"
+						},
+						"type": "string"
+					},
+					"default_in_stock": {
+						"description": "True if the default for the inventory list is to be in stock. THe default value is false if not specified.",
+						"type": "boolean"
+					},
+					"description": {
+						"description": "The user supplied description of this instance.",
+						"x-label": {
+							"default": "description"
+						},
+						"type": "string"
+					},
+					"id": {
+						"description": "The id for the inventory list, which is required and must be unique.",
+						"x-label": {
+							"default": "ID"
+						},
+						"type": "string"
+					},
+					"last_modified": {
+						"description": "Returns the value of attribute 'lastModified'.",
+						"format": "date-time",
+						"x-label": {
+							"default": "Last Modified"
+						},
+						"type": "string"
+					},
+					"link": {
+						"description": "URL that is used to get this instance.  The URL is a computed attribute, and cannot be modified.",
+						"type": "string"
+					},
+					"on_order_inventory_enabled": {
+						"description": "True if the on order flag is enabled.  The default value is false if not specified.",
+						"type": "boolean"
+					},
+					"use_bundle_inventory_only": {
+						"description": "True if the inventory list is used in bundle inventory only.  The default value is false if not specified.",
+						"type": "boolean"
+					}
+				}
+			},
+			"type": "array"
+		},
+		"expand": {
+			"description": "The list of expands set for the search request. Expands are optional.",
+			"items": {
+				"type": "string"
+			},
+			"type": "array"
+		},
+		"next": {
+			"description": "The URL of the next result page.",
+			"type": "string"
+		},
+		"previous": {
+			"description": "The URL of the previous result page.",
+			"type": "string"
+		},
+		"select": {
+			"description": "The fields that you want to select.",
+			"type": "string"
+		},
+		"start": {
+			"description": "The zero-based index of the first search hit to include in the result.",
+			"format": "int32",
+			"minimum": 0,
+			"type": "integer"
+		},
+		"total": {
+			"description": "The total number of documents.",
+			"format": "int32",
+			"type": "integer"
+		}
+	}
+}

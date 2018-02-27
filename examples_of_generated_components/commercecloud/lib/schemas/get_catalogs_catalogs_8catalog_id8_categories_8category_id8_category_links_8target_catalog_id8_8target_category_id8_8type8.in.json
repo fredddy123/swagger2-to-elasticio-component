@@ -1,0 +1,53 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"path": {
+			"type": "object",
+			"properties": {
+				"catalog_id": {
+					"type": "string",
+					"required": true
+				},
+				"category_id": {
+					"type": "string",
+					"required": true
+				},
+				"target_catalog_id": {
+					"type": "string",
+					"required": true
+				},
+				"target_category_id": {
+					"type": "string",
+					"required": true
+				},
+				"type": {
+					"type": "string",
+					"required": true
+				}
+			}
+		},
+		"query": {
+			"type": "object",
+			"properties": {
+				"select": {
+					"type": "string",
+					"required": false
+				}
+			}
+		}
+	}
+}

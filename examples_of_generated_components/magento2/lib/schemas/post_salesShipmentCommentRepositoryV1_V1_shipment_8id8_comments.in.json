@@ -1,0 +1,72 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"path": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "string",
+					"required": true
+				}
+			}
+		},
+		"body": {
+			"properties": {
+				"entity": {
+					"type": "object",
+					"description": "Shipment comment interface. A shipment is a delivery package that contains products. A shipment document accompanies the shipment. This document lists the products and their quantities in the delivery package. A shipment document can contain comments.",
+					"properties": {
+						"is_customer_notified": {
+							"type": "integer",
+							"description": "Is-customer-notified flag value.",
+							"required": true
+						},
+						"parent_id": {
+							"type": "integer",
+							"description": "Parent ID.",
+							"required": true
+						},
+						"extension_attributes": {
+							"type": "object",
+							"description": "ExtensionInterface class for @see \\Magento\\Sales\\Api\\Data\\ShipmentCommentInterface"
+						},
+						"comment": {
+							"type": "string",
+							"description": "Comment.",
+							"required": true
+						},
+						"is_visible_on_front": {
+							"type": "integer",
+							"description": "Is-visible-on-storefront flag value.",
+							"required": true
+						},
+						"created_at": {
+							"type": "string",
+							"description": "Created-at timestamp."
+						},
+						"entity_id": {
+							"type": "integer",
+							"description": "Invoice ID."
+						}
+					},
+					"required": true
+				}
+			},
+			"type": "object"
+		}
+	}
+}

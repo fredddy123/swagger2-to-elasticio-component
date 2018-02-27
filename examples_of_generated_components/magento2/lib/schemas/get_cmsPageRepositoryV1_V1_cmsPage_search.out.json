@@ -1,0 +1,169 @@
+{
+	"type": "object",
+	"description": "Interface for cms page search results.",
+	"properties": {
+		"items": {
+			"type": "array",
+			"description": "Pages list.",
+			"items": {
+				"type": "object",
+				"description": "CMS page interface.",
+				"properties": {
+					"id": {
+						"type": "integer",
+						"description": "ID"
+					},
+					"identifier": {
+						"type": "string",
+						"description": "Identifier",
+						"required": true
+					},
+					"title": {
+						"type": "string",
+						"description": "Title"
+					},
+					"page_layout": {
+						"type": "string",
+						"description": "Page layout"
+					},
+					"meta_title": {
+						"type": "string",
+						"description": "Meta title"
+					},
+					"meta_keywords": {
+						"type": "string",
+						"description": "Meta keywords"
+					},
+					"meta_description": {
+						"type": "string",
+						"description": "Meta description"
+					},
+					"content_heading": {
+						"type": "string",
+						"description": "Content heading"
+					},
+					"content": {
+						"type": "string",
+						"description": "Content"
+					},
+					"creation_time": {
+						"type": "string",
+						"description": "Creation time"
+					},
+					"update_time": {
+						"type": "string",
+						"description": "Update time"
+					},
+					"sort_order": {
+						"type": "string",
+						"description": "Sort order"
+					},
+					"layout_update_xml": {
+						"type": "string",
+						"description": "Layout update xml"
+					},
+					"custom_theme": {
+						"type": "string",
+						"description": "Custom theme"
+					},
+					"custom_root_template": {
+						"type": "string",
+						"description": "Custom root template"
+					},
+					"custom_layout_update_xml": {
+						"type": "string",
+						"description": "Custom layout update xml"
+					},
+					"custom_theme_from": {
+						"type": "string",
+						"description": "Custom theme from"
+					},
+					"custom_theme_to": {
+						"type": "string",
+						"description": "Custom theme to"
+					},
+					"active": {
+						"type": "boolean",
+						"description": "Active"
+					}
+				}
+			},
+			"required": true
+		},
+		"search_criteria": {
+			"type": "object",
+			"description": "Search criteria interface.",
+			"properties": {
+				"filter_groups": {
+					"type": "array",
+					"description": "A list of filter groups.",
+					"items": {
+						"type": "object",
+						"description": "Groups two or more filters together using a logical OR",
+						"properties": {
+							"filters": {
+								"type": "array",
+								"description": "A list of filters in this group",
+								"items": {
+									"type": "object",
+									"description": "Filter which can be used by any methods from service layer.",
+									"properties": {
+										"field": {
+											"type": "string",
+											"description": "Field",
+											"required": true
+										},
+										"value": {
+											"type": "string",
+											"description": "Value",
+											"required": true
+										},
+										"condition_type": {
+											"type": "string",
+											"description": "Condition type"
+										}
+									}
+								}
+							}
+						}
+					},
+					"required": true
+				},
+				"sort_orders": {
+					"type": "array",
+					"description": "Sort order.",
+					"items": {
+						"type": "object",
+						"description": "Data object for sort order.",
+						"properties": {
+							"field": {
+								"type": "string",
+								"description": "Sorting field.",
+								"required": true
+							},
+							"direction": {
+								"type": "string",
+								"description": "Sorting direction.",
+								"required": true
+							}
+						}
+					}
+				},
+				"page_size": {
+					"type": "integer",
+					"description": "Page size."
+				},
+				"current_page": {
+					"type": "integer",
+					"description": "Current page."
+				}
+			},
+			"required": true
+		},
+		"total_count": {
+			"type": "integer",
+			"description": "Total count.",
+			"required": true
+		}
+	}
+}

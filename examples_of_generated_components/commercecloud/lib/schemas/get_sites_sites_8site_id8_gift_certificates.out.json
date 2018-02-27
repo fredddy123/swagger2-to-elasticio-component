@@ -1,0 +1,217 @@
+{
+	"description": "Document representing an unfiltered list of gift certificates.",
+	"properties": {
+		"count": {
+			"description": "The number of returned documents.",
+			"format": "int32",
+			"type": "integer"
+		},
+		"data": {
+			"description": "",
+			"items": {
+				"description": "Document representing a gift certificate",
+				"properties": {
+					"amount": {
+						"properties": {
+							"currency_mnemonic": {
+								"description": "The mnemonic for the money.",
+								"type": "string"
+							},
+							"value": {
+								"description": "The value for the money.",
+								"format": "double",
+								"type": "number"
+							}
+						},
+						"description": "The gift certificate amount.\n The user cannot change the gift certificate amount after the creation of the gift certificate."
+					},
+					"balance": {
+						"properties": {
+							"currency_mnemonic": {
+								"description": "The mnemonic for the money.",
+								"type": "string"
+							},
+							"value": {
+								"description": "The value for the money.",
+								"format": "double",
+								"type": "number"
+							}
+						},
+						"description": "The gift certificate balance.\n This is a computed attribute and cannot be modified."
+					},
+					"creation_date": {
+						"description": "Returns the value of attribute 'creationDate'.",
+						"format": "date-time",
+						"x-label": {
+							"default": "Creation Date"
+						},
+						"type": "string"
+					},
+					"description": {
+						"description": "The description of the gift certificate.",
+						"x-label": {
+							"default": "Description"
+						},
+						"maxLength": 4000,
+						"type": "string"
+					},
+					"enabled": {
+						"description": "The enabled flag of the gift certificate.",
+						"x-label": {
+							"default": "Enabled"
+						},
+						"type": "boolean"
+					},
+					"last_modified": {
+						"description": "Returns the value of attribute 'lastModified'.",
+						"format": "date-time",
+						"x-label": {
+							"default": "Last Modified"
+						},
+						"type": "string"
+					},
+					"link": {
+						"description": "The URL to get the gift certificate.\n This is a computed attribute and cannot be modified.",
+						"type": "string"
+					},
+					"masked_gift_certificate_code": {
+						"description": "The masked gift certificate code with all but the\n last 4 characters replaced with a '*' character.\n This is a computed attribute and cannot be modified.",
+						"type": "string"
+					},
+					"merchant_id": {
+						"description": "The merchant ID of the gift certificate.\n This is a unique attribute.\n This is a computed attribute and cannot be modified.\n This is used to get, update and the delete gift certificates.",
+						"x-label": {
+							"default": "Merchant ID"
+						},
+						"type": "string"
+					},
+					"message": {
+						"description": "The message to the recipient of the gift certificate.",
+						"x-label": {
+							"default": "Message"
+						},
+						"maxLength": 4000,
+						"type": "string"
+					},
+					"order_no": {
+						"description": "The order number of the gift certificate.",
+						"x-label": {
+							"default": "Order Number"
+						},
+						"type": "string"
+					},
+					"recipient_email": {
+						"description": "The email address of the recipient of the gift certificate.",
+						"x-label": {
+							"default": "Recipient Email"
+						},
+						"type": "string"
+					},
+					"recipient_name": {
+						"description": "The recipient of the gift certificate.",
+						"x-label": {
+							"default": "Recipient Name"
+						},
+						"maxLength": 256,
+						"type": "string"
+					},
+					"sender_name": {
+						"description": "The sender of the gift certificate.",
+						"x-label": {
+							"default": "Sender Name"
+						},
+						"maxLength": 256,
+						"type": "string"
+					},
+					"status": {
+						"description": "The status of the gift certificate.\n While creating a gift certificate, user can set the status\n to either \"pending\" or \"issued\" only.",
+						"enum": [
+							"issued",
+							"partially_redeemed",
+							"pending",
+							"redeemed"
+						],
+						"x-label": {
+							"default": "Status"
+						},
+						"type": "string"
+					},
+					"transactions": {
+						"description": "The transactions of the gift certificate",
+						"items": {
+							"description": "Document representing an account transaction",
+							"properties": {
+								"amount": {
+									"properties": {
+										"currency_mnemonic": {
+											"description": "The mnemonic for the money.",
+											"type": "string"
+										},
+										"value": {
+											"description": "The value for the money.",
+											"format": "double",
+											"type": "number"
+										}
+									},
+									"description": "The amount of the gift certificate"
+								},
+								"order_no": {
+									"description": "The order number of the gift certificate",
+									"type": "string"
+								},
+								"timestamp": {
+									"description": "The timestamp of the transaction of the gift certificate",
+									"format": "date-time",
+									"type": "string"
+								},
+								"type_code": {
+									"description": "The type code of the gift certificate",
+									"enum": [
+										"create",
+										"redeem",
+										"delete",
+										"enable",
+										"disable"
+									],
+									"type": "string"
+								}
+							}
+						},
+						"type": "array"
+					}
+				}
+			},
+			"type": "array"
+		},
+		"expand": {
+			"description": "The list of expands set for the search request. Expands are optional.",
+			"items": {
+				"type": "string"
+			},
+			"type": "array"
+		},
+		"next": {
+			"description": "The URL of the next result page.",
+			"type": "string"
+		},
+		"previous": {
+			"description": "The URL of the previous result page.",
+			"type": "string"
+		},
+		"select": {
+			"description": "The fields that you want to select.",
+			"type": "string"
+		},
+		"start": {
+			"description": "The zero-based index of the first search hit to include in the result.",
+			"format": "int32",
+			"minimum": 0,
+			"type": "integer"
+		},
+		"total": {
+			"description": "The total number of documents.",
+			"format": "int32",
+			"type": "integer"
+		}
+	}
+}

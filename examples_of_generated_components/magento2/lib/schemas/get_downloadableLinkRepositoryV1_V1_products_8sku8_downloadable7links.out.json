@@ -1,0 +1,102 @@
+{
+	"type": "array",
+	"items": {
+		"type": "object",
+		"description": "",
+		"properties": {
+			"id": {
+				"type": "integer",
+				"description": "Sample(or link) id"
+			},
+			"title": {
+				"type": "string"
+			},
+			"sort_order": {
+				"type": "integer",
+				"required": true
+			},
+			"is_shareable": {
+				"type": "integer",
+				"description": "Shareable status",
+				"required": true
+			},
+			"price": {
+				"type": "number",
+				"description": "Price",
+				"required": true
+			},
+			"number_of_downloads": {
+				"type": "integer",
+				"description": "Of downloads per user"
+			},
+			"link_type": {
+				"type": "string",
+				"required": true
+			},
+			"link_file": {
+				"type": "string",
+				"description": "relative file path"
+			},
+			"link_file_content": {
+				"type": "object",
+				"description": "",
+				"properties": {
+					"file_data": {
+						"type": "string",
+						"description": "Data (base64 encoded content)",
+						"required": true
+					},
+					"name": {
+						"type": "string",
+						"description": "File name",
+						"required": true
+					},
+					"extension_attributes": {
+						"type": "object",
+						"description": "ExtensionInterface class for @see \\Magento\\Downloadable\\Api\\Data\\File\\ContentInterface"
+					}
+				}
+			},
+			"link_url": {
+				"type": "string",
+				"description": "Link url or null when type is 'file'"
+			},
+			"sample_type": {
+				"type": "string",
+				"required": true
+			},
+			"sample_file": {
+				"type": "string",
+				"description": "relative file path"
+			},
+			"sample_file_content": {
+				"type": "object",
+				"description": "",
+				"properties": {
+					"file_data": {
+						"type": "string",
+						"description": "Data (base64 encoded content)",
+						"required": true
+					},
+					"name": {
+						"type": "string",
+						"description": "File name",
+						"required": true
+					},
+					"extension_attributes": {
+						"type": "object",
+						"description": "ExtensionInterface class for @see \\Magento\\Downloadable\\Api\\Data\\File\\ContentInterface"
+					}
+				}
+			},
+			"sample_url": {
+				"type": "string",
+				"description": "file URL"
+			},
+			"extension_attributes": {
+				"type": "object",
+				"description": "ExtensionInterface class for @see \\Magento\\Downloadable\\Api\\Data\\LinkInterface"
+			}
+		}
+	}
+}

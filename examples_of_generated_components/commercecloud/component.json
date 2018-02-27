@@ -1,0 +1,2251 @@
+{
+	"title": "Data API",
+	"description": "",
+	"credentials": {
+		"fields": {
+			"headers": {
+				"label": "Headers",
+				"viewClass": "TextFieldView"
+			},
+			"queryString": {
+				"label": "Querystring",
+				"viewClass": "TextFieldView"
+			},
+			"apiURI": {
+				"label": "API URI",
+				"viewClass": "TextFieldView"
+			}
+		}
+	},
+	"actions": {
+		"post_catalog_search_catalog_search": {
+			"title": "post_catalog_search_catalog_search",
+			"main": "./lib/actions/post_catalog_search_catalog_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_catalog_search_catalog_search.in.json",
+				"out": "./lib/schemas/post_catalog_search_catalog_search.out.json"
+			}
+		},
+		"get_catalogs_catalogs": {
+			"title": "get_catalogs_catalogs",
+			"main": "./lib/actions/get_catalogs_catalogs.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogs_catalogs.in.json",
+				"out": "./lib/schemas/get_catalogs_catalogs.out.json"
+			}
+		},
+		"get_catalogs_catalogs_8catalog_id8": {
+			"title": "get_catalogs_catalogs_8catalog_id8",
+			"main": "./lib/actions/get_catalogs_catalogs_8catalog_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogs_catalogs_8catalog_id8.in.json",
+				"out": "./lib/schemas/get_catalogs_catalogs_8catalog_id8.out.json"
+			}
+		},
+		"patch_catalogs_catalogs_8catalog_id8": {
+			"title": "patch_catalogs_catalogs_8catalog_id8",
+			"main": "./lib/actions/patch_catalogs_catalogs_8catalog_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_catalogs_catalogs_8catalog_id8.in.json",
+				"out": "./lib/schemas/patch_catalogs_catalogs_8catalog_id8.out.json"
+			}
+		},
+		"get_catalogs_catalogs_8catalog_id8_categories": {
+			"title": "get_catalogs_catalogs_8catalog_id8_categories",
+			"main": "./lib/actions/get_catalogs_catalogs_8catalog_id8_categories.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogs_catalogs_8catalog_id8_categories.in.json",
+				"out": "./lib/schemas/get_catalogs_catalogs_8catalog_id8_categories.out.json"
+			}
+		},
+		"delete_catalogs_catalogs_8catalog_id8_categories_8category_id8": {
+			"title": "delete_catalogs_catalogs_8catalog_id8_categories_8category_id8",
+			"main": "./lib/actions/delete_catalogs_catalogs_8catalog_id8_categories_8category_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_catalogs_catalogs_8catalog_id8_categories_8category_id8.in.json",
+				"out": "./lib/schemas/delete_catalogs_catalogs_8catalog_id8_categories_8category_id8.out.json"
+			}
+		},
+		"get_catalogs_catalogs_8catalog_id8_categories_8category_id8": {
+			"title": "get_catalogs_catalogs_8catalog_id8_categories_8category_id8",
+			"main": "./lib/actions/get_catalogs_catalogs_8catalog_id8_categories_8category_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogs_catalogs_8catalog_id8_categories_8category_id8.in.json",
+				"out": "./lib/schemas/get_catalogs_catalogs_8catalog_id8_categories_8category_id8.out.json"
+			}
+		},
+		"patch_catalogs_catalogs_8catalog_id8_categories_8category_id8": {
+			"title": "patch_catalogs_catalogs_8catalog_id8_categories_8category_id8",
+			"main": "./lib/actions/patch_catalogs_catalogs_8catalog_id8_categories_8category_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_catalogs_catalogs_8catalog_id8_categories_8category_id8.in.json",
+				"out": "./lib/schemas/patch_catalogs_catalogs_8catalog_id8_categories_8category_id8.out.json"
+			}
+		},
+		"put_catalogs_catalogs_8catalog_id8_categories_8category_id8": {
+			"title": "put_catalogs_catalogs_8catalog_id8_categories_8category_id8",
+			"main": "./lib/actions/put_catalogs_catalogs_8catalog_id8_categories_8category_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_catalogs_catalogs_8catalog_id8_categories_8category_id8.in.json",
+				"out": "./lib/schemas/put_catalogs_catalogs_8catalog_id8_categories_8category_id8.out.json"
+			}
+		},
+		"get_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_links": {
+			"title": "get_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_links",
+			"main": "./lib/actions/get_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_links.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_links.in.json",
+				"out": "./lib/schemas/get_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_links.out.json"
+			}
+		},
+		"delete_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_links_8target_catalog_id8_8target_category_id8_8type8": {
+			"title": "delete_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_links_8target_catalog_id8_8target_category_id8_8type8",
+			"main": "./lib/actions/delete_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_links_8target_catalog_id8_8target_category_id8_8type8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_links_8target_catalog_id8_8target_category_id8_8type8.in.json",
+				"out": "./lib/schemas/delete_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_links_8target_catalog_id8_8target_category_id8_8type8.out.json"
+			}
+		},
+		"get_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_links_8target_catalog_id8_8target_category_id8_8type8": {
+			"title": "get_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_links_8target_catalog_id8_8target_category_id8_8type8",
+			"main": "./lib/actions/get_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_links_8target_catalog_id8_8target_category_id8_8type8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_links_8target_catalog_id8_8target_category_id8_8type8.in.json",
+				"out": "./lib/schemas/get_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_links_8target_catalog_id8_8target_category_id8_8type8.out.json"
+			}
+		},
+		"patch_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_links_8target_catalog_id8_8target_category_id8_8type8": {
+			"title": "patch_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_links_8target_catalog_id8_8target_category_id8_8type8",
+			"main": "./lib/actions/patch_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_links_8target_catalog_id8_8target_category_id8_8type8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_links_8target_catalog_id8_8target_category_id8_8type8.in.json",
+				"out": "./lib/schemas/patch_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_links_8target_catalog_id8_8target_category_id8_8type8.out.json"
+			}
+		},
+		"put_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_links_8target_catalog_id8_8target_category_id8_8type8": {
+			"title": "put_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_links_8target_catalog_id8_8target_category_id8_8type8",
+			"main": "./lib/actions/put_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_links_8target_catalog_id8_8target_category_id8_8type8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_links_8target_catalog_id8_8target_category_id8_8type8.in.json",
+				"out": "./lib/schemas/put_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_links_8target_catalog_id8_8target_category_id8_8type8.out.json"
+			}
+		},
+		"post_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_product_assignment_search": {
+			"title": "post_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_product_assignment_search",
+			"main": "./lib/actions/post_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_product_assignment_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_product_assignment_search.in.json",
+				"out": "./lib/schemas/post_catalogs_catalogs_8catalog_id8_categories_8category_id8_category_product_assignment_search.out.json"
+			}
+		},
+		"delete_catalogs_catalogs_8catalog_id8_categories_8category_id8_products_8product_id8": {
+			"title": "delete_catalogs_catalogs_8catalog_id8_categories_8category_id8_products_8product_id8",
+			"main": "./lib/actions/delete_catalogs_catalogs_8catalog_id8_categories_8category_id8_products_8product_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_catalogs_catalogs_8catalog_id8_categories_8category_id8_products_8product_id8.in.json",
+				"out": "./lib/schemas/delete_catalogs_catalogs_8catalog_id8_categories_8category_id8_products_8product_id8.out.json"
+			}
+		},
+		"get_catalogs_catalogs_8catalog_id8_categories_8category_id8_products_8product_id8": {
+			"title": "get_catalogs_catalogs_8catalog_id8_categories_8category_id8_products_8product_id8",
+			"main": "./lib/actions/get_catalogs_catalogs_8catalog_id8_categories_8category_id8_products_8product_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogs_catalogs_8catalog_id8_categories_8category_id8_products_8product_id8.in.json",
+				"out": "./lib/schemas/get_catalogs_catalogs_8catalog_id8_categories_8category_id8_products_8product_id8.out.json"
+			}
+		},
+		"patch_catalogs_catalogs_8catalog_id8_categories_8category_id8_products_8product_id8": {
+			"title": "patch_catalogs_catalogs_8catalog_id8_categories_8category_id8_products_8product_id8",
+			"main": "./lib/actions/patch_catalogs_catalogs_8catalog_id8_categories_8category_id8_products_8product_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_catalogs_catalogs_8catalog_id8_categories_8category_id8_products_8product_id8.in.json",
+				"out": "./lib/schemas/patch_catalogs_catalogs_8catalog_id8_categories_8category_id8_products_8product_id8.out.json"
+			}
+		},
+		"put_catalogs_catalogs_8catalog_id8_categories_8category_id8_products_8product_id8": {
+			"title": "put_catalogs_catalogs_8catalog_id8_categories_8category_id8_products_8product_id8",
+			"main": "./lib/actions/put_catalogs_catalogs_8catalog_id8_categories_8category_id8_products_8product_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_catalogs_catalogs_8catalog_id8_categories_8category_id8_products_8product_id8.in.json",
+				"out": "./lib/schemas/put_catalogs_catalogs_8catalog_id8_categories_8category_id8_products_8product_id8.out.json"
+			}
+		},
+		"post_catalogs_catalogs_8catalog_id8_category_search": {
+			"title": "post_catalogs_catalogs_8catalog_id8_category_search",
+			"main": "./lib/actions/post_catalogs_catalogs_8catalog_id8_category_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_catalogs_catalogs_8catalog_id8_category_search.in.json",
+				"out": "./lib/schemas/post_catalogs_catalogs_8catalog_id8_category_search.out.json"
+			}
+		},
+		"get_catalogs_catalogs_8catalog_id8_shared_product_options": {
+			"title": "get_catalogs_catalogs_8catalog_id8_shared_product_options",
+			"main": "./lib/actions/get_catalogs_catalogs_8catalog_id8_shared_product_options.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogs_catalogs_8catalog_id8_shared_product_options.in.json",
+				"out": "./lib/schemas/get_catalogs_catalogs_8catalog_id8_shared_product_options.out.json"
+			}
+		},
+		"delete_catalogs_catalogs_8catalog_id8_shared_product_options_8id8": {
+			"title": "delete_catalogs_catalogs_8catalog_id8_shared_product_options_8id8",
+			"main": "./lib/actions/delete_catalogs_catalogs_8catalog_id8_shared_product_options_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_catalogs_catalogs_8catalog_id8_shared_product_options_8id8.in.json",
+				"out": "./lib/schemas/delete_catalogs_catalogs_8catalog_id8_shared_product_options_8id8.out.json"
+			}
+		},
+		"get_catalogs_catalogs_8catalog_id8_shared_product_options_8id8": {
+			"title": "get_catalogs_catalogs_8catalog_id8_shared_product_options_8id8",
+			"main": "./lib/actions/get_catalogs_catalogs_8catalog_id8_shared_product_options_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogs_catalogs_8catalog_id8_shared_product_options_8id8.in.json",
+				"out": "./lib/schemas/get_catalogs_catalogs_8catalog_id8_shared_product_options_8id8.out.json"
+			}
+		},
+		"patch_catalogs_catalogs_8catalog_id8_shared_product_options_8id8": {
+			"title": "patch_catalogs_catalogs_8catalog_id8_shared_product_options_8id8",
+			"main": "./lib/actions/patch_catalogs_catalogs_8catalog_id8_shared_product_options_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_catalogs_catalogs_8catalog_id8_shared_product_options_8id8.in.json",
+				"out": "./lib/schemas/patch_catalogs_catalogs_8catalog_id8_shared_product_options_8id8.out.json"
+			}
+		},
+		"put_catalogs_catalogs_8catalog_id8_shared_product_options_8id8": {
+			"title": "put_catalogs_catalogs_8catalog_id8_shared_product_options_8id8",
+			"main": "./lib/actions/put_catalogs_catalogs_8catalog_id8_shared_product_options_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_catalogs_catalogs_8catalog_id8_shared_product_options_8id8.in.json",
+				"out": "./lib/schemas/put_catalogs_catalogs_8catalog_id8_shared_product_options_8id8.out.json"
+			}
+		},
+		"get_catalogs_catalogs_8catalog_id8_shared_product_options_8option_id8_values": {
+			"title": "get_catalogs_catalogs_8catalog_id8_shared_product_options_8option_id8_values",
+			"main": "./lib/actions/get_catalogs_catalogs_8catalog_id8_shared_product_options_8option_id8_values.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogs_catalogs_8catalog_id8_shared_product_options_8option_id8_values.in.json",
+				"out": "./lib/schemas/get_catalogs_catalogs_8catalog_id8_shared_product_options_8option_id8_values.out.json"
+			}
+		},
+		"delete_catalogs_catalogs_8catalog_id8_shared_product_options_8option_id8_values_8id8": {
+			"title": "delete_catalogs_catalogs_8catalog_id8_shared_product_options_8option_id8_values_8id8",
+			"main": "./lib/actions/delete_catalogs_catalogs_8catalog_id8_shared_product_options_8option_id8_values_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_catalogs_catalogs_8catalog_id8_shared_product_options_8option_id8_values_8id8.in.json",
+				"out": "./lib/schemas/delete_catalogs_catalogs_8catalog_id8_shared_product_options_8option_id8_values_8id8.out.json"
+			}
+		},
+		"get_catalogs_catalogs_8catalog_id8_shared_product_options_8option_id8_values_8id8": {
+			"title": "get_catalogs_catalogs_8catalog_id8_shared_product_options_8option_id8_values_8id8",
+			"main": "./lib/actions/get_catalogs_catalogs_8catalog_id8_shared_product_options_8option_id8_values_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogs_catalogs_8catalog_id8_shared_product_options_8option_id8_values_8id8.in.json",
+				"out": "./lib/schemas/get_catalogs_catalogs_8catalog_id8_shared_product_options_8option_id8_values_8id8.out.json"
+			}
+		},
+		"patch_catalogs_catalogs_8catalog_id8_shared_product_options_8option_id8_values_8id8": {
+			"title": "patch_catalogs_catalogs_8catalog_id8_shared_product_options_8option_id8_values_8id8",
+			"main": "./lib/actions/patch_catalogs_catalogs_8catalog_id8_shared_product_options_8option_id8_values_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_catalogs_catalogs_8catalog_id8_shared_product_options_8option_id8_values_8id8.in.json",
+				"out": "./lib/schemas/patch_catalogs_catalogs_8catalog_id8_shared_product_options_8option_id8_values_8id8.out.json"
+			}
+		},
+		"put_catalogs_catalogs_8catalog_id8_shared_product_options_8option_id8_values_8id8": {
+			"title": "put_catalogs_catalogs_8catalog_id8_shared_product_options_8option_id8_values_8id8",
+			"main": "./lib/actions/put_catalogs_catalogs_8catalog_id8_shared_product_options_8option_id8_values_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_catalogs_catalogs_8catalog_id8_shared_product_options_8option_id8_values_8id8.in.json",
+				"out": "./lib/schemas/put_catalogs_catalogs_8catalog_id8_shared_product_options_8option_id8_values_8id8.out.json"
+			}
+		},
+		"get_catalogs_catalogs_8catalog_id8_shared_variation_attributes": {
+			"title": "get_catalogs_catalogs_8catalog_id8_shared_variation_attributes",
+			"main": "./lib/actions/get_catalogs_catalogs_8catalog_id8_shared_variation_attributes.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogs_catalogs_8catalog_id8_shared_variation_attributes.in.json",
+				"out": "./lib/schemas/get_catalogs_catalogs_8catalog_id8_shared_variation_attributes.out.json"
+			}
+		},
+		"get_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8attribute_id8_values": {
+			"title": "get_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8attribute_id8_values",
+			"main": "./lib/actions/get_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8attribute_id8_values.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8attribute_id8_values.in.json",
+				"out": "./lib/schemas/get_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8attribute_id8_values.out.json"
+			}
+		},
+		"delete_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8attribute_id8_values_8id8": {
+			"title": "delete_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8attribute_id8_values_8id8",
+			"main": "./lib/actions/delete_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8attribute_id8_values_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8attribute_id8_values_8id8.in.json",
+				"out": "./lib/schemas/delete_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8attribute_id8_values_8id8.out.json"
+			}
+		},
+		"get_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8attribute_id8_values_8id8": {
+			"title": "get_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8attribute_id8_values_8id8",
+			"main": "./lib/actions/get_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8attribute_id8_values_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8attribute_id8_values_8id8.in.json",
+				"out": "./lib/schemas/get_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8attribute_id8_values_8id8.out.json"
+			}
+		},
+		"patch_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8attribute_id8_values_8id8": {
+			"title": "patch_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8attribute_id8_values_8id8",
+			"main": "./lib/actions/patch_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8attribute_id8_values_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8attribute_id8_values_8id8.in.json",
+				"out": "./lib/schemas/patch_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8attribute_id8_values_8id8.out.json"
+			}
+		},
+		"put_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8attribute_id8_values_8id8": {
+			"title": "put_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8attribute_id8_values_8id8",
+			"main": "./lib/actions/put_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8attribute_id8_values_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8attribute_id8_values_8id8.in.json",
+				"out": "./lib/schemas/put_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8attribute_id8_values_8id8.out.json"
+			}
+		},
+		"delete_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8id8": {
+			"title": "delete_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8id8",
+			"main": "./lib/actions/delete_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8id8.in.json",
+				"out": "./lib/schemas/delete_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8id8.out.json"
+			}
+		},
+		"get_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8id8": {
+			"title": "get_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8id8",
+			"main": "./lib/actions/get_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8id8.in.json",
+				"out": "./lib/schemas/get_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8id8.out.json"
+			}
+		},
+		"patch_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8id8": {
+			"title": "patch_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8id8",
+			"main": "./lib/actions/patch_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8id8.in.json",
+				"out": "./lib/schemas/patch_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8id8.out.json"
+			}
+		},
+		"put_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8id8": {
+			"title": "put_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8id8",
+			"main": "./lib/actions/put_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8id8.in.json",
+				"out": "./lib/schemas/put_catalogs_catalogs_8catalog_id8_shared_variation_attributes_8id8.out.json"
+			}
+		},
+		"post_category_search_category_search": {
+			"title": "post_category_search_category_search",
+			"main": "./lib/actions/post_category_search_category_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_category_search_category_search.in.json",
+				"out": "./lib/schemas/post_category_search_category_search.out.json"
+			}
+		},
+		"get_code_versions_code_versions": {
+			"title": "get_code_versions_code_versions",
+			"main": "./lib/actions/get_code_versions_code_versions.js",
+			"metadata": {
+				"out": "./lib/schemas/get_code_versions_code_versions.out.json"
+			}
+		},
+		"delete_code_versions_code_versions_8code_version_id8": {
+			"title": "delete_code_versions_code_versions_8code_version_id8",
+			"main": "./lib/actions/delete_code_versions_code_versions_8code_version_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_code_versions_code_versions_8code_version_id8.in.json",
+				"out": "./lib/schemas/delete_code_versions_code_versions_8code_version_id8.out.json"
+			}
+		},
+		"get_code_versions_code_versions_8code_version_id8": {
+			"title": "get_code_versions_code_versions_8code_version_id8",
+			"main": "./lib/actions/get_code_versions_code_versions_8code_version_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_code_versions_code_versions_8code_version_id8.in.json",
+				"out": "./lib/schemas/get_code_versions_code_versions_8code_version_id8.out.json"
+			}
+		},
+		"patch_code_versions_code_versions_8code_version_id8": {
+			"title": "patch_code_versions_code_versions_8code_version_id8",
+			"main": "./lib/actions/patch_code_versions_code_versions_8code_version_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_code_versions_code_versions_8code_version_id8.in.json",
+				"out": "./lib/schemas/patch_code_versions_code_versions_8code_version_id8.out.json"
+			}
+		},
+		"put_code_versions_code_versions_8code_version_id8": {
+			"title": "put_code_versions_code_versions_8code_version_id8",
+			"main": "./lib/actions/put_code_versions_code_versions_8code_version_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_code_versions_code_versions_8code_version_id8.in.json",
+				"out": "./lib/schemas/put_code_versions_code_versions_8code_version_id8.out.json"
+			}
+		},
+		"post_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definition_search": {
+			"title": "post_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definition_search",
+			"main": "./lib/actions/post_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definition_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definition_search.in.json",
+				"out": "./lib/schemas/post_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definition_search.out.json"
+			}
+		},
+		"get_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definitions": {
+			"title": "get_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definitions",
+			"main": "./lib/actions/get_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definitions.js",
+			"metadata": {
+				"in": "./lib/schemas/get_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definitions.in.json",
+				"out": "./lib/schemas/get_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definitions.out.json"
+			}
+		},
+		"delete_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definitions_8id8": {
+			"title": "delete_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definitions_8id8",
+			"main": "./lib/actions/delete_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definitions_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definitions_8id8.in.json",
+				"out": "./lib/schemas/delete_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definitions_8id8.out.json"
+			}
+		},
+		"get_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definitions_8id8": {
+			"title": "get_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definitions_8id8",
+			"main": "./lib/actions/get_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definitions_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definitions_8id8.in.json",
+				"out": "./lib/schemas/get_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definitions_8id8.out.json"
+			}
+		},
+		"patch_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definitions_8id8": {
+			"title": "patch_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definitions_8id8",
+			"main": "./lib/actions/patch_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definitions_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definitions_8id8.in.json",
+				"out": "./lib/schemas/patch_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definitions_8id8.out.json"
+			}
+		},
+		"put_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definitions_8id8": {
+			"title": "put_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definitions_8id8",
+			"main": "./lib/actions/put_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definitions_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definitions_8id8.in.json",
+				"out": "./lib/schemas/put_custom_object_definitions_custom_object_definitions_8object_type8_attribute_definitions_8id8.out.json"
+			}
+		},
+		"post_custom_object_definitions_custom_object_definitions_8object_type8_attribute_group_search": {
+			"title": "post_custom_object_definitions_custom_object_definitions_8object_type8_attribute_group_search",
+			"main": "./lib/actions/post_custom_object_definitions_custom_object_definitions_8object_type8_attribute_group_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_custom_object_definitions_custom_object_definitions_8object_type8_attribute_group_search.in.json",
+				"out": "./lib/schemas/post_custom_object_definitions_custom_object_definitions_8object_type8_attribute_group_search.out.json"
+			}
+		},
+		"get_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups": {
+			"title": "get_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups",
+			"main": "./lib/actions/get_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups.js",
+			"metadata": {
+				"in": "./lib/schemas/get_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups.in.json",
+				"out": "./lib/schemas/get_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups.out.json"
+			}
+		},
+		"delete_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8group_id8_attribute_definitions_8def_id8": {
+			"title": "delete_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8group_id8_attribute_definitions_8def_id8",
+			"main": "./lib/actions/delete_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8group_id8_attribute_definitions_8def_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8group_id8_attribute_definitions_8def_id8.in.json",
+				"out": "./lib/schemas/delete_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8group_id8_attribute_definitions_8def_id8.out.json"
+			}
+		},
+		"put_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8group_id8_attribute_definitions_8def_id8": {
+			"title": "put_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8group_id8_attribute_definitions_8def_id8",
+			"main": "./lib/actions/put_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8group_id8_attribute_definitions_8def_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8group_id8_attribute_definitions_8def_id8.in.json",
+				"out": "./lib/schemas/put_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8group_id8_attribute_definitions_8def_id8.out.json"
+			}
+		},
+		"delete_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8id8": {
+			"title": "delete_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8id8",
+			"main": "./lib/actions/delete_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8id8.in.json",
+				"out": "./lib/schemas/delete_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8id8.out.json"
+			}
+		},
+		"get_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8id8": {
+			"title": "get_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8id8",
+			"main": "./lib/actions/get_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8id8.in.json",
+				"out": "./lib/schemas/get_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8id8.out.json"
+			}
+		},
+		"patch_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8id8": {
+			"title": "patch_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8id8",
+			"main": "./lib/actions/patch_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8id8.in.json",
+				"out": "./lib/schemas/patch_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8id8.out.json"
+			}
+		},
+		"put_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8id8": {
+			"title": "put_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8id8",
+			"main": "./lib/actions/put_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8id8.in.json",
+				"out": "./lib/schemas/put_custom_object_definitions_custom_object_definitions_8object_type8_attribute_groups_8id8.out.json"
+			}
+		},
+		"delete_custom_objects_custom_objects_8object_type8_8key8": {
+			"title": "delete_custom_objects_custom_objects_8object_type8_8key8",
+			"main": "./lib/actions/delete_custom_objects_custom_objects_8object_type8_8key8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_custom_objects_custom_objects_8object_type8_8key8.in.json",
+				"out": "./lib/schemas/delete_custom_objects_custom_objects_8object_type8_8key8.out.json"
+			}
+		},
+		"get_custom_objects_custom_objects_8object_type8_8key8": {
+			"title": "get_custom_objects_custom_objects_8object_type8_8key8",
+			"main": "./lib/actions/get_custom_objects_custom_objects_8object_type8_8key8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_custom_objects_custom_objects_8object_type8_8key8.in.json",
+				"out": "./lib/schemas/get_custom_objects_custom_objects_8object_type8_8key8.out.json"
+			}
+		},
+		"patch_custom_objects_custom_objects_8object_type8_8key8": {
+			"title": "patch_custom_objects_custom_objects_8object_type8_8key8",
+			"main": "./lib/actions/patch_custom_objects_custom_objects_8object_type8_8key8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_custom_objects_custom_objects_8object_type8_8key8.in.json",
+				"out": "./lib/schemas/patch_custom_objects_custom_objects_8object_type8_8key8.out.json"
+			}
+		},
+		"put_custom_objects_custom_objects_8object_type8_8key8": {
+			"title": "put_custom_objects_custom_objects_8object_type8_8key8",
+			"main": "./lib/actions/put_custom_objects_custom_objects_8object_type8_8key8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_custom_objects_custom_objects_8object_type8_8key8.in.json",
+				"out": "./lib/schemas/put_custom_objects_custom_objects_8object_type8_8key8.out.json"
+			}
+		},
+		"post_custom_objects_search_custom_objects_search_8object_type8": {
+			"title": "post_custom_objects_search_custom_objects_search_8object_type8",
+			"main": "./lib/actions/post_custom_objects_search_custom_objects_search_8object_type8.js",
+			"metadata": {
+				"in": "./lib/schemas/post_custom_objects_search_custom_objects_search_8object_type8.in.json",
+				"out": "./lib/schemas/post_custom_objects_search_custom_objects_search_8object_type8.out.json"
+			}
+		},
+		"post_customer_lists_customer_lists_8customer_list_id8_customer_search": {
+			"title": "post_customer_lists_customer_lists_8customer_list_id8_customer_search",
+			"main": "./lib/actions/post_customer_lists_customer_lists_8customer_list_id8_customer_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_customer_lists_customer_lists_8customer_list_id8_customer_search.in.json",
+				"out": "./lib/schemas/post_customer_lists_customer_lists_8customer_list_id8_customer_search.out.json"
+			}
+		},
+		"get_customer_lists_customer_lists_8list_id8": {
+			"title": "get_customer_lists_customer_lists_8list_id8",
+			"main": "./lib/actions/get_customer_lists_customer_lists_8list_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_customer_lists_customer_lists_8list_id8.in.json",
+				"out": "./lib/schemas/get_customer_lists_customer_lists_8list_id8.out.json"
+			}
+		},
+		"post_customer_lists_customer_lists_8list_id8_customers": {
+			"title": "post_customer_lists_customer_lists_8list_id8_customers",
+			"main": "./lib/actions/post_customer_lists_customer_lists_8list_id8_customers.js",
+			"metadata": {
+				"in": "./lib/schemas/post_customer_lists_customer_lists_8list_id8_customers.in.json",
+				"out": "./lib/schemas/post_customer_lists_customer_lists_8list_id8_customers.out.json"
+			}
+		},
+		"delete_customer_lists_customer_lists_8list_id8_customers_8customer_no8": {
+			"title": "delete_customer_lists_customer_lists_8list_id8_customers_8customer_no8",
+			"main": "./lib/actions/delete_customer_lists_customer_lists_8list_id8_customers_8customer_no8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_customer_lists_customer_lists_8list_id8_customers_8customer_no8.in.json",
+				"out": "./lib/schemas/delete_customer_lists_customer_lists_8list_id8_customers_8customer_no8.out.json"
+			}
+		},
+		"get_customer_lists_customer_lists_8list_id8_customers_8customer_no8": {
+			"title": "get_customer_lists_customer_lists_8list_id8_customers_8customer_no8",
+			"main": "./lib/actions/get_customer_lists_customer_lists_8list_id8_customers_8customer_no8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_customer_lists_customer_lists_8list_id8_customers_8customer_no8.in.json",
+				"out": "./lib/schemas/get_customer_lists_customer_lists_8list_id8_customers_8customer_no8.out.json"
+			}
+		},
+		"patch_customer_lists_customer_lists_8list_id8_customers_8customer_no8": {
+			"title": "patch_customer_lists_customer_lists_8list_id8_customers_8customer_no8",
+			"main": "./lib/actions/patch_customer_lists_customer_lists_8list_id8_customers_8customer_no8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_customer_lists_customer_lists_8list_id8_customers_8customer_no8.in.json",
+				"out": "./lib/schemas/patch_customer_lists_customer_lists_8list_id8_customers_8customer_no8.out.json"
+			}
+		},
+		"put_customer_lists_customer_lists_8list_id8_customers_8customer_no8": {
+			"title": "put_customer_lists_customer_lists_8list_id8_customers_8customer_no8",
+			"main": "./lib/actions/put_customer_lists_customer_lists_8list_id8_customers_8customer_no8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_customer_lists_customer_lists_8list_id8_customers_8customer_no8.in.json",
+				"out": "./lib/schemas/put_customer_lists_customer_lists_8list_id8_customers_8customer_no8.out.json"
+			}
+		},
+		"get_customer_lists_customer_lists_8list_id8_customers_8customer_no8_addresses": {
+			"title": "get_customer_lists_customer_lists_8list_id8_customers_8customer_no8_addresses",
+			"main": "./lib/actions/get_customer_lists_customer_lists_8list_id8_customers_8customer_no8_addresses.js",
+			"metadata": {
+				"in": "./lib/schemas/get_customer_lists_customer_lists_8list_id8_customers_8customer_no8_addresses.in.json",
+				"out": "./lib/schemas/get_customer_lists_customer_lists_8list_id8_customers_8customer_no8_addresses.out.json"
+			}
+		},
+		"post_customer_lists_customer_lists_8list_id8_customers_8customer_no8_addresses": {
+			"title": "post_customer_lists_customer_lists_8list_id8_customers_8customer_no8_addresses",
+			"main": "./lib/actions/post_customer_lists_customer_lists_8list_id8_customers_8customer_no8_addresses.js",
+			"metadata": {
+				"in": "./lib/schemas/post_customer_lists_customer_lists_8list_id8_customers_8customer_no8_addresses.in.json",
+				"out": "./lib/schemas/post_customer_lists_customer_lists_8list_id8_customers_8customer_no8_addresses.out.json"
+			}
+		},
+		"delete_customer_lists_customer_lists_8list_id8_customers_8customer_no8_addresses_8address_id8": {
+			"title": "delete_customer_lists_customer_lists_8list_id8_customers_8customer_no8_addresses_8address_id8",
+			"main": "./lib/actions/delete_customer_lists_customer_lists_8list_id8_customers_8customer_no8_addresses_8address_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_customer_lists_customer_lists_8list_id8_customers_8customer_no8_addresses_8address_id8.in.json",
+				"out": "./lib/schemas/delete_customer_lists_customer_lists_8list_id8_customers_8customer_no8_addresses_8address_id8.out.json"
+			}
+		},
+		"get_customer_lists_customer_lists_8list_id8_customers_8customer_no8_addresses_8address_id8": {
+			"title": "get_customer_lists_customer_lists_8list_id8_customers_8customer_no8_addresses_8address_id8",
+			"main": "./lib/actions/get_customer_lists_customer_lists_8list_id8_customers_8customer_no8_addresses_8address_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_customer_lists_customer_lists_8list_id8_customers_8customer_no8_addresses_8address_id8.in.json",
+				"out": "./lib/schemas/get_customer_lists_customer_lists_8list_id8_customers_8customer_no8_addresses_8address_id8.out.json"
+			}
+		},
+		"patch_customer_lists_customer_lists_8list_id8_customers_8customer_no8_addresses_8address_id8": {
+			"title": "patch_customer_lists_customer_lists_8list_id8_customers_8customer_no8_addresses_8address_id8",
+			"main": "./lib/actions/patch_customer_lists_customer_lists_8list_id8_customers_8customer_no8_addresses_8address_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_customer_lists_customer_lists_8list_id8_customers_8customer_no8_addresses_8address_id8.in.json",
+				"out": "./lib/schemas/patch_customer_lists_customer_lists_8list_id8_customers_8customer_no8_addresses_8address_id8.out.json"
+			}
+		},
+		"get_global_preferences_global_preferences_preference_groups_8group_id8_8instance_type8": {
+			"title": "get_global_preferences_global_preferences_preference_groups_8group_id8_8instance_type8",
+			"main": "./lib/actions/get_global_preferences_global_preferences_preference_groups_8group_id8_8instance_type8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_global_preferences_global_preferences_preference_groups_8group_id8_8instance_type8.in.json",
+				"out": "./lib/schemas/get_global_preferences_global_preferences_preference_groups_8group_id8_8instance_type8.out.json"
+			}
+		},
+		"patch_global_preferences_global_preferences_preference_groups_8group_id8_8instance_type8": {
+			"title": "patch_global_preferences_global_preferences_preference_groups_8group_id8_8instance_type8",
+			"main": "./lib/actions/patch_global_preferences_global_preferences_preference_groups_8group_id8_8instance_type8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_global_preferences_global_preferences_preference_groups_8group_id8_8instance_type8.in.json",
+				"out": "./lib/schemas/patch_global_preferences_global_preferences_preference_groups_8group_id8_8instance_type8.out.json"
+			}
+		},
+		"post_inventory_list_search_inventory_list_search": {
+			"title": "post_inventory_list_search_inventory_list_search",
+			"main": "./lib/actions/post_inventory_list_search_inventory_list_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_inventory_list_search_inventory_list_search.in.json",
+				"out": "./lib/schemas/post_inventory_list_search_inventory_list_search.out.json"
+			}
+		},
+		"get_inventory_lists_inventory_lists": {
+			"title": "get_inventory_lists_inventory_lists",
+			"main": "./lib/actions/get_inventory_lists_inventory_lists.js",
+			"metadata": {
+				"in": "./lib/schemas/get_inventory_lists_inventory_lists.in.json",
+				"out": "./lib/schemas/get_inventory_lists_inventory_lists.out.json"
+			}
+		},
+		"delete_inventory_lists_inventory_lists_8id8": {
+			"title": "delete_inventory_lists_inventory_lists_8id8",
+			"main": "./lib/actions/delete_inventory_lists_inventory_lists_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_inventory_lists_inventory_lists_8id8.in.json",
+				"out": "./lib/schemas/delete_inventory_lists_inventory_lists_8id8.out.json"
+			}
+		},
+		"get_inventory_lists_inventory_lists_8id8": {
+			"title": "get_inventory_lists_inventory_lists_8id8",
+			"main": "./lib/actions/get_inventory_lists_inventory_lists_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_inventory_lists_inventory_lists_8id8.in.json",
+				"out": "./lib/schemas/get_inventory_lists_inventory_lists_8id8.out.json"
+			}
+		},
+		"patch_inventory_lists_inventory_lists_8id8": {
+			"title": "patch_inventory_lists_inventory_lists_8id8",
+			"main": "./lib/actions/patch_inventory_lists_inventory_lists_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_inventory_lists_inventory_lists_8id8.in.json",
+				"out": "./lib/schemas/patch_inventory_lists_inventory_lists_8id8.out.json"
+			}
+		},
+		"put_inventory_lists_inventory_lists_8id8": {
+			"title": "put_inventory_lists_inventory_lists_8id8",
+			"main": "./lib/actions/put_inventory_lists_inventory_lists_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_inventory_lists_inventory_lists_8id8.in.json",
+				"out": "./lib/schemas/put_inventory_lists_inventory_lists_8id8.out.json"
+			}
+		},
+		"get_inventory_lists_inventory_lists_8inventory_list_id8_product_inventory_records": {
+			"title": "get_inventory_lists_inventory_lists_8inventory_list_id8_product_inventory_records",
+			"main": "./lib/actions/get_inventory_lists_inventory_lists_8inventory_list_id8_product_inventory_records.js",
+			"metadata": {
+				"in": "./lib/schemas/get_inventory_lists_inventory_lists_8inventory_list_id8_product_inventory_records.in.json",
+				"out": "./lib/schemas/get_inventory_lists_inventory_lists_8inventory_list_id8_product_inventory_records.out.json"
+			}
+		},
+		"delete_inventory_lists_inventory_lists_8inventory_list_id8_product_inventory_records_8product_id8": {
+			"title": "delete_inventory_lists_inventory_lists_8inventory_list_id8_product_inventory_records_8product_id8",
+			"main": "./lib/actions/delete_inventory_lists_inventory_lists_8inventory_list_id8_product_inventory_records_8product_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_inventory_lists_inventory_lists_8inventory_list_id8_product_inventory_records_8product_id8.in.json",
+				"out": "./lib/schemas/delete_inventory_lists_inventory_lists_8inventory_list_id8_product_inventory_records_8product_id8.out.json"
+			}
+		},
+		"get_inventory_lists_inventory_lists_8inventory_list_id8_product_inventory_records_8product_id8": {
+			"title": "get_inventory_lists_inventory_lists_8inventory_list_id8_product_inventory_records_8product_id8",
+			"main": "./lib/actions/get_inventory_lists_inventory_lists_8inventory_list_id8_product_inventory_records_8product_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_inventory_lists_inventory_lists_8inventory_list_id8_product_inventory_records_8product_id8.in.json",
+				"out": "./lib/schemas/get_inventory_lists_inventory_lists_8inventory_list_id8_product_inventory_records_8product_id8.out.json"
+			}
+		},
+		"patch_inventory_lists_inventory_lists_8inventory_list_id8_product_inventory_records_8product_id8": {
+			"title": "patch_inventory_lists_inventory_lists_8inventory_list_id8_product_inventory_records_8product_id8",
+			"main": "./lib/actions/patch_inventory_lists_inventory_lists_8inventory_list_id8_product_inventory_records_8product_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_inventory_lists_inventory_lists_8inventory_list_id8_product_inventory_records_8product_id8.in.json",
+				"out": "./lib/schemas/patch_inventory_lists_inventory_lists_8inventory_list_id8_product_inventory_records_8product_id8.out.json"
+			}
+		},
+		"put_inventory_lists_inventory_lists_8inventory_list_id8_product_inventory_records_8product_id8": {
+			"title": "put_inventory_lists_inventory_lists_8inventory_list_id8_product_inventory_records_8product_id8",
+			"main": "./lib/actions/put_inventory_lists_inventory_lists_8inventory_list_id8_product_inventory_records_8product_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_inventory_lists_inventory_lists_8inventory_list_id8_product_inventory_records_8product_id8.in.json",
+				"out": "./lib/schemas/put_inventory_lists_inventory_lists_8inventory_list_id8_product_inventory_records_8product_id8.out.json"
+			}
+		},
+		"post_job_execution_search_job_execution_search": {
+			"title": "post_job_execution_search_job_execution_search",
+			"main": "./lib/actions/post_job_execution_search_job_execution_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_job_execution_search_job_execution_search.in.json",
+				"out": "./lib/schemas/post_job_execution_search_job_execution_search.out.json"
+			}
+		},
+		"post_jobs_jobs_8job_id8_executions": {
+			"title": "post_jobs_jobs_8job_id8_executions",
+			"main": "./lib/actions/post_jobs_jobs_8job_id8_executions.js",
+			"metadata": {
+				"in": "./lib/schemas/post_jobs_jobs_8job_id8_executions.in.json",
+				"out": "./lib/schemas/post_jobs_jobs_8job_id8_executions.out.json"
+			}
+		},
+		"delete_jobs_jobs_8job_id8_executions_8id8": {
+			"title": "delete_jobs_jobs_8job_id8_executions_8id8",
+			"main": "./lib/actions/delete_jobs_jobs_8job_id8_executions_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_jobs_jobs_8job_id8_executions_8id8.in.json",
+				"out": "./lib/schemas/delete_jobs_jobs_8job_id8_executions_8id8.out.json"
+			}
+		},
+		"get_jobs_jobs_8job_id8_executions_8id8": {
+			"title": "get_jobs_jobs_8job_id8_executions_8id8",
+			"main": "./lib/actions/get_jobs_jobs_8job_id8_executions_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_jobs_jobs_8job_id8_executions_8id8.in.json",
+				"out": "./lib/schemas/get_jobs_jobs_8job_id8_executions_8id8.out.json"
+			}
+		},
+		"delete_libraries_libraries_8library_id8_content_8content_id8": {
+			"title": "delete_libraries_libraries_8library_id8_content_8content_id8",
+			"main": "./lib/actions/delete_libraries_libraries_8library_id8_content_8content_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_libraries_libraries_8library_id8_content_8content_id8.in.json",
+				"out": "./lib/schemas/delete_libraries_libraries_8library_id8_content_8content_id8.out.json"
+			}
+		},
+		"get_libraries_libraries_8library_id8_content_8content_id8": {
+			"title": "get_libraries_libraries_8library_id8_content_8content_id8",
+			"main": "./lib/actions/get_libraries_libraries_8library_id8_content_8content_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_libraries_libraries_8library_id8_content_8content_id8.in.json",
+				"out": "./lib/schemas/get_libraries_libraries_8library_id8_content_8content_id8.out.json"
+			}
+		},
+		"patch_libraries_libraries_8library_id8_content_8content_id8": {
+			"title": "patch_libraries_libraries_8library_id8_content_8content_id8",
+			"main": "./lib/actions/patch_libraries_libraries_8library_id8_content_8content_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_libraries_libraries_8library_id8_content_8content_id8.in.json",
+				"out": "./lib/schemas/patch_libraries_libraries_8library_id8_content_8content_id8.out.json"
+			}
+		},
+		"put_libraries_libraries_8library_id8_content_8content_id8": {
+			"title": "put_libraries_libraries_8library_id8_content_8content_id8",
+			"main": "./lib/actions/put_libraries_libraries_8library_id8_content_8content_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_libraries_libraries_8library_id8_content_8content_id8.in.json",
+				"out": "./lib/schemas/put_libraries_libraries_8library_id8_content_8content_id8.out.json"
+			}
+		},
+		"get_libraries_libraries_8library_id8_content_8content_id8_folders": {
+			"title": "get_libraries_libraries_8library_id8_content_8content_id8_folders",
+			"main": "./lib/actions/get_libraries_libraries_8library_id8_content_8content_id8_folders.js",
+			"metadata": {
+				"in": "./lib/schemas/get_libraries_libraries_8library_id8_content_8content_id8_folders.in.json",
+				"out": "./lib/schemas/get_libraries_libraries_8library_id8_content_8content_id8_folders.out.json"
+			}
+		},
+		"delete_libraries_libraries_8library_id8_folder_assignments_8content_id8_8folder_id8": {
+			"title": "delete_libraries_libraries_8library_id8_folder_assignments_8content_id8_8folder_id8",
+			"main": "./lib/actions/delete_libraries_libraries_8library_id8_folder_assignments_8content_id8_8folder_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_libraries_libraries_8library_id8_folder_assignments_8content_id8_8folder_id8.in.json",
+				"out": "./lib/schemas/delete_libraries_libraries_8library_id8_folder_assignments_8content_id8_8folder_id8.out.json"
+			}
+		},
+		"get_libraries_libraries_8library_id8_folder_assignments_8content_id8_8folder_id8": {
+			"title": "get_libraries_libraries_8library_id8_folder_assignments_8content_id8_8folder_id8",
+			"main": "./lib/actions/get_libraries_libraries_8library_id8_folder_assignments_8content_id8_8folder_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_libraries_libraries_8library_id8_folder_assignments_8content_id8_8folder_id8.in.json",
+				"out": "./lib/schemas/get_libraries_libraries_8library_id8_folder_assignments_8content_id8_8folder_id8.out.json"
+			}
+		},
+		"patch_libraries_libraries_8library_id8_folder_assignments_8content_id8_8folder_id8": {
+			"title": "patch_libraries_libraries_8library_id8_folder_assignments_8content_id8_8folder_id8",
+			"main": "./lib/actions/patch_libraries_libraries_8library_id8_folder_assignments_8content_id8_8folder_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_libraries_libraries_8library_id8_folder_assignments_8content_id8_8folder_id8.in.json",
+				"out": "./lib/schemas/patch_libraries_libraries_8library_id8_folder_assignments_8content_id8_8folder_id8.out.json"
+			}
+		},
+		"put_libraries_libraries_8library_id8_folder_assignments_8content_id8_8folder_id8": {
+			"title": "put_libraries_libraries_8library_id8_folder_assignments_8content_id8_8folder_id8",
+			"main": "./lib/actions/put_libraries_libraries_8library_id8_folder_assignments_8content_id8_8folder_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_libraries_libraries_8library_id8_folder_assignments_8content_id8_8folder_id8.in.json",
+				"out": "./lib/schemas/put_libraries_libraries_8library_id8_folder_assignments_8content_id8_8folder_id8.out.json"
+			}
+		},
+		"delete_libraries_libraries_8library_id8_folders_8folder_id8": {
+			"title": "delete_libraries_libraries_8library_id8_folders_8folder_id8",
+			"main": "./lib/actions/delete_libraries_libraries_8library_id8_folders_8folder_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_libraries_libraries_8library_id8_folders_8folder_id8.in.json",
+				"out": "./lib/schemas/delete_libraries_libraries_8library_id8_folders_8folder_id8.out.json"
+			}
+		},
+		"get_libraries_libraries_8library_id8_folders_8folder_id8": {
+			"title": "get_libraries_libraries_8library_id8_folders_8folder_id8",
+			"main": "./lib/actions/get_libraries_libraries_8library_id8_folders_8folder_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_libraries_libraries_8library_id8_folders_8folder_id8.in.json",
+				"out": "./lib/schemas/get_libraries_libraries_8library_id8_folders_8folder_id8.out.json"
+			}
+		},
+		"patch_libraries_libraries_8library_id8_folders_8folder_id8": {
+			"title": "patch_libraries_libraries_8library_id8_folders_8folder_id8",
+			"main": "./lib/actions/patch_libraries_libraries_8library_id8_folders_8folder_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_libraries_libraries_8library_id8_folders_8folder_id8.in.json",
+				"out": "./lib/schemas/patch_libraries_libraries_8library_id8_folders_8folder_id8.out.json"
+			}
+		},
+		"put_libraries_libraries_8library_id8_folders_8folder_id8": {
+			"title": "put_libraries_libraries_8library_id8_folders_8folder_id8",
+			"main": "./lib/actions/put_libraries_libraries_8library_id8_folders_8folder_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_libraries_libraries_8library_id8_folders_8folder_id8.in.json",
+				"out": "./lib/schemas/put_libraries_libraries_8library_id8_folders_8folder_id8.out.json"
+			}
+		},
+		"get_libraries_libraries_8library_id8_folders_8folder_id8_content": {
+			"title": "get_libraries_libraries_8library_id8_folders_8folder_id8_content",
+			"main": "./lib/actions/get_libraries_libraries_8library_id8_folders_8folder_id8_content.js",
+			"metadata": {
+				"in": "./lib/schemas/get_libraries_libraries_8library_id8_folders_8folder_id8_content.in.json",
+				"out": "./lib/schemas/get_libraries_libraries_8library_id8_folders_8folder_id8_content.out.json"
+			}
+		},
+		"get_libraries_libraries_8library_id8_folders_8folder_id8_sub_folders": {
+			"title": "get_libraries_libraries_8library_id8_folders_8folder_id8_sub_folders",
+			"main": "./lib/actions/get_libraries_libraries_8library_id8_folders_8folder_id8_sub_folders.js",
+			"metadata": {
+				"in": "./lib/schemas/get_libraries_libraries_8library_id8_folders_8folder_id8_sub_folders.in.json",
+				"out": "./lib/schemas/get_libraries_libraries_8library_id8_folders_8folder_id8_sub_folders.out.json"
+			}
+		},
+		"get_locale_info_locale_info_locales": {
+			"title": "get_locale_info_locale_info_locales",
+			"main": "./lib/actions/get_locale_info_locale_info_locales.js",
+			"metadata": {
+				"in": "./lib/schemas/get_locale_info_locale_info_locales.in.json",
+				"out": "./lib/schemas/get_locale_info_locale_info_locales.out.json"
+			}
+		},
+		"post_product_search_product_search": {
+			"title": "post_product_search_product_search",
+			"main": "./lib/actions/post_product_search_product_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_product_search_product_search.in.json",
+				"out": "./lib/schemas/post_product_search_product_search.out.json"
+			}
+		},
+		"delete_products_products_8id8": {
+			"title": "delete_products_products_8id8",
+			"main": "./lib/actions/delete_products_products_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_products_products_8id8.in.json",
+				"out": "./lib/schemas/delete_products_products_8id8.out.json"
+			}
+		},
+		"get_products_products_8id8": {
+			"title": "get_products_products_8id8",
+			"main": "./lib/actions/get_products_products_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_products_products_8id8.in.json",
+				"out": "./lib/schemas/get_products_products_8id8.out.json"
+			}
+		},
+		"patch_products_products_8id8": {
+			"title": "patch_products_products_8id8",
+			"main": "./lib/actions/patch_products_products_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_products_products_8id8.in.json",
+				"out": "./lib/schemas/patch_products_products_8id8.out.json"
+			}
+		},
+		"put_products_products_8id8": {
+			"title": "put_products_products_8id8",
+			"main": "./lib/actions/put_products_products_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_products_products_8id8.in.json",
+				"out": "./lib/schemas/put_products_products_8id8.out.json"
+			}
+		},
+		"post_products_products_8id8_variant_search": {
+			"title": "post_products_products_8id8_variant_search",
+			"main": "./lib/actions/post_products_products_8id8_variant_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_products_products_8id8_variant_search.in.json",
+				"out": "./lib/schemas/post_products_products_8id8_variant_search.out.json"
+			}
+		},
+		"get_products_products_8master_product_id8_variation_groups": {
+			"title": "get_products_products_8master_product_id8_variation_groups",
+			"main": "./lib/actions/get_products_products_8master_product_id8_variation_groups.js",
+			"metadata": {
+				"in": "./lib/schemas/get_products_products_8master_product_id8_variation_groups.in.json",
+				"out": "./lib/schemas/get_products_products_8master_product_id8_variation_groups.out.json"
+			}
+		},
+		"delete_products_products_8master_product_id8_variation_groups_8id8": {
+			"title": "delete_products_products_8master_product_id8_variation_groups_8id8",
+			"main": "./lib/actions/delete_products_products_8master_product_id8_variation_groups_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_products_products_8master_product_id8_variation_groups_8id8.in.json",
+				"out": "./lib/schemas/delete_products_products_8master_product_id8_variation_groups_8id8.out.json"
+			}
+		},
+		"get_products_products_8master_product_id8_variation_groups_8id8": {
+			"title": "get_products_products_8master_product_id8_variation_groups_8id8",
+			"main": "./lib/actions/get_products_products_8master_product_id8_variation_groups_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_products_products_8master_product_id8_variation_groups_8id8.in.json",
+				"out": "./lib/schemas/get_products_products_8master_product_id8_variation_groups_8id8.out.json"
+			}
+		},
+		"patch_products_products_8master_product_id8_variation_groups_8id8": {
+			"title": "patch_products_products_8master_product_id8_variation_groups_8id8",
+			"main": "./lib/actions/patch_products_products_8master_product_id8_variation_groups_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_products_products_8master_product_id8_variation_groups_8id8.in.json",
+				"out": "./lib/schemas/patch_products_products_8master_product_id8_variation_groups_8id8.out.json"
+			}
+		},
+		"put_products_products_8master_product_id8_variation_groups_8id8": {
+			"title": "put_products_products_8master_product_id8_variation_groups_8id8",
+			"main": "./lib/actions/put_products_products_8master_product_id8_variation_groups_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_products_products_8master_product_id8_variation_groups_8id8.in.json",
+				"out": "./lib/schemas/put_products_products_8master_product_id8_variation_groups_8id8.out.json"
+			}
+		},
+		"get_products_products_8master_product_id8_variations": {
+			"title": "get_products_products_8master_product_id8_variations",
+			"main": "./lib/actions/get_products_products_8master_product_id8_variations.js",
+			"metadata": {
+				"in": "./lib/schemas/get_products_products_8master_product_id8_variations.in.json",
+				"out": "./lib/schemas/get_products_products_8master_product_id8_variations.out.json"
+			}
+		},
+		"delete_products_products_8master_product_id8_variations_8id8": {
+			"title": "delete_products_products_8master_product_id8_variations_8id8",
+			"main": "./lib/actions/delete_products_products_8master_product_id8_variations_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_products_products_8master_product_id8_variations_8id8.in.json",
+				"out": "./lib/schemas/delete_products_products_8master_product_id8_variations_8id8.out.json"
+			}
+		},
+		"get_products_products_8master_product_id8_variations_8id8": {
+			"title": "get_products_products_8master_product_id8_variations_8id8",
+			"main": "./lib/actions/get_products_products_8master_product_id8_variations_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_products_products_8master_product_id8_variations_8id8.in.json",
+				"out": "./lib/schemas/get_products_products_8master_product_id8_variations_8id8.out.json"
+			}
+		},
+		"patch_products_products_8master_product_id8_variations_8id8": {
+			"title": "patch_products_products_8master_product_id8_variations_8id8",
+			"main": "./lib/actions/patch_products_products_8master_product_id8_variations_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_products_products_8master_product_id8_variations_8id8.in.json",
+				"out": "./lib/schemas/patch_products_products_8master_product_id8_variations_8id8.out.json"
+			}
+		},
+		"put_products_products_8master_product_id8_variations_8id8": {
+			"title": "put_products_products_8master_product_id8_variations_8id8",
+			"main": "./lib/actions/put_products_products_8master_product_id8_variations_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_products_products_8master_product_id8_variations_8id8.in.json",
+				"out": "./lib/schemas/put_products_products_8master_product_id8_variations_8id8.out.json"
+			}
+		},
+		"get_products_products_8product_id8_product_options": {
+			"title": "get_products_products_8product_id8_product_options",
+			"main": "./lib/actions/get_products_products_8product_id8_product_options.js",
+			"metadata": {
+				"in": "./lib/schemas/get_products_products_8product_id8_product_options.in.json",
+				"out": "./lib/schemas/get_products_products_8product_id8_product_options.out.json"
+			}
+		},
+		"delete_products_products_8product_id8_product_options_8id8": {
+			"title": "delete_products_products_8product_id8_product_options_8id8",
+			"main": "./lib/actions/delete_products_products_8product_id8_product_options_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_products_products_8product_id8_product_options_8id8.in.json",
+				"out": "./lib/schemas/delete_products_products_8product_id8_product_options_8id8.out.json"
+			}
+		},
+		"get_products_products_8product_id8_product_options_8id8": {
+			"title": "get_products_products_8product_id8_product_options_8id8",
+			"main": "./lib/actions/get_products_products_8product_id8_product_options_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_products_products_8product_id8_product_options_8id8.in.json",
+				"out": "./lib/schemas/get_products_products_8product_id8_product_options_8id8.out.json"
+			}
+		},
+		"patch_products_products_8product_id8_product_options_8id8": {
+			"title": "patch_products_products_8product_id8_product_options_8id8",
+			"main": "./lib/actions/patch_products_products_8product_id8_product_options_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_products_products_8product_id8_product_options_8id8.in.json",
+				"out": "./lib/schemas/patch_products_products_8product_id8_product_options_8id8.out.json"
+			}
+		},
+		"put_products_products_8product_id8_product_options_8id8": {
+			"title": "put_products_products_8product_id8_product_options_8id8",
+			"main": "./lib/actions/put_products_products_8product_id8_product_options_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_products_products_8product_id8_product_options_8id8.in.json",
+				"out": "./lib/schemas/put_products_products_8product_id8_product_options_8id8.out.json"
+			}
+		},
+		"get_products_products_8product_id8_product_options_8option_id8_values": {
+			"title": "get_products_products_8product_id8_product_options_8option_id8_values",
+			"main": "./lib/actions/get_products_products_8product_id8_product_options_8option_id8_values.js",
+			"metadata": {
+				"in": "./lib/schemas/get_products_products_8product_id8_product_options_8option_id8_values.in.json",
+				"out": "./lib/schemas/get_products_products_8product_id8_product_options_8option_id8_values.out.json"
+			}
+		},
+		"delete_products_products_8product_id8_product_options_8option_id8_values_8id8": {
+			"title": "delete_products_products_8product_id8_product_options_8option_id8_values_8id8",
+			"main": "./lib/actions/delete_products_products_8product_id8_product_options_8option_id8_values_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_products_products_8product_id8_product_options_8option_id8_values_8id8.in.json",
+				"out": "./lib/schemas/delete_products_products_8product_id8_product_options_8option_id8_values_8id8.out.json"
+			}
+		},
+		"get_products_products_8product_id8_product_options_8option_id8_values_8id8": {
+			"title": "get_products_products_8product_id8_product_options_8option_id8_values_8id8",
+			"main": "./lib/actions/get_products_products_8product_id8_product_options_8option_id8_values_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_products_products_8product_id8_product_options_8option_id8_values_8id8.in.json",
+				"out": "./lib/schemas/get_products_products_8product_id8_product_options_8option_id8_values_8id8.out.json"
+			}
+		},
+		"patch_products_products_8product_id8_product_options_8option_id8_values_8id8": {
+			"title": "patch_products_products_8product_id8_product_options_8option_id8_values_8id8",
+			"main": "./lib/actions/patch_products_products_8product_id8_product_options_8option_id8_values_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_products_products_8product_id8_product_options_8option_id8_values_8id8.in.json",
+				"out": "./lib/schemas/patch_products_products_8product_id8_product_options_8option_id8_values_8id8.out.json"
+			}
+		},
+		"put_products_products_8product_id8_product_options_8option_id8_values_8id8": {
+			"title": "put_products_products_8product_id8_product_options_8option_id8_values_8id8",
+			"main": "./lib/actions/put_products_products_8product_id8_product_options_8option_id8_values_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_products_products_8product_id8_product_options_8option_id8_values_8id8.in.json",
+				"out": "./lib/schemas/put_products_products_8product_id8_product_options_8option_id8_values_8id8.out.json"
+			}
+		},
+		"get_products_products_8product_id8_variation_attributes": {
+			"title": "get_products_products_8product_id8_variation_attributes",
+			"main": "./lib/actions/get_products_products_8product_id8_variation_attributes.js",
+			"metadata": {
+				"in": "./lib/schemas/get_products_products_8product_id8_variation_attributes.in.json",
+				"out": "./lib/schemas/get_products_products_8product_id8_variation_attributes.out.json"
+			}
+		},
+		"get_products_products_8product_id8_variation_attributes_8attribute_id8_values": {
+			"title": "get_products_products_8product_id8_variation_attributes_8attribute_id8_values",
+			"main": "./lib/actions/get_products_products_8product_id8_variation_attributes_8attribute_id8_values.js",
+			"metadata": {
+				"in": "./lib/schemas/get_products_products_8product_id8_variation_attributes_8attribute_id8_values.in.json",
+				"out": "./lib/schemas/get_products_products_8product_id8_variation_attributes_8attribute_id8_values.out.json"
+			}
+		},
+		"delete_products_products_8product_id8_variation_attributes_8attribute_id8_values_8id8": {
+			"title": "delete_products_products_8product_id8_variation_attributes_8attribute_id8_values_8id8",
+			"main": "./lib/actions/delete_products_products_8product_id8_variation_attributes_8attribute_id8_values_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_products_products_8product_id8_variation_attributes_8attribute_id8_values_8id8.in.json",
+				"out": "./lib/schemas/delete_products_products_8product_id8_variation_attributes_8attribute_id8_values_8id8.out.json"
+			}
+		},
+		"get_products_products_8product_id8_variation_attributes_8attribute_id8_values_8id8": {
+			"title": "get_products_products_8product_id8_variation_attributes_8attribute_id8_values_8id8",
+			"main": "./lib/actions/get_products_products_8product_id8_variation_attributes_8attribute_id8_values_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_products_products_8product_id8_variation_attributes_8attribute_id8_values_8id8.in.json",
+				"out": "./lib/schemas/get_products_products_8product_id8_variation_attributes_8attribute_id8_values_8id8.out.json"
+			}
+		},
+		"patch_products_products_8product_id8_variation_attributes_8attribute_id8_values_8id8": {
+			"title": "patch_products_products_8product_id8_variation_attributes_8attribute_id8_values_8id8",
+			"main": "./lib/actions/patch_products_products_8product_id8_variation_attributes_8attribute_id8_values_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_products_products_8product_id8_variation_attributes_8attribute_id8_values_8id8.in.json",
+				"out": "./lib/schemas/patch_products_products_8product_id8_variation_attributes_8attribute_id8_values_8id8.out.json"
+			}
+		},
+		"put_products_products_8product_id8_variation_attributes_8attribute_id8_values_8id8": {
+			"title": "put_products_products_8product_id8_variation_attributes_8attribute_id8_values_8id8",
+			"main": "./lib/actions/put_products_products_8product_id8_variation_attributes_8attribute_id8_values_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_products_products_8product_id8_variation_attributes_8attribute_id8_values_8id8.in.json",
+				"out": "./lib/schemas/put_products_products_8product_id8_variation_attributes_8attribute_id8_values_8id8.out.json"
+			}
+		},
+		"delete_products_products_8product_id8_variation_attributes_8id8": {
+			"title": "delete_products_products_8product_id8_variation_attributes_8id8",
+			"main": "./lib/actions/delete_products_products_8product_id8_variation_attributes_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_products_products_8product_id8_variation_attributes_8id8.in.json",
+				"out": "./lib/schemas/delete_products_products_8product_id8_variation_attributes_8id8.out.json"
+			}
+		},
+		"get_products_products_8product_id8_variation_attributes_8id8": {
+			"title": "get_products_products_8product_id8_variation_attributes_8id8",
+			"main": "./lib/actions/get_products_products_8product_id8_variation_attributes_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_products_products_8product_id8_variation_attributes_8id8.in.json",
+				"out": "./lib/schemas/get_products_products_8product_id8_variation_attributes_8id8.out.json"
+			}
+		},
+		"patch_products_products_8product_id8_variation_attributes_8id8": {
+			"title": "patch_products_products_8product_id8_variation_attributes_8id8",
+			"main": "./lib/actions/patch_products_products_8product_id8_variation_attributes_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_products_products_8product_id8_variation_attributes_8id8.in.json",
+				"out": "./lib/schemas/patch_products_products_8product_id8_variation_attributes_8id8.out.json"
+			}
+		},
+		"put_products_products_8product_id8_variation_attributes_8id8": {
+			"title": "put_products_products_8product_id8_variation_attributes_8id8",
+			"main": "./lib/actions/put_products_products_8product_id8_variation_attributes_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_products_products_8product_id8_variation_attributes_8id8.in.json",
+				"out": "./lib/schemas/put_products_products_8product_id8_variation_attributes_8id8.out.json"
+			}
+		},
+		"post_role_search_role_search": {
+			"title": "post_role_search_role_search",
+			"main": "./lib/actions/post_role_search_role_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_role_search_role_search.in.json",
+				"out": "./lib/schemas/post_role_search_role_search.out.json"
+			}
+		},
+		"get_roles_roles": {
+			"title": "get_roles_roles",
+			"main": "./lib/actions/get_roles_roles.js",
+			"metadata": {
+				"in": "./lib/schemas/get_roles_roles.in.json",
+				"out": "./lib/schemas/get_roles_roles.out.json"
+			}
+		},
+		"delete_roles_roles_8id8": {
+			"title": "delete_roles_roles_8id8",
+			"main": "./lib/actions/delete_roles_roles_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_roles_roles_8id8.in.json",
+				"out": "./lib/schemas/delete_roles_roles_8id8.out.json"
+			}
+		},
+		"get_roles_roles_8id8": {
+			"title": "get_roles_roles_8id8",
+			"main": "./lib/actions/get_roles_roles_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_roles_roles_8id8.in.json",
+				"out": "./lib/schemas/get_roles_roles_8id8.out.json"
+			}
+		},
+		"put_roles_roles_8id8": {
+			"title": "put_roles_roles_8id8",
+			"main": "./lib/actions/put_roles_roles_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_roles_roles_8id8.in.json",
+				"out": "./lib/schemas/put_roles_roles_8id8.out.json"
+			}
+		},
+		"post_roles_roles_8id8_user_search": {
+			"title": "post_roles_roles_8id8_user_search",
+			"main": "./lib/actions/post_roles_roles_8id8_user_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_roles_roles_8id8_user_search.in.json",
+				"out": "./lib/schemas/post_roles_roles_8id8_user_search.out.json"
+			}
+		},
+		"get_roles_roles_8id8_users": {
+			"title": "get_roles_roles_8id8_users",
+			"main": "./lib/actions/get_roles_roles_8id8_users.js",
+			"metadata": {
+				"in": "./lib/schemas/get_roles_roles_8id8_users.in.json",
+				"out": "./lib/schemas/get_roles_roles_8id8_users.out.json"
+			}
+		},
+		"delete_roles_roles_8id8_users_8login8": {
+			"title": "delete_roles_roles_8id8_users_8login8",
+			"main": "./lib/actions/delete_roles_roles_8id8_users_8login8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_roles_roles_8id8_users_8login8.in.json",
+				"out": "./lib/schemas/delete_roles_roles_8id8_users_8login8.out.json"
+			}
+		},
+		"put_roles_roles_8id8_users_8login8": {
+			"title": "put_roles_roles_8id8_users_8login8",
+			"main": "./lib/actions/put_roles_roles_8id8_users_8login8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_roles_roles_8id8_users_8login8.in.json",
+				"out": "./lib/schemas/put_roles_roles_8id8_users_8login8.out.json"
+			}
+		},
+		"get_settings_settings_logging_custom": {
+			"title": "get_settings_settings_logging_custom",
+			"main": "./lib/actions/get_settings_settings_logging_custom.js",
+			"metadata": {
+				"out": "./lib/schemas/get_settings_settings_logging_custom.out.json"
+			}
+		},
+		"patch_settings_settings_logging_custom": {
+			"title": "patch_settings_settings_logging_custom",
+			"main": "./lib/actions/patch_settings_settings_logging_custom.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_settings_settings_logging_custom.in.json",
+				"out": "./lib/schemas/patch_settings_settings_logging_custom.out.json"
+			}
+		},
+		"post_site_preferences_site_preferences_preference_groups_8group_id8_8instance_type8_preference_search": {
+			"title": "post_site_preferences_site_preferences_preference_groups_8group_id8_8instance_type8_preference_search",
+			"main": "./lib/actions/post_site_preferences_site_preferences_preference_groups_8group_id8_8instance_type8_preference_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_site_preferences_site_preferences_preference_groups_8group_id8_8instance_type8_preference_search.in.json",
+				"out": "./lib/schemas/post_site_preferences_site_preferences_preference_groups_8group_id8_8instance_type8_preference_search.out.json"
+			}
+		},
+		"get_site_preferences_site_preferences_preference_groups_8group_id8_8instance_type8_preferences_8preference_id8": {
+			"title": "get_site_preferences_site_preferences_preference_groups_8group_id8_8instance_type8_preferences_8preference_id8",
+			"main": "./lib/actions/get_site_preferences_site_preferences_preference_groups_8group_id8_8instance_type8_preferences_8preference_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_site_preferences_site_preferences_preference_groups_8group_id8_8instance_type8_preferences_8preference_id8.in.json",
+				"out": "./lib/schemas/get_site_preferences_site_preferences_preference_groups_8group_id8_8instance_type8_preferences_8preference_id8.out.json"
+			}
+		},
+		"post_site_search_site_search": {
+			"title": "post_site_search_site_search",
+			"main": "./lib/actions/post_site_search_site_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_site_search_site_search.in.json",
+				"out": "./lib/schemas/post_site_search_site_search.out.json"
+			}
+		},
+		"get_sites_sites": {
+			"title": "get_sites_sites",
+			"main": "./lib/actions/get_sites_sites.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites.in.json",
+				"out": "./lib/schemas/get_sites_sites.out.json"
+			}
+		},
+		"get_sites_sites_8site_id8": {
+			"title": "get_sites_sites_8site_id8",
+			"main": "./lib/actions/get_sites_sites_8site_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites_8site_id8.in.json",
+				"out": "./lib/schemas/get_sites_sites_8site_id8.out.json"
+			}
+		},
+		"post_sites_sites_8site_id8_ab_test_search": {
+			"title": "post_sites_sites_8site_id8_ab_test_search",
+			"main": "./lib/actions/post_sites_sites_8site_id8_ab_test_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_sites_sites_8site_id8_ab_test_search.in.json",
+				"out": "./lib/schemas/post_sites_sites_8site_id8_ab_test_search.out.json"
+			}
+		},
+		"get_sites_sites_8site_id8_ab_tests": {
+			"title": "get_sites_sites_8site_id8_ab_tests",
+			"main": "./lib/actions/get_sites_sites_8site_id8_ab_tests.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites_8site_id8_ab_tests.in.json",
+				"out": "./lib/schemas/get_sites_sites_8site_id8_ab_tests.out.json"
+			}
+		},
+		"delete_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8": {
+			"title": "delete_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8",
+			"main": "./lib/actions/delete_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8.in.json",
+				"out": "./lib/schemas/delete_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8.out.json"
+			}
+		},
+		"get_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8": {
+			"title": "get_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8",
+			"main": "./lib/actions/get_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8.in.json",
+				"out": "./lib/schemas/get_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8.out.json"
+			}
+		},
+		"patch_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8": {
+			"title": "patch_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8",
+			"main": "./lib/actions/patch_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8.in.json",
+				"out": "./lib/schemas/patch_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8.out.json"
+			}
+		},
+		"put_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8": {
+			"title": "put_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8",
+			"main": "./lib/actions/put_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8.in.json",
+				"out": "./lib/schemas/put_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8.out.json"
+			}
+		},
+		"delete_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_promotions_8promotion_id8": {
+			"title": "delete_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_promotions_8promotion_id8",
+			"main": "./lib/actions/delete_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_promotions_8promotion_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_promotions_8promotion_id8.in.json",
+				"out": "./lib/schemas/delete_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_promotions_8promotion_id8.out.json"
+			}
+		},
+		"put_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_promotions_8promotion_id8": {
+			"title": "put_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_promotions_8promotion_id8",
+			"main": "./lib/actions/put_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_promotions_8promotion_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_promotions_8promotion_id8.in.json",
+				"out": "./lib/schemas/put_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_promotions_8promotion_id8.out.json"
+			}
+		},
+		"delete_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_slot_configurations_8slot_id8_8slot_config_id8": {
+			"title": "delete_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_slot_configurations_8slot_id8_8slot_config_id8",
+			"main": "./lib/actions/delete_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_slot_configurations_8slot_id8_8slot_config_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_slot_configurations_8slot_id8_8slot_config_id8.in.json",
+				"out": "./lib/schemas/delete_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_slot_configurations_8slot_id8_8slot_config_id8.out.json"
+			}
+		},
+		"put_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_slot_configurations_8slot_id8_8slot_config_id8": {
+			"title": "put_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_slot_configurations_8slot_id8_8slot_config_id8",
+			"main": "./lib/actions/put_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_slot_configurations_8slot_id8_8slot_config_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_slot_configurations_8slot_id8_8slot_config_id8.in.json",
+				"out": "./lib/schemas/put_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_slot_configurations_8slot_id8_8slot_config_id8.out.json"
+			}
+		},
+		"delete_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_sorting_rules_8sorting_rule_id8_8category_id8": {
+			"title": "delete_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_sorting_rules_8sorting_rule_id8_8category_id8",
+			"main": "./lib/actions/delete_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_sorting_rules_8sorting_rule_id8_8category_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_sorting_rules_8sorting_rule_id8_8category_id8.in.json",
+				"out": "./lib/schemas/delete_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_sorting_rules_8sorting_rule_id8_8category_id8.out.json"
+			}
+		},
+		"put_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_sorting_rules_8sorting_rule_id8_8category_id8": {
+			"title": "put_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_sorting_rules_8sorting_rule_id8_8category_id8",
+			"main": "./lib/actions/put_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_sorting_rules_8sorting_rule_id8_8category_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_sorting_rules_8sorting_rule_id8_8category_id8.in.json",
+				"out": "./lib/schemas/put_sites_sites_8site_id8_ab_tests_8ab_test_id8_segments_8segment_id8_sorting_rules_8sorting_rule_id8_8category_id8.out.json"
+			}
+		},
+		"delete_sites_sites_8site_id8_ab_tests_8id8": {
+			"title": "delete_sites_sites_8site_id8_ab_tests_8id8",
+			"main": "./lib/actions/delete_sites_sites_8site_id8_ab_tests_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_sites_sites_8site_id8_ab_tests_8id8.in.json",
+				"out": "./lib/schemas/delete_sites_sites_8site_id8_ab_tests_8id8.out.json"
+			}
+		},
+		"get_sites_sites_8site_id8_ab_tests_8id8": {
+			"title": "get_sites_sites_8site_id8_ab_tests_8id8",
+			"main": "./lib/actions/get_sites_sites_8site_id8_ab_tests_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites_8site_id8_ab_tests_8id8.in.json",
+				"out": "./lib/schemas/get_sites_sites_8site_id8_ab_tests_8id8.out.json"
+			}
+		},
+		"patch_sites_sites_8site_id8_ab_tests_8id8": {
+			"title": "patch_sites_sites_8site_id8_ab_tests_8id8",
+			"main": "./lib/actions/patch_sites_sites_8site_id8_ab_tests_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_sites_sites_8site_id8_ab_tests_8id8.in.json",
+				"out": "./lib/schemas/patch_sites_sites_8site_id8_ab_tests_8id8.out.json"
+			}
+		},
+		"put_sites_sites_8site_id8_ab_tests_8id8": {
+			"title": "put_sites_sites_8site_id8_ab_tests_8id8",
+			"main": "./lib/actions/put_sites_sites_8site_id8_ab_tests_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_sites_sites_8site_id8_ab_tests_8id8.in.json",
+				"out": "./lib/schemas/put_sites_sites_8site_id8_ab_tests_8id8.out.json"
+			}
+		},
+		"post_sites_sites_8site_id8_campaign_search": {
+			"title": "post_sites_sites_8site_id8_campaign_search",
+			"main": "./lib/actions/post_sites_sites_8site_id8_campaign_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_sites_sites_8site_id8_campaign_search.in.json",
+				"out": "./lib/schemas/post_sites_sites_8site_id8_campaign_search.out.json"
+			}
+		},
+		"delete_sites_sites_8site_id8_campaigns_8campaign_id8": {
+			"title": "delete_sites_sites_8site_id8_campaigns_8campaign_id8",
+			"main": "./lib/actions/delete_sites_sites_8site_id8_campaigns_8campaign_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_sites_sites_8site_id8_campaigns_8campaign_id8.in.json",
+				"out": "./lib/schemas/delete_sites_sites_8site_id8_campaigns_8campaign_id8.out.json"
+			}
+		},
+		"get_sites_sites_8site_id8_campaigns_8campaign_id8": {
+			"title": "get_sites_sites_8site_id8_campaigns_8campaign_id8",
+			"main": "./lib/actions/get_sites_sites_8site_id8_campaigns_8campaign_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites_8site_id8_campaigns_8campaign_id8.in.json",
+				"out": "./lib/schemas/get_sites_sites_8site_id8_campaigns_8campaign_id8.out.json"
+			}
+		},
+		"patch_sites_sites_8site_id8_campaigns_8campaign_id8": {
+			"title": "patch_sites_sites_8site_id8_campaigns_8campaign_id8",
+			"main": "./lib/actions/patch_sites_sites_8site_id8_campaigns_8campaign_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_sites_sites_8site_id8_campaigns_8campaign_id8.in.json",
+				"out": "./lib/schemas/patch_sites_sites_8site_id8_campaigns_8campaign_id8.out.json"
+			}
+		},
+		"put_sites_sites_8site_id8_campaigns_8campaign_id8": {
+			"title": "put_sites_sites_8site_id8_campaigns_8campaign_id8",
+			"main": "./lib/actions/put_sites_sites_8site_id8_campaigns_8campaign_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_sites_sites_8site_id8_campaigns_8campaign_id8.in.json",
+				"out": "./lib/schemas/put_sites_sites_8site_id8_campaigns_8campaign_id8.out.json"
+			}
+		},
+		"delete_sites_sites_8site_id8_campaigns_8campaign_id8_coupons_8coupon_id8": {
+			"title": "delete_sites_sites_8site_id8_campaigns_8campaign_id8_coupons_8coupon_id8",
+			"main": "./lib/actions/delete_sites_sites_8site_id8_campaigns_8campaign_id8_coupons_8coupon_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_sites_sites_8site_id8_campaigns_8campaign_id8_coupons_8coupon_id8.in.json",
+				"out": "./lib/schemas/delete_sites_sites_8site_id8_campaigns_8campaign_id8_coupons_8coupon_id8.out.json"
+			}
+		},
+		"put_sites_sites_8site_id8_campaigns_8campaign_id8_coupons_8coupon_id8": {
+			"title": "put_sites_sites_8site_id8_campaigns_8campaign_id8_coupons_8coupon_id8",
+			"main": "./lib/actions/put_sites_sites_8site_id8_campaigns_8campaign_id8_coupons_8coupon_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_sites_sites_8site_id8_campaigns_8campaign_id8_coupons_8coupon_id8.in.json",
+				"out": "./lib/schemas/put_sites_sites_8site_id8_campaigns_8campaign_id8_coupons_8coupon_id8.out.json"
+			}
+		},
+		"delete_sites_sites_8site_id8_campaigns_8campaign_id8_customer_groups_8customer_group_id8": {
+			"title": "delete_sites_sites_8site_id8_campaigns_8campaign_id8_customer_groups_8customer_group_id8",
+			"main": "./lib/actions/delete_sites_sites_8site_id8_campaigns_8campaign_id8_customer_groups_8customer_group_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_sites_sites_8site_id8_campaigns_8campaign_id8_customer_groups_8customer_group_id8.in.json",
+				"out": "./lib/schemas/delete_sites_sites_8site_id8_campaigns_8campaign_id8_customer_groups_8customer_group_id8.out.json"
+			}
+		},
+		"put_sites_sites_8site_id8_campaigns_8campaign_id8_customer_groups_8customer_group_id8": {
+			"title": "put_sites_sites_8site_id8_campaigns_8campaign_id8_customer_groups_8customer_group_id8",
+			"main": "./lib/actions/put_sites_sites_8site_id8_campaigns_8campaign_id8_customer_groups_8customer_group_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_sites_sites_8site_id8_campaigns_8campaign_id8_customer_groups_8customer_group_id8.in.json",
+				"out": "./lib/schemas/put_sites_sites_8site_id8_campaigns_8campaign_id8_customer_groups_8customer_group_id8.out.json"
+			}
+		},
+		"delete_sites_sites_8site_id8_campaigns_8campaign_id8_promotions_8promotion_id8": {
+			"title": "delete_sites_sites_8site_id8_campaigns_8campaign_id8_promotions_8promotion_id8",
+			"main": "./lib/actions/delete_sites_sites_8site_id8_campaigns_8campaign_id8_promotions_8promotion_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_sites_sites_8site_id8_campaigns_8campaign_id8_promotions_8promotion_id8.in.json",
+				"out": "./lib/schemas/delete_sites_sites_8site_id8_campaigns_8campaign_id8_promotions_8promotion_id8.out.json"
+			}
+		},
+		"put_sites_sites_8site_id8_campaigns_8campaign_id8_promotions_8promotion_id8": {
+			"title": "put_sites_sites_8site_id8_campaigns_8campaign_id8_promotions_8promotion_id8",
+			"main": "./lib/actions/put_sites_sites_8site_id8_campaigns_8campaign_id8_promotions_8promotion_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_sites_sites_8site_id8_campaigns_8campaign_id8_promotions_8promotion_id8.in.json",
+				"out": "./lib/schemas/put_sites_sites_8site_id8_campaigns_8campaign_id8_promotions_8promotion_id8.out.json"
+			}
+		},
+		"delete_sites_sites_8site_id8_campaigns_8campaign_id8_slot_configurations_8slot_id8_8slot_config_id8": {
+			"title": "delete_sites_sites_8site_id8_campaigns_8campaign_id8_slot_configurations_8slot_id8_8slot_config_id8",
+			"main": "./lib/actions/delete_sites_sites_8site_id8_campaigns_8campaign_id8_slot_configurations_8slot_id8_8slot_config_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_sites_sites_8site_id8_campaigns_8campaign_id8_slot_configurations_8slot_id8_8slot_config_id8.in.json",
+				"out": "./lib/schemas/delete_sites_sites_8site_id8_campaigns_8campaign_id8_slot_configurations_8slot_id8_8slot_config_id8.out.json"
+			}
+		},
+		"patch_sites_sites_8site_id8_campaigns_8campaign_id8_slot_configurations_8slot_id8_8slot_config_id8": {
+			"title": "patch_sites_sites_8site_id8_campaigns_8campaign_id8_slot_configurations_8slot_id8_8slot_config_id8",
+			"main": "./lib/actions/patch_sites_sites_8site_id8_campaigns_8campaign_id8_slot_configurations_8slot_id8_8slot_config_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_sites_sites_8site_id8_campaigns_8campaign_id8_slot_configurations_8slot_id8_8slot_config_id8.in.json",
+				"out": "./lib/schemas/patch_sites_sites_8site_id8_campaigns_8campaign_id8_slot_configurations_8slot_id8_8slot_config_id8.out.json"
+			}
+		},
+		"put_sites_sites_8site_id8_campaigns_8campaign_id8_slot_configurations_8slot_id8_8slot_config_id8": {
+			"title": "put_sites_sites_8site_id8_campaigns_8campaign_id8_slot_configurations_8slot_id8_8slot_config_id8",
+			"main": "./lib/actions/put_sites_sites_8site_id8_campaigns_8campaign_id8_slot_configurations_8slot_id8_8slot_config_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_sites_sites_8site_id8_campaigns_8campaign_id8_slot_configurations_8slot_id8_8slot_config_id8.in.json",
+				"out": "./lib/schemas/put_sites_sites_8site_id8_campaigns_8campaign_id8_slot_configurations_8slot_id8_8slot_config_id8.out.json"
+			}
+		},
+		"delete_sites_sites_8site_id8_campaigns_8campaign_id8_sorting_rules_8sorting_rule_id8_8category_id8": {
+			"title": "delete_sites_sites_8site_id8_campaigns_8campaign_id8_sorting_rules_8sorting_rule_id8_8category_id8",
+			"main": "./lib/actions/delete_sites_sites_8site_id8_campaigns_8campaign_id8_sorting_rules_8sorting_rule_id8_8category_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_sites_sites_8site_id8_campaigns_8campaign_id8_sorting_rules_8sorting_rule_id8_8category_id8.in.json",
+				"out": "./lib/schemas/delete_sites_sites_8site_id8_campaigns_8campaign_id8_sorting_rules_8sorting_rule_id8_8category_id8.out.json"
+			}
+		},
+		"put_sites_sites_8site_id8_campaigns_8campaign_id8_sorting_rules_8sorting_rule_id8_8category_id8": {
+			"title": "put_sites_sites_8site_id8_campaigns_8campaign_id8_sorting_rules_8sorting_rule_id8_8category_id8",
+			"main": "./lib/actions/put_sites_sites_8site_id8_campaigns_8campaign_id8_sorting_rules_8sorting_rule_id8_8category_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_sites_sites_8site_id8_campaigns_8campaign_id8_sorting_rules_8sorting_rule_id8_8category_id8.in.json",
+				"out": "./lib/schemas/put_sites_sites_8site_id8_campaigns_8campaign_id8_sorting_rules_8sorting_rule_id8_8category_id8.out.json"
+			}
+		},
+		"delete_sites_sites_8site_id8_campaigns_8campaign_id8_source_code_groups_8source_code_group_id8": {
+			"title": "delete_sites_sites_8site_id8_campaigns_8campaign_id8_source_code_groups_8source_code_group_id8",
+			"main": "./lib/actions/delete_sites_sites_8site_id8_campaigns_8campaign_id8_source_code_groups_8source_code_group_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_sites_sites_8site_id8_campaigns_8campaign_id8_source_code_groups_8source_code_group_id8.in.json",
+				"out": "./lib/schemas/delete_sites_sites_8site_id8_campaigns_8campaign_id8_source_code_groups_8source_code_group_id8.out.json"
+			}
+		},
+		"put_sites_sites_8site_id8_campaigns_8campaign_id8_source_code_groups_8source_code_group_id8": {
+			"title": "put_sites_sites_8site_id8_campaigns_8campaign_id8_source_code_groups_8source_code_group_id8",
+			"main": "./lib/actions/put_sites_sites_8site_id8_campaigns_8campaign_id8_source_code_groups_8source_code_group_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_sites_sites_8site_id8_campaigns_8campaign_id8_source_code_groups_8source_code_group_id8.in.json",
+				"out": "./lib/schemas/put_sites_sites_8site_id8_campaigns_8campaign_id8_source_code_groups_8source_code_group_id8.out.json"
+			}
+		},
+		"post_sites_sites_8site_id8_coupon_redemption_search": {
+			"title": "post_sites_sites_8site_id8_coupon_redemption_search",
+			"main": "./lib/actions/post_sites_sites_8site_id8_coupon_redemption_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_sites_sites_8site_id8_coupon_redemption_search.in.json",
+				"out": "./lib/schemas/post_sites_sites_8site_id8_coupon_redemption_search.out.json"
+			}
+		},
+		"post_sites_sites_8site_id8_coupon_search": {
+			"title": "post_sites_sites_8site_id8_coupon_search",
+			"main": "./lib/actions/post_sites_sites_8site_id8_coupon_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_sites_sites_8site_id8_coupon_search.in.json",
+				"out": "./lib/schemas/post_sites_sites_8site_id8_coupon_search.out.json"
+			}
+		},
+		"get_sites_sites_8site_id8_coupons": {
+			"title": "get_sites_sites_8site_id8_coupons",
+			"main": "./lib/actions/get_sites_sites_8site_id8_coupons.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites_8site_id8_coupons.in.json",
+				"out": "./lib/schemas/get_sites_sites_8site_id8_coupons.out.json"
+			}
+		},
+		"delete_sites_sites_8site_id8_coupons_8coupon_id8": {
+			"title": "delete_sites_sites_8site_id8_coupons_8coupon_id8",
+			"main": "./lib/actions/delete_sites_sites_8site_id8_coupons_8coupon_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_sites_sites_8site_id8_coupons_8coupon_id8.in.json",
+				"out": "./lib/schemas/delete_sites_sites_8site_id8_coupons_8coupon_id8.out.json"
+			}
+		},
+		"get_sites_sites_8site_id8_coupons_8coupon_id8": {
+			"title": "get_sites_sites_8site_id8_coupons_8coupon_id8",
+			"main": "./lib/actions/get_sites_sites_8site_id8_coupons_8coupon_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites_8site_id8_coupons_8coupon_id8.in.json",
+				"out": "./lib/schemas/get_sites_sites_8site_id8_coupons_8coupon_id8.out.json"
+			}
+		},
+		"patch_sites_sites_8site_id8_coupons_8coupon_id8": {
+			"title": "patch_sites_sites_8site_id8_coupons_8coupon_id8",
+			"main": "./lib/actions/patch_sites_sites_8site_id8_coupons_8coupon_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_sites_sites_8site_id8_coupons_8coupon_id8.in.json",
+				"out": "./lib/schemas/patch_sites_sites_8site_id8_coupons_8coupon_id8.out.json"
+			}
+		},
+		"put_sites_sites_8site_id8_coupons_8coupon_id8": {
+			"title": "put_sites_sites_8site_id8_coupons_8coupon_id8",
+			"main": "./lib/actions/put_sites_sites_8site_id8_coupons_8coupon_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_sites_sites_8site_id8_coupons_8coupon_id8.in.json",
+				"out": "./lib/schemas/put_sites_sites_8site_id8_coupons_8coupon_id8.out.json"
+			}
+		},
+		"get_sites_sites_8site_id8_coupons_8coupon_id8_campaigns": {
+			"title": "get_sites_sites_8site_id8_coupons_8coupon_id8_campaigns",
+			"main": "./lib/actions/get_sites_sites_8site_id8_coupons_8coupon_id8_campaigns.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites_8site_id8_coupons_8coupon_id8_campaigns.in.json",
+				"out": "./lib/schemas/get_sites_sites_8site_id8_coupons_8coupon_id8_campaigns.out.json"
+			}
+		},
+		"get_sites_sites_8site_id8_coupons_8coupon_id8_campaigns_8campaign_id8_promotions": {
+			"title": "get_sites_sites_8site_id8_coupons_8coupon_id8_campaigns_8campaign_id8_promotions",
+			"main": "./lib/actions/get_sites_sites_8site_id8_coupons_8coupon_id8_campaigns_8campaign_id8_promotions.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites_8site_id8_coupons_8coupon_id8_campaigns_8campaign_id8_promotions.in.json",
+				"out": "./lib/schemas/get_sites_sites_8site_id8_coupons_8coupon_id8_campaigns_8campaign_id8_promotions.out.json"
+			}
+		},
+		"get_sites_sites_8site_id8_coupons_8coupon_id8_codes": {
+			"title": "get_sites_sites_8site_id8_coupons_8coupon_id8_codes",
+			"main": "./lib/actions/get_sites_sites_8site_id8_coupons_8coupon_id8_codes.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites_8site_id8_coupons_8coupon_id8_codes.in.json",
+				"out": "./lib/schemas/get_sites_sites_8site_id8_coupons_8coupon_id8_codes.out.json"
+			}
+		},
+		"post_sites_sites_8site_id8_coupons_8coupon_id8_multiple_codes": {
+			"title": "post_sites_sites_8site_id8_coupons_8coupon_id8_multiple_codes",
+			"main": "./lib/actions/post_sites_sites_8site_id8_coupons_8coupon_id8_multiple_codes.js",
+			"metadata": {
+				"in": "./lib/schemas/post_sites_sites_8site_id8_coupons_8coupon_id8_multiple_codes.in.json",
+				"out": "./lib/schemas/post_sites_sites_8site_id8_coupons_8coupon_id8_multiple_codes.out.json"
+			}
+		},
+		"get_sites_sites_8site_id8_coupons_8coupon_id8_promotions": {
+			"title": "get_sites_sites_8site_id8_coupons_8coupon_id8_promotions",
+			"main": "./lib/actions/get_sites_sites_8site_id8_coupons_8coupon_id8_promotions.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites_8site_id8_coupons_8coupon_id8_promotions.in.json",
+				"out": "./lib/schemas/get_sites_sites_8site_id8_coupons_8coupon_id8_promotions.out.json"
+			}
+		},
+		"delete_sites_sites_8site_id8_custom_objects_8object_type8_8key8": {
+			"title": "delete_sites_sites_8site_id8_custom_objects_8object_type8_8key8",
+			"main": "./lib/actions/delete_sites_sites_8site_id8_custom_objects_8object_type8_8key8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_sites_sites_8site_id8_custom_objects_8object_type8_8key8.in.json",
+				"out": "./lib/schemas/delete_sites_sites_8site_id8_custom_objects_8object_type8_8key8.out.json"
+			}
+		},
+		"get_sites_sites_8site_id8_custom_objects_8object_type8_8key8": {
+			"title": "get_sites_sites_8site_id8_custom_objects_8object_type8_8key8",
+			"main": "./lib/actions/get_sites_sites_8site_id8_custom_objects_8object_type8_8key8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites_8site_id8_custom_objects_8object_type8_8key8.in.json",
+				"out": "./lib/schemas/get_sites_sites_8site_id8_custom_objects_8object_type8_8key8.out.json"
+			}
+		},
+		"patch_sites_sites_8site_id8_custom_objects_8object_type8_8key8": {
+			"title": "patch_sites_sites_8site_id8_custom_objects_8object_type8_8key8",
+			"main": "./lib/actions/patch_sites_sites_8site_id8_custom_objects_8object_type8_8key8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_sites_sites_8site_id8_custom_objects_8object_type8_8key8.in.json",
+				"out": "./lib/schemas/patch_sites_sites_8site_id8_custom_objects_8object_type8_8key8.out.json"
+			}
+		},
+		"put_sites_sites_8site_id8_custom_objects_8object_type8_8key8": {
+			"title": "put_sites_sites_8site_id8_custom_objects_8object_type8_8key8",
+			"main": "./lib/actions/put_sites_sites_8site_id8_custom_objects_8object_type8_8key8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_sites_sites_8site_id8_custom_objects_8object_type8_8key8.in.json",
+				"out": "./lib/schemas/put_sites_sites_8site_id8_custom_objects_8object_type8_8key8.out.json"
+			}
+		},
+		"post_sites_sites_8site_id8_customer_group_search": {
+			"title": "post_sites_sites_8site_id8_customer_group_search",
+			"main": "./lib/actions/post_sites_sites_8site_id8_customer_group_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_sites_sites_8site_id8_customer_group_search.in.json",
+				"out": "./lib/schemas/post_sites_sites_8site_id8_customer_group_search.out.json"
+			}
+		},
+		"get_sites_sites_8site_id8_customer_groups": {
+			"title": "get_sites_sites_8site_id8_customer_groups",
+			"main": "./lib/actions/get_sites_sites_8site_id8_customer_groups.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites_8site_id8_customer_groups.in.json",
+				"out": "./lib/schemas/get_sites_sites_8site_id8_customer_groups.out.json"
+			}
+		},
+		"delete_sites_sites_8site_id8_customer_groups_8id8": {
+			"title": "delete_sites_sites_8site_id8_customer_groups_8id8",
+			"main": "./lib/actions/delete_sites_sites_8site_id8_customer_groups_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_sites_sites_8site_id8_customer_groups_8id8.in.json",
+				"out": "./lib/schemas/delete_sites_sites_8site_id8_customer_groups_8id8.out.json"
+			}
+		},
+		"get_sites_sites_8site_id8_customer_groups_8id8": {
+			"title": "get_sites_sites_8site_id8_customer_groups_8id8",
+			"main": "./lib/actions/get_sites_sites_8site_id8_customer_groups_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites_8site_id8_customer_groups_8id8.in.json",
+				"out": "./lib/schemas/get_sites_sites_8site_id8_customer_groups_8id8.out.json"
+			}
+		},
+		"patch_sites_sites_8site_id8_customer_groups_8id8": {
+			"title": "patch_sites_sites_8site_id8_customer_groups_8id8",
+			"main": "./lib/actions/patch_sites_sites_8site_id8_customer_groups_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_sites_sites_8site_id8_customer_groups_8id8.in.json",
+				"out": "./lib/schemas/patch_sites_sites_8site_id8_customer_groups_8id8.out.json"
+			}
+		},
+		"put_sites_sites_8site_id8_customer_groups_8id8": {
+			"title": "put_sites_sites_8site_id8_customer_groups_8id8",
+			"main": "./lib/actions/put_sites_sites_8site_id8_customer_groups_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_sites_sites_8site_id8_customer_groups_8id8.in.json",
+				"out": "./lib/schemas/put_sites_sites_8site_id8_customer_groups_8id8.out.json"
+			}
+		},
+		"post_sites_sites_8site_id8_customer_groups_8id8_member_search": {
+			"title": "post_sites_sites_8site_id8_customer_groups_8id8_member_search",
+			"main": "./lib/actions/post_sites_sites_8site_id8_customer_groups_8id8_member_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_sites_sites_8site_id8_customer_groups_8id8_member_search.in.json",
+				"out": "./lib/schemas/post_sites_sites_8site_id8_customer_groups_8id8_member_search.out.json"
+			}
+		},
+		"get_sites_sites_8site_id8_customer_groups_8id8_members": {
+			"title": "get_sites_sites_8site_id8_customer_groups_8id8_members",
+			"main": "./lib/actions/get_sites_sites_8site_id8_customer_groups_8id8_members.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites_8site_id8_customer_groups_8id8_members.in.json",
+				"out": "./lib/schemas/get_sites_sites_8site_id8_customer_groups_8id8_members.out.json"
+			}
+		},
+		"delete_sites_sites_8site_id8_customer_groups_8id8_members_8customer_no8": {
+			"title": "delete_sites_sites_8site_id8_customer_groups_8id8_members_8customer_no8",
+			"main": "./lib/actions/delete_sites_sites_8site_id8_customer_groups_8id8_members_8customer_no8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_sites_sites_8site_id8_customer_groups_8id8_members_8customer_no8.in.json",
+				"out": "./lib/schemas/delete_sites_sites_8site_id8_customer_groups_8id8_members_8customer_no8.out.json"
+			}
+		},
+		"get_sites_sites_8site_id8_customer_groups_8id8_members_8customer_no8": {
+			"title": "get_sites_sites_8site_id8_customer_groups_8id8_members_8customer_no8",
+			"main": "./lib/actions/get_sites_sites_8site_id8_customer_groups_8id8_members_8customer_no8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites_8site_id8_customer_groups_8id8_members_8customer_no8.in.json",
+				"out": "./lib/schemas/get_sites_sites_8site_id8_customer_groups_8id8_members_8customer_no8.out.json"
+			}
+		},
+		"put_sites_sites_8site_id8_customer_groups_8id8_members_8customer_no8": {
+			"title": "put_sites_sites_8site_id8_customer_groups_8id8_members_8customer_no8",
+			"main": "./lib/actions/put_sites_sites_8site_id8_customer_groups_8id8_members_8customer_no8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_sites_sites_8site_id8_customer_groups_8id8_members_8customer_no8.in.json",
+				"out": "./lib/schemas/put_sites_sites_8site_id8_customer_groups_8id8_members_8customer_no8.out.json"
+			}
+		},
+		"post_sites_sites_8site_id8_gift_certificate_search": {
+			"title": "post_sites_sites_8site_id8_gift_certificate_search",
+			"main": "./lib/actions/post_sites_sites_8site_id8_gift_certificate_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_sites_sites_8site_id8_gift_certificate_search.in.json",
+				"out": "./lib/schemas/post_sites_sites_8site_id8_gift_certificate_search.out.json"
+			}
+		},
+		"get_sites_sites_8site_id8_gift_certificates": {
+			"title": "get_sites_sites_8site_id8_gift_certificates",
+			"main": "./lib/actions/get_sites_sites_8site_id8_gift_certificates.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites_8site_id8_gift_certificates.in.json",
+				"out": "./lib/schemas/get_sites_sites_8site_id8_gift_certificates.out.json"
+			}
+		},
+		"post_sites_sites_8site_id8_gift_certificates": {
+			"title": "post_sites_sites_8site_id8_gift_certificates",
+			"main": "./lib/actions/post_sites_sites_8site_id8_gift_certificates.js",
+			"metadata": {
+				"in": "./lib/schemas/post_sites_sites_8site_id8_gift_certificates.in.json",
+				"out": "./lib/schemas/post_sites_sites_8site_id8_gift_certificates.out.json"
+			}
+		},
+		"delete_sites_sites_8site_id8_gift_certificates_8merchant_id8": {
+			"title": "delete_sites_sites_8site_id8_gift_certificates_8merchant_id8",
+			"main": "./lib/actions/delete_sites_sites_8site_id8_gift_certificates_8merchant_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_sites_sites_8site_id8_gift_certificates_8merchant_id8.in.json",
+				"out": "./lib/schemas/delete_sites_sites_8site_id8_gift_certificates_8merchant_id8.out.json"
+			}
+		},
+		"get_sites_sites_8site_id8_gift_certificates_8merchant_id8": {
+			"title": "get_sites_sites_8site_id8_gift_certificates_8merchant_id8",
+			"main": "./lib/actions/get_sites_sites_8site_id8_gift_certificates_8merchant_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites_8site_id8_gift_certificates_8merchant_id8.in.json",
+				"out": "./lib/schemas/get_sites_sites_8site_id8_gift_certificates_8merchant_id8.out.json"
+			}
+		},
+		"patch_sites_sites_8site_id8_gift_certificates_8merchant_id8": {
+			"title": "patch_sites_sites_8site_id8_gift_certificates_8merchant_id8",
+			"main": "./lib/actions/patch_sites_sites_8site_id8_gift_certificates_8merchant_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_sites_sites_8site_id8_gift_certificates_8merchant_id8.in.json",
+				"out": "./lib/schemas/patch_sites_sites_8site_id8_gift_certificates_8merchant_id8.out.json"
+			}
+		},
+		"get_sites_sites_8site_id8_locale_info_locales": {
+			"title": "get_sites_sites_8site_id8_locale_info_locales",
+			"main": "./lib/actions/get_sites_sites_8site_id8_locale_info_locales.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites_8site_id8_locale_info_locales.in.json",
+				"out": "./lib/schemas/get_sites_sites_8site_id8_locale_info_locales.out.json"
+			}
+		},
+		"post_sites_sites_8site_id8_promotion_campaign_assignment_search": {
+			"title": "post_sites_sites_8site_id8_promotion_campaign_assignment_search",
+			"main": "./lib/actions/post_sites_sites_8site_id8_promotion_campaign_assignment_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_sites_sites_8site_id8_promotion_campaign_assignment_search.in.json",
+				"out": "./lib/schemas/post_sites_sites_8site_id8_promotion_campaign_assignment_search.out.json"
+			}
+		},
+		"post_sites_sites_8site_id8_promotion_search": {
+			"title": "post_sites_sites_8site_id8_promotion_search",
+			"main": "./lib/actions/post_sites_sites_8site_id8_promotion_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_sites_sites_8site_id8_promotion_search.in.json",
+				"out": "./lib/schemas/post_sites_sites_8site_id8_promotion_search.out.json"
+			}
+		},
+		"delete_sites_sites_8site_id8_promotions_8id8": {
+			"title": "delete_sites_sites_8site_id8_promotions_8id8",
+			"main": "./lib/actions/delete_sites_sites_8site_id8_promotions_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_sites_sites_8site_id8_promotions_8id8.in.json",
+				"out": "./lib/schemas/delete_sites_sites_8site_id8_promotions_8id8.out.json"
+			}
+		},
+		"get_sites_sites_8site_id8_promotions_8id8": {
+			"title": "get_sites_sites_8site_id8_promotions_8id8",
+			"main": "./lib/actions/get_sites_sites_8site_id8_promotions_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites_8site_id8_promotions_8id8.in.json",
+				"out": "./lib/schemas/get_sites_sites_8site_id8_promotions_8id8.out.json"
+			}
+		},
+		"patch_sites_sites_8site_id8_promotions_8id8": {
+			"title": "patch_sites_sites_8site_id8_promotions_8id8",
+			"main": "./lib/actions/patch_sites_sites_8site_id8_promotions_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_sites_sites_8site_id8_promotions_8id8.in.json",
+				"out": "./lib/schemas/patch_sites_sites_8site_id8_promotions_8id8.out.json"
+			}
+		},
+		"put_sites_sites_8site_id8_promotions_8id8": {
+			"title": "put_sites_sites_8site_id8_promotions_8id8",
+			"main": "./lib/actions/put_sites_sites_8site_id8_promotions_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_sites_sites_8site_id8_promotions_8id8.in.json",
+				"out": "./lib/schemas/put_sites_sites_8site_id8_promotions_8id8.out.json"
+			}
+		},
+		"get_sites_sites_8site_id8_site_preferences_preference_groups_8group_id8_8instance_type8": {
+			"title": "get_sites_sites_8site_id8_site_preferences_preference_groups_8group_id8_8instance_type8",
+			"main": "./lib/actions/get_sites_sites_8site_id8_site_preferences_preference_groups_8group_id8_8instance_type8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites_8site_id8_site_preferences_preference_groups_8group_id8_8instance_type8.in.json",
+				"out": "./lib/schemas/get_sites_sites_8site_id8_site_preferences_preference_groups_8group_id8_8instance_type8.out.json"
+			}
+		},
+		"patch_sites_sites_8site_id8_site_preferences_preference_groups_8group_id8_8instance_type8": {
+			"title": "patch_sites_sites_8site_id8_site_preferences_preference_groups_8group_id8_8instance_type8",
+			"main": "./lib/actions/patch_sites_sites_8site_id8_site_preferences_preference_groups_8group_id8_8instance_type8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_sites_sites_8site_id8_site_preferences_preference_groups_8group_id8_8instance_type8.in.json",
+				"out": "./lib/schemas/patch_sites_sites_8site_id8_site_preferences_preference_groups_8group_id8_8instance_type8.out.json"
+			}
+		},
+		"post_sites_sites_8site_id8_slot_configuration_campaign_assignment_search": {
+			"title": "post_sites_sites_8site_id8_slot_configuration_campaign_assignment_search",
+			"main": "./lib/actions/post_sites_sites_8site_id8_slot_configuration_campaign_assignment_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_sites_sites_8site_id8_slot_configuration_campaign_assignment_search.in.json",
+				"out": "./lib/schemas/post_sites_sites_8site_id8_slot_configuration_campaign_assignment_search.out.json"
+			}
+		},
+		"post_sites_sites_8site_id8_slot_configuration_search": {
+			"title": "post_sites_sites_8site_id8_slot_configuration_search",
+			"main": "./lib/actions/post_sites_sites_8site_id8_slot_configuration_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_sites_sites_8site_id8_slot_configuration_search.in.json",
+				"out": "./lib/schemas/post_sites_sites_8site_id8_slot_configuration_search.out.json"
+			}
+		},
+		"get_sites_sites_8site_id8_slot_configurations": {
+			"title": "get_sites_sites_8site_id8_slot_configurations",
+			"main": "./lib/actions/get_sites_sites_8site_id8_slot_configurations.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites_8site_id8_slot_configurations.in.json",
+				"out": "./lib/schemas/get_sites_sites_8site_id8_slot_configurations.out.json"
+			}
+		},
+		"post_sites_sites_8site_id8_slot_search": {
+			"title": "post_sites_sites_8site_id8_slot_search",
+			"main": "./lib/actions/post_sites_sites_8site_id8_slot_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_sites_sites_8site_id8_slot_search.in.json",
+				"out": "./lib/schemas/post_sites_sites_8site_id8_slot_search.out.json"
+			}
+		},
+		"get_sites_sites_8site_id8_slots": {
+			"title": "get_sites_sites_8site_id8_slots",
+			"main": "./lib/actions/get_sites_sites_8site_id8_slots.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites_8site_id8_slots.in.json",
+				"out": "./lib/schemas/get_sites_sites_8site_id8_slots.out.json"
+			}
+		},
+		"delete_sites_sites_8site_id8_slots_8slot_id8_slot_configurations_8configuration_id8": {
+			"title": "delete_sites_sites_8site_id8_slots_8slot_id8_slot_configurations_8configuration_id8",
+			"main": "./lib/actions/delete_sites_sites_8site_id8_slots_8slot_id8_slot_configurations_8configuration_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_sites_sites_8site_id8_slots_8slot_id8_slot_configurations_8configuration_id8.in.json",
+				"out": "./lib/schemas/delete_sites_sites_8site_id8_slots_8slot_id8_slot_configurations_8configuration_id8.out.json"
+			}
+		},
+		"get_sites_sites_8site_id8_slots_8slot_id8_slot_configurations_8configuration_id8": {
+			"title": "get_sites_sites_8site_id8_slots_8slot_id8_slot_configurations_8configuration_id8",
+			"main": "./lib/actions/get_sites_sites_8site_id8_slots_8slot_id8_slot_configurations_8configuration_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites_8site_id8_slots_8slot_id8_slot_configurations_8configuration_id8.in.json",
+				"out": "./lib/schemas/get_sites_sites_8site_id8_slots_8slot_id8_slot_configurations_8configuration_id8.out.json"
+			}
+		},
+		"patch_sites_sites_8site_id8_slots_8slot_id8_slot_configurations_8configuration_id8": {
+			"title": "patch_sites_sites_8site_id8_slots_8slot_id8_slot_configurations_8configuration_id8",
+			"main": "./lib/actions/patch_sites_sites_8site_id8_slots_8slot_id8_slot_configurations_8configuration_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_sites_sites_8site_id8_slots_8slot_id8_slot_configurations_8configuration_id8.in.json",
+				"out": "./lib/schemas/patch_sites_sites_8site_id8_slots_8slot_id8_slot_configurations_8configuration_id8.out.json"
+			}
+		},
+		"put_sites_sites_8site_id8_slots_8slot_id8_slot_configurations_8configuration_id8": {
+			"title": "put_sites_sites_8site_id8_slots_8slot_id8_slot_configurations_8configuration_id8",
+			"main": "./lib/actions/put_sites_sites_8site_id8_slots_8slot_id8_slot_configurations_8configuration_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_sites_sites_8site_id8_slots_8slot_id8_slot_configurations_8configuration_id8.in.json",
+				"out": "./lib/schemas/put_sites_sites_8site_id8_slots_8slot_id8_slot_configurations_8configuration_id8.out.json"
+			}
+		},
+		"get_sites_sites_8site_id8_slots_8slot_id8_8context_type8": {
+			"title": "get_sites_sites_8site_id8_slots_8slot_id8_8context_type8",
+			"main": "./lib/actions/get_sites_sites_8site_id8_slots_8slot_id8_8context_type8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites_8site_id8_slots_8slot_id8_8context_type8.in.json",
+				"out": "./lib/schemas/get_sites_sites_8site_id8_slots_8slot_id8_8context_type8.out.json"
+			}
+		},
+		"post_sites_sites_8site_id8_source_code_group_search": {
+			"title": "post_sites_sites_8site_id8_source_code_group_search",
+			"main": "./lib/actions/post_sites_sites_8site_id8_source_code_group_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_sites_sites_8site_id8_source_code_group_search.in.json",
+				"out": "./lib/schemas/post_sites_sites_8site_id8_source_code_group_search.out.json"
+			}
+		},
+		"get_sites_sites_8site_id8_source_code_groups": {
+			"title": "get_sites_sites_8site_id8_source_code_groups",
+			"main": "./lib/actions/get_sites_sites_8site_id8_source_code_groups.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites_8site_id8_source_code_groups.in.json",
+				"out": "./lib/schemas/get_sites_sites_8site_id8_source_code_groups.out.json"
+			}
+		},
+		"delete_sites_sites_8site_id8_source_code_groups_8id8": {
+			"title": "delete_sites_sites_8site_id8_source_code_groups_8id8",
+			"main": "./lib/actions/delete_sites_sites_8site_id8_source_code_groups_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_sites_sites_8site_id8_source_code_groups_8id8.in.json",
+				"out": "./lib/schemas/delete_sites_sites_8site_id8_source_code_groups_8id8.out.json"
+			}
+		},
+		"get_sites_sites_8site_id8_source_code_groups_8id8": {
+			"title": "get_sites_sites_8site_id8_source_code_groups_8id8",
+			"main": "./lib/actions/get_sites_sites_8site_id8_source_code_groups_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites_8site_id8_source_code_groups_8id8.in.json",
+				"out": "./lib/schemas/get_sites_sites_8site_id8_source_code_groups_8id8.out.json"
+			}
+		},
+		"patch_sites_sites_8site_id8_source_code_groups_8id8": {
+			"title": "patch_sites_sites_8site_id8_source_code_groups_8id8",
+			"main": "./lib/actions/patch_sites_sites_8site_id8_source_code_groups_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_sites_sites_8site_id8_source_code_groups_8id8.in.json",
+				"out": "./lib/schemas/patch_sites_sites_8site_id8_source_code_groups_8id8.out.json"
+			}
+		},
+		"put_sites_sites_8site_id8_source_code_groups_8id8": {
+			"title": "put_sites_sites_8site_id8_source_code_groups_8id8",
+			"main": "./lib/actions/put_sites_sites_8site_id8_source_code_groups_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_sites_sites_8site_id8_source_code_groups_8id8.in.json",
+				"out": "./lib/schemas/put_sites_sites_8site_id8_source_code_groups_8id8.out.json"
+			}
+		},
+		"post_sites_sites_8site_id8_store_search": {
+			"title": "post_sites_sites_8site_id8_store_search",
+			"main": "./lib/actions/post_sites_sites_8site_id8_store_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_sites_sites_8site_id8_store_search.in.json",
+				"out": "./lib/schemas/post_sites_sites_8site_id8_store_search.out.json"
+			}
+		},
+		"get_sites_sites_8site_id8_stores": {
+			"title": "get_sites_sites_8site_id8_stores",
+			"main": "./lib/actions/get_sites_sites_8site_id8_stores.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites_8site_id8_stores.in.json",
+				"out": "./lib/schemas/get_sites_sites_8site_id8_stores.out.json"
+			}
+		},
+		"delete_sites_sites_8site_id8_stores_8id8": {
+			"title": "delete_sites_sites_8site_id8_stores_8id8",
+			"main": "./lib/actions/delete_sites_sites_8site_id8_stores_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_sites_sites_8site_id8_stores_8id8.in.json",
+				"out": "./lib/schemas/delete_sites_sites_8site_id8_stores_8id8.out.json"
+			}
+		},
+		"get_sites_sites_8site_id8_stores_8id8": {
+			"title": "get_sites_sites_8site_id8_stores_8id8",
+			"main": "./lib/actions/get_sites_sites_8site_id8_stores_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_sites_sites_8site_id8_stores_8id8.in.json",
+				"out": "./lib/schemas/get_sites_sites_8site_id8_stores_8id8.out.json"
+			}
+		},
+		"patch_sites_sites_8site_id8_stores_8id8": {
+			"title": "patch_sites_sites_8site_id8_stores_8id8",
+			"main": "./lib/actions/patch_sites_sites_8site_id8_stores_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_sites_sites_8site_id8_stores_8id8.in.json",
+				"out": "./lib/schemas/patch_sites_sites_8site_id8_stores_8id8.out.json"
+			}
+		},
+		"put_sites_sites_8site_id8_stores_8id8": {
+			"title": "put_sites_sites_8site_id8_stores_8id8",
+			"main": "./lib/actions/put_sites_sites_8site_id8_stores_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_sites_sites_8site_id8_stores_8id8.in.json",
+				"out": "./lib/schemas/put_sites_sites_8site_id8_stores_8id8.out.json"
+			}
+		},
+		"post_system_object_definition_search_system_object_definition_search": {
+			"title": "post_system_object_definition_search_system_object_definition_search",
+			"main": "./lib/actions/post_system_object_definition_search_system_object_definition_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_system_object_definition_search_system_object_definition_search.in.json",
+				"out": "./lib/schemas/post_system_object_definition_search_system_object_definition_search.out.json"
+			}
+		},
+		"get_system_object_definitions_system_object_definitions": {
+			"title": "get_system_object_definitions_system_object_definitions",
+			"main": "./lib/actions/get_system_object_definitions_system_object_definitions.js",
+			"metadata": {
+				"in": "./lib/schemas/get_system_object_definitions_system_object_definitions.in.json",
+				"out": "./lib/schemas/get_system_object_definitions_system_object_definitions.out.json"
+			}
+		},
+		"get_system_object_definitions_system_object_definitions_8object_type8": {
+			"title": "get_system_object_definitions_system_object_definitions_8object_type8",
+			"main": "./lib/actions/get_system_object_definitions_system_object_definitions_8object_type8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_system_object_definitions_system_object_definitions_8object_type8.in.json",
+				"out": "./lib/schemas/get_system_object_definitions_system_object_definitions_8object_type8.out.json"
+			}
+		},
+		"post_system_object_definitions_system_object_definitions_8object_type8_attribute_definition_search": {
+			"title": "post_system_object_definitions_system_object_definitions_8object_type8_attribute_definition_search",
+			"main": "./lib/actions/post_system_object_definitions_system_object_definitions_8object_type8_attribute_definition_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_system_object_definitions_system_object_definitions_8object_type8_attribute_definition_search.in.json",
+				"out": "./lib/schemas/post_system_object_definitions_system_object_definitions_8object_type8_attribute_definition_search.out.json"
+			}
+		},
+		"get_system_object_definitions_system_object_definitions_8object_type8_attribute_definitions": {
+			"title": "get_system_object_definitions_system_object_definitions_8object_type8_attribute_definitions",
+			"main": "./lib/actions/get_system_object_definitions_system_object_definitions_8object_type8_attribute_definitions.js",
+			"metadata": {
+				"in": "./lib/schemas/get_system_object_definitions_system_object_definitions_8object_type8_attribute_definitions.in.json",
+				"out": "./lib/schemas/get_system_object_definitions_system_object_definitions_8object_type8_attribute_definitions.out.json"
+			}
+		},
+		"delete_system_object_definitions_system_object_definitions_8object_type8_attribute_definitions_8id8": {
+			"title": "delete_system_object_definitions_system_object_definitions_8object_type8_attribute_definitions_8id8",
+			"main": "./lib/actions/delete_system_object_definitions_system_object_definitions_8object_type8_attribute_definitions_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_system_object_definitions_system_object_definitions_8object_type8_attribute_definitions_8id8.in.json",
+				"out": "./lib/schemas/delete_system_object_definitions_system_object_definitions_8object_type8_attribute_definitions_8id8.out.json"
+			}
+		},
+		"get_system_object_definitions_system_object_definitions_8object_type8_attribute_definitions_8id8": {
+			"title": "get_system_object_definitions_system_object_definitions_8object_type8_attribute_definitions_8id8",
+			"main": "./lib/actions/get_system_object_definitions_system_object_definitions_8object_type8_attribute_definitions_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_system_object_definitions_system_object_definitions_8object_type8_attribute_definitions_8id8.in.json",
+				"out": "./lib/schemas/get_system_object_definitions_system_object_definitions_8object_type8_attribute_definitions_8id8.out.json"
+			}
+		},
+		"patch_system_object_definitions_system_object_definitions_8object_type8_attribute_definitions_8id8": {
+			"title": "patch_system_object_definitions_system_object_definitions_8object_type8_attribute_definitions_8id8",
+			"main": "./lib/actions/patch_system_object_definitions_system_object_definitions_8object_type8_attribute_definitions_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_system_object_definitions_system_object_definitions_8object_type8_attribute_definitions_8id8.in.json",
+				"out": "./lib/schemas/patch_system_object_definitions_system_object_definitions_8object_type8_attribute_definitions_8id8.out.json"
+			}
+		},
+		"put_system_object_definitions_system_object_definitions_8object_type8_attribute_definitions_8id8": {
+			"title": "put_system_object_definitions_system_object_definitions_8object_type8_attribute_definitions_8id8",
+			"main": "./lib/actions/put_system_object_definitions_system_object_definitions_8object_type8_attribute_definitions_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_system_object_definitions_system_object_definitions_8object_type8_attribute_definitions_8id8.in.json",
+				"out": "./lib/schemas/put_system_object_definitions_system_object_definitions_8object_type8_attribute_definitions_8id8.out.json"
+			}
+		},
+		"post_system_object_definitions_system_object_definitions_8object_type8_attribute_group_search": {
+			"title": "post_system_object_definitions_system_object_definitions_8object_type8_attribute_group_search",
+			"main": "./lib/actions/post_system_object_definitions_system_object_definitions_8object_type8_attribute_group_search.js",
+			"metadata": {
+				"in": "./lib/schemas/post_system_object_definitions_system_object_definitions_8object_type8_attribute_group_search.in.json",
+				"out": "./lib/schemas/post_system_object_definitions_system_object_definitions_8object_type8_attribute_group_search.out.json"
+			}
+		},
+		"get_system_object_definitions_system_object_definitions_8object_type8_attribute_groups": {
+			"title": "get_system_object_definitions_system_object_definitions_8object_type8_attribute_groups",
+			"main": "./lib/actions/get_system_object_definitions_system_object_definitions_8object_type8_attribute_groups.js",
+			"metadata": {
+				"in": "./lib/schemas/get_system_object_definitions_system_object_definitions_8object_type8_attribute_groups.in.json",
+				"out": "./lib/schemas/get_system_object_definitions_system_object_definitions_8object_type8_attribute_groups.out.json"
+			}
+		},
+		"delete_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8group_id8_attribute_definitions_8def_id8": {
+			"title": "delete_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8group_id8_attribute_definitions_8def_id8",
+			"main": "./lib/actions/delete_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8group_id8_attribute_definitions_8def_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8group_id8_attribute_definitions_8def_id8.in.json",
+				"out": "./lib/schemas/delete_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8group_id8_attribute_definitions_8def_id8.out.json"
+			}
+		},
+		"put_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8group_id8_attribute_definitions_8def_id8": {
+			"title": "put_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8group_id8_attribute_definitions_8def_id8",
+			"main": "./lib/actions/put_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8group_id8_attribute_definitions_8def_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8group_id8_attribute_definitions_8def_id8.in.json",
+				"out": "./lib/schemas/put_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8group_id8_attribute_definitions_8def_id8.out.json"
+			}
+		},
+		"delete_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8id8": {
+			"title": "delete_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8id8",
+			"main": "./lib/actions/delete_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8id8.in.json",
+				"out": "./lib/schemas/delete_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8id8.out.json"
+			}
+		},
+		"get_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8id8": {
+			"title": "get_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8id8",
+			"main": "./lib/actions/get_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8id8.in.json",
+				"out": "./lib/schemas/get_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8id8.out.json"
+			}
+		},
+		"patch_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8id8": {
+			"title": "patch_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8id8",
+			"main": "./lib/actions/patch_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8id8.in.json",
+				"out": "./lib/schemas/patch_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8id8.out.json"
+			}
+		},
+		"put_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8id8": {
+			"title": "put_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8id8",
+			"main": "./lib/actions/put_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8id8.in.json",
+				"out": "./lib/schemas/put_system_object_definitions_system_object_definitions_8object_type8_attribute_groups_8id8.out.json"
+			}
+		},
+		"get_users_users_this": {
+			"title": "get_users_users_this",
+			"main": "./lib/actions/get_users_users_this.js",
+			"metadata": {
+				"out": "./lib/schemas/get_users_users_this.out.json"
+			}
+		},
+		"patch_users_users_this_password": {
+			"title": "patch_users_users_this_password",
+			"main": "./lib/actions/patch_users_users_this_password.js",
+			"metadata": {
+				"in": "./lib/schemas/patch_users_users_this_password.in.json",
+				"out": "./lib/schemas/patch_users_users_this_password.out.json"
+			}
+		}
+	}
+}

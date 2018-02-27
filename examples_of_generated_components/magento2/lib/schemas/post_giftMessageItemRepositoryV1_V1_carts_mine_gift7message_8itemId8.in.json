@@ -1,0 +1,75 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"path": {
+			"type": "object",
+			"properties": {
+				"itemId": {
+					"type": "integer",
+					"required": true
+				}
+			}
+		},
+		"body": {
+			"properties": {
+				"giftMessage": {
+					"type": "object",
+					"description": "Interface MessageInterface",
+					"properties": {
+						"gift_message_id": {
+							"type": "integer",
+							"description": "Gift message ID. Otherwise, null."
+						},
+						"customer_id": {
+							"type": "integer",
+							"description": "Customer ID. Otherwise, null."
+						},
+						"sender": {
+							"type": "string",
+							"description": "Sender name.",
+							"required": true
+						},
+						"recipient": {
+							"type": "string",
+							"description": "Recipient name.",
+							"required": true
+						},
+						"message": {
+							"type": "string",
+							"description": "Message text.",
+							"required": true
+						},
+						"extension_attributes": {
+							"type": "object",
+							"description": "ExtensionInterface class for @see \\Magento\\GiftMessage\\Api\\Data\\MessageInterface",
+							"properties": {
+								"entity_id": {
+									"type": "string"
+								},
+								"entity_type": {
+									"type": "string"
+								}
+							}
+						}
+					},
+					"required": true
+				}
+			},
+			"type": "object"
+		}
+	}
+}

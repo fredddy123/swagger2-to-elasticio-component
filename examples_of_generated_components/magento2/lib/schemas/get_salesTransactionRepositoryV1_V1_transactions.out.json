@@ -1,0 +1,156 @@
+{
+	"type": "object",
+	"description": "Transaction search result interface. A transaction is an interaction between a merchant and a customer such as a purchase, a credit, a refund, and so on.",
+	"properties": {
+		"items": {
+			"type": "array",
+			"description": "Array of collection items.",
+			"items": {
+				"type": "object",
+				"description": "Transaction interface. A transaction is an interaction between a merchant and a customer such as a purchase, a credit, a refund, and so on.",
+				"properties": {
+					"transaction_id": {
+						"type": "integer",
+						"description": "Transaction ID.",
+						"required": true
+					},
+					"parent_id": {
+						"type": "integer",
+						"description": "The parent ID for the transaction. Otherwise, null."
+					},
+					"order_id": {
+						"type": "integer",
+						"description": "Order ID.",
+						"required": true
+					},
+					"payment_id": {
+						"type": "integer",
+						"description": "Payment ID.",
+						"required": true
+					},
+					"txn_id": {
+						"type": "string",
+						"description": "Transaction business ID.",
+						"required": true
+					},
+					"parent_txn_id": {
+						"type": "string",
+						"description": "Parent transaction business ID.",
+						"required": true
+					},
+					"txn_type": {
+						"type": "string",
+						"description": "Transaction type.",
+						"required": true
+					},
+					"is_closed": {
+						"type": "integer",
+						"description": "Is-closed flag value.",
+						"required": true
+					},
+					"additional_information": {
+						"type": "array",
+						"description": "Array of additional information. Otherwise, null.",
+						"items": {
+							"type": "string"
+						}
+					},
+					"created_at": {
+						"type": "string",
+						"description": "Created-at timestamp.",
+						"required": true
+					},
+					"child_transactions": {
+						"type": "array",
+						"description": "Array of child transactions.",
+						"items": {
+							"type": "object",
+							"description": "this field is the reference to sales-data-transaction-interface"
+						},
+						"required": true
+					},
+					"extension_attributes": {
+						"type": "object",
+						"description": "ExtensionInterface class for @see \\Magento\\Sales\\Api\\Data\\TransactionInterface"
+					}
+				}
+			},
+			"required": true
+		},
+		"search_criteria": {
+			"type": "object",
+			"description": "Search criteria interface.",
+			"properties": {
+				"filter_groups": {
+					"type": "array",
+					"description": "A list of filter groups.",
+					"items": {
+						"type": "object",
+						"description": "Groups two or more filters together using a logical OR",
+						"properties": {
+							"filters": {
+								"type": "array",
+								"description": "A list of filters in this group",
+								"items": {
+									"type": "object",
+									"description": "Filter which can be used by any methods from service layer.",
+									"properties": {
+										"field": {
+											"type": "string",
+											"description": "Field",
+											"required": true
+										},
+										"value": {
+											"type": "string",
+											"description": "Value",
+											"required": true
+										},
+										"condition_type": {
+											"type": "string",
+											"description": "Condition type"
+										}
+									}
+								}
+							}
+						}
+					},
+					"required": true
+				},
+				"sort_orders": {
+					"type": "array",
+					"description": "Sort order.",
+					"items": {
+						"type": "object",
+						"description": "Data object for sort order.",
+						"properties": {
+							"field": {
+								"type": "string",
+								"description": "Sorting field.",
+								"required": true
+							},
+							"direction": {
+								"type": "string",
+								"description": "Sorting direction.",
+								"required": true
+							}
+						}
+					}
+				},
+				"page_size": {
+					"type": "integer",
+					"description": "Page size."
+				},
+				"current_page": {
+					"type": "integer",
+					"description": "Current page."
+				}
+			},
+			"required": true
+		},
+		"total_count": {
+			"type": "integer",
+			"description": "Total count.",
+			"required": true
+		}
+	}
+}

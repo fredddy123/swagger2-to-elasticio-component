@@ -1,0 +1,202 @@
+{
+	"description": "Result document containing an array of content subfolders.",
+	"properties": {
+		"count": {
+			"format": "int32",
+			"type": "integer"
+		},
+		"data": {
+			"items": {
+				"type": "object"
+			},
+			"type": "array"
+		},
+		"hits": {
+			"description": "The sorted array of search hits. This array can be empty.",
+			"items": {
+				"description": "Document representing a content folder.",
+				"properties": {
+					"c_customCSSFile": {
+						"properties": {
+							"abs_url": {
+								"description": "The absolute URL with request protocol",
+								"type": "string"
+							},
+							"alt": {
+								"additionalProperties": {
+									"type": "string"
+								},
+								"description": "The alternative image text",
+								"format": "localized",
+								"type": "object"
+							},
+							"dis_base_url": {
+								"description": "The DIS base URL only for product images",
+								"type": "string"
+							},
+							"path": {
+								"description": "The raw media file path",
+								"type": "string"
+							},
+							"title": {
+								"additionalProperties": {
+									"type": "string"
+								},
+								"description": "The image title",
+								"format": "localized",
+								"type": "object"
+							}
+						},
+						"description": "Use this attribute to apply custom styles for this category.",
+						"x-label": {
+							"default": "Custom CSS File"
+						}
+					},
+					"creation_date": {
+						"description": "Returns the value of attribute 'creationDate'.",
+						"format": "date-time",
+						"x-label": {
+							"default": "Creation Date"
+						},
+						"type": "string"
+					},
+					"description": {
+						"additionalProperties": {
+							"type": "string"
+						},
+						"description": "The localized content folder description.",
+						"format": "localized",
+						"x-label": {
+							"default": "Description"
+						},
+						"type": "object"
+					},
+					"id": {
+						"description": "The id of the content folder.",
+						"x-label": {
+							"default": "ID"
+						},
+						"maxLength": 256,
+						"type": "string"
+					},
+					"last_modified": {
+						"description": "Returns the value of attribute 'lastModified'.",
+						"format": "date-time",
+						"x-label": {
+							"default": "Last Modified"
+						},
+						"type": "string"
+					},
+					"link": {
+						"description": "The link to the content folder resource.",
+						"type": "string"
+					},
+					"name": {
+						"additionalProperties": {
+							"type": "string"
+						},
+						"description": "The localized content folder name.",
+						"format": "localized",
+						"x-label": {
+							"default": "Name"
+						},
+						"type": "object"
+					},
+					"online": {
+						"description": "A flag indicating whether the folder in online (default is false).",
+						"x-label": {
+							"default": "Online"
+						},
+						"type": "boolean"
+					},
+					"page_description": {
+						"additionalProperties": {
+							"type": "string"
+						},
+						"description": "The localized content folder page description.",
+						"format": "localized",
+						"x-label": {
+							"default": "Page Description"
+						},
+						"type": "object"
+					},
+					"page_keywords": {
+						"additionalProperties": {
+							"type": "string"
+						},
+						"description": "The localized content folder page keywords.",
+						"format": "localized",
+						"x-label": {
+							"default": "Page Keywords"
+						},
+						"type": "object"
+					},
+					"page_title": {
+						"additionalProperties": {
+							"type": "string"
+						},
+						"description": "The localized content folder page title.",
+						"format": "localized",
+						"x-label": {
+							"default": "Page Title"
+						},
+						"type": "object"
+					},
+					"page_url": {
+						"additionalProperties": {
+							"type": "string"
+						},
+						"description": "The localized content folder page URL.",
+						"format": "localized",
+						"x-label": {
+							"default": "Page URL"
+						},
+						"type": "object"
+					},
+					"parent_folder_id": {
+						"description": "The id of the parent content folder.",
+						"type": "string"
+					},
+					"parent_link": {
+						"description": "The URL to the parent content folder.",
+						"type": "string"
+					},
+					"sub_folders_link": {
+						"description": "The URL to list the content sub-folders.",
+						"type": "string"
+					},
+					"template": {
+						"description": "The rendering template.",
+						"x-label": {
+							"default": "Rendering Template"
+						},
+						"type": "string"
+					}
+				}
+			},
+			"type": "array"
+		},
+		"next": {
+			"description": "The URL of the next result page.",
+			"type": "string"
+		},
+		"previous": {
+			"description": "The URL of the previous result page.",
+			"type": "string"
+		},
+		"select": {
+			"description": "The fields that you want to select.",
+			"type": "string"
+		},
+		"start": {
+			"description": "The zero-based index of the first search hit to include in the result.",
+			"format": "int32",
+			"minimum": 0,
+			"type": "integer"
+		},
+		"total": {
+			"format": "int32",
+			"type": "integer"
+		}
+	}
+}

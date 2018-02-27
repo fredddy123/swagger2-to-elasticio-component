@@ -1,0 +1,11 @@
+{
+	"description": "Document representing a customer list.",
+	"properties": {
+		"id": {
+			"description": "The id of the customer list.",
+			"minLength": 1,
+			"type": "string",
+			"required": true
+		}
+	}
+}

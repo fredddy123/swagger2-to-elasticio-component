@@ -1,0 +1,100 @@
+{
+	"type": "object",
+	"description": "",
+	"properties": {
+		"product_sku": {
+			"type": "string",
+			"description": "Product SKU",
+			"required": true
+		},
+		"option_id": {
+			"type": "integer",
+			"description": "Option id"
+		},
+		"title": {
+			"type": "string",
+			"description": "Option title",
+			"required": true
+		},
+		"type": {
+			"type": "string",
+			"description": "Option type",
+			"required": true
+		},
+		"sort_order": {
+			"type": "integer",
+			"description": "Sort order",
+			"required": true
+		},
+		"is_require": {
+			"type": "boolean",
+			"description": "Is require",
+			"required": true
+		},
+		"price": {
+			"type": "number",
+			"description": "Price"
+		},
+		"price_type": {
+			"type": "string",
+			"description": "Price type"
+		},
+		"sku": {
+			"type": "string",
+			"description": "Sku"
+		},
+		"file_extension": {
+			"type": "string"
+		},
+		"max_characters": {
+			"type": "integer"
+		},
+		"image_size_x": {
+			"type": "integer"
+		},
+		"image_size_y": {
+			"type": "integer"
+		},
+		"values": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"description": "",
+				"properties": {
+					"title": {
+						"type": "string",
+						"description": "Option title",
+						"required": true
+					},
+					"sort_order": {
+						"type": "integer",
+						"description": "Sort order",
+						"required": true
+					},
+					"price": {
+						"type": "number",
+						"description": "Price",
+						"required": true
+					},
+					"price_type": {
+						"type": "string",
+						"description": "Price type",
+						"required": true
+					},
+					"sku": {
+						"type": "string",
+						"description": "Sku"
+					},
+					"option_type_id": {
+						"type": "integer",
+						"description": "Option type id"
+					}
+				}
+			}
+		},
+		"extension_attributes": {
+			"type": "object",
+			"description": "ExtensionInterface class for @see \\Magento\\Catalog\\Api\\Data\\ProductCustomOptionInterface"
+		}
+	}
+}

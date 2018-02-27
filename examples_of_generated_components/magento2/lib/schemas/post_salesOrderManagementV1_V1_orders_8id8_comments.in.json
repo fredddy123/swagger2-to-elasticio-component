@@ -1,0 +1,80 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"path": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "integer",
+					"required": true
+				}
+			}
+		},
+		"body": {
+			"properties": {
+				"statusHistory": {
+					"type": "object",
+					"description": "Order status history interface. An order is a document that a web store issues to a customer. Magento generates a sales order that lists the product items, billing and shipping addresses, and shipping and payment methods. A corresponding external document, known as a purchase order, is emailed to the customer.",
+					"properties": {
+						"comment": {
+							"type": "string",
+							"description": "Comment.",
+							"required": true
+						},
+						"created_at": {
+							"type": "string",
+							"description": "Created-at timestamp."
+						},
+						"entity_id": {
+							"type": "integer",
+							"description": "Order status history ID."
+						},
+						"entity_name": {
+							"type": "string",
+							"description": "Entity name."
+						},
+						"is_customer_notified": {
+							"type": "integer",
+							"description": "Is-customer-notified flag value.",
+							"required": true
+						},
+						"is_visible_on_front": {
+							"type": "integer",
+							"description": "Is-visible-on-storefront flag value.",
+							"required": true
+						},
+						"parent_id": {
+							"type": "integer",
+							"description": "Parent ID.",
+							"required": true
+						},
+						"status": {
+							"type": "string",
+							"description": "Status."
+						},
+						"extension_attributes": {
+							"type": "object",
+							"description": "ExtensionInterface class for @see \\Magento\\Sales\\Api\\Data\\OrderStatusHistoryInterface"
+						}
+					},
+					"required": true
+				}
+			},
+			"type": "object"
+		}
+	}
+}

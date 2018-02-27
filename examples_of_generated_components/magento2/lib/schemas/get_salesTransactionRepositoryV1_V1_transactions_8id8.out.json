@@ -1,0 +1,70 @@
+{
+	"type": "object",
+	"description": "Transaction interface. A transaction is an interaction between a merchant and a customer such as a purchase, a credit, a refund, and so on.",
+	"properties": {
+		"transaction_id": {
+			"type": "integer",
+			"description": "Transaction ID.",
+			"required": true
+		},
+		"parent_id": {
+			"type": "integer",
+			"description": "The parent ID for the transaction. Otherwise, null."
+		},
+		"order_id": {
+			"type": "integer",
+			"description": "Order ID.",
+			"required": true
+		},
+		"payment_id": {
+			"type": "integer",
+			"description": "Payment ID.",
+			"required": true
+		},
+		"txn_id": {
+			"type": "string",
+			"description": "Transaction business ID.",
+			"required": true
+		},
+		"parent_txn_id": {
+			"type": "string",
+			"description": "Parent transaction business ID.",
+			"required": true
+		},
+		"txn_type": {
+			"type": "string",
+			"description": "Transaction type.",
+			"required": true
+		},
+		"is_closed": {
+			"type": "integer",
+			"description": "Is-closed flag value.",
+			"required": true
+		},
+		"additional_information": {
+			"type": "array",
+			"description": "Array of additional information. Otherwise, null.",
+			"items": {
+				"type": "string"
+			}
+		},
+		"created_at": {
+			"type": "string",
+			"description": "Created-at timestamp.",
+			"required": true
+		},
+		"child_transactions": {
+			"type": "array",
+			"description": "Array of child transactions.",
+			"items": {
+				"type": "object",
+				"description": "this field is the reference to sales-data-transaction-interface"
+			},
+			"required": true
+		},
+		"extension_attributes": {
+			"type": "object",
+			"description": "ExtensionInterface class for @see \\Magento\\Sales\\Api\\Data\\TransactionInterface"
+		}
+	}
+}

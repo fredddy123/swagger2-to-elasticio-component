@@ -1,0 +1,84 @@
+{
+	"description": "Document representing a campaign.",
+	"properties": {
+		"campaign_id": {
+			"description": "The ID of the campaign.",
+			"x-label": {
+				"default": "ID"
+			},
+			"maxLength": 256,
+			"minLength": 1,
+			"type": "string"
+		},
+		"coupons": {
+			"description": "The array of assigned coupon IDs, not sorted",
+			"items": {
+				"type": "string"
+			},
+			"type": "array"
+		},
+		"creation_date": {
+			"description": "Returns the value of attribute 'creationDate'.",
+			"format": "date-time",
+			"x-label": {
+				"default": "Creation Date"
+			},
+			"type": "string"
+		},
+		"customer_groups": {
+			"description": "The array of assigned customer groups, not sorted",
+			"items": {
+				"type": "string"
+			},
+			"type": "array"
+		},
+		"description": {
+			"description": "The description of the campaign.",
+			"format": "text",
+			"x-label": {
+				"default": "Description"
+			},
+			"maxLength": 4000,
+			"type": "string"
+		},
+		"enabled": {
+			"description": "The enabled flag for campaign.",
+			"type": "boolean"
+		},
+		"end_date": {
+			"description": "The date that the Scenario ends",
+			"format": "date-time",
+			"x-label": {
+				"default": "End Date"
+			},
+			"type": "string"
+		},
+		"last_modified": {
+			"description": "Returns the value of attribute 'lastModified'.",
+			"format": "date-time",
+			"x-label": {
+				"default": "Last Modified"
+			},
+			"type": "string"
+		},
+		"link": {
+			"description": "link for convenience",
+			"type": "string"
+		},
+		"source_code_groups": {
+			"description": "The array of assigned source code groups, not sorted",
+			"items": {
+				"type": "string"
+			},
+			"type": "array"
+		},
+		"start_date": {
+			"description": "The date that the Scenario begins",
+			"format": "date-time",
+			"x-label": {
+				"default": "Start Date"
+			},
+			"type": "string"
+		}
+	}
+}

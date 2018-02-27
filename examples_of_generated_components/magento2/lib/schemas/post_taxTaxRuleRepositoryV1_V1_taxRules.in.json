@@ -1,0 +1,82 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"body": {
+			"properties": {
+				"rule": {
+					"type": "object",
+					"description": "Tax rule interface.",
+					"properties": {
+						"id": {
+							"type": "integer",
+							"description": "Id"
+						},
+						"code": {
+							"type": "string",
+							"description": "Tax rule code",
+							"required": true
+						},
+						"priority": {
+							"type": "integer",
+							"description": "Priority",
+							"required": true
+						},
+						"position": {
+							"type": "integer",
+							"description": "Sort order.",
+							"required": true
+						},
+						"customer_tax_class_ids": {
+							"type": "array",
+							"description": "Customer tax class id",
+							"items": {
+								"type": "integer"
+							},
+							"required": true
+						},
+						"product_tax_class_ids": {
+							"type": "array",
+							"description": "Product tax class id",
+							"items": {
+								"type": "integer"
+							},
+							"required": true
+						},
+						"tax_rate_ids": {
+							"type": "array",
+							"description": "Tax rate ids",
+							"items": {
+								"type": "integer"
+							},
+							"required": true
+						},
+						"calculate_subtotal": {
+							"type": "boolean",
+							"description": "Calculate subtotal."
+						},
+						"extension_attributes": {
+							"type": "object",
+							"description": "ExtensionInterface class for @see \\Magento\\Tax\\Api\\Data\\TaxRuleInterface"
+						}
+					},
+					"required": true
+				}
+			},
+			"type": "object"
+		}
+	}
+}

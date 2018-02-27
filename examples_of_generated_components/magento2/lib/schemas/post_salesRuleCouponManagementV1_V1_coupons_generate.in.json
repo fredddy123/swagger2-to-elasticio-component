@@ -1,0 +1,71 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"body": {
+			"properties": {
+				"couponSpec": {
+					"type": "object",
+					"description": "CouponGenerationSpecInterface",
+					"properties": {
+						"rule_id": {
+							"type": "integer",
+							"description": "The id of the rule associated with the coupon",
+							"required": true
+						},
+						"format": {
+							"type": "string",
+							"description": "Format of generated coupon code",
+							"required": true
+						},
+						"quantity": {
+							"type": "integer",
+							"description": "Of coupons to generate",
+							"required": true
+						},
+						"length": {
+							"type": "integer",
+							"description": "Length of coupon code",
+							"required": true
+						},
+						"prefix": {
+							"type": "string",
+							"description": "The prefix"
+						},
+						"suffix": {
+							"type": "string",
+							"description": "The suffix"
+						},
+						"delimiter_at_every": {
+							"type": "integer",
+							"description": "The spacing where the delimiter should exist"
+						},
+						"delimiter": {
+							"type": "string",
+							"description": "The delimiter"
+						},
+						"extension_attributes": {
+							"type": "object",
+							"description": "ExtensionInterface class for @see \\Magento\\SalesRule\\Api\\Data\\CouponGenerationSpecInterface"
+						}
+					},
+					"required": true
+				}
+			},
+			"type": "object"
+		}
+	}
+}

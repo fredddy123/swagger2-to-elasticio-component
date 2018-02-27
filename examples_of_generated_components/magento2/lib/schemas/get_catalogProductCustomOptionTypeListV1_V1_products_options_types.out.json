@@ -1,0 +1,28 @@
+{
+	"type": "array",
+	"items": {
+		"type": "object",
+		"description": "",
+		"properties": {
+			"label": {
+				"type": "string",
+				"description": "Option type label",
+				"required": true
+			},
+			"code": {
+				"type": "string",
+				"description": "Option type code",
+				"required": true
+			},
+			"group": {
+				"type": "string",
+				"description": "Option type group",
+				"required": true
+			},
+			"extension_attributes": {
+				"type": "object",
+				"description": "ExtensionInterface class for @see \\Magento\\Catalog\\Api\\Data\\ProductCustomOptionTypeInterface"
+			}
+		}
+	}
+}

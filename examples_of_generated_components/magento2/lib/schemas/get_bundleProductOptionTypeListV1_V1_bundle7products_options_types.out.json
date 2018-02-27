@@ -1,0 +1,23 @@
+{
+	"type": "array",
+	"items": {
+		"type": "object",
+		"description": "Interface OptionTypeInterface",
+		"properties": {
+			"label": {
+				"type": "string",
+				"description": "Type label",
+				"required": true
+			},
+			"code": {
+				"type": "string",
+				"description": "Type code",
+				"required": true
+			},
+			"extension_attributes": {
+				"type": "object",
+				"description": "ExtensionInterface class for @see \\Magento\\Bundle\\Api\\Data\\OptionTypeInterface"
+			}
+		}
+	}
+}

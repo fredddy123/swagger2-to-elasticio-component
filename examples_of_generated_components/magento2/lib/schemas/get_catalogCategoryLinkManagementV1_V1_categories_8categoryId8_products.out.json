@@ -1,0 +1,24 @@
+{
+	"type": "array",
+	"items": {
+		"type": "object",
+		"description": "",
+		"properties": {
+			"sku": {
+				"type": "string"
+			},
+			"position": {
+				"type": "integer"
+			},
+			"category_id": {
+				"type": "string",
+				"description": "Category id",
+				"required": true
+			},
+			"extension_attributes": {
+				"type": "object",
+				"description": "ExtensionInterface class for @see \\Magento\\Catalog\\Api\\Data\\CategoryProductLinkInterface"
+			}
+		}
+	}
+}

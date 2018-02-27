@@ -1,0 +1,45 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"path": {
+			"type": "object",
+			"properties": {
+				"sku": {
+					"type": "string",
+					"required": true
+				}
+			}
+		},
+		"query": {
+			"type": "object",
+			"properties": {
+				"editMode": {
+					"type": "boolean",
+					"required": false
+				},
+				"storeId": {
+					"type": "integer",
+					"required": false
+				},
+				"forceReload": {
+					"type": "boolean",
+					"required": false
+				}
+			}
+		}
+	}
+}

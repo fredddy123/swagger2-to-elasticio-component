@@ -1,0 +1,166 @@
+{
+	"description": "Document representing a variation attribute.",
+	"properties": {
+		"attribute_definition_id": {
+			"description": "The id of the requested attribute definition.",
+			"type": "string",
+			"required": true
+		},
+		"attribute_definition_name": {
+			"additionalProperties": {
+				"type": "string"
+			},
+			"description": "The localized display name of the variation attribute definition.",
+			"format": "localized",
+			"type": "object"
+		},
+		"default_value": {
+			"description": "default variation attribute value",
+			"type": "string"
+		},
+		"id": {
+			"description": "The id of the variation attribute.",
+			"minLength": 1,
+			"type": "string"
+		},
+		"link": {
+			"description": "URL that is used to get this instance",
+			"type": "string"
+		},
+		"name": {
+			"additionalProperties": {
+				"type": "string"
+			},
+			"description": "The localized display name of the variation attribute.",
+			"format": "localized",
+			"type": "object"
+		},
+		"shared": {
+			"description": "Returns the value of attribute 'shared' if attribute is local or shared",
+			"type": "boolean"
+		},
+		"slicing": {
+			"description": "Returns the value of attribute 'slicing'.",
+			"type": "boolean"
+		},
+		"values": {
+			"description": "The sorted array of variation values. This array can be empty.",
+			"items": {
+				"description": "Document representing a variation attribute value.",
+				"properties": {
+					"description": {
+						"additionalProperties": {
+							"type": "string"
+						},
+						"description": "The localized description of the variation value.",
+						"format": "localized",
+						"type": "object"
+					},
+					"image": {
+						"properties": {
+							"abs_url": {
+								"description": "The absolute URL with request protocol",
+								"type": "string"
+							},
+							"alt": {
+								"additionalProperties": {
+									"type": "string"
+								},
+								"description": "The alternative image text",
+								"format": "localized",
+								"type": "object"
+							},
+							"dis_base_url": {
+								"description": "The DIS base URL only for product images",
+								"type": "string"
+							},
+							"path": {
+								"description": "The raw media file path",
+								"type": "string"
+							},
+							"title": {
+								"additionalProperties": {
+									"type": "string"
+								},
+								"description": "The image title",
+								"format": "localized",
+								"type": "object"
+							}
+						},
+						"description": "The first product image for the configured viewtype and this variation value."
+					},
+					"image_swatch": {
+						"properties": {
+							"abs_url": {
+								"description": "The absolute URL with request protocol",
+								"type": "string"
+							},
+							"alt": {
+								"additionalProperties": {
+									"type": "string"
+								},
+								"description": "The alternative image text",
+								"format": "localized",
+								"type": "object"
+							},
+							"dis_base_url": {
+								"description": "The DIS base URL only for product images",
+								"type": "string"
+							},
+							"path": {
+								"description": "The raw media file path",
+								"type": "string"
+							},
+							"title": {
+								"additionalProperties": {
+									"type": "string"
+								},
+								"description": "The image title",
+								"format": "localized",
+								"type": "object"
+							}
+						},
+						"description": "The first product image for the configured viewtype and this variation value. (typically the swatch image)"
+					},
+					"link": {
+						"description": "",
+						"type": "string"
+					},
+					"name": {
+						"additionalProperties": {
+							"type": "string"
+						},
+						"description": "The localized display name of the variation value.",
+						"format": "localized",
+						"type": "object"
+					},
+					"orderable": {
+						"description": "A flag indicating whether at least one variant with this variation attribute value is available to sell.",
+						"type": "boolean"
+					},
+					"position": {
+						"description": "The position of the value among all values of a variation attribute.",
+						"format": "double",
+						"type": "number"
+					},
+					"value": {
+						"description": "The actual variation value.",
+						"minLength": 1,
+						"type": "string",
+						"required": true
+					}
+				}
+			},
+			"type": "array"
+		},
+		"variation_attribute_type": {
+			"description": "variation attribute type",
+			"enum": [
+				"string",
+				"int",
+				"unknown"
+			],
+			"type": "string"
+		}
+	}
+}

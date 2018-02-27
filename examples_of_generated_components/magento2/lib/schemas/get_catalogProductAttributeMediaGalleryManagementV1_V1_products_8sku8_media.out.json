@@ -1,0 +1,108 @@
+{
+	"type": "array",
+	"items": {
+		"type": "object",
+		"description": "",
+		"properties": {
+			"id": {
+				"type": "integer",
+				"description": "Gallery entry ID"
+			},
+			"media_type": {
+				"type": "string",
+				"description": "Media type",
+				"required": true
+			},
+			"label": {
+				"type": "string",
+				"description": "Gallery entry alternative text",
+				"required": true
+			},
+			"position": {
+				"type": "integer",
+				"description": "Gallery entry position (sort order)",
+				"required": true
+			},
+			"disabled": {
+				"type": "boolean",
+				"description": "If gallery entry is hidden from product page",
+				"required": true
+			},
+			"types": {
+				"type": "array",
+				"description": "Gallery entry image types (thumbnail, image, small_image etc)",
+				"items": {
+					"type": "string"
+				},
+				"required": true
+			},
+			"file": {
+				"type": "string",
+				"description": "File path"
+			},
+			"content": {
+				"type": "object",
+				"description": "Image Content data interface",
+				"properties": {
+					"base64_encoded_data": {
+						"type": "string",
+						"description": "Media data (base64 encoded content)",
+						"required": true
+					},
+					"type": {
+						"type": "string",
+						"description": "MIME type",
+						"required": true
+					},
+					"name": {
+						"type": "string",
+						"description": "Image name",
+						"required": true
+					}
+				}
+			},
+			"extension_attributes": {
+				"type": "object",
+				"description": "ExtensionInterface class for @see \\Magento\\Catalog\\Api\\Data\\ProductAttributeMediaGalleryEntryInterface",
+				"properties": {
+					"video_content": {
+						"type": "object",
+						"description": "Video Content data interface",
+						"properties": {
+							"media_type": {
+								"type": "string",
+								"description": "MIME type",
+								"required": true
+							},
+							"video_provider": {
+								"type": "string",
+								"description": "Provider",
+								"required": true
+							},
+							"video_url": {
+								"type": "string",
+								"description": "Video URL",
+								"required": true
+							},
+							"video_title": {
+								"type": "string",
+								"description": "Title",
+								"required": true
+							},
+							"video_description": {
+								"type": "string",
+								"description": "Video Description",
+								"required": true
+							},
+							"video_metadata": {
+								"type": "string",
+								"description": "Metadata",
+								"required": true
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,42 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"path": {
+			"type": "object",
+			"properties": {
+				"cartId": {
+					"type": "string",
+					"required": true
+				}
+			}
+		},
+		"body": {
+			"properties": {
+				"customerId": {
+					"type": "integer",
+					"description": "The customer ID.",
+					"required": true
+				},
+				"storeId": {
+					"type": "integer",
+					"required": true
+				}
+			},
+			"type": "object"
+		}
+	}
+}

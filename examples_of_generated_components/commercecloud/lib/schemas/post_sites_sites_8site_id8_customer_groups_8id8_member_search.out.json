@@ -1,0 +1,183 @@
+{
+	"description": "Document representing a customer group member search result.",
+	"properties": {
+		"count": {
+			"description": "The number of returned documents.",
+			"format": "int32",
+			"type": "integer"
+		},
+		"data": {
+			"items": {
+				"type": "object"
+			},
+			"type": "array"
+		},
+		"expand": {
+			"description": "The list of expands set for the search request. Expands are optional.",
+			"items": {
+				"type": "string"
+			},
+			"type": "array"
+		},
+		"hits": {
+			"description": "The sorted array of search hits. Can be empty.",
+			"items": {
+				"description": "Document representing a customer group member",
+				"properties": {
+					"active": {
+						"description": "A flag indicating whether the customer is enabled and can log in.",
+						"type": "boolean"
+					},
+					"c_familyStatus": {
+						"x-label": {
+							"default": "Family Status"
+						},
+						"type": "string"
+					},
+					"creation_date": {
+						"description": "Returns the value of attribute 'creationDate'.",
+						"format": "date-time",
+						"x-label": {
+							"default": "Creation Date"
+						},
+						"type": "string"
+					},
+					"customer_link": {
+						"description": "The link to the customer resource.",
+						"maxLength": 256,
+						"type": "string"
+					},
+					"customer_no": {
+						"description": "The customers number (id).",
+						"x-label": {
+							"default": "Customer No"
+						},
+						"maxLength": 100,
+						"type": "string"
+					},
+					"email": {
+						"description": "The customer's email address.",
+						"format": "email",
+						"x-label": {
+							"default": "Email"
+						},
+						"maxLength": 256,
+						"type": "string"
+					},
+					"first_name": {
+						"description": "The customer's first name.",
+						"x-label": {
+							"default": "First Name"
+						},
+						"maxLength": 256,
+						"type": "string"
+					},
+					"last_modified": {
+						"description": "Returns the value of attribute 'lastModified'.",
+						"format": "date-time",
+						"x-label": {
+							"default": "Last Modified"
+						},
+						"type": "string"
+					},
+					"last_name": {
+						"description": "The customer's last name.",
+						"x-label": {
+							"default": "Last Name"
+						},
+						"maxLength": 256,
+						"type": "string"
+					},
+					"link": {
+						"description": "The link to the customer group member resource.",
+						"maxLength": 256,
+						"type": "string"
+					},
+					"login": {
+						"description": "The login of the customer.",
+						"maxLength": 256,
+						"type": "string"
+					}
+				}
+			},
+			"type": "array"
+		},
+		"next": {
+			"description": "The URL of the next result page.",
+			"properties": {
+				"count": {
+					"description": "Returns the count of search hits to include in the page.",
+					"format": "int32",
+					"type": "integer"
+				},
+				"start": {
+					"description": "Returns the zero-based index of the first search hit in the page.",
+					"format": "int32",
+					"type": "integer"
+				}
+			}
+		},
+		"previous": {
+			"description": "The URL of the previous result page.",
+			"properties": {
+				"count": {
+					"description": "Returns the count of search hits to include in the page.",
+					"format": "int32",
+					"type": "integer"
+				},
+				"start": {
+					"description": "Returns the zero-based index of the first search hit in the page.",
+					"format": "int32",
+					"type": "integer"
+				}
+			}
+		},
+		"query": {
+			"description": "The query passed into the search",
+			"x-sub_types": {
+				"nested_query": "#/definitions/nested_query",
+				"filtered_query": "#/definitions/filtered_query",
+				"text_query": "#/definitions/text_query",
+				"term_query": "#/definitions/term_query",
+				"match_all_query": "#/definitions/match_all_query",
+				"bool_query": "#/definitions/bool_query"
+			}
+		},
+		"select": {
+			"description": "The fields that you want to select.",
+			"type": "string"
+		},
+		"sorts": {
+			"description": "The list of sort clauses configured for the search request. Sort clauses are optional.",
+			"items": {
+				"description": "Document representing a sort request.",
+				"properties": {
+					"field": {
+						"description": "The name of the field to sort on.",
+						"type": "string"
+					},
+					"sort_order": {
+						"description": "The sort order to be applied when sorting. When omitted, the default sort order (ASC) is used.",
+						"enum": [
+							"asc",
+							"desc"
+						],
+						"type": "string"
+					}
+				}
+			},
+			"type": "array"
+		},
+		"start": {
+			"description": "The zero-based index of the first search hit to include in the result.",
+			"format": "int32",
+			"minimum": 0,
+			"type": "integer"
+		},
+		"total": {
+			"description": "The total number of documents.",
+			"format": "int32",
+			"type": "integer"
+		}
+	}
+}

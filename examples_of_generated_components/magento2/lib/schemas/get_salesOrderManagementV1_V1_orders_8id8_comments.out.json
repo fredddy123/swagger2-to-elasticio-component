@@ -1,0 +1,132 @@
+{
+	"type": "object",
+	"description": "Order status history search result interface. An order is a document that a web store issues to a customer. Magento generates a sales order that lists the product items, billing and shipping addresses, and shipping and payment methods. A corresponding external document, known as a purchase order, is emailed to the customer.",
+	"properties": {
+		"items": {
+			"type": "array",
+			"description": "Array of collection items.",
+			"items": {
+				"type": "object",
+				"description": "Order status history interface. An order is a document that a web store issues to a customer. Magento generates a sales order that lists the product items, billing and shipping addresses, and shipping and payment methods. A corresponding external document, known as a purchase order, is emailed to the customer.",
+				"properties": {
+					"comment": {
+						"type": "string",
+						"description": "Comment.",
+						"required": true
+					},
+					"created_at": {
+						"type": "string",
+						"description": "Created-at timestamp."
+					},
+					"entity_id": {
+						"type": "integer",
+						"description": "Order status history ID."
+					},
+					"entity_name": {
+						"type": "string",
+						"description": "Entity name."
+					},
+					"is_customer_notified": {
+						"type": "integer",
+						"description": "Is-customer-notified flag value.",
+						"required": true
+					},
+					"is_visible_on_front": {
+						"type": "integer",
+						"description": "Is-visible-on-storefront flag value.",
+						"required": true
+					},
+					"parent_id": {
+						"type": "integer",
+						"description": "Parent ID.",
+						"required": true
+					},
+					"status": {
+						"type": "string",
+						"description": "Status."
+					},
+					"extension_attributes": {
+						"type": "object",
+						"description": "ExtensionInterface class for @see \\Magento\\Sales\\Api\\Data\\OrderStatusHistoryInterface"
+					}
+				}
+			},
+			"required": true
+		},
+		"search_criteria": {
+			"type": "object",
+			"description": "Search criteria interface.",
+			"properties": {
+				"filter_groups": {
+					"type": "array",
+					"description": "A list of filter groups.",
+					"items": {
+						"type": "object",
+						"description": "Groups two or more filters together using a logical OR",
+						"properties": {
+							"filters": {
+								"type": "array",
+								"description": "A list of filters in this group",
+								"items": {
+									"type": "object",
+									"description": "Filter which can be used by any methods from service layer.",
+									"properties": {
+										"field": {
+											"type": "string",
+											"description": "Field",
+											"required": true
+										},
+										"value": {
+											"type": "string",
+											"description": "Value",
+											"required": true
+										},
+										"condition_type": {
+											"type": "string",
+											"description": "Condition type"
+										}
+									}
+								}
+							}
+						}
+					},
+					"required": true
+				},
+				"sort_orders": {
+					"type": "array",
+					"description": "Sort order.",
+					"items": {
+						"type": "object",
+						"description": "Data object for sort order.",
+						"properties": {
+							"field": {
+								"type": "string",
+								"description": "Sorting field.",
+								"required": true
+							},
+							"direction": {
+								"type": "string",
+								"description": "Sorting direction.",
+								"required": true
+							}
+						}
+					}
+				},
+				"page_size": {
+					"type": "integer",
+					"description": "Page size."
+				},
+				"current_page": {
+					"type": "integer",
+					"description": "Current page."
+				}
+			},
+			"required": true
+		},
+		"total_count": {
+			"type": "integer",
+			"description": "Total count.",
+			"required": true
+		}
+	}
+}

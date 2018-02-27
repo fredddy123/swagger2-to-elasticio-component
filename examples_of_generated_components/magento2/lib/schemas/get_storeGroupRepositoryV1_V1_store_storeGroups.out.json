@@ -1,0 +1,33 @@
+{
+	"type": "array",
+	"items": {
+		"type": "object",
+		"description": "Group interface",
+		"properties": {
+			"id": {
+				"type": "integer",
+				"required": true
+			},
+			"website_id": {
+				"type": "integer",
+				"required": true
+			},
+			"root_category_id": {
+				"type": "integer",
+				"required": true
+			},
+			"default_store_id": {
+				"type": "integer",
+				"required": true
+			},
+			"name": {
+				"type": "string",
+				"required": true
+			},
+			"extension_attributes": {
+				"type": "object",
+				"description": "ExtensionInterface class for @see \\Magento\\Store\\Api\\Data\\GroupInterface"
+			}
+		}
+	}
+}

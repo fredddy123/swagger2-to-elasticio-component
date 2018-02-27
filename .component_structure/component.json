@@ -1,0 +1,25 @@
+{
+    "title":"Magento REST API",
+    "description" : "Magento rest api",
+
+    "credentials": {
+        "fields": {
+            "headers": {
+                "label": "Headers",
+                "viewClass": "TextFieldView"
+            },
+
+            "queryString": {
+                "label": "Querystring",
+                "viewClass": "TextFieldView"
+            },
+            "apiURI": {
+                "label": "API URI",
+                "viewClass": "TextFieldView"
+            }
+        }
+    },
+
+    "actions": {
+    }
+}

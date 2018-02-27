@@ -1,0 +1,67 @@
+{
+	"type": "array",
+	"items": {
+		"type": "object",
+		"description": "Country Information interface.",
+		"properties": {
+			"id": {
+				"type": "string",
+				"description": "The country id for the store.",
+				"required": true
+			},
+			"two_letter_abbreviation": {
+				"type": "string",
+				"description": "The country 2 letter abbreviation for the store.",
+				"required": true
+			},
+			"three_letter_abbreviation": {
+				"type": "string",
+				"description": "The country 3 letter abbreviation for the store.",
+				"required": true
+			},
+			"full_name_locale": {
+				"type": "string",
+				"description": "The country full name (in store locale) for the store.",
+				"required": true
+			},
+			"full_name_english": {
+				"type": "string",
+				"description": "The country full name (in English) for the store.",
+				"required": true
+			},
+			"available_regions": {
+				"type": "array",
+				"description": "The available regions for the store.",
+				"items": {
+					"type": "object",
+					"description": "Region Information interface.",
+					"properties": {
+						"id": {
+							"type": "string",
+							"description": "Region id",
+							"required": true
+						},
+						"code": {
+							"type": "string",
+							"description": "Region code",
+							"required": true
+						},
+						"name": {
+							"type": "string",
+							"description": "Region name",
+							"required": true
+						},
+						"extension_attributes": {
+							"type": "object",
+							"description": "ExtensionInterface class for @see \\Magento\\Directory\\Api\\Data\\RegionInformationInterface"
+						}
+					}
+				}
+			},
+			"extension_attributes": {
+				"type": "object",
+				"description": "ExtensionInterface class for @see \\Magento\\Directory\\Api\\Data\\CountryInformationInterface"
+			}
+		}
+	}
+}

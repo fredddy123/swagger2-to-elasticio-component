@@ -1,0 +1,88 @@
+{
+	"description": "Represents a set of preferences attached at the organization level.",
+	"properties": {
+		"link": {
+			"description": "A URL that returns the full details for a custom preference",
+			"type": "string"
+		},
+		"site_preferences": {
+			"description": "The list of site preferences, returned with expand=sites",
+			"items": {
+				"description": "Represents a set of preferences attached at the organization level.",
+				"properties": {
+					"link": {
+						"description": "A URL that returns the full details for a custom preference",
+						"type": "string"
+					},
+					"site": {
+						"description": "The site that contains the preferences",
+						"properties": {
+							"customer_list_link": {
+								"description": "The link to the customer list.",
+								"properties": {
+									"customer_list_id": {
+										"description": "The customerlist id.",
+										"type": "string"
+									},
+									"link": {
+										"description": "The target of the link.",
+										"type": "string"
+									},
+									"title": {
+										"additionalProperties": {
+											"type": "string"
+										},
+										"description": "The link title.",
+										"format": "localized",
+										"type": "object"
+									}
+								}
+							},
+							"description": {
+								"additionalProperties": {
+									"type": "string"
+								},
+								"description": "The description of this site.",
+								"format": "localized",
+								"type": "object"
+							},
+							"display_name": {
+								"additionalProperties": {
+									"type": "string"
+								},
+								"description": "The display name entered by the user.",
+								"format": "localized",
+								"type": "object"
+							},
+							"id": {
+								"description": "The id of this site.",
+								"minLength": 1,
+								"type": "string",
+								"required": true
+							},
+							"in_deletion": {
+								"description": "The deletion status of this site, true if in deletion",
+								"type": "boolean"
+							},
+							"link": {
+								"description": "A link directly to the site",
+								"type": "string"
+							},
+							"storefront_status": {
+								"description": "",
+								"enum": [
+									"online",
+									"maintenance",
+									"to_be_deleted",
+									"protected"
+								],
+								"type": "string"
+							}
+						}
+					}
+				}
+			},
+			"type": "array"
+		}
+	}
+}

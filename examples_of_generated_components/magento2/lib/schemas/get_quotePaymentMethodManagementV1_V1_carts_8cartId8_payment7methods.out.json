@@ -1,0 +1,20 @@
+{
+	"type": "array",
+	"description": "Array of payment methods.",
+	"items": {
+		"type": "object",
+		"description": "Interface PaymentMethodInterface",
+		"properties": {
+			"code": {
+				"type": "string",
+				"description": "Payment method code",
+				"required": true
+			},
+			"title": {
+				"type": "string",
+				"description": "Payment method title",
+				"required": true
+			}
+		}
+	}
+}

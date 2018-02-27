@@ -1,0 +1,143 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"path": {
+			"type": "object",
+			"properties": {
+				"catalog_id": {
+					"type": "string",
+					"required": true
+				},
+				"attribute_id": {
+					"type": "string",
+					"required": true
+				},
+				"id": {
+					"type": "string",
+					"required": true
+				}
+			}
+		},
+		"body": {
+			"description": "Document representing a variation attribute value.",
+			"properties": {
+				"description": {
+					"additionalProperties": {
+						"type": "string"
+					},
+					"description": "The localized description of the variation value.",
+					"format": "localized",
+					"type": "object"
+				},
+				"image": {
+					"properties": {
+						"abs_url": {
+							"description": "The absolute URL with request protocol",
+							"type": "string"
+						},
+						"alt": {
+							"additionalProperties": {
+								"type": "string"
+							},
+							"description": "The alternative image text",
+							"format": "localized",
+							"type": "object"
+						},
+						"dis_base_url": {
+							"description": "The DIS base URL only for product images",
+							"type": "string"
+						},
+						"path": {
+							"description": "The raw media file path",
+							"type": "string"
+						},
+						"title": {
+							"additionalProperties": {
+								"type": "string"
+							},
+							"description": "The image title",
+							"format": "localized",
+							"type": "object"
+						}
+					},
+					"description": "The first product image for the configured viewtype and this variation value."
+				},
+				"image_swatch": {
+					"properties": {
+						"abs_url": {
+							"description": "The absolute URL with request protocol",
+							"type": "string"
+						},
+						"alt": {
+							"additionalProperties": {
+								"type": "string"
+							},
+							"description": "The alternative image text",
+							"format": "localized",
+							"type": "object"
+						},
+						"dis_base_url": {
+							"description": "The DIS base URL only for product images",
+							"type": "string"
+						},
+						"path": {
+							"description": "The raw media file path",
+							"type": "string"
+						},
+						"title": {
+							"additionalProperties": {
+								"type": "string"
+							},
+							"description": "The image title",
+							"format": "localized",
+							"type": "object"
+						}
+					},
+					"description": "The first product image for the configured viewtype and this variation value. (typically the swatch image)"
+				},
+				"link": {
+					"description": "",
+					"type": "string"
+				},
+				"name": {
+					"additionalProperties": {
+						"type": "string"
+					},
+					"description": "The localized display name of the variation value.",
+					"format": "localized",
+					"type": "object"
+				},
+				"orderable": {
+					"description": "A flag indicating whether at least one variant with this variation attribute value is available to sell.",
+					"type": "boolean"
+				},
+				"position": {
+					"description": "The position of the value among all values of a variation attribute.",
+					"format": "double",
+					"type": "number"
+				},
+				"value": {
+					"description": "The actual variation value.",
+					"minLength": 1,
+					"type": "string",
+					"required": true
+				}
+			},
+			"type": "object"
+		}
+	}
+}

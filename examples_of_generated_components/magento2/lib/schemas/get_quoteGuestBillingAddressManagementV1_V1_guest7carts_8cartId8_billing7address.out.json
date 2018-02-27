@@ -1,0 +1,132 @@
+{
+	"type": "object",
+	"description": "Interface AddressInterface",
+	"properties": {
+		"id": {
+			"type": "integer",
+			"description": "Id"
+		},
+		"region": {
+			"type": "string",
+			"description": "Region name",
+			"required": true
+		},
+		"region_id": {
+			"type": "integer",
+			"description": "Region id",
+			"required": true
+		},
+		"region_code": {
+			"type": "string",
+			"description": "Region code",
+			"required": true
+		},
+		"country_id": {
+			"type": "string",
+			"description": "Country id",
+			"required": true
+		},
+		"street": {
+			"type": "array",
+			"description": "Street",
+			"items": {
+				"type": "string"
+			},
+			"required": true
+		},
+		"company": {
+			"type": "string",
+			"description": "Company"
+		},
+		"telephone": {
+			"type": "string",
+			"description": "Telephone number",
+			"required": true
+		},
+		"fax": {
+			"type": "string",
+			"description": "Fax number"
+		},
+		"postcode": {
+			"type": "string",
+			"description": "Postcode",
+			"required": true
+		},
+		"city": {
+			"type": "string",
+			"description": "City name",
+			"required": true
+		},
+		"firstname": {
+			"type": "string",
+			"description": "First name",
+			"required": true
+		},
+		"lastname": {
+			"type": "string",
+			"description": "Last name",
+			"required": true
+		},
+		"middlename": {
+			"type": "string",
+			"description": "Middle name"
+		},
+		"prefix": {
+			"type": "string",
+			"description": "Prefix"
+		},
+		"suffix": {
+			"type": "string",
+			"description": "Suffix"
+		},
+		"vat_id": {
+			"type": "string",
+			"description": "Vat id"
+		},
+		"customer_id": {
+			"type": "integer",
+			"description": "Customer id"
+		},
+		"email": {
+			"type": "string",
+			"description": "Billing/shipping email",
+			"required": true
+		},
+		"same_as_billing": {
+			"type": "integer",
+			"description": "Same as billing flag"
+		},
+		"customer_address_id": {
+			"type": "integer",
+			"description": "Customer address id"
+		},
+		"save_in_address_book": {
+			"type": "integer",
+			"description": "Save in address book flag"
+		},
+		"extension_attributes": {
+			"type": "object",
+			"description": "ExtensionInterface class for @see \\Magento\\Quote\\Api\\Data\\AddressInterface"
+		},
+		"custom_attributes": {
+			"type": "array",
+			"description": "Custom attributes values.",
+			"items": {
+				"type": "object",
+				"description": "Interface for custom attribute value.",
+				"properties": {
+					"attribute_code": {
+						"type": "string",
+						"description": "Attribute code",
+						"required": true
+					},
+					"value": {
+						"type": "string",
+						"description": "Attribute value",
+						"required": true
+					}
+				}
+			}
+		}
+	}
+}

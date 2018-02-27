@@ -1,0 +1,47 @@
+{
+	"type": "object",
+	"description": "",
+	"properties": {
+		"id": {
+			"type": "integer"
+		},
+		"parent_id": {
+			"type": "integer",
+			"description": "Parent category ID",
+			"required": true
+		},
+		"name": {
+			"type": "string",
+			"description": "Category name",
+			"required": true
+		},
+		"is_active": {
+			"type": "boolean",
+			"description": "Whether category is active",
+			"required": true
+		},
+		"position": {
+			"type": "integer",
+			"description": "Category position",
+			"required": true
+		},
+		"level": {
+			"type": "integer",
+			"description": "Category level",
+			"required": true
+		},
+		"product_count": {
+			"type": "integer",
+			"description": "Product count",
+			"required": true
+		},
+		"children_data": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"description": "this field is the reference to catalog-data-category-tree-interface"
+			},
+			"required": true
+		}
+	}
+}

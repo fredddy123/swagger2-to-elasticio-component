@@ -1,0 +1,115 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"path": {
+			"type": "object",
+			"properties": {
+				"invoiceId": {
+					"type": "integer",
+					"required": true
+				}
+			}
+		},
+		"body": {
+			"properties": {
+				"items": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"description": "Interface CreditmemoItemCreationInterface",
+						"properties": {
+							"extension_attributes": {
+								"type": "object",
+								"description": "ExtensionInterface class for @see \\Magento\\Sales\\Api\\Data\\CreditmemoItemCreationInterface"
+							},
+							"order_item_id": {
+								"type": "integer",
+								"description": "Order item ID.",
+								"required": true
+							},
+							"qty": {
+								"type": "number",
+								"description": "Quantity.",
+								"required": true
+							}
+						}
+					}
+				},
+				"isOnline": {
+					"type": "boolean"
+				},
+				"notify": {
+					"type": "boolean"
+				},
+				"appendComment": {
+					"type": "boolean"
+				},
+				"comment": {
+					"type": "object",
+					"description": "Interface CreditmemoCommentCreationInterface",
+					"properties": {
+						"extension_attributes": {
+							"type": "object",
+							"description": "ExtensionInterface class for @see \\Magento\\Sales\\Api\\Data\\CreditmemoCommentCreationInterface"
+						},
+						"comment": {
+							"type": "string",
+							"description": "Comment.",
+							"required": true
+						},
+						"is_visible_on_front": {
+							"type": "integer",
+							"description": "Is-visible-on-storefront flag value.",
+							"required": true
+						}
+					}
+				},
+				"arguments": {
+					"type": "object",
+					"description": "Interface CreditmemoCreationArgumentsInterface",
+					"properties": {
+						"shipping_amount": {
+							"type": "number",
+							"description": "Credit memo shipping amount."
+						},
+						"adjustment_positive": {
+							"type": "number",
+							"description": "Credit memo positive adjustment."
+						},
+						"adjustment_negative": {
+							"type": "number",
+							"description": "Credit memo negative adjustment."
+						},
+						"extension_attributes": {
+							"type": "object",
+							"description": "ExtensionInterface class for @see \\Magento\\Sales\\Api\\Data\\CreditmemoCreationArgumentsInterface",
+							"properties": {
+								"return_to_stock_items": {
+									"type": "array",
+									"items": {
+										"type": "integer"
+									}
+								}
+							}
+						}
+					}
+				}
+			},
+			"type": "object"
+		}
+	}
+}

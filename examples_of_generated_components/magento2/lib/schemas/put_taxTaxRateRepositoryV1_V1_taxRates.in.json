@@ -1,0 +1,102 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"body": {
+			"properties": {
+				"taxRate": {
+					"type": "object",
+					"description": "Tax rate interface.",
+					"properties": {
+						"id": {
+							"type": "integer",
+							"description": "Id"
+						},
+						"tax_country_id": {
+							"type": "string",
+							"description": "Country id",
+							"required": true
+						},
+						"tax_region_id": {
+							"type": "integer",
+							"description": "Region id"
+						},
+						"region_name": {
+							"type": "string",
+							"description": "Region name"
+						},
+						"tax_postcode": {
+							"type": "string",
+							"description": "Postcode"
+						},
+						"zip_is_range": {
+							"type": "integer",
+							"description": "Zip is range"
+						},
+						"zip_from": {
+							"type": "integer",
+							"description": "Zip range from"
+						},
+						"zip_to": {
+							"type": "integer",
+							"description": "Zip range to"
+						},
+						"rate": {
+							"type": "number",
+							"description": "Tax rate in percentage",
+							"required": true
+						},
+						"code": {
+							"type": "string",
+							"description": "Tax rate code",
+							"required": true
+						},
+						"titles": {
+							"type": "array",
+							"description": "Tax rate titles",
+							"items": {
+								"type": "object",
+								"description": "Tax rate title interface.",
+								"properties": {
+									"store_id": {
+										"type": "string",
+										"description": "Store id",
+										"required": true
+									},
+									"value": {
+										"type": "string",
+										"description": "Title value",
+										"required": true
+									},
+									"extension_attributes": {
+										"type": "object",
+										"description": "ExtensionInterface class for @see \\Magento\\Tax\\Api\\Data\\TaxRateTitleInterface"
+									}
+								}
+							}
+						},
+						"extension_attributes": {
+							"type": "object",
+							"description": "ExtensionInterface class for @see \\Magento\\Tax\\Api\\Data\\TaxRateInterface"
+						}
+					},
+					"required": true
+				}
+			},
+			"type": "object"
+		}
+	}
+}

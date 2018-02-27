@@ -1,0 +1,141 @@
+{
+	"description": "Document representing an unfiltered list of inventory records.",
+	"properties": {
+		"count": {
+			"description": "The number of returned documents.",
+			"format": "int32",
+			"type": "integer"
+		},
+		"data": {
+			"description": "The collection of product inventory records.",
+			"items": {
+				"description": "Document representing a product inventory record.",
+				"properties": {
+					"allocation": {
+						"description": "The allocation quantity and reset date.",
+						"properties": {
+							"amount": {
+								"description": "The allocation quantity that is currently set. The quantity unit is the same unit as the product itself.",
+								"format": "double",
+								"type": "number"
+							},
+							"reset_date": {
+								"description": "The date the allocation quantity was initialized or reset.",
+								"format": "date-time",
+								"type": "string"
+							}
+						}
+					},
+					"ats": {
+						"description": "The quantity of items available to sell (ATS). This is calculated as the\n allocation plus the preorderBackorderAllocation minus the turnover.",
+						"format": "double",
+						"type": "number"
+					},
+					"creation_date": {
+						"description": "Returns the value of attribute 'creationDate'.",
+						"format": "date-time",
+						"x-label": {
+							"default": "Creation Date"
+						},
+						"type": "string"
+					},
+					"in_stock_date": {
+						"description": "The date that the item is expected to be in stock.",
+						"format": "date-time",
+						"type": "string"
+					},
+					"inventory_list_id": {
+						"description": "The user supplied ID of the inventory list.",
+						"type": "string"
+					},
+					"inventory_turnover": {
+						"description": "The sum of all inventory transactions (decrements and increments)\n that have been recorded subsequent to the allocation was reset date.\n The quantity value can be negative due to higher quantity of inventory decrements than increments.",
+						"format": "double",
+						"type": "number"
+					},
+					"last_modified": {
+						"description": "Returns the value of attribute 'lastModified'.",
+						"format": "date-time",
+						"x-label": {
+							"default": "Last Modified"
+						},
+						"type": "string"
+					},
+					"link": {
+						"description": "The URL that is used to get this instance.",
+						"type": "string"
+					},
+					"perpetual_flag": {
+						"description": "The flag that determines if the product is perpetually in stock.",
+						"type": "boolean"
+					},
+					"pre_order_back_order_allocation": {
+						"description": "The quantity of items that are allocated for sale, beyond the initial stock allocation.",
+						"format": "double",
+						"type": "number"
+					},
+					"pre_order_back_order_handling": {
+						"description": "The enum holding the records pre-backorder-handling configuration.\n Possible values are NONE, PREORDER and BACKORDER.\n Method returns NONE in case the record pre-backorder-handling-code is null or unknown.",
+						"enum": [
+							"none",
+							"preorder",
+							"backorder"
+						],
+						"type": "string"
+					},
+					"product_id": {
+						"description": "The user supplied ID of the product.",
+						"maxLength": 256,
+						"minLength": 1,
+						"type": "string"
+					},
+					"product_name": {
+						"description": "The name of the product.",
+						"type": "string"
+					},
+					"quantity_on_order": {
+						"description": "The on order quantity, the quantity of all transactions for\n this record since the allocation reset date.",
+						"format": "double",
+						"type": "number"
+					},
+					"stock_level": {
+						"description": "The current stock level. This is calculated as the allocation minus the turnover.",
+						"format": "double",
+						"type": "number"
+					}
+				}
+			},
+			"type": "array"
+		},
+		"expand": {
+			"description": "The list of expands set for the search request. Expands are optional.",
+			"items": {
+				"type": "string"
+			},
+			"type": "array"
+		},
+		"next": {
+			"description": "The URL of the next result page.",
+			"type": "string"
+		},
+		"previous": {
+			"description": "The URL of the previous result page.",
+			"type": "string"
+		},
+		"select": {
+			"description": "The fields that you want to select.",
+			"type": "string"
+		},
+		"start": {
+			"description": "The zero-based index of the first search hit to include in the result.",
+			"format": "int32",
+			"minimum": 0,
+			"type": "integer"
+		},
+		"total": {
+			"description": "The total number of documents.",
+			"format": "int32",
+			"type": "integer"
+		}
+	}
+}

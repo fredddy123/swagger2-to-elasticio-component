@@ -1,0 +1,84 @@
+{
+	"description": "Result document containing an array of code versions.",
+	"properties": {
+		"count": {
+			"description": "The number of returned documents.",
+			"format": "int32",
+			"type": "integer"
+		},
+		"data": {
+			"description": "The array of code versions",
+			"items": {
+				"description": "Document representing a code version",
+				"properties": {
+					"activation_time": {
+						"description": "The code version activation time.",
+						"format": "date-time",
+						"type": "string"
+					},
+					"active": {
+						"description": "Use this method to determine, if this code version is currently active.",
+						"type": "boolean"
+					},
+					"cartridges": {
+						"description": "A list containing the names of all cartridges participating in this code version.",
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"compatibility_mode": {
+						"description": "The code version compatibility mode.",
+						"type": "string"
+					},
+					"id": {
+						"description": "The code version id.",
+						"type": "string"
+					},
+					"last_modification_time": {
+						"description": "The last time, when the code version was changed.",
+						"format": "date-time",
+						"type": "string"
+					},
+					"rollback": {
+						"description": "Use this method to determine, if this code version is the current rollback version.",
+						"type": "boolean"
+					},
+					"total_size": {
+						"description": "Returns the total size of the file system content of this code version in bytes.",
+						"format": "int64",
+						"type": "integer"
+					},
+					"web_dav_url": {
+						"description": "Returns the HTTPS based WebDAV URL that can be used to access the code version resources.",
+						"type": "string"
+					}
+				}
+			},
+			"type": "array"
+		},
+		"next": {
+			"description": "The URL of the next result page.",
+			"type": "string"
+		},
+		"previous": {
+			"description": "The URL of the previous result page.",
+			"type": "string"
+		},
+		"select": {
+			"description": "The fields that you want to select.",
+			"type": "string"
+		},
+		"start": {
+			"description": "The zero-based index of the first search hit to include in the result.",
+			"format": "int32",
+			"minimum": 0,
+			"type": "integer"
+		},
+		"total": {
+			"description": "The total number of documents.",
+			"format": "int32",
+			"type": "integer"
+		}
+	}
+}

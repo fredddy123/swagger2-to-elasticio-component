@@ -1,0 +1,159 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"path": {
+			"type": "object",
+			"properties": {
+				"productSku": {
+					"type": "string",
+					"required": true
+				},
+				"itemId": {
+					"type": "string",
+					"required": true
+				}
+			}
+		},
+		"body": {
+			"properties": {
+				"stockItem": {
+					"type": "object",
+					"description": "Interface StockItem",
+					"properties": {
+						"item_id": {
+							"type": "integer"
+						},
+						"product_id": {
+							"type": "integer"
+						},
+						"stock_id": {
+							"type": "integer",
+							"description": "Stock identifier"
+						},
+						"qty": {
+							"type": "number",
+							"required": true
+						},
+						"is_in_stock": {
+							"type": "boolean",
+							"description": "Stock Availability",
+							"required": true
+						},
+						"is_qty_decimal": {
+							"type": "boolean",
+							"required": true
+						},
+						"show_default_notification_message": {
+							"type": "boolean",
+							"required": true
+						},
+						"use_config_min_qty": {
+							"type": "boolean",
+							"required": true
+						},
+						"min_qty": {
+							"type": "number",
+							"description": "Minimal quantity available for item status in stock",
+							"required": true
+						},
+						"use_config_min_sale_qty": {
+							"type": "integer",
+							"required": true
+						},
+						"min_sale_qty": {
+							"type": "number",
+							"description": "Minimum Qty Allowed in Shopping Cart or NULL when there is no limitation",
+							"required": true
+						},
+						"use_config_max_sale_qty": {
+							"type": "boolean",
+							"required": true
+						},
+						"max_sale_qty": {
+							"type": "number",
+							"description": "Maximum Qty Allowed in Shopping Cart data wrapper",
+							"required": true
+						},
+						"use_config_backorders": {
+							"type": "boolean",
+							"required": true
+						},
+						"backorders": {
+							"type": "integer",
+							"description": "Backorders status",
+							"required": true
+						},
+						"use_config_notify_stock_qty": {
+							"type": "boolean",
+							"required": true
+						},
+						"notify_stock_qty": {
+							"type": "number",
+							"description": "Notify for Quantity Below data wrapper",
+							"required": true
+						},
+						"use_config_qty_increments": {
+							"type": "boolean",
+							"required": true
+						},
+						"qty_increments": {
+							"type": "number",
+							"description": "Quantity Increments data wrapper",
+							"required": true
+						},
+						"use_config_enable_qty_inc": {
+							"type": "boolean",
+							"required": true
+						},
+						"enable_qty_increments": {
+							"type": "boolean",
+							"description": "Whether Quantity Increments is enabled",
+							"required": true
+						},
+						"use_config_manage_stock": {
+							"type": "boolean",
+							"required": true
+						},
+						"manage_stock": {
+							"type": "boolean",
+							"description": "Can Manage Stock",
+							"required": true
+						},
+						"low_stock_date": {
+							"type": "string",
+							"required": true
+						},
+						"is_decimal_divided": {
+							"type": "boolean",
+							"required": true
+						},
+						"stock_status_changed_auto": {
+							"type": "integer",
+							"required": true
+						},
+						"extension_attributes": {
+							"type": "object",
+							"description": "ExtensionInterface class for @see \\Magento\\CatalogInventory\\Api\\Data\\StockItemInterface"
+						}
+					},
+					"required": true
+				}
+			},
+			"type": "object"
+		}
+	}
+}

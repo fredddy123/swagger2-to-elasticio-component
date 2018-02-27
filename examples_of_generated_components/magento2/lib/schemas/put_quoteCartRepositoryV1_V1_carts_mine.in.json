@@ -1,0 +1,1026 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"body": {
+			"properties": {
+				"quote": {
+					"type": "object",
+					"description": "Interface CartInterface",
+					"properties": {
+						"id": {
+							"type": "integer",
+							"description": "Cart/quote ID.",
+							"required": true
+						},
+						"created_at": {
+							"type": "string",
+							"description": "Cart creation date and time. Otherwise, null."
+						},
+						"updated_at": {
+							"type": "string",
+							"description": "Cart last update date and time. Otherwise, null."
+						},
+						"converted_at": {
+							"type": "string",
+							"description": "Cart conversion date and time. Otherwise, null."
+						},
+						"is_active": {
+							"type": "boolean",
+							"description": "Active status flag value. Otherwise, null."
+						},
+						"is_virtual": {
+							"type": "boolean",
+							"description": "Virtual flag value. Otherwise, null."
+						},
+						"items": {
+							"type": "array",
+							"description": "Array of items. Otherwise, null.",
+							"items": {
+								"type": "object",
+								"description": "Interface CartItemInterface",
+								"properties": {
+									"item_id": {
+										"type": "integer",
+										"description": "Item ID. Otherwise, null."
+									},
+									"sku": {
+										"type": "string",
+										"description": "Product SKU. Otherwise, null."
+									},
+									"qty": {
+										"type": "number",
+										"description": "Product quantity.",
+										"required": true
+									},
+									"name": {
+										"type": "string",
+										"description": "Product name. Otherwise, null."
+									},
+									"price": {
+										"type": "number",
+										"description": "Product price. Otherwise, null."
+									},
+									"product_type": {
+										"type": "string",
+										"description": "Product type. Otherwise, null."
+									},
+									"quote_id": {
+										"type": "string",
+										"description": "Quote id.",
+										"required": true
+									},
+									"product_option": {
+										"type": "object",
+										"description": "Product option interface",
+										"properties": {
+											"extension_attributes": {
+												"type": "object",
+												"description": "ExtensionInterface class for @see \\Magento\\Quote\\Api\\Data\\ProductOptionInterface",
+												"properties": {
+													"custom_options": {
+														"type": "array",
+														"items": {
+															"type": "object",
+															"description": "Interface CustomOptionInterface",
+															"properties": {
+																"option_id": {
+																	"type": "string",
+																	"description": "Option id",
+																	"required": true
+																},
+																"option_value": {
+																	"type": "string",
+																	"description": "Option value",
+																	"required": true
+																},
+																"extension_attributes": {
+																	"type": "object",
+																	"description": "ExtensionInterface class for @see \\Magento\\Catalog\\Api\\Data\\CustomOptionInterface",
+																	"properties": {
+																		"file_info": {
+																			"type": "object",
+																			"description": "Image Content data interface",
+																			"properties": {
+																				"base64_encoded_data": {
+																					"type": "string",
+																					"description": "Media data (base64 encoded content)",
+																					"required": true
+																				},
+																				"type": {
+																					"type": "string",
+																					"description": "MIME type",
+																					"required": true
+																				},
+																				"name": {
+																					"type": "string",
+																					"description": "Image name",
+																					"required": true
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													},
+													"bundle_options": {
+														"type": "array",
+														"items": {
+															"type": "object",
+															"description": "Interface BundleOptionInterface",
+															"properties": {
+																"option_id": {
+																	"type": "integer",
+																	"description": "Bundle option id.",
+																	"required": true
+																},
+																"option_qty": {
+																	"type": "integer",
+																	"description": "Bundle option quantity.",
+																	"required": true
+																},
+																"option_selections": {
+																	"type": "array",
+																	"description": "Bundle option selection ids.",
+																	"items": {
+																		"type": "integer"
+																	},
+																	"required": true
+																},
+																"extension_attributes": {
+																	"type": "object",
+																	"description": "ExtensionInterface class for @see \\Magento\\Bundle\\Api\\Data\\BundleOptionInterface"
+																}
+															}
+														}
+													},
+													"downloadable_option": {
+														"type": "object",
+														"description": "Downloadable Option",
+														"properties": {
+															"downloadable_links": {
+																"type": "array",
+																"description": "The list of downloadable links",
+																"items": {
+																	"type": "integer"
+																},
+																"required": true
+															}
+														}
+													},
+													"configurable_item_options": {
+														"type": "array",
+														"items": {
+															"type": "object",
+															"description": "Interface ConfigurableItemOptionValueInterface",
+															"properties": {
+																"option_id": {
+																	"type": "string",
+																	"description": "Option SKU",
+																	"required": true
+																},
+																"option_value": {
+																	"type": "integer",
+																	"description": "Item id"
+																},
+																"extension_attributes": {
+																	"type": "object",
+																	"description": "ExtensionInterface class for @see \\Magento\\ConfigurableProduct\\Api\\Data\\ConfigurableItemOptionValueInterface"
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									},
+									"extension_attributes": {
+										"type": "object",
+										"description": "ExtensionInterface class for @see \\Magento\\Quote\\Api\\Data\\CartItemInterface"
+									}
+								}
+							}
+						},
+						"items_count": {
+							"type": "integer",
+							"description": "Number of different items or products in the cart. Otherwise, null."
+						},
+						"items_qty": {
+							"type": "number",
+							"description": "Total quantity of all cart items. Otherwise, null."
+						},
+						"customer": {
+							"type": "object",
+							"description": "Customer interface.",
+							"properties": {
+								"id": {
+									"type": "integer",
+									"description": "Customer id"
+								},
+								"group_id": {
+									"type": "integer",
+									"description": "Group id"
+								},
+								"default_billing": {
+									"type": "string",
+									"description": "Default billing address id"
+								},
+								"default_shipping": {
+									"type": "string",
+									"description": "Default shipping address id"
+								},
+								"confirmation": {
+									"type": "string",
+									"description": "Confirmation"
+								},
+								"created_at": {
+									"type": "string",
+									"description": "Created at time"
+								},
+								"updated_at": {
+									"type": "string",
+									"description": "Updated at time"
+								},
+								"created_in": {
+									"type": "string",
+									"description": "Created in area"
+								},
+								"dob": {
+									"type": "string",
+									"description": "Date of birth"
+								},
+								"email": {
+									"type": "string",
+									"description": "Email address",
+									"required": true
+								},
+								"firstname": {
+									"type": "string",
+									"description": "First name",
+									"required": true
+								},
+								"lastname": {
+									"type": "string",
+									"description": "Last name",
+									"required": true
+								},
+								"middlename": {
+									"type": "string",
+									"description": "Middle name"
+								},
+								"prefix": {
+									"type": "string",
+									"description": "Prefix"
+								},
+								"suffix": {
+									"type": "string",
+									"description": "Suffix"
+								},
+								"gender": {
+									"type": "integer",
+									"description": "Gender"
+								},
+								"store_id": {
+									"type": "integer",
+									"description": "Store id"
+								},
+								"taxvat": {
+									"type": "string",
+									"description": "Tax Vat"
+								},
+								"website_id": {
+									"type": "integer",
+									"description": "Website id"
+								},
+								"addresses": {
+									"type": "array",
+									"description": "Customer addresses.",
+									"items": {
+										"type": "object",
+										"description": "Customer address interface.",
+										"properties": {
+											"id": {
+												"type": "integer",
+												"description": "ID"
+											},
+											"customer_id": {
+												"type": "integer",
+												"description": "Customer ID"
+											},
+											"region": {
+												"type": "object",
+												"description": "Customer address region interface.",
+												"properties": {
+													"region_code": {
+														"type": "string",
+														"description": "Region code",
+														"required": true
+													},
+													"region": {
+														"type": "string",
+														"description": "Region",
+														"required": true
+													},
+													"region_id": {
+														"type": "integer",
+														"description": "Region id",
+														"required": true
+													},
+													"extension_attributes": {
+														"type": "object",
+														"description": "ExtensionInterface class for @see \\Magento\\Customer\\Api\\Data\\RegionInterface"
+													}
+												}
+											},
+											"region_id": {
+												"type": "integer",
+												"description": "Region ID"
+											},
+											"country_id": {
+												"type": "string",
+												"description": "Country code in ISO_3166-2 format"
+											},
+											"street": {
+												"type": "array",
+												"description": "Street",
+												"items": {
+													"type": "string"
+												}
+											},
+											"company": {
+												"type": "string",
+												"description": "Company"
+											},
+											"telephone": {
+												"type": "string",
+												"description": "Telephone number"
+											},
+											"fax": {
+												"type": "string",
+												"description": "Fax number"
+											},
+											"postcode": {
+												"type": "string",
+												"description": "Postcode"
+											},
+											"city": {
+												"type": "string",
+												"description": "City name"
+											},
+											"firstname": {
+												"type": "string",
+												"description": "First name"
+											},
+											"lastname": {
+												"type": "string",
+												"description": "Last name"
+											},
+											"middlename": {
+												"type": "string",
+												"description": "Middle name"
+											},
+											"prefix": {
+												"type": "string",
+												"description": "Prefix"
+											},
+											"suffix": {
+												"type": "string",
+												"description": "Suffix"
+											},
+											"vat_id": {
+												"type": "string",
+												"description": "Vat id"
+											},
+											"default_shipping": {
+												"type": "boolean",
+												"description": "If this address is default shipping address."
+											},
+											"default_billing": {
+												"type": "boolean",
+												"description": "If this address is default billing address"
+											},
+											"extension_attributes": {
+												"type": "object",
+												"description": "ExtensionInterface class for @see \\Magento\\Customer\\Api\\Data\\AddressInterface"
+											},
+											"custom_attributes": {
+												"type": "array",
+												"description": "Custom attributes values.",
+												"items": {
+													"type": "object",
+													"description": "Interface for custom attribute value.",
+													"properties": {
+														"attribute_code": {
+															"type": "string",
+															"description": "Attribute code",
+															"required": true
+														},
+														"value": {
+															"type": "string",
+															"description": "Attribute value",
+															"required": true
+														}
+													}
+												}
+											}
+										}
+									}
+								},
+								"disable_auto_group_change": {
+									"type": "integer",
+									"description": "Disable auto group change flag."
+								},
+								"extension_attributes": {
+									"type": "object",
+									"description": "ExtensionInterface class for @see \\Magento\\Customer\\Api\\Data\\CustomerInterface",
+									"properties": {
+										"is_subscribed": {
+											"type": "boolean"
+										}
+									}
+								},
+								"custom_attributes": {
+									"type": "array",
+									"description": "Custom attributes values.",
+									"items": {
+										"type": "object",
+										"description": "Interface for custom attribute value.",
+										"properties": {
+											"attribute_code": {
+												"type": "string",
+												"description": "Attribute code",
+												"required": true
+											},
+											"value": {
+												"type": "string",
+												"description": "Attribute value",
+												"required": true
+											}
+										}
+									}
+								}
+							},
+							"required": true
+						},
+						"billing_address": {
+							"type": "object",
+							"description": "Interface AddressInterface",
+							"properties": {
+								"id": {
+									"type": "integer",
+									"description": "Id"
+								},
+								"region": {
+									"type": "string",
+									"description": "Region name",
+									"required": true
+								},
+								"region_id": {
+									"type": "integer",
+									"description": "Region id",
+									"required": true
+								},
+								"region_code": {
+									"type": "string",
+									"description": "Region code",
+									"required": true
+								},
+								"country_id": {
+									"type": "string",
+									"description": "Country id",
+									"required": true
+								},
+								"street": {
+									"type": "array",
+									"description": "Street",
+									"items": {
+										"type": "string"
+									},
+									"required": true
+								},
+								"company": {
+									"type": "string",
+									"description": "Company"
+								},
+								"telephone": {
+									"type": "string",
+									"description": "Telephone number",
+									"required": true
+								},
+								"fax": {
+									"type": "string",
+									"description": "Fax number"
+								},
+								"postcode": {
+									"type": "string",
+									"description": "Postcode",
+									"required": true
+								},
+								"city": {
+									"type": "string",
+									"description": "City name",
+									"required": true
+								},
+								"firstname": {
+									"type": "string",
+									"description": "First name",
+									"required": true
+								},
+								"lastname": {
+									"type": "string",
+									"description": "Last name",
+									"required": true
+								},
+								"middlename": {
+									"type": "string",
+									"description": "Middle name"
+								},
+								"prefix": {
+									"type": "string",
+									"description": "Prefix"
+								},
+								"suffix": {
+									"type": "string",
+									"description": "Suffix"
+								},
+								"vat_id": {
+									"type": "string",
+									"description": "Vat id"
+								},
+								"customer_id": {
+									"type": "integer",
+									"description": "Customer id"
+								},
+								"email": {
+									"type": "string",
+									"description": "Billing/shipping email",
+									"required": true
+								},
+								"same_as_billing": {
+									"type": "integer",
+									"description": "Same as billing flag"
+								},
+								"customer_address_id": {
+									"type": "integer",
+									"description": "Customer address id"
+								},
+								"save_in_address_book": {
+									"type": "integer",
+									"description": "Save in address book flag"
+								},
+								"extension_attributes": {
+									"type": "object",
+									"description": "ExtensionInterface class for @see \\Magento\\Quote\\Api\\Data\\AddressInterface"
+								},
+								"custom_attributes": {
+									"type": "array",
+									"description": "Custom attributes values.",
+									"items": {
+										"type": "object",
+										"description": "Interface for custom attribute value.",
+										"properties": {
+											"attribute_code": {
+												"type": "string",
+												"description": "Attribute code",
+												"required": true
+											},
+											"value": {
+												"type": "string",
+												"description": "Attribute value",
+												"required": true
+											}
+										}
+									}
+								}
+							}
+						},
+						"reserved_order_id": {
+							"type": "integer",
+							"description": "Reserved order ID. Otherwise, null."
+						},
+						"orig_order_id": {
+							"type": "integer",
+							"description": "Original order ID. Otherwise, null."
+						},
+						"currency": {
+							"type": "object",
+							"description": "Interface CurrencyInterface",
+							"properties": {
+								"global_currency_code": {
+									"type": "string",
+									"description": "Global currency code"
+								},
+								"base_currency_code": {
+									"type": "string",
+									"description": "Base currency code"
+								},
+								"store_currency_code": {
+									"type": "string",
+									"description": "Store currency code"
+								},
+								"quote_currency_code": {
+									"type": "string",
+									"description": "Quote currency code"
+								},
+								"store_to_base_rate": {
+									"type": "number",
+									"description": "Store currency to base currency rate"
+								},
+								"store_to_quote_rate": {
+									"type": "number",
+									"description": "Store currency to quote currency rate"
+								},
+								"base_to_global_rate": {
+									"type": "number",
+									"description": "Base currency to global currency rate"
+								},
+								"base_to_quote_rate": {
+									"type": "number",
+									"description": "Base currency to quote currency rate"
+								},
+								"extension_attributes": {
+									"type": "object",
+									"description": "ExtensionInterface class for @see \\Magento\\Quote\\Api\\Data\\CurrencyInterface"
+								}
+							}
+						},
+						"customer_is_guest": {
+							"type": "boolean",
+							"description": "For guest customers, false for logged in customers"
+						},
+						"customer_note": {
+							"type": "string",
+							"description": "Notice text"
+						},
+						"customer_note_notify": {
+							"type": "boolean",
+							"description": "Customer notification flag"
+						},
+						"customer_tax_class_id": {
+							"type": "integer",
+							"description": "Customer tax class ID."
+						},
+						"store_id": {
+							"type": "integer",
+							"description": "Store identifier",
+							"required": true
+						},
+						"extension_attributes": {
+							"type": "object",
+							"description": "ExtensionInterface class for @see \\Magento\\Quote\\Api\\Data\\CartInterface",
+							"properties": {
+								"shipping_assignments": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"description": "Interface ShippingAssignmentInterface",
+										"properties": {
+											"shipping": {
+												"type": "object",
+												"description": "Interface ShippingInterface",
+												"properties": {
+													"address": {
+														"type": "object",
+														"description": "Interface AddressInterface",
+														"properties": {
+															"id": {
+																"type": "integer",
+																"description": "Id"
+															},
+															"region": {
+																"type": "string",
+																"description": "Region name",
+																"required": true
+															},
+															"region_id": {
+																"type": "integer",
+																"description": "Region id",
+																"required": true
+															},
+															"region_code": {
+																"type": "string",
+																"description": "Region code",
+																"required": true
+															},
+															"country_id": {
+																"type": "string",
+																"description": "Country id",
+																"required": true
+															},
+															"street": {
+																"type": "array",
+																"description": "Street",
+																"items": {
+																	"type": "string"
+																},
+																"required": true
+															},
+															"company": {
+																"type": "string",
+																"description": "Company"
+															},
+															"telephone": {
+																"type": "string",
+																"description": "Telephone number",
+																"required": true
+															},
+															"fax": {
+																"type": "string",
+																"description": "Fax number"
+															},
+															"postcode": {
+																"type": "string",
+																"description": "Postcode",
+																"required": true
+															},
+															"city": {
+																"type": "string",
+																"description": "City name",
+																"required": true
+															},
+															"firstname": {
+																"type": "string",
+																"description": "First name",
+																"required": true
+															},
+															"lastname": {
+																"type": "string",
+																"description": "Last name",
+																"required": true
+															},
+															"middlename": {
+																"type": "string",
+																"description": "Middle name"
+															},
+															"prefix": {
+																"type": "string",
+																"description": "Prefix"
+															},
+															"suffix": {
+																"type": "string",
+																"description": "Suffix"
+															},
+															"vat_id": {
+																"type": "string",
+																"description": "Vat id"
+															},
+															"customer_id": {
+																"type": "integer",
+																"description": "Customer id"
+															},
+															"email": {
+																"type": "string",
+																"description": "Billing/shipping email",
+																"required": true
+															},
+															"same_as_billing": {
+																"type": "integer",
+																"description": "Same as billing flag"
+															},
+															"customer_address_id": {
+																"type": "integer",
+																"description": "Customer address id"
+															},
+															"save_in_address_book": {
+																"type": "integer",
+																"description": "Save in address book flag"
+															},
+															"extension_attributes": {
+																"type": "object",
+																"description": "ExtensionInterface class for @see \\Magento\\Quote\\Api\\Data\\AddressInterface"
+															},
+															"custom_attributes": {
+																"type": "array",
+																"description": "Custom attributes values.",
+																"items": {
+																	"type": "object",
+																	"description": "Interface for custom attribute value.",
+																	"properties": {
+																		"attribute_code": {
+																			"type": "string",
+																			"description": "Attribute code",
+																			"required": true
+																		},
+																		"value": {
+																			"type": "string",
+																			"description": "Attribute value",
+																			"required": true
+																		}
+																	}
+																}
+															}
+														},
+														"required": true
+													},
+													"method": {
+														"type": "string",
+														"description": "Shipping method",
+														"required": true
+													},
+													"extension_attributes": {
+														"type": "object",
+														"description": "ExtensionInterface class for @see \\Magento\\Quote\\Api\\Data\\ShippingInterface"
+													}
+												},
+												"required": true
+											},
+											"items": {
+												"type": "array",
+												"items": {
+													"type": "object",
+													"description": "Interface CartItemInterface",
+													"properties": {
+														"item_id": {
+															"type": "integer",
+															"description": "Item ID. Otherwise, null."
+														},
+														"sku": {
+															"type": "string",
+															"description": "Product SKU. Otherwise, null."
+														},
+														"qty": {
+															"type": "number",
+															"description": "Product quantity.",
+															"required": true
+														},
+														"name": {
+															"type": "string",
+															"description": "Product name. Otherwise, null."
+														},
+														"price": {
+															"type": "number",
+															"description": "Product price. Otherwise, null."
+														},
+														"product_type": {
+															"type": "string",
+															"description": "Product type. Otherwise, null."
+														},
+														"quote_id": {
+															"type": "string",
+															"description": "Quote id.",
+															"required": true
+														},
+														"product_option": {
+															"type": "object",
+															"description": "Product option interface",
+															"properties": {
+																"extension_attributes": {
+																	"type": "object",
+																	"description": "ExtensionInterface class for @see \\Magento\\Quote\\Api\\Data\\ProductOptionInterface",
+																	"properties": {
+																		"custom_options": {
+																			"type": "array",
+																			"items": {
+																				"type": "object",
+																				"description": "Interface CustomOptionInterface",
+																				"properties": {
+																					"option_id": {
+																						"type": "string",
+																						"description": "Option id",
+																						"required": true
+																					},
+																					"option_value": {
+																						"type": "string",
+																						"description": "Option value",
+																						"required": true
+																					},
+																					"extension_attributes": {
+																						"type": "object",
+																						"description": "ExtensionInterface class for @see \\Magento\\Catalog\\Api\\Data\\CustomOptionInterface",
+																						"properties": {
+																							"file_info": {
+																								"type": "object",
+																								"description": "Image Content data interface",
+																								"properties": {
+																									"base64_encoded_data": {
+																										"type": "string",
+																										"description": "Media data (base64 encoded content)",
+																										"required": true
+																									},
+																									"type": {
+																										"type": "string",
+																										"description": "MIME type",
+																										"required": true
+																									},
+																									"name": {
+																										"type": "string",
+																										"description": "Image name",
+																										"required": true
+																									}
+																								}
+																							}
+																						}
+																					}
+																				}
+																			}
+																		},
+																		"bundle_options": {
+																			"type": "array",
+																			"items": {
+																				"type": "object",
+																				"description": "Interface BundleOptionInterface",
+																				"properties": {
+																					"option_id": {
+																						"type": "integer",
+																						"description": "Bundle option id.",
+																						"required": true
+																					},
+																					"option_qty": {
+																						"type": "integer",
+																						"description": "Bundle option quantity.",
+																						"required": true
+																					},
+																					"option_selections": {
+																						"type": "array",
+																						"description": "Bundle option selection ids.",
+																						"items": {
+																							"type": "integer"
+																						},
+																						"required": true
+																					},
+																					"extension_attributes": {
+																						"type": "object",
+																						"description": "ExtensionInterface class for @see \\Magento\\Bundle\\Api\\Data\\BundleOptionInterface"
+																					}
+																				}
+																			}
+																		},
+																		"downloadable_option": {
+																			"type": "object",
+																			"description": "Downloadable Option",
+																			"properties": {
+																				"downloadable_links": {
+																					"type": "array",
+																					"description": "The list of downloadable links",
+																					"items": {
+																						"type": "integer"
+																					},
+																					"required": true
+																				}
+																			}
+																		},
+																		"configurable_item_options": {
+																			"type": "array",
+																			"items": {
+																				"type": "object",
+																				"description": "Interface ConfigurableItemOptionValueInterface",
+																				"properties": {
+																					"option_id": {
+																						"type": "string",
+																						"description": "Option SKU",
+																						"required": true
+																					},
+																					"option_value": {
+																						"type": "integer",
+																						"description": "Item id"
+																					},
+																					"extension_attributes": {
+																						"type": "object",
+																						"description": "ExtensionInterface class for @see \\Magento\\ConfigurableProduct\\Api\\Data\\ConfigurableItemOptionValueInterface"
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														},
+														"extension_attributes": {
+															"type": "object",
+															"description": "ExtensionInterface class for @see \\Magento\\Quote\\Api\\Data\\CartItemInterface"
+														}
+													}
+												},
+												"required": true
+											},
+											"extension_attributes": {
+												"type": "object",
+												"description": "ExtensionInterface class for @see \\Magento\\Quote\\Api\\Data\\ShippingAssignmentInterface"
+											}
+										}
+									}
+								}
+							}
+						}
+					},
+					"required": true
+				}
+			},
+			"type": "object"
+		}
+	}
+}

@@ -1,0 +1,2559 @@
+{
+	"title": "Magento Community",
+	"description": "",
+	"credentials": {
+		"fields": {
+			"headers": {
+				"label": "Headers",
+				"viewClass": "TextFieldView"
+			},
+			"queryString": {
+				"label": "Querystring",
+				"viewClass": "TextFieldView"
+			},
+			"apiURI": {
+				"label": "API URI",
+				"viewClass": "TextFieldView"
+			}
+		}
+	},
+	"actions": {
+		"get_storeStoreRepositoryV1_V1_store_storeViews": {
+			"title": "get_storeStoreRepositoryV1_V1_store_storeViews",
+			"main": "./lib/actions/get_storeStoreRepositoryV1_V1_store_storeViews.js",
+			"metadata": {
+				"out": "./lib/schemas/get_storeStoreRepositoryV1_V1_store_storeViews.out.json"
+			}
+		},
+		"get_storeGroupRepositoryV1_V1_store_storeGroups": {
+			"title": "get_storeGroupRepositoryV1_V1_store_storeGroups",
+			"main": "./lib/actions/get_storeGroupRepositoryV1_V1_store_storeGroups.js",
+			"metadata": {
+				"out": "./lib/schemas/get_storeGroupRepositoryV1_V1_store_storeGroups.out.json"
+			}
+		},
+		"get_storeWebsiteRepositoryV1_V1_store_websites": {
+			"title": "get_storeWebsiteRepositoryV1_V1_store_websites",
+			"main": "./lib/actions/get_storeWebsiteRepositoryV1_V1_store_websites.js",
+			"metadata": {
+				"out": "./lib/schemas/get_storeWebsiteRepositoryV1_V1_store_websites.out.json"
+			}
+		},
+		"get_storeStoreConfigManagerV1_V1_store_storeConfigs": {
+			"title": "get_storeStoreConfigManagerV1_V1_store_storeConfigs",
+			"main": "./lib/actions/get_storeStoreConfigManagerV1_V1_store_storeConfigs.js",
+			"metadata": {
+				"in": "./lib/schemas/get_storeStoreConfigManagerV1_V1_store_storeConfigs.in.json",
+				"out": "./lib/schemas/get_storeStoreConfigManagerV1_V1_store_storeConfigs.out.json"
+			}
+		},
+		"get_directoryCurrencyInformationAcquirerV1_V1_directory_currency": {
+			"title": "get_directoryCurrencyInformationAcquirerV1_V1_directory_currency",
+			"main": "./lib/actions/get_directoryCurrencyInformationAcquirerV1_V1_directory_currency.js",
+			"metadata": {
+				"out": "./lib/schemas/get_directoryCurrencyInformationAcquirerV1_V1_directory_currency.out.json"
+			}
+		},
+		"get_directoryCountryInformationAcquirerV1_V1_directory_countries": {
+			"title": "get_directoryCountryInformationAcquirerV1_V1_directory_countries",
+			"main": "./lib/actions/get_directoryCountryInformationAcquirerV1_V1_directory_countries.js",
+			"metadata": {
+				"out": "./lib/schemas/get_directoryCountryInformationAcquirerV1_V1_directory_countries.out.json"
+			}
+		},
+		"get_directoryCountryInformationAcquirerV1_V1_directory_countries_8countryId8": {
+			"title": "get_directoryCountryInformationAcquirerV1_V1_directory_countries_8countryId8",
+			"main": "./lib/actions/get_directoryCountryInformationAcquirerV1_V1_directory_countries_8countryId8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_directoryCountryInformationAcquirerV1_V1_directory_countries_8countryId8.in.json",
+				"out": "./lib/schemas/get_directoryCountryInformationAcquirerV1_V1_directory_countries_8countryId8.out.json"
+			}
+		},
+		"get_eavAttributeSetRepositoryV1_V1_eav_attribute7sets_list": {
+			"title": "get_eavAttributeSetRepositoryV1_V1_eav_attribute7sets_list",
+			"main": "./lib/actions/get_eavAttributeSetRepositoryV1_V1_eav_attribute7sets_list.js",
+			"metadata": {
+				"in": "./lib/schemas/get_eavAttributeSetRepositoryV1_V1_eav_attribute7sets_list.in.json",
+				"out": "./lib/schemas/get_eavAttributeSetRepositoryV1_V1_eav_attribute7sets_list.out.json"
+			}
+		},
+		"get_eavAttributeSetRepositoryV1_V1_eav_attribute7sets_8attributeSetId8": {
+			"title": "get_eavAttributeSetRepositoryV1_V1_eav_attribute7sets_8attributeSetId8",
+			"main": "./lib/actions/get_eavAttributeSetRepositoryV1_V1_eav_attribute7sets_8attributeSetId8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_eavAttributeSetRepositoryV1_V1_eav_attribute7sets_8attributeSetId8.in.json",
+				"out": "./lib/schemas/get_eavAttributeSetRepositoryV1_V1_eav_attribute7sets_8attributeSetId8.out.json"
+			}
+		},
+		"delete_eavAttributeSetRepositoryV1_V1_eav_attribute7sets_8attributeSetId8": {
+			"title": "delete_eavAttributeSetRepositoryV1_V1_eav_attribute7sets_8attributeSetId8",
+			"main": "./lib/actions/delete_eavAttributeSetRepositoryV1_V1_eav_attribute7sets_8attributeSetId8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_eavAttributeSetRepositoryV1_V1_eav_attribute7sets_8attributeSetId8.in.json",
+				"out": "./lib/schemas/delete_eavAttributeSetRepositoryV1_V1_eav_attribute7sets_8attributeSetId8.out.json"
+			}
+		},
+		"put_eavAttributeSetRepositoryV1_V1_eav_attribute7sets_8attributeSetId8": {
+			"title": "put_eavAttributeSetRepositoryV1_V1_eav_attribute7sets_8attributeSetId8",
+			"main": "./lib/actions/put_eavAttributeSetRepositoryV1_V1_eav_attribute7sets_8attributeSetId8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_eavAttributeSetRepositoryV1_V1_eav_attribute7sets_8attributeSetId8.in.json",
+				"out": "./lib/schemas/put_eavAttributeSetRepositoryV1_V1_eav_attribute7sets_8attributeSetId8.out.json"
+			}
+		},
+		"post_eavAttributeSetManagementV1_V1_eav_attribute7sets": {
+			"title": "post_eavAttributeSetManagementV1_V1_eav_attribute7sets",
+			"main": "./lib/actions/post_eavAttributeSetManagementV1_V1_eav_attribute7sets.js",
+			"metadata": {
+				"in": "./lib/schemas/post_eavAttributeSetManagementV1_V1_eav_attribute7sets.in.json",
+				"out": "./lib/schemas/post_eavAttributeSetManagementV1_V1_eav_attribute7sets.out.json"
+			}
+		},
+		"get_backendModuleServiceV1_V1_modules": {
+			"title": "get_backendModuleServiceV1_V1_modules",
+			"main": "./lib/actions/get_backendModuleServiceV1_V1_modules.js",
+			"metadata": {
+				"out": "./lib/schemas/get_backendModuleServiceV1_V1_modules.out.json"
+			}
+		},
+		"get_customerGroupRepositoryV1_V1_customerGroups_8id8": {
+			"title": "get_customerGroupRepositoryV1_V1_customerGroups_8id8",
+			"main": "./lib/actions/get_customerGroupRepositoryV1_V1_customerGroups_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_customerGroupRepositoryV1_V1_customerGroups_8id8.in.json",
+				"out": "./lib/schemas/get_customerGroupRepositoryV1_V1_customerGroups_8id8.out.json"
+			}
+		},
+		"put_customerGroupRepositoryV1_V1_customerGroups_8id8": {
+			"title": "put_customerGroupRepositoryV1_V1_customerGroups_8id8",
+			"main": "./lib/actions/put_customerGroupRepositoryV1_V1_customerGroups_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_customerGroupRepositoryV1_V1_customerGroups_8id8.in.json",
+				"out": "./lib/schemas/put_customerGroupRepositoryV1_V1_customerGroups_8id8.out.json"
+			}
+		},
+		"delete_customerGroupRepositoryV1_V1_customerGroups_8id8": {
+			"title": "delete_customerGroupRepositoryV1_V1_customerGroups_8id8",
+			"main": "./lib/actions/delete_customerGroupRepositoryV1_V1_customerGroups_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_customerGroupRepositoryV1_V1_customerGroups_8id8.in.json",
+				"out": "./lib/schemas/delete_customerGroupRepositoryV1_V1_customerGroups_8id8.out.json"
+			}
+		},
+		"get_customerGroupRepositoryV1_V1_customerGroups_search": {
+			"title": "get_customerGroupRepositoryV1_V1_customerGroups_search",
+			"main": "./lib/actions/get_customerGroupRepositoryV1_V1_customerGroups_search.js",
+			"metadata": {
+				"in": "./lib/schemas/get_customerGroupRepositoryV1_V1_customerGroups_search.in.json",
+				"out": "./lib/schemas/get_customerGroupRepositoryV1_V1_customerGroups_search.out.json"
+			}
+		},
+		"post_customerGroupRepositoryV1_V1_customerGroups": {
+			"title": "post_customerGroupRepositoryV1_V1_customerGroups",
+			"main": "./lib/actions/post_customerGroupRepositoryV1_V1_customerGroups.js",
+			"metadata": {
+				"in": "./lib/schemas/post_customerGroupRepositoryV1_V1_customerGroups.in.json",
+				"out": "./lib/schemas/post_customerGroupRepositoryV1_V1_customerGroups.out.json"
+			}
+		},
+		"get_customerGroupManagementV1_V1_customerGroups_default_8storeId8": {
+			"title": "get_customerGroupManagementV1_V1_customerGroups_default_8storeId8",
+			"main": "./lib/actions/get_customerGroupManagementV1_V1_customerGroups_default_8storeId8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_customerGroupManagementV1_V1_customerGroups_default_8storeId8.in.json",
+				"out": "./lib/schemas/get_customerGroupManagementV1_V1_customerGroups_default_8storeId8.out.json"
+			}
+		},
+		"get_customerGroupManagementV1_V1_customerGroups_default": {
+			"title": "get_customerGroupManagementV1_V1_customerGroups_default",
+			"main": "./lib/actions/get_customerGroupManagementV1_V1_customerGroups_default.js",
+			"metadata": {
+				"in": "./lib/schemas/get_customerGroupManagementV1_V1_customerGroups_default.in.json",
+				"out": "./lib/schemas/get_customerGroupManagementV1_V1_customerGroups_default.out.json"
+			}
+		},
+		"get_customerGroupManagementV1_V1_customerGroups_8id8_permissions": {
+			"title": "get_customerGroupManagementV1_V1_customerGroups_8id8_permissions",
+			"main": "./lib/actions/get_customerGroupManagementV1_V1_customerGroups_8id8_permissions.js",
+			"metadata": {
+				"in": "./lib/schemas/get_customerGroupManagementV1_V1_customerGroups_8id8_permissions.in.json",
+				"out": "./lib/schemas/get_customerGroupManagementV1_V1_customerGroups_8id8_permissions.out.json"
+			}
+		},
+		"get_customerCustomerMetadataV1_V1_attributeMetadata_customer_attribute_8attributeCode8": {
+			"title": "get_customerCustomerMetadataV1_V1_attributeMetadata_customer_attribute_8attributeCode8",
+			"main": "./lib/actions/get_customerCustomerMetadataV1_V1_attributeMetadata_customer_attribute_8attributeCode8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_customerCustomerMetadataV1_V1_attributeMetadata_customer_attribute_8attributeCode8.in.json",
+				"out": "./lib/schemas/get_customerCustomerMetadataV1_V1_attributeMetadata_customer_attribute_8attributeCode8.out.json"
+			}
+		},
+		"get_customerCustomerMetadataV1_V1_attributeMetadata_customer_form_8formCode8": {
+			"title": "get_customerCustomerMetadataV1_V1_attributeMetadata_customer_form_8formCode8",
+			"main": "./lib/actions/get_customerCustomerMetadataV1_V1_attributeMetadata_customer_form_8formCode8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_customerCustomerMetadataV1_V1_attributeMetadata_customer_form_8formCode8.in.json",
+				"out": "./lib/schemas/get_customerCustomerMetadataV1_V1_attributeMetadata_customer_form_8formCode8.out.json"
+			}
+		},
+		"get_customerCustomerMetadataV1_V1_attributeMetadata_customer": {
+			"title": "get_customerCustomerMetadataV1_V1_attributeMetadata_customer",
+			"main": "./lib/actions/get_customerCustomerMetadataV1_V1_attributeMetadata_customer.js",
+			"metadata": {
+				"out": "./lib/schemas/get_customerCustomerMetadataV1_V1_attributeMetadata_customer.out.json"
+			}
+		},
+		"get_customerCustomerMetadataV1_V1_attributeMetadata_customer_custom": {
+			"title": "get_customerCustomerMetadataV1_V1_attributeMetadata_customer_custom",
+			"main": "./lib/actions/get_customerCustomerMetadataV1_V1_attributeMetadata_customer_custom.js",
+			"metadata": {
+				"in": "./lib/schemas/get_customerCustomerMetadataV1_V1_attributeMetadata_customer_custom.in.json",
+				"out": "./lib/schemas/get_customerCustomerMetadataV1_V1_attributeMetadata_customer_custom.out.json"
+			}
+		},
+		"get_customerAddressMetadataV1_V1_attributeMetadata_customerAddress_attribute_8attributeCode8": {
+			"title": "get_customerAddressMetadataV1_V1_attributeMetadata_customerAddress_attribute_8attributeCode8",
+			"main": "./lib/actions/get_customerAddressMetadataV1_V1_attributeMetadata_customerAddress_attribute_8attributeCode8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_customerAddressMetadataV1_V1_attributeMetadata_customerAddress_attribute_8attributeCode8.in.json",
+				"out": "./lib/schemas/get_customerAddressMetadataV1_V1_attributeMetadata_customerAddress_attribute_8attributeCode8.out.json"
+			}
+		},
+		"get_customerAddressMetadataV1_V1_attributeMetadata_customerAddress_form_8formCode8": {
+			"title": "get_customerAddressMetadataV1_V1_attributeMetadata_customerAddress_form_8formCode8",
+			"main": "./lib/actions/get_customerAddressMetadataV1_V1_attributeMetadata_customerAddress_form_8formCode8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_customerAddressMetadataV1_V1_attributeMetadata_customerAddress_form_8formCode8.in.json",
+				"out": "./lib/schemas/get_customerAddressMetadataV1_V1_attributeMetadata_customerAddress_form_8formCode8.out.json"
+			}
+		},
+		"get_customerAddressMetadataV1_V1_attributeMetadata_customerAddress": {
+			"title": "get_customerAddressMetadataV1_V1_attributeMetadata_customerAddress",
+			"main": "./lib/actions/get_customerAddressMetadataV1_V1_attributeMetadata_customerAddress.js",
+			"metadata": {
+				"out": "./lib/schemas/get_customerAddressMetadataV1_V1_attributeMetadata_customerAddress.out.json"
+			}
+		},
+		"get_customerAddressMetadataV1_V1_attributeMetadata_customerAddress_custom": {
+			"title": "get_customerAddressMetadataV1_V1_attributeMetadata_customerAddress_custom",
+			"main": "./lib/actions/get_customerAddressMetadataV1_V1_attributeMetadata_customerAddress_custom.js",
+			"metadata": {
+				"in": "./lib/schemas/get_customerAddressMetadataV1_V1_attributeMetadata_customerAddress_custom.in.json",
+				"out": "./lib/schemas/get_customerAddressMetadataV1_V1_attributeMetadata_customerAddress_custom.out.json"
+			}
+		},
+		"get_customerCustomerRepositoryV1_V1_customers_8customerId8": {
+			"title": "get_customerCustomerRepositoryV1_V1_customers_8customerId8",
+			"main": "./lib/actions/get_customerCustomerRepositoryV1_V1_customers_8customerId8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_customerCustomerRepositoryV1_V1_customers_8customerId8.in.json",
+				"out": "./lib/schemas/get_customerCustomerRepositoryV1_V1_customers_8customerId8.out.json"
+			}
+		},
+		"delete_customerCustomerRepositoryV1_V1_customers_8customerId8": {
+			"title": "delete_customerCustomerRepositoryV1_V1_customers_8customerId8",
+			"main": "./lib/actions/delete_customerCustomerRepositoryV1_V1_customers_8customerId8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_customerCustomerRepositoryV1_V1_customers_8customerId8.in.json",
+				"out": "./lib/schemas/delete_customerCustomerRepositoryV1_V1_customers_8customerId8.out.json"
+			}
+		},
+		"put_customerCustomerRepositoryV1_V1_customers_8id8": {
+			"title": "put_customerCustomerRepositoryV1_V1_customers_8id8",
+			"main": "./lib/actions/put_customerCustomerRepositoryV1_V1_customers_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_customerCustomerRepositoryV1_V1_customers_8id8.in.json",
+				"out": "./lib/schemas/put_customerCustomerRepositoryV1_V1_customers_8id8.out.json"
+			}
+		},
+		"put_customerCustomerRepositoryV1_V1_customers_me": {
+			"title": "put_customerCustomerRepositoryV1_V1_customers_me",
+			"main": "./lib/actions/put_customerCustomerRepositoryV1_V1_customers_me.js",
+			"metadata": {
+				"in": "./lib/schemas/put_customerCustomerRepositoryV1_V1_customers_me.in.json",
+				"out": "./lib/schemas/put_customerCustomerRepositoryV1_V1_customers_me.out.json"
+			}
+		},
+		"get_customerCustomerRepositoryV1_V1_customers_me": {
+			"title": "get_customerCustomerRepositoryV1_V1_customers_me",
+			"main": "./lib/actions/get_customerCustomerRepositoryV1_V1_customers_me.js",
+			"metadata": {
+				"out": "./lib/schemas/get_customerCustomerRepositoryV1_V1_customers_me.out.json"
+			}
+		},
+		"get_customerCustomerRepositoryV1_V1_customers_search": {
+			"title": "get_customerCustomerRepositoryV1_V1_customers_search",
+			"main": "./lib/actions/get_customerCustomerRepositoryV1_V1_customers_search.js",
+			"metadata": {
+				"in": "./lib/schemas/get_customerCustomerRepositoryV1_V1_customers_search.in.json",
+				"out": "./lib/schemas/get_customerCustomerRepositoryV1_V1_customers_search.out.json"
+			}
+		},
+		"post_customerAccountManagementV1_V1_customers": {
+			"title": "post_customerAccountManagementV1_V1_customers",
+			"main": "./lib/actions/post_customerAccountManagementV1_V1_customers.js",
+			"metadata": {
+				"in": "./lib/schemas/post_customerAccountManagementV1_V1_customers.in.json",
+				"out": "./lib/schemas/post_customerAccountManagementV1_V1_customers.out.json"
+			}
+		},
+		"put_customerAccountManagementV1_V1_customers_me_activate": {
+			"title": "put_customerAccountManagementV1_V1_customers_me_activate",
+			"main": "./lib/actions/put_customerAccountManagementV1_V1_customers_me_activate.js",
+			"metadata": {
+				"in": "./lib/schemas/put_customerAccountManagementV1_V1_customers_me_activate.in.json",
+				"out": "./lib/schemas/put_customerAccountManagementV1_V1_customers_me_activate.out.json"
+			}
+		},
+		"put_customerAccountManagementV1_V1_customers_8email8_activate": {
+			"title": "put_customerAccountManagementV1_V1_customers_8email8_activate",
+			"main": "./lib/actions/put_customerAccountManagementV1_V1_customers_8email8_activate.js",
+			"metadata": {
+				"in": "./lib/schemas/put_customerAccountManagementV1_V1_customers_8email8_activate.in.json",
+				"out": "./lib/schemas/put_customerAccountManagementV1_V1_customers_8email8_activate.out.json"
+			}
+		},
+		"put_customerAccountManagementV1_V1_customers_me_password": {
+			"title": "put_customerAccountManagementV1_V1_customers_me_password",
+			"main": "./lib/actions/put_customerAccountManagementV1_V1_customers_me_password.js",
+			"metadata": {
+				"in": "./lib/schemas/put_customerAccountManagementV1_V1_customers_me_password.in.json",
+				"out": "./lib/schemas/put_customerAccountManagementV1_V1_customers_me_password.out.json"
+			}
+		},
+		"get_customerAccountManagementV1_V1_customers_8customerId8_password_resetLinkToken_8resetPasswordLinkToken8": {
+			"title": "get_customerAccountManagementV1_V1_customers_8customerId8_password_resetLinkToken_8resetPasswordLinkToken8",
+			"main": "./lib/actions/get_customerAccountManagementV1_V1_customers_8customerId8_password_resetLinkToken_8resetPasswordLinkToken8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_customerAccountManagementV1_V1_customers_8customerId8_password_resetLinkToken_8resetPasswordLinkToken8.in.json",
+				"out": "./lib/schemas/get_customerAccountManagementV1_V1_customers_8customerId8_password_resetLinkToken_8resetPasswordLinkToken8.out.json"
+			}
+		},
+		"put_customerAccountManagementV1_V1_customers_password": {
+			"title": "put_customerAccountManagementV1_V1_customers_password",
+			"main": "./lib/actions/put_customerAccountManagementV1_V1_customers_password.js",
+			"metadata": {
+				"in": "./lib/schemas/put_customerAccountManagementV1_V1_customers_password.in.json",
+				"out": "./lib/schemas/put_customerAccountManagementV1_V1_customers_password.out.json"
+			}
+		},
+		"get_customerAccountManagementV1_V1_customers_8customerId8_confirm": {
+			"title": "get_customerAccountManagementV1_V1_customers_8customerId8_confirm",
+			"main": "./lib/actions/get_customerAccountManagementV1_V1_customers_8customerId8_confirm.js",
+			"metadata": {
+				"in": "./lib/schemas/get_customerAccountManagementV1_V1_customers_8customerId8_confirm.in.json",
+				"out": "./lib/schemas/get_customerAccountManagementV1_V1_customers_8customerId8_confirm.out.json"
+			}
+		},
+		"post_customerAccountManagementV1_V1_customers_confirm": {
+			"title": "post_customerAccountManagementV1_V1_customers_confirm",
+			"main": "./lib/actions/post_customerAccountManagementV1_V1_customers_confirm.js",
+			"metadata": {
+				"in": "./lib/schemas/post_customerAccountManagementV1_V1_customers_confirm.in.json",
+				"out": "./lib/schemas/post_customerAccountManagementV1_V1_customers_confirm.out.json"
+			}
+		},
+		"put_customerAccountManagementV1_V1_customers_validate": {
+			"title": "put_customerAccountManagementV1_V1_customers_validate",
+			"main": "./lib/actions/put_customerAccountManagementV1_V1_customers_validate.js",
+			"metadata": {
+				"in": "./lib/schemas/put_customerAccountManagementV1_V1_customers_validate.in.json",
+				"out": "./lib/schemas/put_customerAccountManagementV1_V1_customers_validate.out.json"
+			}
+		},
+		"get_customerAccountManagementV1_V1_customers_8customerId8_permissions_readonly": {
+			"title": "get_customerAccountManagementV1_V1_customers_8customerId8_permissions_readonly",
+			"main": "./lib/actions/get_customerAccountManagementV1_V1_customers_8customerId8_permissions_readonly.js",
+			"metadata": {
+				"in": "./lib/schemas/get_customerAccountManagementV1_V1_customers_8customerId8_permissions_readonly.in.json",
+				"out": "./lib/schemas/get_customerAccountManagementV1_V1_customers_8customerId8_permissions_readonly.out.json"
+			}
+		},
+		"post_customerAccountManagementV1_V1_customers_isEmailAvailable": {
+			"title": "post_customerAccountManagementV1_V1_customers_isEmailAvailable",
+			"main": "./lib/actions/post_customerAccountManagementV1_V1_customers_isEmailAvailable.js",
+			"metadata": {
+				"in": "./lib/schemas/post_customerAccountManagementV1_V1_customers_isEmailAvailable.in.json",
+				"out": "./lib/schemas/post_customerAccountManagementV1_V1_customers_isEmailAvailable.out.json"
+			}
+		},
+		"get_customerAccountManagementV1_V1_customers_me_billingAddress": {
+			"title": "get_customerAccountManagementV1_V1_customers_me_billingAddress",
+			"main": "./lib/actions/get_customerAccountManagementV1_V1_customers_me_billingAddress.js",
+			"metadata": {
+				"out": "./lib/schemas/get_customerAccountManagementV1_V1_customers_me_billingAddress.out.json"
+			}
+		},
+		"get_customerAccountManagementV1_V1_customers_8customerId8_billingAddress": {
+			"title": "get_customerAccountManagementV1_V1_customers_8customerId8_billingAddress",
+			"main": "./lib/actions/get_customerAccountManagementV1_V1_customers_8customerId8_billingAddress.js",
+			"metadata": {
+				"in": "./lib/schemas/get_customerAccountManagementV1_V1_customers_8customerId8_billingAddress.in.json",
+				"out": "./lib/schemas/get_customerAccountManagementV1_V1_customers_8customerId8_billingAddress.out.json"
+			}
+		},
+		"get_customerAccountManagementV1_V1_customers_me_shippingAddress": {
+			"title": "get_customerAccountManagementV1_V1_customers_me_shippingAddress",
+			"main": "./lib/actions/get_customerAccountManagementV1_V1_customers_me_shippingAddress.js",
+			"metadata": {
+				"out": "./lib/schemas/get_customerAccountManagementV1_V1_customers_me_shippingAddress.out.json"
+			}
+		},
+		"get_customerAccountManagementV1_V1_customers_8customerId8_shippingAddress": {
+			"title": "get_customerAccountManagementV1_V1_customers_8customerId8_shippingAddress",
+			"main": "./lib/actions/get_customerAccountManagementV1_V1_customers_8customerId8_shippingAddress.js",
+			"metadata": {
+				"in": "./lib/schemas/get_customerAccountManagementV1_V1_customers_8customerId8_shippingAddress.in.json",
+				"out": "./lib/schemas/get_customerAccountManagementV1_V1_customers_8customerId8_shippingAddress.out.json"
+			}
+		},
+		"get_customerAddressRepositoryV1_V1_customers_addresses_8addressId8": {
+			"title": "get_customerAddressRepositoryV1_V1_customers_addresses_8addressId8",
+			"main": "./lib/actions/get_customerAddressRepositoryV1_V1_customers_addresses_8addressId8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_customerAddressRepositoryV1_V1_customers_addresses_8addressId8.in.json",
+				"out": "./lib/schemas/get_customerAddressRepositoryV1_V1_customers_addresses_8addressId8.out.json"
+			}
+		},
+		"delete_customerAddressRepositoryV1_V1_addresses_8addressId8": {
+			"title": "delete_customerAddressRepositoryV1_V1_addresses_8addressId8",
+			"main": "./lib/actions/delete_customerAddressRepositoryV1_V1_addresses_8addressId8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_customerAddressRepositoryV1_V1_addresses_8addressId8.in.json",
+				"out": "./lib/schemas/delete_customerAddressRepositoryV1_V1_addresses_8addressId8.out.json"
+			}
+		},
+		"get_cmsPageRepositoryV1_V1_cmsPage_8pageId8": {
+			"title": "get_cmsPageRepositoryV1_V1_cmsPage_8pageId8",
+			"main": "./lib/actions/get_cmsPageRepositoryV1_V1_cmsPage_8pageId8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_cmsPageRepositoryV1_V1_cmsPage_8pageId8.in.json",
+				"out": "./lib/schemas/get_cmsPageRepositoryV1_V1_cmsPage_8pageId8.out.json"
+			}
+		},
+		"delete_cmsPageRepositoryV1_V1_cmsPage_8pageId8": {
+			"title": "delete_cmsPageRepositoryV1_V1_cmsPage_8pageId8",
+			"main": "./lib/actions/delete_cmsPageRepositoryV1_V1_cmsPage_8pageId8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_cmsPageRepositoryV1_V1_cmsPage_8pageId8.in.json",
+				"out": "./lib/schemas/delete_cmsPageRepositoryV1_V1_cmsPage_8pageId8.out.json"
+			}
+		},
+		"get_cmsPageRepositoryV1_V1_cmsPage_search": {
+			"title": "get_cmsPageRepositoryV1_V1_cmsPage_search",
+			"main": "./lib/actions/get_cmsPageRepositoryV1_V1_cmsPage_search.js",
+			"metadata": {
+				"in": "./lib/schemas/get_cmsPageRepositoryV1_V1_cmsPage_search.in.json",
+				"out": "./lib/schemas/get_cmsPageRepositoryV1_V1_cmsPage_search.out.json"
+			}
+		},
+		"post_cmsPageRepositoryV1_V1_cmsPage": {
+			"title": "post_cmsPageRepositoryV1_V1_cmsPage",
+			"main": "./lib/actions/post_cmsPageRepositoryV1_V1_cmsPage.js",
+			"metadata": {
+				"in": "./lib/schemas/post_cmsPageRepositoryV1_V1_cmsPage.in.json",
+				"out": "./lib/schemas/post_cmsPageRepositoryV1_V1_cmsPage.out.json"
+			}
+		},
+		"put_cmsPageRepositoryV1_V1_cmsPage_8id8": {
+			"title": "put_cmsPageRepositoryV1_V1_cmsPage_8id8",
+			"main": "./lib/actions/put_cmsPageRepositoryV1_V1_cmsPage_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_cmsPageRepositoryV1_V1_cmsPage_8id8.in.json",
+				"out": "./lib/schemas/put_cmsPageRepositoryV1_V1_cmsPage_8id8.out.json"
+			}
+		},
+		"get_cmsBlockRepositoryV1_V1_cmsBlock_8blockId8": {
+			"title": "get_cmsBlockRepositoryV1_V1_cmsBlock_8blockId8",
+			"main": "./lib/actions/get_cmsBlockRepositoryV1_V1_cmsBlock_8blockId8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_cmsBlockRepositoryV1_V1_cmsBlock_8blockId8.in.json",
+				"out": "./lib/schemas/get_cmsBlockRepositoryV1_V1_cmsBlock_8blockId8.out.json"
+			}
+		},
+		"delete_cmsBlockRepositoryV1_V1_cmsBlock_8blockId8": {
+			"title": "delete_cmsBlockRepositoryV1_V1_cmsBlock_8blockId8",
+			"main": "./lib/actions/delete_cmsBlockRepositoryV1_V1_cmsBlock_8blockId8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_cmsBlockRepositoryV1_V1_cmsBlock_8blockId8.in.json",
+				"out": "./lib/schemas/delete_cmsBlockRepositoryV1_V1_cmsBlock_8blockId8.out.json"
+			}
+		},
+		"get_cmsBlockRepositoryV1_V1_cmsBlock_search": {
+			"title": "get_cmsBlockRepositoryV1_V1_cmsBlock_search",
+			"main": "./lib/actions/get_cmsBlockRepositoryV1_V1_cmsBlock_search.js",
+			"metadata": {
+				"in": "./lib/schemas/get_cmsBlockRepositoryV1_V1_cmsBlock_search.in.json",
+				"out": "./lib/schemas/get_cmsBlockRepositoryV1_V1_cmsBlock_search.out.json"
+			}
+		},
+		"post_cmsBlockRepositoryV1_V1_cmsBlock": {
+			"title": "post_cmsBlockRepositoryV1_V1_cmsBlock",
+			"main": "./lib/actions/post_cmsBlockRepositoryV1_V1_cmsBlock.js",
+			"metadata": {
+				"in": "./lib/schemas/post_cmsBlockRepositoryV1_V1_cmsBlock.in.json",
+				"out": "./lib/schemas/post_cmsBlockRepositoryV1_V1_cmsBlock.out.json"
+			}
+		},
+		"put_cmsBlockRepositoryV1_V1_cmsBlock_8id8": {
+			"title": "put_cmsBlockRepositoryV1_V1_cmsBlock_8id8",
+			"main": "./lib/actions/put_cmsBlockRepositoryV1_V1_cmsBlock_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_cmsBlockRepositoryV1_V1_cmsBlock_8id8.in.json",
+				"out": "./lib/schemas/put_cmsBlockRepositoryV1_V1_cmsBlock_8id8.out.json"
+			}
+		},
+		"post_catalogProductRepositoryV1_V1_products": {
+			"title": "post_catalogProductRepositoryV1_V1_products",
+			"main": "./lib/actions/post_catalogProductRepositoryV1_V1_products.js",
+			"metadata": {
+				"in": "./lib/schemas/post_catalogProductRepositoryV1_V1_products.in.json",
+				"out": "./lib/schemas/post_catalogProductRepositoryV1_V1_products.out.json"
+			}
+		},
+		"get_catalogProductRepositoryV1_V1_products": {
+			"title": "get_catalogProductRepositoryV1_V1_products",
+			"main": "./lib/actions/get_catalogProductRepositoryV1_V1_products.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogProductRepositoryV1_V1_products.in.json",
+				"out": "./lib/schemas/get_catalogProductRepositoryV1_V1_products.out.json"
+			}
+		},
+		"put_catalogProductRepositoryV1_V1_products_8sku8": {
+			"title": "put_catalogProductRepositoryV1_V1_products_8sku8",
+			"main": "./lib/actions/put_catalogProductRepositoryV1_V1_products_8sku8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_catalogProductRepositoryV1_V1_products_8sku8.in.json",
+				"out": "./lib/schemas/put_catalogProductRepositoryV1_V1_products_8sku8.out.json"
+			}
+		},
+		"delete_catalogProductRepositoryV1_V1_products_8sku8": {
+			"title": "delete_catalogProductRepositoryV1_V1_products_8sku8",
+			"main": "./lib/actions/delete_catalogProductRepositoryV1_V1_products_8sku8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_catalogProductRepositoryV1_V1_products_8sku8.in.json",
+				"out": "./lib/schemas/delete_catalogProductRepositoryV1_V1_products_8sku8.out.json"
+			}
+		},
+		"get_catalogProductRepositoryV1_V1_products_8sku8": {
+			"title": "get_catalogProductRepositoryV1_V1_products_8sku8",
+			"main": "./lib/actions/get_catalogProductRepositoryV1_V1_products_8sku8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogProductRepositoryV1_V1_products_8sku8.in.json",
+				"out": "./lib/schemas/get_catalogProductRepositoryV1_V1_products_8sku8.out.json"
+			}
+		},
+		"get_catalogProductAttributeTypesListV1_V1_products_attributes_types": {
+			"title": "get_catalogProductAttributeTypesListV1_V1_products_attributes_types",
+			"main": "./lib/actions/get_catalogProductAttributeTypesListV1_V1_products_attributes_types.js",
+			"metadata": {
+				"out": "./lib/schemas/get_catalogProductAttributeTypesListV1_V1_products_attributes_types.out.json"
+			}
+		},
+		"get_catalogProductAttributeRepositoryV1_V1_products_attributes_8attributeCode8": {
+			"title": "get_catalogProductAttributeRepositoryV1_V1_products_attributes_8attributeCode8",
+			"main": "./lib/actions/get_catalogProductAttributeRepositoryV1_V1_products_attributes_8attributeCode8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogProductAttributeRepositoryV1_V1_products_attributes_8attributeCode8.in.json",
+				"out": "./lib/schemas/get_catalogProductAttributeRepositoryV1_V1_products_attributes_8attributeCode8.out.json"
+			}
+		},
+		"put_catalogProductAttributeRepositoryV1_V1_products_attributes_8attributeCode8": {
+			"title": "put_catalogProductAttributeRepositoryV1_V1_products_attributes_8attributeCode8",
+			"main": "./lib/actions/put_catalogProductAttributeRepositoryV1_V1_products_attributes_8attributeCode8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_catalogProductAttributeRepositoryV1_V1_products_attributes_8attributeCode8.in.json",
+				"out": "./lib/schemas/put_catalogProductAttributeRepositoryV1_V1_products_attributes_8attributeCode8.out.json"
+			}
+		},
+		"delete_catalogProductAttributeRepositoryV1_V1_products_attributes_8attributeCode8": {
+			"title": "delete_catalogProductAttributeRepositoryV1_V1_products_attributes_8attributeCode8",
+			"main": "./lib/actions/delete_catalogProductAttributeRepositoryV1_V1_products_attributes_8attributeCode8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_catalogProductAttributeRepositoryV1_V1_products_attributes_8attributeCode8.in.json",
+				"out": "./lib/schemas/delete_catalogProductAttributeRepositoryV1_V1_products_attributes_8attributeCode8.out.json"
+			}
+		},
+		"get_catalogProductAttributeRepositoryV1_V1_products_attributes": {
+			"title": "get_catalogProductAttributeRepositoryV1_V1_products_attributes",
+			"main": "./lib/actions/get_catalogProductAttributeRepositoryV1_V1_products_attributes.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogProductAttributeRepositoryV1_V1_products_attributes.in.json",
+				"out": "./lib/schemas/get_catalogProductAttributeRepositoryV1_V1_products_attributes.out.json"
+			}
+		},
+		"post_catalogProductAttributeRepositoryV1_V1_products_attributes": {
+			"title": "post_catalogProductAttributeRepositoryV1_V1_products_attributes",
+			"main": "./lib/actions/post_catalogProductAttributeRepositoryV1_V1_products_attributes.js",
+			"metadata": {
+				"in": "./lib/schemas/post_catalogProductAttributeRepositoryV1_V1_products_attributes.in.json",
+				"out": "./lib/schemas/post_catalogProductAttributeRepositoryV1_V1_products_attributes.out.json"
+			}
+		},
+		"get_catalogCategoryAttributeRepositoryV1_V1_categories_attributes_8attributeCode8": {
+			"title": "get_catalogCategoryAttributeRepositoryV1_V1_categories_attributes_8attributeCode8",
+			"main": "./lib/actions/get_catalogCategoryAttributeRepositoryV1_V1_categories_attributes_8attributeCode8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogCategoryAttributeRepositoryV1_V1_categories_attributes_8attributeCode8.in.json",
+				"out": "./lib/schemas/get_catalogCategoryAttributeRepositoryV1_V1_categories_attributes_8attributeCode8.out.json"
+			}
+		},
+		"get_catalogCategoryAttributeRepositoryV1_V1_categories_attributes": {
+			"title": "get_catalogCategoryAttributeRepositoryV1_V1_categories_attributes",
+			"main": "./lib/actions/get_catalogCategoryAttributeRepositoryV1_V1_categories_attributes.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogCategoryAttributeRepositoryV1_V1_categories_attributes.in.json",
+				"out": "./lib/schemas/get_catalogCategoryAttributeRepositoryV1_V1_categories_attributes.out.json"
+			}
+		},
+		"get_catalogCategoryAttributeOptionManagementV1_V1_categories_attributes_8attributeCode8_options": {
+			"title": "get_catalogCategoryAttributeOptionManagementV1_V1_categories_attributes_8attributeCode8_options",
+			"main": "./lib/actions/get_catalogCategoryAttributeOptionManagementV1_V1_categories_attributes_8attributeCode8_options.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogCategoryAttributeOptionManagementV1_V1_categories_attributes_8attributeCode8_options.in.json",
+				"out": "./lib/schemas/get_catalogCategoryAttributeOptionManagementV1_V1_categories_attributes_8attributeCode8_options.out.json"
+			}
+		},
+		"get_catalogProductTypeListV1_V1_products_types": {
+			"title": "get_catalogProductTypeListV1_V1_products_types",
+			"main": "./lib/actions/get_catalogProductTypeListV1_V1_products_types.js",
+			"metadata": {
+				"out": "./lib/schemas/get_catalogProductTypeListV1_V1_products_types.out.json"
+			}
+		},
+		"get_catalogAttributeSetRepositoryV1_V1_products_attribute7sets_sets_list": {
+			"title": "get_catalogAttributeSetRepositoryV1_V1_products_attribute7sets_sets_list",
+			"main": "./lib/actions/get_catalogAttributeSetRepositoryV1_V1_products_attribute7sets_sets_list.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogAttributeSetRepositoryV1_V1_products_attribute7sets_sets_list.in.json",
+				"out": "./lib/schemas/get_catalogAttributeSetRepositoryV1_V1_products_attribute7sets_sets_list.out.json"
+			}
+		},
+		"get_catalogAttributeSetRepositoryV1_V1_products_attribute7sets_8attributeSetId8": {
+			"title": "get_catalogAttributeSetRepositoryV1_V1_products_attribute7sets_8attributeSetId8",
+			"main": "./lib/actions/get_catalogAttributeSetRepositoryV1_V1_products_attribute7sets_8attributeSetId8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogAttributeSetRepositoryV1_V1_products_attribute7sets_8attributeSetId8.in.json",
+				"out": "./lib/schemas/get_catalogAttributeSetRepositoryV1_V1_products_attribute7sets_8attributeSetId8.out.json"
+			}
+		},
+		"delete_catalogAttributeSetRepositoryV1_V1_products_attribute7sets_8attributeSetId8": {
+			"title": "delete_catalogAttributeSetRepositoryV1_V1_products_attribute7sets_8attributeSetId8",
+			"main": "./lib/actions/delete_catalogAttributeSetRepositoryV1_V1_products_attribute7sets_8attributeSetId8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_catalogAttributeSetRepositoryV1_V1_products_attribute7sets_8attributeSetId8.in.json",
+				"out": "./lib/schemas/delete_catalogAttributeSetRepositoryV1_V1_products_attribute7sets_8attributeSetId8.out.json"
+			}
+		},
+		"put_catalogAttributeSetRepositoryV1_V1_products_attribute7sets_8attributeSetId8": {
+			"title": "put_catalogAttributeSetRepositoryV1_V1_products_attribute7sets_8attributeSetId8",
+			"main": "./lib/actions/put_catalogAttributeSetRepositoryV1_V1_products_attribute7sets_8attributeSetId8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_catalogAttributeSetRepositoryV1_V1_products_attribute7sets_8attributeSetId8.in.json",
+				"out": "./lib/schemas/put_catalogAttributeSetRepositoryV1_V1_products_attribute7sets_8attributeSetId8.out.json"
+			}
+		},
+		"post_catalogAttributeSetManagementV1_V1_products_attribute7sets": {
+			"title": "post_catalogAttributeSetManagementV1_V1_products_attribute7sets",
+			"main": "./lib/actions/post_catalogAttributeSetManagementV1_V1_products_attribute7sets.js",
+			"metadata": {
+				"in": "./lib/schemas/post_catalogAttributeSetManagementV1_V1_products_attribute7sets.in.json",
+				"out": "./lib/schemas/post_catalogAttributeSetManagementV1_V1_products_attribute7sets.out.json"
+			}
+		},
+		"get_catalogProductAttributeManagementV1_V1_products_attribute7sets_8attributeSetId8_attributes": {
+			"title": "get_catalogProductAttributeManagementV1_V1_products_attribute7sets_8attributeSetId8_attributes",
+			"main": "./lib/actions/get_catalogProductAttributeManagementV1_V1_products_attribute7sets_8attributeSetId8_attributes.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogProductAttributeManagementV1_V1_products_attribute7sets_8attributeSetId8_attributes.in.json",
+				"out": "./lib/schemas/get_catalogProductAttributeManagementV1_V1_products_attribute7sets_8attributeSetId8_attributes.out.json"
+			}
+		},
+		"post_catalogProductAttributeManagementV1_V1_products_attribute7sets_attributes": {
+			"title": "post_catalogProductAttributeManagementV1_V1_products_attribute7sets_attributes",
+			"main": "./lib/actions/post_catalogProductAttributeManagementV1_V1_products_attribute7sets_attributes.js",
+			"metadata": {
+				"in": "./lib/schemas/post_catalogProductAttributeManagementV1_V1_products_attribute7sets_attributes.in.json",
+				"out": "./lib/schemas/post_catalogProductAttributeManagementV1_V1_products_attribute7sets_attributes.out.json"
+			}
+		},
+		"delete_catalogProductAttributeManagementV1_V1_products_attribute7sets_8attributeSetId8_attributes_8attributeCode8": {
+			"title": "delete_catalogProductAttributeManagementV1_V1_products_attribute7sets_8attributeSetId8_attributes_8attributeCode8",
+			"main": "./lib/actions/delete_catalogProductAttributeManagementV1_V1_products_attribute7sets_8attributeSetId8_attributes_8attributeCode8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_catalogProductAttributeManagementV1_V1_products_attribute7sets_8attributeSetId8_attributes_8attributeCode8.in.json",
+				"out": "./lib/schemas/delete_catalogProductAttributeManagementV1_V1_products_attribute7sets_8attributeSetId8_attributes_8attributeCode8.out.json"
+			}
+		},
+		"get_catalogProductAttributeGroupRepositoryV1_V1_products_attribute7sets_groups_list": {
+			"title": "get_catalogProductAttributeGroupRepositoryV1_V1_products_attribute7sets_groups_list",
+			"main": "./lib/actions/get_catalogProductAttributeGroupRepositoryV1_V1_products_attribute7sets_groups_list.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogProductAttributeGroupRepositoryV1_V1_products_attribute7sets_groups_list.in.json",
+				"out": "./lib/schemas/get_catalogProductAttributeGroupRepositoryV1_V1_products_attribute7sets_groups_list.out.json"
+			}
+		},
+		"post_catalogProductAttributeGroupRepositoryV1_V1_products_attribute7sets_groups": {
+			"title": "post_catalogProductAttributeGroupRepositoryV1_V1_products_attribute7sets_groups",
+			"main": "./lib/actions/post_catalogProductAttributeGroupRepositoryV1_V1_products_attribute7sets_groups.js",
+			"metadata": {
+				"in": "./lib/schemas/post_catalogProductAttributeGroupRepositoryV1_V1_products_attribute7sets_groups.in.json",
+				"out": "./lib/schemas/post_catalogProductAttributeGroupRepositoryV1_V1_products_attribute7sets_groups.out.json"
+			}
+		},
+		"put_catalogProductAttributeGroupRepositoryV1_V1_products_attribute7sets_8attributeSetId8_groups": {
+			"title": "put_catalogProductAttributeGroupRepositoryV1_V1_products_attribute7sets_8attributeSetId8_groups",
+			"main": "./lib/actions/put_catalogProductAttributeGroupRepositoryV1_V1_products_attribute7sets_8attributeSetId8_groups.js",
+			"metadata": {
+				"in": "./lib/schemas/put_catalogProductAttributeGroupRepositoryV1_V1_products_attribute7sets_8attributeSetId8_groups.in.json",
+				"out": "./lib/schemas/put_catalogProductAttributeGroupRepositoryV1_V1_products_attribute7sets_8attributeSetId8_groups.out.json"
+			}
+		},
+		"delete_catalogProductAttributeGroupRepositoryV1_V1_products_attribute7sets_groups_8groupId8": {
+			"title": "delete_catalogProductAttributeGroupRepositoryV1_V1_products_attribute7sets_groups_8groupId8",
+			"main": "./lib/actions/delete_catalogProductAttributeGroupRepositoryV1_V1_products_attribute7sets_groups_8groupId8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_catalogProductAttributeGroupRepositoryV1_V1_products_attribute7sets_groups_8groupId8.in.json",
+				"out": "./lib/schemas/delete_catalogProductAttributeGroupRepositoryV1_V1_products_attribute7sets_groups_8groupId8.out.json"
+			}
+		},
+		"get_catalogProductAttributeOptionManagementV1_V1_products_attributes_8attributeCode8_options": {
+			"title": "get_catalogProductAttributeOptionManagementV1_V1_products_attributes_8attributeCode8_options",
+			"main": "./lib/actions/get_catalogProductAttributeOptionManagementV1_V1_products_attributes_8attributeCode8_options.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogProductAttributeOptionManagementV1_V1_products_attributes_8attributeCode8_options.in.json",
+				"out": "./lib/schemas/get_catalogProductAttributeOptionManagementV1_V1_products_attributes_8attributeCode8_options.out.json"
+			}
+		},
+		"post_catalogProductAttributeOptionManagementV1_V1_products_attributes_8attributeCode8_options": {
+			"title": "post_catalogProductAttributeOptionManagementV1_V1_products_attributes_8attributeCode8_options",
+			"main": "./lib/actions/post_catalogProductAttributeOptionManagementV1_V1_products_attributes_8attributeCode8_options.js",
+			"metadata": {
+				"in": "./lib/schemas/post_catalogProductAttributeOptionManagementV1_V1_products_attributes_8attributeCode8_options.in.json",
+				"out": "./lib/schemas/post_catalogProductAttributeOptionManagementV1_V1_products_attributes_8attributeCode8_options.out.json"
+			}
+		},
+		"delete_catalogProductAttributeOptionManagementV1_V1_products_attributes_8attributeCode8_options_8optionId8": {
+			"title": "delete_catalogProductAttributeOptionManagementV1_V1_products_attributes_8attributeCode8_options_8optionId8",
+			"main": "./lib/actions/delete_catalogProductAttributeOptionManagementV1_V1_products_attributes_8attributeCode8_options_8optionId8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_catalogProductAttributeOptionManagementV1_V1_products_attributes_8attributeCode8_options_8optionId8.in.json",
+				"out": "./lib/schemas/delete_catalogProductAttributeOptionManagementV1_V1_products_attributes_8attributeCode8_options_8optionId8.out.json"
+			}
+		},
+		"get_catalogProductMediaAttributeManagementV1_V1_products_media_types_8attributeSetName8": {
+			"title": "get_catalogProductMediaAttributeManagementV1_V1_products_media_types_8attributeSetName8",
+			"main": "./lib/actions/get_catalogProductMediaAttributeManagementV1_V1_products_media_types_8attributeSetName8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogProductMediaAttributeManagementV1_V1_products_media_types_8attributeSetName8.in.json",
+				"out": "./lib/schemas/get_catalogProductMediaAttributeManagementV1_V1_products_media_types_8attributeSetName8.out.json"
+			}
+		},
+		"get_catalogProductAttributeMediaGalleryManagementV1_V1_products_8sku8_media_8entryId8": {
+			"title": "get_catalogProductAttributeMediaGalleryManagementV1_V1_products_8sku8_media_8entryId8",
+			"main": "./lib/actions/get_catalogProductAttributeMediaGalleryManagementV1_V1_products_8sku8_media_8entryId8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogProductAttributeMediaGalleryManagementV1_V1_products_8sku8_media_8entryId8.in.json",
+				"out": "./lib/schemas/get_catalogProductAttributeMediaGalleryManagementV1_V1_products_8sku8_media_8entryId8.out.json"
+			}
+		},
+		"put_catalogProductAttributeMediaGalleryManagementV1_V1_products_8sku8_media_8entryId8": {
+			"title": "put_catalogProductAttributeMediaGalleryManagementV1_V1_products_8sku8_media_8entryId8",
+			"main": "./lib/actions/put_catalogProductAttributeMediaGalleryManagementV1_V1_products_8sku8_media_8entryId8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_catalogProductAttributeMediaGalleryManagementV1_V1_products_8sku8_media_8entryId8.in.json",
+				"out": "./lib/schemas/put_catalogProductAttributeMediaGalleryManagementV1_V1_products_8sku8_media_8entryId8.out.json"
+			}
+		},
+		"delete_catalogProductAttributeMediaGalleryManagementV1_V1_products_8sku8_media_8entryId8": {
+			"title": "delete_catalogProductAttributeMediaGalleryManagementV1_V1_products_8sku8_media_8entryId8",
+			"main": "./lib/actions/delete_catalogProductAttributeMediaGalleryManagementV1_V1_products_8sku8_media_8entryId8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_catalogProductAttributeMediaGalleryManagementV1_V1_products_8sku8_media_8entryId8.in.json",
+				"out": "./lib/schemas/delete_catalogProductAttributeMediaGalleryManagementV1_V1_products_8sku8_media_8entryId8.out.json"
+			}
+		},
+		"post_catalogProductAttributeMediaGalleryManagementV1_V1_products_8sku8_media": {
+			"title": "post_catalogProductAttributeMediaGalleryManagementV1_V1_products_8sku8_media",
+			"main": "./lib/actions/post_catalogProductAttributeMediaGalleryManagementV1_V1_products_8sku8_media.js",
+			"metadata": {
+				"in": "./lib/schemas/post_catalogProductAttributeMediaGalleryManagementV1_V1_products_8sku8_media.in.json",
+				"out": "./lib/schemas/post_catalogProductAttributeMediaGalleryManagementV1_V1_products_8sku8_media.out.json"
+			}
+		},
+		"get_catalogProductAttributeMediaGalleryManagementV1_V1_products_8sku8_media": {
+			"title": "get_catalogProductAttributeMediaGalleryManagementV1_V1_products_8sku8_media",
+			"main": "./lib/actions/get_catalogProductAttributeMediaGalleryManagementV1_V1_products_8sku8_media.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogProductAttributeMediaGalleryManagementV1_V1_products_8sku8_media.in.json",
+				"out": "./lib/schemas/get_catalogProductAttributeMediaGalleryManagementV1_V1_products_8sku8_media.out.json"
+			}
+		},
+		"get_catalogProductTierPriceManagementV1_V1_products_8sku8_group7prices_8customerGroupId8_tiers": {
+			"title": "get_catalogProductTierPriceManagementV1_V1_products_8sku8_group7prices_8customerGroupId8_tiers",
+			"main": "./lib/actions/get_catalogProductTierPriceManagementV1_V1_products_8sku8_group7prices_8customerGroupId8_tiers.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogProductTierPriceManagementV1_V1_products_8sku8_group7prices_8customerGroupId8_tiers.in.json",
+				"out": "./lib/schemas/get_catalogProductTierPriceManagementV1_V1_products_8sku8_group7prices_8customerGroupId8_tiers.out.json"
+			}
+		},
+		"post_catalogProductTierPriceManagementV1_V1_products_8sku8_group7prices_8customerGroupId8_tiers_8qty8_price_8price8": {
+			"title": "post_catalogProductTierPriceManagementV1_V1_products_8sku8_group7prices_8customerGroupId8_tiers_8qty8_price_8price8",
+			"main": "./lib/actions/post_catalogProductTierPriceManagementV1_V1_products_8sku8_group7prices_8customerGroupId8_tiers_8qty8_price_8price8.js",
+			"metadata": {
+				"in": "./lib/schemas/post_catalogProductTierPriceManagementV1_V1_products_8sku8_group7prices_8customerGroupId8_tiers_8qty8_price_8price8.in.json",
+				"out": "./lib/schemas/post_catalogProductTierPriceManagementV1_V1_products_8sku8_group7prices_8customerGroupId8_tiers_8qty8_price_8price8.out.json"
+			}
+		},
+		"delete_catalogProductTierPriceManagementV1_V1_products_8sku8_group7prices_8customerGroupId8_tiers_8qty8": {
+			"title": "delete_catalogProductTierPriceManagementV1_V1_products_8sku8_group7prices_8customerGroupId8_tiers_8qty8",
+			"main": "./lib/actions/delete_catalogProductTierPriceManagementV1_V1_products_8sku8_group7prices_8customerGroupId8_tiers_8qty8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_catalogProductTierPriceManagementV1_V1_products_8sku8_group7prices_8customerGroupId8_tiers_8qty8.in.json",
+				"out": "./lib/schemas/delete_catalogProductTierPriceManagementV1_V1_products_8sku8_group7prices_8customerGroupId8_tiers_8qty8.out.json"
+			}
+		},
+		"delete_catalogCategoryRepositoryV1_V1_categories_8categoryId8": {
+			"title": "delete_catalogCategoryRepositoryV1_V1_categories_8categoryId8",
+			"main": "./lib/actions/delete_catalogCategoryRepositoryV1_V1_categories_8categoryId8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_catalogCategoryRepositoryV1_V1_categories_8categoryId8.in.json",
+				"out": "./lib/schemas/delete_catalogCategoryRepositoryV1_V1_categories_8categoryId8.out.json"
+			}
+		},
+		"get_catalogCategoryRepositoryV1_V1_categories_8categoryId8": {
+			"title": "get_catalogCategoryRepositoryV1_V1_categories_8categoryId8",
+			"main": "./lib/actions/get_catalogCategoryRepositoryV1_V1_categories_8categoryId8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogCategoryRepositoryV1_V1_categories_8categoryId8.in.json",
+				"out": "./lib/schemas/get_catalogCategoryRepositoryV1_V1_categories_8categoryId8.out.json"
+			}
+		},
+		"post_catalogCategoryRepositoryV1_V1_categories": {
+			"title": "post_catalogCategoryRepositoryV1_V1_categories",
+			"main": "./lib/actions/post_catalogCategoryRepositoryV1_V1_categories.js",
+			"metadata": {
+				"in": "./lib/schemas/post_catalogCategoryRepositoryV1_V1_categories.in.json",
+				"out": "./lib/schemas/post_catalogCategoryRepositoryV1_V1_categories.out.json"
+			}
+		},
+		"get_catalogCategoryManagementV1_V1_categories": {
+			"title": "get_catalogCategoryManagementV1_V1_categories",
+			"main": "./lib/actions/get_catalogCategoryManagementV1_V1_categories.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogCategoryManagementV1_V1_categories.in.json",
+				"out": "./lib/schemas/get_catalogCategoryManagementV1_V1_categories.out.json"
+			}
+		},
+		"put_catalogCategoryRepositoryV1_V1_categories_8id8": {
+			"title": "put_catalogCategoryRepositoryV1_V1_categories_8id8",
+			"main": "./lib/actions/put_catalogCategoryRepositoryV1_V1_categories_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_catalogCategoryRepositoryV1_V1_categories_8id8.in.json",
+				"out": "./lib/schemas/put_catalogCategoryRepositoryV1_V1_categories_8id8.out.json"
+			}
+		},
+		"put_catalogCategoryManagementV1_V1_categories_8categoryId8_move": {
+			"title": "put_catalogCategoryManagementV1_V1_categories_8categoryId8_move",
+			"main": "./lib/actions/put_catalogCategoryManagementV1_V1_categories_8categoryId8_move.js",
+			"metadata": {
+				"in": "./lib/schemas/put_catalogCategoryManagementV1_V1_categories_8categoryId8_move.in.json",
+				"out": "./lib/schemas/put_catalogCategoryManagementV1_V1_categories_8categoryId8_move.out.json"
+			}
+		},
+		"get_catalogProductCustomOptionTypeListV1_V1_products_options_types": {
+			"title": "get_catalogProductCustomOptionTypeListV1_V1_products_options_types",
+			"main": "./lib/actions/get_catalogProductCustomOptionTypeListV1_V1_products_options_types.js",
+			"metadata": {
+				"out": "./lib/schemas/get_catalogProductCustomOptionTypeListV1_V1_products_options_types.out.json"
+			}
+		},
+		"get_catalogProductCustomOptionRepositoryV1_V1_products_8sku8_options": {
+			"title": "get_catalogProductCustomOptionRepositoryV1_V1_products_8sku8_options",
+			"main": "./lib/actions/get_catalogProductCustomOptionRepositoryV1_V1_products_8sku8_options.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogProductCustomOptionRepositoryV1_V1_products_8sku8_options.in.json",
+				"out": "./lib/schemas/get_catalogProductCustomOptionRepositoryV1_V1_products_8sku8_options.out.json"
+			}
+		},
+		"get_catalogProductCustomOptionRepositoryV1_V1_products_8sku8_options_8optionId8": {
+			"title": "get_catalogProductCustomOptionRepositoryV1_V1_products_8sku8_options_8optionId8",
+			"main": "./lib/actions/get_catalogProductCustomOptionRepositoryV1_V1_products_8sku8_options_8optionId8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogProductCustomOptionRepositoryV1_V1_products_8sku8_options_8optionId8.in.json",
+				"out": "./lib/schemas/get_catalogProductCustomOptionRepositoryV1_V1_products_8sku8_options_8optionId8.out.json"
+			}
+		},
+		"delete_catalogProductCustomOptionRepositoryV1_V1_products_8sku8_options_8optionId8": {
+			"title": "delete_catalogProductCustomOptionRepositoryV1_V1_products_8sku8_options_8optionId8",
+			"main": "./lib/actions/delete_catalogProductCustomOptionRepositoryV1_V1_products_8sku8_options_8optionId8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_catalogProductCustomOptionRepositoryV1_V1_products_8sku8_options_8optionId8.in.json",
+				"out": "./lib/schemas/delete_catalogProductCustomOptionRepositoryV1_V1_products_8sku8_options_8optionId8.out.json"
+			}
+		},
+		"post_catalogProductCustomOptionRepositoryV1_V1_products_options": {
+			"title": "post_catalogProductCustomOptionRepositoryV1_V1_products_options",
+			"main": "./lib/actions/post_catalogProductCustomOptionRepositoryV1_V1_products_options.js",
+			"metadata": {
+				"in": "./lib/schemas/post_catalogProductCustomOptionRepositoryV1_V1_products_options.in.json",
+				"out": "./lib/schemas/post_catalogProductCustomOptionRepositoryV1_V1_products_options.out.json"
+			}
+		},
+		"put_catalogProductCustomOptionRepositoryV1_V1_products_options_8optionId8": {
+			"title": "put_catalogProductCustomOptionRepositoryV1_V1_products_options_8optionId8",
+			"main": "./lib/actions/put_catalogProductCustomOptionRepositoryV1_V1_products_options_8optionId8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_catalogProductCustomOptionRepositoryV1_V1_products_options_8optionId8.in.json",
+				"out": "./lib/schemas/put_catalogProductCustomOptionRepositoryV1_V1_products_options_8optionId8.out.json"
+			}
+		},
+		"get_catalogProductLinkTypeListV1_V1_products_links_types": {
+			"title": "get_catalogProductLinkTypeListV1_V1_products_links_types",
+			"main": "./lib/actions/get_catalogProductLinkTypeListV1_V1_products_links_types.js",
+			"metadata": {
+				"out": "./lib/schemas/get_catalogProductLinkTypeListV1_V1_products_links_types.out.json"
+			}
+		},
+		"get_catalogProductLinkTypeListV1_V1_products_links_8type8_attributes": {
+			"title": "get_catalogProductLinkTypeListV1_V1_products_links_8type8_attributes",
+			"main": "./lib/actions/get_catalogProductLinkTypeListV1_V1_products_links_8type8_attributes.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogProductLinkTypeListV1_V1_products_links_8type8_attributes.in.json",
+				"out": "./lib/schemas/get_catalogProductLinkTypeListV1_V1_products_links_8type8_attributes.out.json"
+			}
+		},
+		"get_catalogProductLinkManagementV1_V1_products_8sku8_links_8type8": {
+			"title": "get_catalogProductLinkManagementV1_V1_products_8sku8_links_8type8",
+			"main": "./lib/actions/get_catalogProductLinkManagementV1_V1_products_8sku8_links_8type8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogProductLinkManagementV1_V1_products_8sku8_links_8type8.in.json",
+				"out": "./lib/schemas/get_catalogProductLinkManagementV1_V1_products_8sku8_links_8type8.out.json"
+			}
+		},
+		"post_catalogProductLinkManagementV1_V1_products_8sku8_links": {
+			"title": "post_catalogProductLinkManagementV1_V1_products_8sku8_links",
+			"main": "./lib/actions/post_catalogProductLinkManagementV1_V1_products_8sku8_links.js",
+			"metadata": {
+				"in": "./lib/schemas/post_catalogProductLinkManagementV1_V1_products_8sku8_links.in.json",
+				"out": "./lib/schemas/post_catalogProductLinkManagementV1_V1_products_8sku8_links.out.json"
+			}
+		},
+		"put_catalogProductLinkRepositoryV1_V1_products_8sku8_links": {
+			"title": "put_catalogProductLinkRepositoryV1_V1_products_8sku8_links",
+			"main": "./lib/actions/put_catalogProductLinkRepositoryV1_V1_products_8sku8_links.js",
+			"metadata": {
+				"in": "./lib/schemas/put_catalogProductLinkRepositoryV1_V1_products_8sku8_links.in.json",
+				"out": "./lib/schemas/put_catalogProductLinkRepositoryV1_V1_products_8sku8_links.out.json"
+			}
+		},
+		"delete_catalogProductLinkRepositoryV1_V1_products_8sku8_links_8type8_8linkedProductSku8": {
+			"title": "delete_catalogProductLinkRepositoryV1_V1_products_8sku8_links_8type8_8linkedProductSku8",
+			"main": "./lib/actions/delete_catalogProductLinkRepositoryV1_V1_products_8sku8_links_8type8_8linkedProductSku8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_catalogProductLinkRepositoryV1_V1_products_8sku8_links_8type8_8linkedProductSku8.in.json",
+				"out": "./lib/schemas/delete_catalogProductLinkRepositoryV1_V1_products_8sku8_links_8type8_8linkedProductSku8.out.json"
+			}
+		},
+		"get_catalogCategoryLinkManagementV1_V1_categories_8categoryId8_products": {
+			"title": "get_catalogCategoryLinkManagementV1_V1_categories_8categoryId8_products",
+			"main": "./lib/actions/get_catalogCategoryLinkManagementV1_V1_categories_8categoryId8_products.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogCategoryLinkManagementV1_V1_categories_8categoryId8_products.in.json",
+				"out": "./lib/schemas/get_catalogCategoryLinkManagementV1_V1_categories_8categoryId8_products.out.json"
+			}
+		},
+		"post_catalogCategoryLinkRepositoryV1_V1_categories_8categoryId8_products": {
+			"title": "post_catalogCategoryLinkRepositoryV1_V1_categories_8categoryId8_products",
+			"main": "./lib/actions/post_catalogCategoryLinkRepositoryV1_V1_categories_8categoryId8_products.js",
+			"metadata": {
+				"in": "./lib/schemas/post_catalogCategoryLinkRepositoryV1_V1_categories_8categoryId8_products.in.json",
+				"out": "./lib/schemas/post_catalogCategoryLinkRepositoryV1_V1_categories_8categoryId8_products.out.json"
+			}
+		},
+		"put_catalogCategoryLinkRepositoryV1_V1_categories_8categoryId8_products": {
+			"title": "put_catalogCategoryLinkRepositoryV1_V1_categories_8categoryId8_products",
+			"main": "./lib/actions/put_catalogCategoryLinkRepositoryV1_V1_categories_8categoryId8_products.js",
+			"metadata": {
+				"in": "./lib/schemas/put_catalogCategoryLinkRepositoryV1_V1_categories_8categoryId8_products.in.json",
+				"out": "./lib/schemas/put_catalogCategoryLinkRepositoryV1_V1_categories_8categoryId8_products.out.json"
+			}
+		},
+		"delete_catalogCategoryLinkRepositoryV1_V1_categories_8categoryId8_products_8sku8": {
+			"title": "delete_catalogCategoryLinkRepositoryV1_V1_categories_8categoryId8_products_8sku8",
+			"main": "./lib/actions/delete_catalogCategoryLinkRepositoryV1_V1_categories_8categoryId8_products_8sku8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_catalogCategoryLinkRepositoryV1_V1_categories_8categoryId8_products_8sku8.in.json",
+				"out": "./lib/schemas/delete_catalogCategoryLinkRepositoryV1_V1_categories_8categoryId8_products_8sku8.out.json"
+			}
+		},
+		"post_catalogProductWebsiteLinkRepositoryV1_V1_products_8sku8_websites": {
+			"title": "post_catalogProductWebsiteLinkRepositoryV1_V1_products_8sku8_websites",
+			"main": "./lib/actions/post_catalogProductWebsiteLinkRepositoryV1_V1_products_8sku8_websites.js",
+			"metadata": {
+				"in": "./lib/schemas/post_catalogProductWebsiteLinkRepositoryV1_V1_products_8sku8_websites.in.json",
+				"out": "./lib/schemas/post_catalogProductWebsiteLinkRepositoryV1_V1_products_8sku8_websites.out.json"
+			}
+		},
+		"put_catalogProductWebsiteLinkRepositoryV1_V1_products_8sku8_websites": {
+			"title": "put_catalogProductWebsiteLinkRepositoryV1_V1_products_8sku8_websites",
+			"main": "./lib/actions/put_catalogProductWebsiteLinkRepositoryV1_V1_products_8sku8_websites.js",
+			"metadata": {
+				"in": "./lib/schemas/put_catalogProductWebsiteLinkRepositoryV1_V1_products_8sku8_websites.in.json",
+				"out": "./lib/schemas/put_catalogProductWebsiteLinkRepositoryV1_V1_products_8sku8_websites.out.json"
+			}
+		},
+		"delete_catalogProductWebsiteLinkRepositoryV1_V1_products_8sku8_websites_8websiteId8": {
+			"title": "delete_catalogProductWebsiteLinkRepositoryV1_V1_products_8sku8_websites_8websiteId8",
+			"main": "./lib/actions/delete_catalogProductWebsiteLinkRepositoryV1_V1_products_8sku8_websites_8websiteId8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_catalogProductWebsiteLinkRepositoryV1_V1_products_8sku8_websites_8websiteId8.in.json",
+				"out": "./lib/schemas/delete_catalogProductWebsiteLinkRepositoryV1_V1_products_8sku8_websites_8websiteId8.out.json"
+			}
+		},
+		"get_searchV1_V1_search": {
+			"title": "get_searchV1_V1_search",
+			"main": "./lib/actions/get_searchV1_V1_search.js",
+			"metadata": {
+				"in": "./lib/schemas/get_searchV1_V1_search.in.json",
+				"out": "./lib/schemas/get_searchV1_V1_search.out.json"
+			}
+		},
+		"post_bundleProductLinkManagementV1_V1_bundle7products_8sku8_links_8optionId8": {
+			"title": "post_bundleProductLinkManagementV1_V1_bundle7products_8sku8_links_8optionId8",
+			"main": "./lib/actions/post_bundleProductLinkManagementV1_V1_bundle7products_8sku8_links_8optionId8.js",
+			"metadata": {
+				"in": "./lib/schemas/post_bundleProductLinkManagementV1_V1_bundle7products_8sku8_links_8optionId8.in.json",
+				"out": "./lib/schemas/post_bundleProductLinkManagementV1_V1_bundle7products_8sku8_links_8optionId8.out.json"
+			}
+		},
+		"put_bundleProductLinkManagementV1_V1_bundle7products_8sku8_links_8id8": {
+			"title": "put_bundleProductLinkManagementV1_V1_bundle7products_8sku8_links_8id8",
+			"main": "./lib/actions/put_bundleProductLinkManagementV1_V1_bundle7products_8sku8_links_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_bundleProductLinkManagementV1_V1_bundle7products_8sku8_links_8id8.in.json",
+				"out": "./lib/schemas/put_bundleProductLinkManagementV1_V1_bundle7products_8sku8_links_8id8.out.json"
+			}
+		},
+		"get_bundleProductLinkManagementV1_V1_bundle7products_8productSku8_children": {
+			"title": "get_bundleProductLinkManagementV1_V1_bundle7products_8productSku8_children",
+			"main": "./lib/actions/get_bundleProductLinkManagementV1_V1_bundle7products_8productSku8_children.js",
+			"metadata": {
+				"in": "./lib/schemas/get_bundleProductLinkManagementV1_V1_bundle7products_8productSku8_children.in.json",
+				"out": "./lib/schemas/get_bundleProductLinkManagementV1_V1_bundle7products_8productSku8_children.out.json"
+			}
+		},
+		"delete_bundleProductLinkManagementV1_V1_bundle7products_8sku8_options_8optionId8_children_8childSku8": {
+			"title": "delete_bundleProductLinkManagementV1_V1_bundle7products_8sku8_options_8optionId8_children_8childSku8",
+			"main": "./lib/actions/delete_bundleProductLinkManagementV1_V1_bundle7products_8sku8_options_8optionId8_children_8childSku8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_bundleProductLinkManagementV1_V1_bundle7products_8sku8_options_8optionId8_children_8childSku8.in.json",
+				"out": "./lib/schemas/delete_bundleProductLinkManagementV1_V1_bundle7products_8sku8_options_8optionId8_children_8childSku8.out.json"
+			}
+		},
+		"get_bundleProductOptionRepositoryV1_V1_bundle7products_8sku8_options_all": {
+			"title": "get_bundleProductOptionRepositoryV1_V1_bundle7products_8sku8_options_all",
+			"main": "./lib/actions/get_bundleProductOptionRepositoryV1_V1_bundle7products_8sku8_options_all.js",
+			"metadata": {
+				"in": "./lib/schemas/get_bundleProductOptionRepositoryV1_V1_bundle7products_8sku8_options_all.in.json",
+				"out": "./lib/schemas/get_bundleProductOptionRepositoryV1_V1_bundle7products_8sku8_options_all.out.json"
+			}
+		},
+		"get_bundleProductOptionRepositoryV1_V1_bundle7products_8sku8_options_8optionId8": {
+			"title": "get_bundleProductOptionRepositoryV1_V1_bundle7products_8sku8_options_8optionId8",
+			"main": "./lib/actions/get_bundleProductOptionRepositoryV1_V1_bundle7products_8sku8_options_8optionId8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_bundleProductOptionRepositoryV1_V1_bundle7products_8sku8_options_8optionId8.in.json",
+				"out": "./lib/schemas/get_bundleProductOptionRepositoryV1_V1_bundle7products_8sku8_options_8optionId8.out.json"
+			}
+		},
+		"delete_bundleProductOptionRepositoryV1_V1_bundle7products_8sku8_options_8optionId8": {
+			"title": "delete_bundleProductOptionRepositoryV1_V1_bundle7products_8sku8_options_8optionId8",
+			"main": "./lib/actions/delete_bundleProductOptionRepositoryV1_V1_bundle7products_8sku8_options_8optionId8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_bundleProductOptionRepositoryV1_V1_bundle7products_8sku8_options_8optionId8.in.json",
+				"out": "./lib/schemas/delete_bundleProductOptionRepositoryV1_V1_bundle7products_8sku8_options_8optionId8.out.json"
+			}
+		},
+		"get_bundleProductOptionTypeListV1_V1_bundle7products_options_types": {
+			"title": "get_bundleProductOptionTypeListV1_V1_bundle7products_options_types",
+			"main": "./lib/actions/get_bundleProductOptionTypeListV1_V1_bundle7products_options_types.js",
+			"metadata": {
+				"out": "./lib/schemas/get_bundleProductOptionTypeListV1_V1_bundle7products_options_types.out.json"
+			}
+		},
+		"post_bundleProductOptionManagementV1_V1_bundle7products_options_add": {
+			"title": "post_bundleProductOptionManagementV1_V1_bundle7products_options_add",
+			"main": "./lib/actions/post_bundleProductOptionManagementV1_V1_bundle7products_options_add.js",
+			"metadata": {
+				"in": "./lib/schemas/post_bundleProductOptionManagementV1_V1_bundle7products_options_add.in.json",
+				"out": "./lib/schemas/post_bundleProductOptionManagementV1_V1_bundle7products_options_add.out.json"
+			}
+		},
+		"put_bundleProductOptionManagementV1_V1_bundle7products_options_8optionId8": {
+			"title": "put_bundleProductOptionManagementV1_V1_bundle7products_options_8optionId8",
+			"main": "./lib/actions/put_bundleProductOptionManagementV1_V1_bundle7products_options_8optionId8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_bundleProductOptionManagementV1_V1_bundle7products_options_8optionId8.in.json",
+				"out": "./lib/schemas/put_bundleProductOptionManagementV1_V1_bundle7products_options_8optionId8.out.json"
+			}
+		},
+		"get_quoteCartRepositoryV1_V1_carts_8cartId8": {
+			"title": "get_quoteCartRepositoryV1_V1_carts_8cartId8",
+			"main": "./lib/actions/get_quoteCartRepositoryV1_V1_carts_8cartId8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_quoteCartRepositoryV1_V1_carts_8cartId8.in.json",
+				"out": "./lib/schemas/get_quoteCartRepositoryV1_V1_carts_8cartId8.out.json"
+			}
+		},
+		"put_quoteCartManagementV1_V1_carts_8cartId8": {
+			"title": "put_quoteCartManagementV1_V1_carts_8cartId8",
+			"main": "./lib/actions/put_quoteCartManagementV1_V1_carts_8cartId8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_quoteCartManagementV1_V1_carts_8cartId8.in.json",
+				"out": "./lib/schemas/put_quoteCartManagementV1_V1_carts_8cartId8.out.json"
+			}
+		},
+		"get_quoteCartRepositoryV1_V1_carts_search": {
+			"title": "get_quoteCartRepositoryV1_V1_carts_search",
+			"main": "./lib/actions/get_quoteCartRepositoryV1_V1_carts_search.js",
+			"metadata": {
+				"in": "./lib/schemas/get_quoteCartRepositoryV1_V1_carts_search.in.json",
+				"out": "./lib/schemas/get_quoteCartRepositoryV1_V1_carts_search.out.json"
+			}
+		},
+		"put_quoteCartRepositoryV1_V1_carts_mine": {
+			"title": "put_quoteCartRepositoryV1_V1_carts_mine",
+			"main": "./lib/actions/put_quoteCartRepositoryV1_V1_carts_mine.js",
+			"metadata": {
+				"in": "./lib/schemas/put_quoteCartRepositoryV1_V1_carts_mine.in.json",
+				"out": "./lib/schemas/put_quoteCartRepositoryV1_V1_carts_mine.out.json"
+			}
+		},
+		"post_quoteCartManagementV1_V1_carts_mine": {
+			"title": "post_quoteCartManagementV1_V1_carts_mine",
+			"main": "./lib/actions/post_quoteCartManagementV1_V1_carts_mine.js",
+			"metadata": {
+				"out": "./lib/schemas/post_quoteCartManagementV1_V1_carts_mine.out.json"
+			}
+		},
+		"get_quoteCartManagementV1_V1_carts_mine": {
+			"title": "get_quoteCartManagementV1_V1_carts_mine",
+			"main": "./lib/actions/get_quoteCartManagementV1_V1_carts_mine.js",
+			"metadata": {
+				"out": "./lib/schemas/get_quoteCartManagementV1_V1_carts_mine.out.json"
+			}
+		},
+		"post_quoteCartManagementV1_V1_carts_": {
+			"title": "post_quoteCartManagementV1_V1_carts_",
+			"main": "./lib/actions/post_quoteCartManagementV1_V1_carts_.js",
+			"metadata": {
+				"out": "./lib/schemas/post_quoteCartManagementV1_V1_carts_.out.json"
+			}
+		},
+		"post_quoteCartManagementV1_V1_customers_8customerId8_carts": {
+			"title": "post_quoteCartManagementV1_V1_customers_8customerId8_carts",
+			"main": "./lib/actions/post_quoteCartManagementV1_V1_customers_8customerId8_carts.js",
+			"metadata": {
+				"in": "./lib/schemas/post_quoteCartManagementV1_V1_customers_8customerId8_carts.in.json",
+				"out": "./lib/schemas/post_quoteCartManagementV1_V1_customers_8customerId8_carts.out.json"
+			}
+		},
+		"put_quoteCartManagementV1_V1_carts_mine_order": {
+			"title": "put_quoteCartManagementV1_V1_carts_mine_order",
+			"main": "./lib/actions/put_quoteCartManagementV1_V1_carts_mine_order.js",
+			"metadata": {
+				"in": "./lib/schemas/put_quoteCartManagementV1_V1_carts_mine_order.in.json",
+				"out": "./lib/schemas/put_quoteCartManagementV1_V1_carts_mine_order.out.json"
+			}
+		},
+		"put_quoteCartManagementV1_V1_carts_8cartId8_order": {
+			"title": "put_quoteCartManagementV1_V1_carts_8cartId8_order",
+			"main": "./lib/actions/put_quoteCartManagementV1_V1_carts_8cartId8_order.js",
+			"metadata": {
+				"in": "./lib/schemas/put_quoteCartManagementV1_V1_carts_8cartId8_order.in.json",
+				"out": "./lib/schemas/put_quoteCartManagementV1_V1_carts_8cartId8_order.out.json"
+			}
+		},
+		"get_quoteGuestCartRepositoryV1_V1_guest7carts_8cartId8": {
+			"title": "get_quoteGuestCartRepositoryV1_V1_guest7carts_8cartId8",
+			"main": "./lib/actions/get_quoteGuestCartRepositoryV1_V1_guest7carts_8cartId8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_quoteGuestCartRepositoryV1_V1_guest7carts_8cartId8.in.json",
+				"out": "./lib/schemas/get_quoteGuestCartRepositoryV1_V1_guest7carts_8cartId8.out.json"
+			}
+		},
+		"put_quoteGuestCartManagementV1_V1_guest7carts_8cartId8": {
+			"title": "put_quoteGuestCartManagementV1_V1_guest7carts_8cartId8",
+			"main": "./lib/actions/put_quoteGuestCartManagementV1_V1_guest7carts_8cartId8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_quoteGuestCartManagementV1_V1_guest7carts_8cartId8.in.json",
+				"out": "./lib/schemas/put_quoteGuestCartManagementV1_V1_guest7carts_8cartId8.out.json"
+			}
+		},
+		"post_quoteGuestCartManagementV1_V1_guest7carts": {
+			"title": "post_quoteGuestCartManagementV1_V1_guest7carts",
+			"main": "./lib/actions/post_quoteGuestCartManagementV1_V1_guest7carts.js",
+			"metadata": {
+				"out": "./lib/schemas/post_quoteGuestCartManagementV1_V1_guest7carts.out.json"
+			}
+		},
+		"put_quoteGuestCartManagementV1_V1_guest7carts_8cartId8_order": {
+			"title": "put_quoteGuestCartManagementV1_V1_guest7carts_8cartId8_order",
+			"main": "./lib/actions/put_quoteGuestCartManagementV1_V1_guest7carts_8cartId8_order.js",
+			"metadata": {
+				"in": "./lib/schemas/put_quoteGuestCartManagementV1_V1_guest7carts_8cartId8_order.in.json",
+				"out": "./lib/schemas/put_quoteGuestCartManagementV1_V1_guest7carts_8cartId8_order.out.json"
+			}
+		},
+		"get_quoteShippingMethodManagementV1_V1_carts_8cartId8_shipping7methods": {
+			"title": "get_quoteShippingMethodManagementV1_V1_carts_8cartId8_shipping7methods",
+			"main": "./lib/actions/get_quoteShippingMethodManagementV1_V1_carts_8cartId8_shipping7methods.js",
+			"metadata": {
+				"in": "./lib/schemas/get_quoteShippingMethodManagementV1_V1_carts_8cartId8_shipping7methods.in.json",
+				"out": "./lib/schemas/get_quoteShippingMethodManagementV1_V1_carts_8cartId8_shipping7methods.out.json"
+			}
+		},
+		"post_quoteShippingMethodManagementV1_V1_carts_8cartId8_estimate7shipping7methods7by7address7id": {
+			"title": "post_quoteShippingMethodManagementV1_V1_carts_8cartId8_estimate7shipping7methods7by7address7id",
+			"main": "./lib/actions/post_quoteShippingMethodManagementV1_V1_carts_8cartId8_estimate7shipping7methods7by7address7id.js",
+			"metadata": {
+				"in": "./lib/schemas/post_quoteShippingMethodManagementV1_V1_carts_8cartId8_estimate7shipping7methods7by7address7id.in.json",
+				"out": "./lib/schemas/post_quoteShippingMethodManagementV1_V1_carts_8cartId8_estimate7shipping7methods7by7address7id.out.json"
+			}
+		},
+		"get_quoteShippingMethodManagementV1_V1_carts_mine_shipping7methods": {
+			"title": "get_quoteShippingMethodManagementV1_V1_carts_mine_shipping7methods",
+			"main": "./lib/actions/get_quoteShippingMethodManagementV1_V1_carts_mine_shipping7methods.js",
+			"metadata": {
+				"out": "./lib/schemas/get_quoteShippingMethodManagementV1_V1_carts_mine_shipping7methods.out.json"
+			}
+		},
+		"post_quoteShippingMethodManagementV1_V1_carts_mine_estimate7shipping7methods7by7address7id": {
+			"title": "post_quoteShippingMethodManagementV1_V1_carts_mine_estimate7shipping7methods7by7address7id",
+			"main": "./lib/actions/post_quoteShippingMethodManagementV1_V1_carts_mine_estimate7shipping7methods7by7address7id.js",
+			"metadata": {
+				"in": "./lib/schemas/post_quoteShippingMethodManagementV1_V1_carts_mine_estimate7shipping7methods7by7address7id.in.json",
+				"out": "./lib/schemas/post_quoteShippingMethodManagementV1_V1_carts_mine_estimate7shipping7methods7by7address7id.out.json"
+			}
+		},
+		"post_quoteShipmentEstimationV1_V1_carts_8cartId8_estimate7shipping7methods": {
+			"title": "post_quoteShipmentEstimationV1_V1_carts_8cartId8_estimate7shipping7methods",
+			"main": "./lib/actions/post_quoteShipmentEstimationV1_V1_carts_8cartId8_estimate7shipping7methods.js",
+			"metadata": {
+				"in": "./lib/schemas/post_quoteShipmentEstimationV1_V1_carts_8cartId8_estimate7shipping7methods.in.json",
+				"out": "./lib/schemas/post_quoteShipmentEstimationV1_V1_carts_8cartId8_estimate7shipping7methods.out.json"
+			}
+		},
+		"post_quoteShipmentEstimationV1_V1_carts_mine_estimate7shipping7methods": {
+			"title": "post_quoteShipmentEstimationV1_V1_carts_mine_estimate7shipping7methods",
+			"main": "./lib/actions/post_quoteShipmentEstimationV1_V1_carts_mine_estimate7shipping7methods.js",
+			"metadata": {
+				"in": "./lib/schemas/post_quoteShipmentEstimationV1_V1_carts_mine_estimate7shipping7methods.in.json",
+				"out": "./lib/schemas/post_quoteShipmentEstimationV1_V1_carts_mine_estimate7shipping7methods.out.json"
+			}
+		},
+		"get_quoteGuestShippingMethodManagementV1_V1_guest7carts_8cartId8_shipping7methods": {
+			"title": "get_quoteGuestShippingMethodManagementV1_V1_guest7carts_8cartId8_shipping7methods",
+			"main": "./lib/actions/get_quoteGuestShippingMethodManagementV1_V1_guest7carts_8cartId8_shipping7methods.js",
+			"metadata": {
+				"in": "./lib/schemas/get_quoteGuestShippingMethodManagementV1_V1_guest7carts_8cartId8_shipping7methods.in.json",
+				"out": "./lib/schemas/get_quoteGuestShippingMethodManagementV1_V1_guest7carts_8cartId8_shipping7methods.out.json"
+			}
+		},
+		"post_quoteGuestShipmentEstimationV1_V1_guest7carts_8cartId8_estimate7shipping7methods": {
+			"title": "post_quoteGuestShipmentEstimationV1_V1_guest7carts_8cartId8_estimate7shipping7methods",
+			"main": "./lib/actions/post_quoteGuestShipmentEstimationV1_V1_guest7carts_8cartId8_estimate7shipping7methods.js",
+			"metadata": {
+				"in": "./lib/schemas/post_quoteGuestShipmentEstimationV1_V1_guest7carts_8cartId8_estimate7shipping7methods.in.json",
+				"out": "./lib/schemas/post_quoteGuestShipmentEstimationV1_V1_guest7carts_8cartId8_estimate7shipping7methods.out.json"
+			}
+		},
+		"get_quoteCartItemRepositoryV1_V1_carts_8cartId8_items": {
+			"title": "get_quoteCartItemRepositoryV1_V1_carts_8cartId8_items",
+			"main": "./lib/actions/get_quoteCartItemRepositoryV1_V1_carts_8cartId8_items.js",
+			"metadata": {
+				"in": "./lib/schemas/get_quoteCartItemRepositoryV1_V1_carts_8cartId8_items.in.json",
+				"out": "./lib/schemas/get_quoteCartItemRepositoryV1_V1_carts_8cartId8_items.out.json"
+			}
+		},
+		"post_quoteCartItemRepositoryV1_V1_carts_8quoteId8_items": {
+			"title": "post_quoteCartItemRepositoryV1_V1_carts_8quoteId8_items",
+			"main": "./lib/actions/post_quoteCartItemRepositoryV1_V1_carts_8quoteId8_items.js",
+			"metadata": {
+				"in": "./lib/schemas/post_quoteCartItemRepositoryV1_V1_carts_8quoteId8_items.in.json",
+				"out": "./lib/schemas/post_quoteCartItemRepositoryV1_V1_carts_8quoteId8_items.out.json"
+			}
+		},
+		"put_quoteCartItemRepositoryV1_V1_carts_8cartId8_items_8itemId8": {
+			"title": "put_quoteCartItemRepositoryV1_V1_carts_8cartId8_items_8itemId8",
+			"main": "./lib/actions/put_quoteCartItemRepositoryV1_V1_carts_8cartId8_items_8itemId8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_quoteCartItemRepositoryV1_V1_carts_8cartId8_items_8itemId8.in.json",
+				"out": "./lib/schemas/put_quoteCartItemRepositoryV1_V1_carts_8cartId8_items_8itemId8.out.json"
+			}
+		},
+		"delete_quoteCartItemRepositoryV1_V1_carts_8cartId8_items_8itemId8": {
+			"title": "delete_quoteCartItemRepositoryV1_V1_carts_8cartId8_items_8itemId8",
+			"main": "./lib/actions/delete_quoteCartItemRepositoryV1_V1_carts_8cartId8_items_8itemId8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_quoteCartItemRepositoryV1_V1_carts_8cartId8_items_8itemId8.in.json",
+				"out": "./lib/schemas/delete_quoteCartItemRepositoryV1_V1_carts_8cartId8_items_8itemId8.out.json"
+			}
+		},
+		"get_quoteCartItemRepositoryV1_V1_carts_mine_items": {
+			"title": "get_quoteCartItemRepositoryV1_V1_carts_mine_items",
+			"main": "./lib/actions/get_quoteCartItemRepositoryV1_V1_carts_mine_items.js",
+			"metadata": {
+				"out": "./lib/schemas/get_quoteCartItemRepositoryV1_V1_carts_mine_items.out.json"
+			}
+		},
+		"post_quoteCartItemRepositoryV1_V1_carts_mine_items": {
+			"title": "post_quoteCartItemRepositoryV1_V1_carts_mine_items",
+			"main": "./lib/actions/post_quoteCartItemRepositoryV1_V1_carts_mine_items.js",
+			"metadata": {
+				"in": "./lib/schemas/post_quoteCartItemRepositoryV1_V1_carts_mine_items.in.json",
+				"out": "./lib/schemas/post_quoteCartItemRepositoryV1_V1_carts_mine_items.out.json"
+			}
+		},
+		"put_quoteCartItemRepositoryV1_V1_carts_mine_items_8itemId8": {
+			"title": "put_quoteCartItemRepositoryV1_V1_carts_mine_items_8itemId8",
+			"main": "./lib/actions/put_quoteCartItemRepositoryV1_V1_carts_mine_items_8itemId8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_quoteCartItemRepositoryV1_V1_carts_mine_items_8itemId8.in.json",
+				"out": "./lib/schemas/put_quoteCartItemRepositoryV1_V1_carts_mine_items_8itemId8.out.json"
+			}
+		},
+		"delete_quoteCartItemRepositoryV1_V1_carts_mine_items_8itemId8": {
+			"title": "delete_quoteCartItemRepositoryV1_V1_carts_mine_items_8itemId8",
+			"main": "./lib/actions/delete_quoteCartItemRepositoryV1_V1_carts_mine_items_8itemId8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_quoteCartItemRepositoryV1_V1_carts_mine_items_8itemId8.in.json",
+				"out": "./lib/schemas/delete_quoteCartItemRepositoryV1_V1_carts_mine_items_8itemId8.out.json"
+			}
+		},
+		"get_quoteGuestCartItemRepositoryV1_V1_guest7carts_8cartId8_items": {
+			"title": "get_quoteGuestCartItemRepositoryV1_V1_guest7carts_8cartId8_items",
+			"main": "./lib/actions/get_quoteGuestCartItemRepositoryV1_V1_guest7carts_8cartId8_items.js",
+			"metadata": {
+				"in": "./lib/schemas/get_quoteGuestCartItemRepositoryV1_V1_guest7carts_8cartId8_items.in.json",
+				"out": "./lib/schemas/get_quoteGuestCartItemRepositoryV1_V1_guest7carts_8cartId8_items.out.json"
+			}
+		},
+		"post_quoteGuestCartItemRepositoryV1_V1_guest7carts_8cartId8_items": {
+			"title": "post_quoteGuestCartItemRepositoryV1_V1_guest7carts_8cartId8_items",
+			"main": "./lib/actions/post_quoteGuestCartItemRepositoryV1_V1_guest7carts_8cartId8_items.js",
+			"metadata": {
+				"in": "./lib/schemas/post_quoteGuestCartItemRepositoryV1_V1_guest7carts_8cartId8_items.in.json",
+				"out": "./lib/schemas/post_quoteGuestCartItemRepositoryV1_V1_guest7carts_8cartId8_items.out.json"
+			}
+		},
+		"put_quoteGuestCartItemRepositoryV1_V1_guest7carts_8cartId8_items_8itemId8": {
+			"title": "put_quoteGuestCartItemRepositoryV1_V1_guest7carts_8cartId8_items_8itemId8",
+			"main": "./lib/actions/put_quoteGuestCartItemRepositoryV1_V1_guest7carts_8cartId8_items_8itemId8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_quoteGuestCartItemRepositoryV1_V1_guest7carts_8cartId8_items_8itemId8.in.json",
+				"out": "./lib/schemas/put_quoteGuestCartItemRepositoryV1_V1_guest7carts_8cartId8_items_8itemId8.out.json"
+			}
+		},
+		"delete_quoteGuestCartItemRepositoryV1_V1_guest7carts_8cartId8_items_8itemId8": {
+			"title": "delete_quoteGuestCartItemRepositoryV1_V1_guest7carts_8cartId8_items_8itemId8",
+			"main": "./lib/actions/delete_quoteGuestCartItemRepositoryV1_V1_guest7carts_8cartId8_items_8itemId8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_quoteGuestCartItemRepositoryV1_V1_guest7carts_8cartId8_items_8itemId8.in.json",
+				"out": "./lib/schemas/delete_quoteGuestCartItemRepositoryV1_V1_guest7carts_8cartId8_items_8itemId8.out.json"
+			}
+		},
+		"get_quotePaymentMethodManagementV1_V1_carts_8cartId8_selected7payment7method": {
+			"title": "get_quotePaymentMethodManagementV1_V1_carts_8cartId8_selected7payment7method",
+			"main": "./lib/actions/get_quotePaymentMethodManagementV1_V1_carts_8cartId8_selected7payment7method.js",
+			"metadata": {
+				"in": "./lib/schemas/get_quotePaymentMethodManagementV1_V1_carts_8cartId8_selected7payment7method.in.json",
+				"out": "./lib/schemas/get_quotePaymentMethodManagementV1_V1_carts_8cartId8_selected7payment7method.out.json"
+			}
+		},
+		"put_quotePaymentMethodManagementV1_V1_carts_8cartId8_selected7payment7method": {
+			"title": "put_quotePaymentMethodManagementV1_V1_carts_8cartId8_selected7payment7method",
+			"main": "./lib/actions/put_quotePaymentMethodManagementV1_V1_carts_8cartId8_selected7payment7method.js",
+			"metadata": {
+				"in": "./lib/schemas/put_quotePaymentMethodManagementV1_V1_carts_8cartId8_selected7payment7method.in.json",
+				"out": "./lib/schemas/put_quotePaymentMethodManagementV1_V1_carts_8cartId8_selected7payment7method.out.json"
+			}
+		},
+		"get_quotePaymentMethodManagementV1_V1_carts_8cartId8_payment7methods": {
+			"title": "get_quotePaymentMethodManagementV1_V1_carts_8cartId8_payment7methods",
+			"main": "./lib/actions/get_quotePaymentMethodManagementV1_V1_carts_8cartId8_payment7methods.js",
+			"metadata": {
+				"in": "./lib/schemas/get_quotePaymentMethodManagementV1_V1_carts_8cartId8_payment7methods.in.json",
+				"out": "./lib/schemas/get_quotePaymentMethodManagementV1_V1_carts_8cartId8_payment7methods.out.json"
+			}
+		},
+		"get_quotePaymentMethodManagementV1_V1_carts_mine_selected7payment7method": {
+			"title": "get_quotePaymentMethodManagementV1_V1_carts_mine_selected7payment7method",
+			"main": "./lib/actions/get_quotePaymentMethodManagementV1_V1_carts_mine_selected7payment7method.js",
+			"metadata": {
+				"out": "./lib/schemas/get_quotePaymentMethodManagementV1_V1_carts_mine_selected7payment7method.out.json"
+			}
+		},
+		"put_quotePaymentMethodManagementV1_V1_carts_mine_selected7payment7method": {
+			"title": "put_quotePaymentMethodManagementV1_V1_carts_mine_selected7payment7method",
+			"main": "./lib/actions/put_quotePaymentMethodManagementV1_V1_carts_mine_selected7payment7method.js",
+			"metadata": {
+				"in": "./lib/schemas/put_quotePaymentMethodManagementV1_V1_carts_mine_selected7payment7method.in.json",
+				"out": "./lib/schemas/put_quotePaymentMethodManagementV1_V1_carts_mine_selected7payment7method.out.json"
+			}
+		},
+		"get_quotePaymentMethodManagementV1_V1_carts_mine_payment7methods": {
+			"title": "get_quotePaymentMethodManagementV1_V1_carts_mine_payment7methods",
+			"main": "./lib/actions/get_quotePaymentMethodManagementV1_V1_carts_mine_payment7methods.js",
+			"metadata": {
+				"out": "./lib/schemas/get_quotePaymentMethodManagementV1_V1_carts_mine_payment7methods.out.json"
+			}
+		},
+		"get_quoteGuestPaymentMethodManagementV1_V1_guest7carts_8cartId8_selected7payment7method": {
+			"title": "get_quoteGuestPaymentMethodManagementV1_V1_guest7carts_8cartId8_selected7payment7method",
+			"main": "./lib/actions/get_quoteGuestPaymentMethodManagementV1_V1_guest7carts_8cartId8_selected7payment7method.js",
+			"metadata": {
+				"in": "./lib/schemas/get_quoteGuestPaymentMethodManagementV1_V1_guest7carts_8cartId8_selected7payment7method.in.json",
+				"out": "./lib/schemas/get_quoteGuestPaymentMethodManagementV1_V1_guest7carts_8cartId8_selected7payment7method.out.json"
+			}
+		},
+		"put_quoteGuestPaymentMethodManagementV1_V1_guest7carts_8cartId8_selected7payment7method": {
+			"title": "put_quoteGuestPaymentMethodManagementV1_V1_guest7carts_8cartId8_selected7payment7method",
+			"main": "./lib/actions/put_quoteGuestPaymentMethodManagementV1_V1_guest7carts_8cartId8_selected7payment7method.js",
+			"metadata": {
+				"in": "./lib/schemas/put_quoteGuestPaymentMethodManagementV1_V1_guest7carts_8cartId8_selected7payment7method.in.json",
+				"out": "./lib/schemas/put_quoteGuestPaymentMethodManagementV1_V1_guest7carts_8cartId8_selected7payment7method.out.json"
+			}
+		},
+		"get_quoteGuestPaymentMethodManagementV1_V1_guest7carts_8cartId8_payment7methods": {
+			"title": "get_quoteGuestPaymentMethodManagementV1_V1_guest7carts_8cartId8_payment7methods",
+			"main": "./lib/actions/get_quoteGuestPaymentMethodManagementV1_V1_guest7carts_8cartId8_payment7methods.js",
+			"metadata": {
+				"in": "./lib/schemas/get_quoteGuestPaymentMethodManagementV1_V1_guest7carts_8cartId8_payment7methods.in.json",
+				"out": "./lib/schemas/get_quoteGuestPaymentMethodManagementV1_V1_guest7carts_8cartId8_payment7methods.out.json"
+			}
+		},
+		"get_quoteBillingAddressManagementV1_V1_carts_8cartId8_billing7address": {
+			"title": "get_quoteBillingAddressManagementV1_V1_carts_8cartId8_billing7address",
+			"main": "./lib/actions/get_quoteBillingAddressManagementV1_V1_carts_8cartId8_billing7address.js",
+			"metadata": {
+				"in": "./lib/schemas/get_quoteBillingAddressManagementV1_V1_carts_8cartId8_billing7address.in.json",
+				"out": "./lib/schemas/get_quoteBillingAddressManagementV1_V1_carts_8cartId8_billing7address.out.json"
+			}
+		},
+		"post_quoteBillingAddressManagementV1_V1_carts_8cartId8_billing7address": {
+			"title": "post_quoteBillingAddressManagementV1_V1_carts_8cartId8_billing7address",
+			"main": "./lib/actions/post_quoteBillingAddressManagementV1_V1_carts_8cartId8_billing7address.js",
+			"metadata": {
+				"in": "./lib/schemas/post_quoteBillingAddressManagementV1_V1_carts_8cartId8_billing7address.in.json",
+				"out": "./lib/schemas/post_quoteBillingAddressManagementV1_V1_carts_8cartId8_billing7address.out.json"
+			}
+		},
+		"get_quoteBillingAddressManagementV1_V1_carts_mine_billing7address": {
+			"title": "get_quoteBillingAddressManagementV1_V1_carts_mine_billing7address",
+			"main": "./lib/actions/get_quoteBillingAddressManagementV1_V1_carts_mine_billing7address.js",
+			"metadata": {
+				"out": "./lib/schemas/get_quoteBillingAddressManagementV1_V1_carts_mine_billing7address.out.json"
+			}
+		},
+		"post_quoteBillingAddressManagementV1_V1_carts_mine_billing7address": {
+			"title": "post_quoteBillingAddressManagementV1_V1_carts_mine_billing7address",
+			"main": "./lib/actions/post_quoteBillingAddressManagementV1_V1_carts_mine_billing7address.js",
+			"metadata": {
+				"in": "./lib/schemas/post_quoteBillingAddressManagementV1_V1_carts_mine_billing7address.in.json",
+				"out": "./lib/schemas/post_quoteBillingAddressManagementV1_V1_carts_mine_billing7address.out.json"
+			}
+		},
+		"get_quoteGuestBillingAddressManagementV1_V1_guest7carts_8cartId8_billing7address": {
+			"title": "get_quoteGuestBillingAddressManagementV1_V1_guest7carts_8cartId8_billing7address",
+			"main": "./lib/actions/get_quoteGuestBillingAddressManagementV1_V1_guest7carts_8cartId8_billing7address.js",
+			"metadata": {
+				"in": "./lib/schemas/get_quoteGuestBillingAddressManagementV1_V1_guest7carts_8cartId8_billing7address.in.json",
+				"out": "./lib/schemas/get_quoteGuestBillingAddressManagementV1_V1_guest7carts_8cartId8_billing7address.out.json"
+			}
+		},
+		"post_quoteGuestBillingAddressManagementV1_V1_guest7carts_8cartId8_billing7address": {
+			"title": "post_quoteGuestBillingAddressManagementV1_V1_guest7carts_8cartId8_billing7address",
+			"main": "./lib/actions/post_quoteGuestBillingAddressManagementV1_V1_guest7carts_8cartId8_billing7address.js",
+			"metadata": {
+				"in": "./lib/schemas/post_quoteGuestBillingAddressManagementV1_V1_guest7carts_8cartId8_billing7address.in.json",
+				"out": "./lib/schemas/post_quoteGuestBillingAddressManagementV1_V1_guest7carts_8cartId8_billing7address.out.json"
+			}
+		},
+		"get_quoteCouponManagementV1_V1_carts_8cartId8_coupons": {
+			"title": "get_quoteCouponManagementV1_V1_carts_8cartId8_coupons",
+			"main": "./lib/actions/get_quoteCouponManagementV1_V1_carts_8cartId8_coupons.js",
+			"metadata": {
+				"in": "./lib/schemas/get_quoteCouponManagementV1_V1_carts_8cartId8_coupons.in.json",
+				"out": "./lib/schemas/get_quoteCouponManagementV1_V1_carts_8cartId8_coupons.out.json"
+			}
+		},
+		"delete_quoteCouponManagementV1_V1_carts_8cartId8_coupons": {
+			"title": "delete_quoteCouponManagementV1_V1_carts_8cartId8_coupons",
+			"main": "./lib/actions/delete_quoteCouponManagementV1_V1_carts_8cartId8_coupons.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_quoteCouponManagementV1_V1_carts_8cartId8_coupons.in.json",
+				"out": "./lib/schemas/delete_quoteCouponManagementV1_V1_carts_8cartId8_coupons.out.json"
+			}
+		},
+		"put_quoteCouponManagementV1_V1_carts_8cartId8_coupons_8couponCode8": {
+			"title": "put_quoteCouponManagementV1_V1_carts_8cartId8_coupons_8couponCode8",
+			"main": "./lib/actions/put_quoteCouponManagementV1_V1_carts_8cartId8_coupons_8couponCode8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_quoteCouponManagementV1_V1_carts_8cartId8_coupons_8couponCode8.in.json",
+				"out": "./lib/schemas/put_quoteCouponManagementV1_V1_carts_8cartId8_coupons_8couponCode8.out.json"
+			}
+		},
+		"get_quoteCouponManagementV1_V1_carts_mine_coupons": {
+			"title": "get_quoteCouponManagementV1_V1_carts_mine_coupons",
+			"main": "./lib/actions/get_quoteCouponManagementV1_V1_carts_mine_coupons.js",
+			"metadata": {
+				"out": "./lib/schemas/get_quoteCouponManagementV1_V1_carts_mine_coupons.out.json"
+			}
+		},
+		"delete_quoteCouponManagementV1_V1_carts_mine_coupons": {
+			"title": "delete_quoteCouponManagementV1_V1_carts_mine_coupons",
+			"main": "./lib/actions/delete_quoteCouponManagementV1_V1_carts_mine_coupons.js",
+			"metadata": {
+				"out": "./lib/schemas/delete_quoteCouponManagementV1_V1_carts_mine_coupons.out.json"
+			}
+		},
+		"put_quoteCouponManagementV1_V1_carts_mine_coupons_8couponCode8": {
+			"title": "put_quoteCouponManagementV1_V1_carts_mine_coupons_8couponCode8",
+			"main": "./lib/actions/put_quoteCouponManagementV1_V1_carts_mine_coupons_8couponCode8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_quoteCouponManagementV1_V1_carts_mine_coupons_8couponCode8.in.json",
+				"out": "./lib/schemas/put_quoteCouponManagementV1_V1_carts_mine_coupons_8couponCode8.out.json"
+			}
+		},
+		"get_quoteGuestCouponManagementV1_V1_guest7carts_8cartId8_coupons": {
+			"title": "get_quoteGuestCouponManagementV1_V1_guest7carts_8cartId8_coupons",
+			"main": "./lib/actions/get_quoteGuestCouponManagementV1_V1_guest7carts_8cartId8_coupons.js",
+			"metadata": {
+				"in": "./lib/schemas/get_quoteGuestCouponManagementV1_V1_guest7carts_8cartId8_coupons.in.json",
+				"out": "./lib/schemas/get_quoteGuestCouponManagementV1_V1_guest7carts_8cartId8_coupons.out.json"
+			}
+		},
+		"delete_quoteGuestCouponManagementV1_V1_guest7carts_8cartId8_coupons": {
+			"title": "delete_quoteGuestCouponManagementV1_V1_guest7carts_8cartId8_coupons",
+			"main": "./lib/actions/delete_quoteGuestCouponManagementV1_V1_guest7carts_8cartId8_coupons.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_quoteGuestCouponManagementV1_V1_guest7carts_8cartId8_coupons.in.json",
+				"out": "./lib/schemas/delete_quoteGuestCouponManagementV1_V1_guest7carts_8cartId8_coupons.out.json"
+			}
+		},
+		"put_quoteGuestCouponManagementV1_V1_guest7carts_8cartId8_coupons_8couponCode8": {
+			"title": "put_quoteGuestCouponManagementV1_V1_guest7carts_8cartId8_coupons_8couponCode8",
+			"main": "./lib/actions/put_quoteGuestCouponManagementV1_V1_guest7carts_8cartId8_coupons_8couponCode8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_quoteGuestCouponManagementV1_V1_guest7carts_8cartId8_coupons_8couponCode8.in.json",
+				"out": "./lib/schemas/put_quoteGuestCouponManagementV1_V1_guest7carts_8cartId8_coupons_8couponCode8.out.json"
+			}
+		},
+		"get_quoteCartTotalRepositoryV1_V1_carts_8cartId8_totals": {
+			"title": "get_quoteCartTotalRepositoryV1_V1_carts_8cartId8_totals",
+			"main": "./lib/actions/get_quoteCartTotalRepositoryV1_V1_carts_8cartId8_totals.js",
+			"metadata": {
+				"in": "./lib/schemas/get_quoteCartTotalRepositoryV1_V1_carts_8cartId8_totals.in.json",
+				"out": "./lib/schemas/get_quoteCartTotalRepositoryV1_V1_carts_8cartId8_totals.out.json"
+			}
+		},
+		"get_quoteCartTotalRepositoryV1_V1_carts_mine_totals": {
+			"title": "get_quoteCartTotalRepositoryV1_V1_carts_mine_totals",
+			"main": "./lib/actions/get_quoteCartTotalRepositoryV1_V1_carts_mine_totals.js",
+			"metadata": {
+				"out": "./lib/schemas/get_quoteCartTotalRepositoryV1_V1_carts_mine_totals.out.json"
+			}
+		},
+		"put_quoteGuestCartTotalManagementV1_V1_guest7carts_8cartId8_collect7totals": {
+			"title": "put_quoteGuestCartTotalManagementV1_V1_guest7carts_8cartId8_collect7totals",
+			"main": "./lib/actions/put_quoteGuestCartTotalManagementV1_V1_guest7carts_8cartId8_collect7totals.js",
+			"metadata": {
+				"in": "./lib/schemas/put_quoteGuestCartTotalManagementV1_V1_guest7carts_8cartId8_collect7totals.in.json",
+				"out": "./lib/schemas/put_quoteGuestCartTotalManagementV1_V1_guest7carts_8cartId8_collect7totals.out.json"
+			}
+		},
+		"get_quoteGuestCartTotalRepositoryV1_V1_guest7carts_8cartId8_totals": {
+			"title": "get_quoteGuestCartTotalRepositoryV1_V1_guest7carts_8cartId8_totals",
+			"main": "./lib/actions/get_quoteGuestCartTotalRepositoryV1_V1_guest7carts_8cartId8_totals.js",
+			"metadata": {
+				"in": "./lib/schemas/get_quoteGuestCartTotalRepositoryV1_V1_guest7carts_8cartId8_totals.in.json",
+				"out": "./lib/schemas/get_quoteGuestCartTotalRepositoryV1_V1_guest7carts_8cartId8_totals.out.json"
+			}
+		},
+		"put_quoteCartTotalManagementV1_V1_carts_mine_collect7totals": {
+			"title": "put_quoteCartTotalManagementV1_V1_carts_mine_collect7totals",
+			"main": "./lib/actions/put_quoteCartTotalManagementV1_V1_carts_mine_collect7totals.js",
+			"metadata": {
+				"in": "./lib/schemas/put_quoteCartTotalManagementV1_V1_carts_mine_collect7totals.in.json",
+				"out": "./lib/schemas/put_quoteCartTotalManagementV1_V1_carts_mine_collect7totals.out.json"
+			}
+		},
+		"get_checkoutAgreementsCheckoutAgreementsRepositoryV1_V1_carts_licence": {
+			"title": "get_checkoutAgreementsCheckoutAgreementsRepositoryV1_V1_carts_licence",
+			"main": "./lib/actions/get_checkoutAgreementsCheckoutAgreementsRepositoryV1_V1_carts_licence.js",
+			"metadata": {
+				"out": "./lib/schemas/get_checkoutAgreementsCheckoutAgreementsRepositoryV1_V1_carts_licence.out.json"
+			}
+		},
+		"get_salesOrderRepositoryV1_V1_orders_8id8": {
+			"title": "get_salesOrderRepositoryV1_V1_orders_8id8",
+			"main": "./lib/actions/get_salesOrderRepositoryV1_V1_orders_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_salesOrderRepositoryV1_V1_orders_8id8.in.json",
+				"out": "./lib/schemas/get_salesOrderRepositoryV1_V1_orders_8id8.out.json"
+			}
+		},
+		"get_salesOrderRepositoryV1_V1_orders": {
+			"title": "get_salesOrderRepositoryV1_V1_orders",
+			"main": "./lib/actions/get_salesOrderRepositoryV1_V1_orders.js",
+			"metadata": {
+				"in": "./lib/schemas/get_salesOrderRepositoryV1_V1_orders.in.json",
+				"out": "./lib/schemas/get_salesOrderRepositoryV1_V1_orders.out.json"
+			}
+		},
+		"put_salesOrderRepositoryV1_V1_orders_create": {
+			"title": "put_salesOrderRepositoryV1_V1_orders_create",
+			"main": "./lib/actions/put_salesOrderRepositoryV1_V1_orders_create.js",
+			"metadata": {
+				"in": "./lib/schemas/put_salesOrderRepositoryV1_V1_orders_create.in.json",
+				"out": "./lib/schemas/put_salesOrderRepositoryV1_V1_orders_create.out.json"
+			}
+		},
+		"post_salesOrderRepositoryV1_V1_orders_": {
+			"title": "post_salesOrderRepositoryV1_V1_orders_",
+			"main": "./lib/actions/post_salesOrderRepositoryV1_V1_orders_.js",
+			"metadata": {
+				"in": "./lib/schemas/post_salesOrderRepositoryV1_V1_orders_.in.json",
+				"out": "./lib/schemas/post_salesOrderRepositoryV1_V1_orders_.out.json"
+			}
+		},
+		"get_salesOrderManagementV1_V1_orders_8id8_statuses": {
+			"title": "get_salesOrderManagementV1_V1_orders_8id8_statuses",
+			"main": "./lib/actions/get_salesOrderManagementV1_V1_orders_8id8_statuses.js",
+			"metadata": {
+				"in": "./lib/schemas/get_salesOrderManagementV1_V1_orders_8id8_statuses.in.json",
+				"out": "./lib/schemas/get_salesOrderManagementV1_V1_orders_8id8_statuses.out.json"
+			}
+		},
+		"post_salesOrderManagementV1_V1_orders_8id8_cancel": {
+			"title": "post_salesOrderManagementV1_V1_orders_8id8_cancel",
+			"main": "./lib/actions/post_salesOrderManagementV1_V1_orders_8id8_cancel.js",
+			"metadata": {
+				"in": "./lib/schemas/post_salesOrderManagementV1_V1_orders_8id8_cancel.in.json",
+				"out": "./lib/schemas/post_salesOrderManagementV1_V1_orders_8id8_cancel.out.json"
+			}
+		},
+		"post_salesOrderManagementV1_V1_orders_8id8_emails": {
+			"title": "post_salesOrderManagementV1_V1_orders_8id8_emails",
+			"main": "./lib/actions/post_salesOrderManagementV1_V1_orders_8id8_emails.js",
+			"metadata": {
+				"in": "./lib/schemas/post_salesOrderManagementV1_V1_orders_8id8_emails.in.json",
+				"out": "./lib/schemas/post_salesOrderManagementV1_V1_orders_8id8_emails.out.json"
+			}
+		},
+		"post_salesOrderManagementV1_V1_orders_8id8_hold": {
+			"title": "post_salesOrderManagementV1_V1_orders_8id8_hold",
+			"main": "./lib/actions/post_salesOrderManagementV1_V1_orders_8id8_hold.js",
+			"metadata": {
+				"in": "./lib/schemas/post_salesOrderManagementV1_V1_orders_8id8_hold.in.json",
+				"out": "./lib/schemas/post_salesOrderManagementV1_V1_orders_8id8_hold.out.json"
+			}
+		},
+		"post_salesOrderManagementV1_V1_orders_8id8_unhold": {
+			"title": "post_salesOrderManagementV1_V1_orders_8id8_unhold",
+			"main": "./lib/actions/post_salesOrderManagementV1_V1_orders_8id8_unhold.js",
+			"metadata": {
+				"in": "./lib/schemas/post_salesOrderManagementV1_V1_orders_8id8_unhold.in.json",
+				"out": "./lib/schemas/post_salesOrderManagementV1_V1_orders_8id8_unhold.out.json"
+			}
+		},
+		"post_salesOrderManagementV1_V1_orders_8id8_comments": {
+			"title": "post_salesOrderManagementV1_V1_orders_8id8_comments",
+			"main": "./lib/actions/post_salesOrderManagementV1_V1_orders_8id8_comments.js",
+			"metadata": {
+				"in": "./lib/schemas/post_salesOrderManagementV1_V1_orders_8id8_comments.in.json",
+				"out": "./lib/schemas/post_salesOrderManagementV1_V1_orders_8id8_comments.out.json"
+			}
+		},
+		"get_salesOrderManagementV1_V1_orders_8id8_comments": {
+			"title": "get_salesOrderManagementV1_V1_orders_8id8_comments",
+			"main": "./lib/actions/get_salesOrderManagementV1_V1_orders_8id8_comments.js",
+			"metadata": {
+				"in": "./lib/schemas/get_salesOrderManagementV1_V1_orders_8id8_comments.in.json",
+				"out": "./lib/schemas/get_salesOrderManagementV1_V1_orders_8id8_comments.out.json"
+			}
+		},
+		"put_salesOrderAddressRepositoryV1_V1_orders_8parent_id8": {
+			"title": "put_salesOrderAddressRepositoryV1_V1_orders_8parent_id8",
+			"main": "./lib/actions/put_salesOrderAddressRepositoryV1_V1_orders_8parent_id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_salesOrderAddressRepositoryV1_V1_orders_8parent_id8.in.json",
+				"out": "./lib/schemas/put_salesOrderAddressRepositoryV1_V1_orders_8parent_id8.out.json"
+			}
+		},
+		"get_salesOrderItemRepositoryV1_V1_orders_items_8id8": {
+			"title": "get_salesOrderItemRepositoryV1_V1_orders_items_8id8",
+			"main": "./lib/actions/get_salesOrderItemRepositoryV1_V1_orders_items_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_salesOrderItemRepositoryV1_V1_orders_items_8id8.in.json",
+				"out": "./lib/schemas/get_salesOrderItemRepositoryV1_V1_orders_items_8id8.out.json"
+			}
+		},
+		"get_salesOrderItemRepositoryV1_V1_orders_items": {
+			"title": "get_salesOrderItemRepositoryV1_V1_orders_items",
+			"main": "./lib/actions/get_salesOrderItemRepositoryV1_V1_orders_items.js",
+			"metadata": {
+				"in": "./lib/schemas/get_salesOrderItemRepositoryV1_V1_orders_items.in.json",
+				"out": "./lib/schemas/get_salesOrderItemRepositoryV1_V1_orders_items.out.json"
+			}
+		},
+		"get_salesInvoiceRepositoryV1_V1_invoices_8id8": {
+			"title": "get_salesInvoiceRepositoryV1_V1_invoices_8id8",
+			"main": "./lib/actions/get_salesInvoiceRepositoryV1_V1_invoices_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_salesInvoiceRepositoryV1_V1_invoices_8id8.in.json",
+				"out": "./lib/schemas/get_salesInvoiceRepositoryV1_V1_invoices_8id8.out.json"
+			}
+		},
+		"get_salesInvoiceRepositoryV1_V1_invoices": {
+			"title": "get_salesInvoiceRepositoryV1_V1_invoices",
+			"main": "./lib/actions/get_salesInvoiceRepositoryV1_V1_invoices.js",
+			"metadata": {
+				"in": "./lib/schemas/get_salesInvoiceRepositoryV1_V1_invoices.in.json",
+				"out": "./lib/schemas/get_salesInvoiceRepositoryV1_V1_invoices.out.json"
+			}
+		},
+		"post_salesInvoiceRepositoryV1_V1_invoices_": {
+			"title": "post_salesInvoiceRepositoryV1_V1_invoices_",
+			"main": "./lib/actions/post_salesInvoiceRepositoryV1_V1_invoices_.js",
+			"metadata": {
+				"in": "./lib/schemas/post_salesInvoiceRepositoryV1_V1_invoices_.in.json",
+				"out": "./lib/schemas/post_salesInvoiceRepositoryV1_V1_invoices_.out.json"
+			}
+		},
+		"get_salesInvoiceManagementV1_V1_invoices_8id8_comments": {
+			"title": "get_salesInvoiceManagementV1_V1_invoices_8id8_comments",
+			"main": "./lib/actions/get_salesInvoiceManagementV1_V1_invoices_8id8_comments.js",
+			"metadata": {
+				"in": "./lib/schemas/get_salesInvoiceManagementV1_V1_invoices_8id8_comments.in.json",
+				"out": "./lib/schemas/get_salesInvoiceManagementV1_V1_invoices_8id8_comments.out.json"
+			}
+		},
+		"post_salesInvoiceManagementV1_V1_invoices_8id8_emails": {
+			"title": "post_salesInvoiceManagementV1_V1_invoices_8id8_emails",
+			"main": "./lib/actions/post_salesInvoiceManagementV1_V1_invoices_8id8_emails.js",
+			"metadata": {
+				"in": "./lib/schemas/post_salesInvoiceManagementV1_V1_invoices_8id8_emails.in.json",
+				"out": "./lib/schemas/post_salesInvoiceManagementV1_V1_invoices_8id8_emails.out.json"
+			}
+		},
+		"post_salesInvoiceManagementV1_V1_invoices_8id8_void": {
+			"title": "post_salesInvoiceManagementV1_V1_invoices_8id8_void",
+			"main": "./lib/actions/post_salesInvoiceManagementV1_V1_invoices_8id8_void.js",
+			"metadata": {
+				"in": "./lib/schemas/post_salesInvoiceManagementV1_V1_invoices_8id8_void.in.json",
+				"out": "./lib/schemas/post_salesInvoiceManagementV1_V1_invoices_8id8_void.out.json"
+			}
+		},
+		"post_salesInvoiceManagementV1_V1_invoices_8id8_capture": {
+			"title": "post_salesInvoiceManagementV1_V1_invoices_8id8_capture",
+			"main": "./lib/actions/post_salesInvoiceManagementV1_V1_invoices_8id8_capture.js",
+			"metadata": {
+				"in": "./lib/schemas/post_salesInvoiceManagementV1_V1_invoices_8id8_capture.in.json",
+				"out": "./lib/schemas/post_salesInvoiceManagementV1_V1_invoices_8id8_capture.out.json"
+			}
+		},
+		"post_salesInvoiceCommentRepositoryV1_V1_invoices_comments": {
+			"title": "post_salesInvoiceCommentRepositoryV1_V1_invoices_comments",
+			"main": "./lib/actions/post_salesInvoiceCommentRepositoryV1_V1_invoices_comments.js",
+			"metadata": {
+				"in": "./lib/schemas/post_salesInvoiceCommentRepositoryV1_V1_invoices_comments.in.json",
+				"out": "./lib/schemas/post_salesInvoiceCommentRepositoryV1_V1_invoices_comments.out.json"
+			}
+		},
+		"post_salesRefundInvoiceV1_V1_invoice_8invoiceId8_refund": {
+			"title": "post_salesRefundInvoiceV1_V1_invoice_8invoiceId8_refund",
+			"main": "./lib/actions/post_salesRefundInvoiceV1_V1_invoice_8invoiceId8_refund.js",
+			"metadata": {
+				"in": "./lib/schemas/post_salesRefundInvoiceV1_V1_invoice_8invoiceId8_refund.in.json",
+				"out": "./lib/schemas/post_salesRefundInvoiceV1_V1_invoice_8invoiceId8_refund.out.json"
+			}
+		},
+		"get_salesCreditmemoManagementV1_V1_creditmemo_8id8_comments": {
+			"title": "get_salesCreditmemoManagementV1_V1_creditmemo_8id8_comments",
+			"main": "./lib/actions/get_salesCreditmemoManagementV1_V1_creditmemo_8id8_comments.js",
+			"metadata": {
+				"in": "./lib/schemas/get_salesCreditmemoManagementV1_V1_creditmemo_8id8_comments.in.json",
+				"out": "./lib/schemas/get_salesCreditmemoManagementV1_V1_creditmemo_8id8_comments.out.json"
+			}
+		},
+		"post_salesCreditmemoCommentRepositoryV1_V1_creditmemo_8id8_comments": {
+			"title": "post_salesCreditmemoCommentRepositoryV1_V1_creditmemo_8id8_comments",
+			"main": "./lib/actions/post_salesCreditmemoCommentRepositoryV1_V1_creditmemo_8id8_comments.js",
+			"metadata": {
+				"in": "./lib/schemas/post_salesCreditmemoCommentRepositoryV1_V1_creditmemo_8id8_comments.in.json",
+				"out": "./lib/schemas/post_salesCreditmemoCommentRepositoryV1_V1_creditmemo_8id8_comments.out.json"
+			}
+		},
+		"put_salesCreditmemoManagementV1_V1_creditmemo_8id8": {
+			"title": "put_salesCreditmemoManagementV1_V1_creditmemo_8id8",
+			"main": "./lib/actions/put_salesCreditmemoManagementV1_V1_creditmemo_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_salesCreditmemoManagementV1_V1_creditmemo_8id8.in.json",
+				"out": "./lib/schemas/put_salesCreditmemoManagementV1_V1_creditmemo_8id8.out.json"
+			}
+		},
+		"get_salesCreditmemoRepositoryV1_V1_creditmemo_8id8": {
+			"title": "get_salesCreditmemoRepositoryV1_V1_creditmemo_8id8",
+			"main": "./lib/actions/get_salesCreditmemoRepositoryV1_V1_creditmemo_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_salesCreditmemoRepositoryV1_V1_creditmemo_8id8.in.json",
+				"out": "./lib/schemas/get_salesCreditmemoRepositoryV1_V1_creditmemo_8id8.out.json"
+			}
+		},
+		"post_salesCreditmemoManagementV1_V1_creditmemo_8id8_emails": {
+			"title": "post_salesCreditmemoManagementV1_V1_creditmemo_8id8_emails",
+			"main": "./lib/actions/post_salesCreditmemoManagementV1_V1_creditmemo_8id8_emails.js",
+			"metadata": {
+				"in": "./lib/schemas/post_salesCreditmemoManagementV1_V1_creditmemo_8id8_emails.in.json",
+				"out": "./lib/schemas/post_salesCreditmemoManagementV1_V1_creditmemo_8id8_emails.out.json"
+			}
+		},
+		"post_salesCreditmemoManagementV1_V1_creditmemo_refund": {
+			"title": "post_salesCreditmemoManagementV1_V1_creditmemo_refund",
+			"main": "./lib/actions/post_salesCreditmemoManagementV1_V1_creditmemo_refund.js",
+			"metadata": {
+				"in": "./lib/schemas/post_salesCreditmemoManagementV1_V1_creditmemo_refund.in.json",
+				"out": "./lib/schemas/post_salesCreditmemoManagementV1_V1_creditmemo_refund.out.json"
+			}
+		},
+		"get_salesCreditmemoRepositoryV1_V1_creditmemos": {
+			"title": "get_salesCreditmemoRepositoryV1_V1_creditmemos",
+			"main": "./lib/actions/get_salesCreditmemoRepositoryV1_V1_creditmemos.js",
+			"metadata": {
+				"in": "./lib/schemas/get_salesCreditmemoRepositoryV1_V1_creditmemos.in.json",
+				"out": "./lib/schemas/get_salesCreditmemoRepositoryV1_V1_creditmemos.out.json"
+			}
+		},
+		"post_salesCreditmemoRepositoryV1_V1_creditmemo": {
+			"title": "post_salesCreditmemoRepositoryV1_V1_creditmemo",
+			"main": "./lib/actions/post_salesCreditmemoRepositoryV1_V1_creditmemo.js",
+			"metadata": {
+				"in": "./lib/schemas/post_salesCreditmemoRepositoryV1_V1_creditmemo.in.json",
+				"out": "./lib/schemas/post_salesCreditmemoRepositoryV1_V1_creditmemo.out.json"
+			}
+		},
+		"post_salesRefundOrderV1_V1_order_8orderId8_refund": {
+			"title": "post_salesRefundOrderV1_V1_order_8orderId8_refund",
+			"main": "./lib/actions/post_salesRefundOrderV1_V1_order_8orderId8_refund.js",
+			"metadata": {
+				"in": "./lib/schemas/post_salesRefundOrderV1_V1_order_8orderId8_refund.in.json",
+				"out": "./lib/schemas/post_salesRefundOrderV1_V1_order_8orderId8_refund.out.json"
+			}
+		},
+		"get_salesShipmentRepositoryV1_V1_shipment_8id8": {
+			"title": "get_salesShipmentRepositoryV1_V1_shipment_8id8",
+			"main": "./lib/actions/get_salesShipmentRepositoryV1_V1_shipment_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_salesShipmentRepositoryV1_V1_shipment_8id8.in.json",
+				"out": "./lib/schemas/get_salesShipmentRepositoryV1_V1_shipment_8id8.out.json"
+			}
+		},
+		"get_salesShipmentRepositoryV1_V1_shipments": {
+			"title": "get_salesShipmentRepositoryV1_V1_shipments",
+			"main": "./lib/actions/get_salesShipmentRepositoryV1_V1_shipments.js",
+			"metadata": {
+				"in": "./lib/schemas/get_salesShipmentRepositoryV1_V1_shipments.in.json",
+				"out": "./lib/schemas/get_salesShipmentRepositoryV1_V1_shipments.out.json"
+			}
+		},
+		"post_salesShipmentRepositoryV1_V1_shipment_": {
+			"title": "post_salesShipmentRepositoryV1_V1_shipment_",
+			"main": "./lib/actions/post_salesShipmentRepositoryV1_V1_shipment_.js",
+			"metadata": {
+				"in": "./lib/schemas/post_salesShipmentRepositoryV1_V1_shipment_.in.json",
+				"out": "./lib/schemas/post_salesShipmentRepositoryV1_V1_shipment_.out.json"
+			}
+		},
+		"get_salesShipmentManagementV1_V1_shipment_8id8_comments": {
+			"title": "get_salesShipmentManagementV1_V1_shipment_8id8_comments",
+			"main": "./lib/actions/get_salesShipmentManagementV1_V1_shipment_8id8_comments.js",
+			"metadata": {
+				"in": "./lib/schemas/get_salesShipmentManagementV1_V1_shipment_8id8_comments.in.json",
+				"out": "./lib/schemas/get_salesShipmentManagementV1_V1_shipment_8id8_comments.out.json"
+			}
+		},
+		"post_salesShipmentCommentRepositoryV1_V1_shipment_8id8_comments": {
+			"title": "post_salesShipmentCommentRepositoryV1_V1_shipment_8id8_comments",
+			"main": "./lib/actions/post_salesShipmentCommentRepositoryV1_V1_shipment_8id8_comments.js",
+			"metadata": {
+				"in": "./lib/schemas/post_salesShipmentCommentRepositoryV1_V1_shipment_8id8_comments.in.json",
+				"out": "./lib/schemas/post_salesShipmentCommentRepositoryV1_V1_shipment_8id8_comments.out.json"
+			}
+		},
+		"post_salesShipmentManagementV1_V1_shipment_8id8_emails": {
+			"title": "post_salesShipmentManagementV1_V1_shipment_8id8_emails",
+			"main": "./lib/actions/post_salesShipmentManagementV1_V1_shipment_8id8_emails.js",
+			"metadata": {
+				"in": "./lib/schemas/post_salesShipmentManagementV1_V1_shipment_8id8_emails.in.json",
+				"out": "./lib/schemas/post_salesShipmentManagementV1_V1_shipment_8id8_emails.out.json"
+			}
+		},
+		"get_salesShipmentManagementV1_V1_shipment_8id8_label": {
+			"title": "get_salesShipmentManagementV1_V1_shipment_8id8_label",
+			"main": "./lib/actions/get_salesShipmentManagementV1_V1_shipment_8id8_label.js",
+			"metadata": {
+				"in": "./lib/schemas/get_salesShipmentManagementV1_V1_shipment_8id8_label.in.json",
+				"out": "./lib/schemas/get_salesShipmentManagementV1_V1_shipment_8id8_label.out.json"
+			}
+		},
+		"post_salesShipmentTrackRepositoryV1_V1_shipment_track": {
+			"title": "post_salesShipmentTrackRepositoryV1_V1_shipment_track",
+			"main": "./lib/actions/post_salesShipmentTrackRepositoryV1_V1_shipment_track.js",
+			"metadata": {
+				"in": "./lib/schemas/post_salesShipmentTrackRepositoryV1_V1_shipment_track.in.json",
+				"out": "./lib/schemas/post_salesShipmentTrackRepositoryV1_V1_shipment_track.out.json"
+			}
+		},
+		"delete_salesShipmentTrackRepositoryV1_V1_shipment_track_8id8": {
+			"title": "delete_salesShipmentTrackRepositoryV1_V1_shipment_track_8id8",
+			"main": "./lib/actions/delete_salesShipmentTrackRepositoryV1_V1_shipment_track_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_salesShipmentTrackRepositoryV1_V1_shipment_track_8id8.in.json",
+				"out": "./lib/schemas/delete_salesShipmentTrackRepositoryV1_V1_shipment_track_8id8.out.json"
+			}
+		},
+		"post_salesShipOrderV1_V1_order_8orderId8_ship": {
+			"title": "post_salesShipOrderV1_V1_order_8orderId8_ship",
+			"main": "./lib/actions/post_salesShipOrderV1_V1_order_8orderId8_ship.js",
+			"metadata": {
+				"in": "./lib/schemas/post_salesShipOrderV1_V1_order_8orderId8_ship.in.json",
+				"out": "./lib/schemas/post_salesShipOrderV1_V1_order_8orderId8_ship.out.json"
+			}
+		},
+		"get_salesTransactionRepositoryV1_V1_transactions_8id8": {
+			"title": "get_salesTransactionRepositoryV1_V1_transactions_8id8",
+			"main": "./lib/actions/get_salesTransactionRepositoryV1_V1_transactions_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_salesTransactionRepositoryV1_V1_transactions_8id8.in.json",
+				"out": "./lib/schemas/get_salesTransactionRepositoryV1_V1_transactions_8id8.out.json"
+			}
+		},
+		"get_salesTransactionRepositoryV1_V1_transactions": {
+			"title": "get_salesTransactionRepositoryV1_V1_transactions",
+			"main": "./lib/actions/get_salesTransactionRepositoryV1_V1_transactions.js",
+			"metadata": {
+				"in": "./lib/schemas/get_salesTransactionRepositoryV1_V1_transactions.in.json",
+				"out": "./lib/schemas/get_salesTransactionRepositoryV1_V1_transactions.out.json"
+			}
+		},
+		"post_salesInvoiceOrderV1_V1_order_8orderId8_invoice": {
+			"title": "post_salesInvoiceOrderV1_V1_order_8orderId8_invoice",
+			"main": "./lib/actions/post_salesInvoiceOrderV1_V1_order_8orderId8_invoice.js",
+			"metadata": {
+				"in": "./lib/schemas/post_salesInvoiceOrderV1_V1_order_8orderId8_invoice.in.json",
+				"out": "./lib/schemas/post_salesInvoiceOrderV1_V1_order_8orderId8_invoice.out.json"
+			}
+		},
+		"get_downloadableLinkRepositoryV1_V1_products_8sku8_downloadable7links": {
+			"title": "get_downloadableLinkRepositoryV1_V1_products_8sku8_downloadable7links",
+			"main": "./lib/actions/get_downloadableLinkRepositoryV1_V1_products_8sku8_downloadable7links.js",
+			"metadata": {
+				"in": "./lib/schemas/get_downloadableLinkRepositoryV1_V1_products_8sku8_downloadable7links.in.json",
+				"out": "./lib/schemas/get_downloadableLinkRepositoryV1_V1_products_8sku8_downloadable7links.out.json"
+			}
+		},
+		"post_downloadableLinkRepositoryV1_V1_products_8sku8_downloadable7links": {
+			"title": "post_downloadableLinkRepositoryV1_V1_products_8sku8_downloadable7links",
+			"main": "./lib/actions/post_downloadableLinkRepositoryV1_V1_products_8sku8_downloadable7links.js",
+			"metadata": {
+				"in": "./lib/schemas/post_downloadableLinkRepositoryV1_V1_products_8sku8_downloadable7links.in.json",
+				"out": "./lib/schemas/post_downloadableLinkRepositoryV1_V1_products_8sku8_downloadable7links.out.json"
+			}
+		},
+		"put_downloadableLinkRepositoryV1_V1_products_8sku8_downloadable7links_8id8": {
+			"title": "put_downloadableLinkRepositoryV1_V1_products_8sku8_downloadable7links_8id8",
+			"main": "./lib/actions/put_downloadableLinkRepositoryV1_V1_products_8sku8_downloadable7links_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_downloadableLinkRepositoryV1_V1_products_8sku8_downloadable7links_8id8.in.json",
+				"out": "./lib/schemas/put_downloadableLinkRepositoryV1_V1_products_8sku8_downloadable7links_8id8.out.json"
+			}
+		},
+		"delete_downloadableLinkRepositoryV1_V1_products_downloadable7links_8id8": {
+			"title": "delete_downloadableLinkRepositoryV1_V1_products_downloadable7links_8id8",
+			"main": "./lib/actions/delete_downloadableLinkRepositoryV1_V1_products_downloadable7links_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_downloadableLinkRepositoryV1_V1_products_downloadable7links_8id8.in.json",
+				"out": "./lib/schemas/delete_downloadableLinkRepositoryV1_V1_products_downloadable7links_8id8.out.json"
+			}
+		},
+		"get_downloadableSampleRepositoryV1_V1_products_8sku8_downloadable7links_samples": {
+			"title": "get_downloadableSampleRepositoryV1_V1_products_8sku8_downloadable7links_samples",
+			"main": "./lib/actions/get_downloadableSampleRepositoryV1_V1_products_8sku8_downloadable7links_samples.js",
+			"metadata": {
+				"in": "./lib/schemas/get_downloadableSampleRepositoryV1_V1_products_8sku8_downloadable7links_samples.in.json",
+				"out": "./lib/schemas/get_downloadableSampleRepositoryV1_V1_products_8sku8_downloadable7links_samples.out.json"
+			}
+		},
+		"post_downloadableSampleRepositoryV1_V1_products_8sku8_downloadable7links_samples": {
+			"title": "post_downloadableSampleRepositoryV1_V1_products_8sku8_downloadable7links_samples",
+			"main": "./lib/actions/post_downloadableSampleRepositoryV1_V1_products_8sku8_downloadable7links_samples.js",
+			"metadata": {
+				"in": "./lib/schemas/post_downloadableSampleRepositoryV1_V1_products_8sku8_downloadable7links_samples.in.json",
+				"out": "./lib/schemas/post_downloadableSampleRepositoryV1_V1_products_8sku8_downloadable7links_samples.out.json"
+			}
+		},
+		"put_downloadableSampleRepositoryV1_V1_products_8sku8_downloadable7links_samples_8id8": {
+			"title": "put_downloadableSampleRepositoryV1_V1_products_8sku8_downloadable7links_samples_8id8",
+			"main": "./lib/actions/put_downloadableSampleRepositoryV1_V1_products_8sku8_downloadable7links_samples_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_downloadableSampleRepositoryV1_V1_products_8sku8_downloadable7links_samples_8id8.in.json",
+				"out": "./lib/schemas/put_downloadableSampleRepositoryV1_V1_products_8sku8_downloadable7links_samples_8id8.out.json"
+			}
+		},
+		"delete_downloadableSampleRepositoryV1_V1_products_downloadable7links_samples_8id8": {
+			"title": "delete_downloadableSampleRepositoryV1_V1_products_downloadable7links_samples_8id8",
+			"main": "./lib/actions/delete_downloadableSampleRepositoryV1_V1_products_downloadable7links_samples_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_downloadableSampleRepositoryV1_V1_products_downloadable7links_samples_8id8.in.json",
+				"out": "./lib/schemas/delete_downloadableSampleRepositoryV1_V1_products_downloadable7links_samples_8id8.out.json"
+			}
+		},
+		"get_catalogInventoryStockRegistryV1_V1_stockItems_8productSku8": {
+			"title": "get_catalogInventoryStockRegistryV1_V1_stockItems_8productSku8",
+			"main": "./lib/actions/get_catalogInventoryStockRegistryV1_V1_stockItems_8productSku8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogInventoryStockRegistryV1_V1_stockItems_8productSku8.in.json",
+				"out": "./lib/schemas/get_catalogInventoryStockRegistryV1_V1_stockItems_8productSku8.out.json"
+			}
+		},
+		"put_catalogInventoryStockRegistryV1_V1_products_8productSku8_stockItems_8itemId8": {
+			"title": "put_catalogInventoryStockRegistryV1_V1_products_8productSku8_stockItems_8itemId8",
+			"main": "./lib/actions/put_catalogInventoryStockRegistryV1_V1_products_8productSku8_stockItems_8itemId8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_catalogInventoryStockRegistryV1_V1_products_8productSku8_stockItems_8itemId8.in.json",
+				"out": "./lib/schemas/put_catalogInventoryStockRegistryV1_V1_products_8productSku8_stockItems_8itemId8.out.json"
+			}
+		},
+		"get_catalogInventoryStockRegistryV1_V1_stockItems_lowStock_": {
+			"title": "get_catalogInventoryStockRegistryV1_V1_stockItems_lowStock_",
+			"main": "./lib/actions/get_catalogInventoryStockRegistryV1_V1_stockItems_lowStock_.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogInventoryStockRegistryV1_V1_stockItems_lowStock_.in.json",
+				"out": "./lib/schemas/get_catalogInventoryStockRegistryV1_V1_stockItems_lowStock_.out.json"
+			}
+		},
+		"get_catalogInventoryStockRegistryV1_V1_stockStatuses_8productSku8": {
+			"title": "get_catalogInventoryStockRegistryV1_V1_stockStatuses_8productSku8",
+			"main": "./lib/actions/get_catalogInventoryStockRegistryV1_V1_stockStatuses_8productSku8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_catalogInventoryStockRegistryV1_V1_stockStatuses_8productSku8.in.json",
+				"out": "./lib/schemas/get_catalogInventoryStockRegistryV1_V1_stockStatuses_8productSku8.out.json"
+			}
+		},
+		"post_checkoutGuestShippingInformationManagementV1_V1_guest7carts_8cartId8_shipping7information": {
+			"title": "post_checkoutGuestShippingInformationManagementV1_V1_guest7carts_8cartId8_shipping7information",
+			"main": "./lib/actions/post_checkoutGuestShippingInformationManagementV1_V1_guest7carts_8cartId8_shipping7information.js",
+			"metadata": {
+				"in": "./lib/schemas/post_checkoutGuestShippingInformationManagementV1_V1_guest7carts_8cartId8_shipping7information.in.json",
+				"out": "./lib/schemas/post_checkoutGuestShippingInformationManagementV1_V1_guest7carts_8cartId8_shipping7information.out.json"
+			}
+		},
+		"post_checkoutShippingInformationManagementV1_V1_carts_mine_shipping7information": {
+			"title": "post_checkoutShippingInformationManagementV1_V1_carts_mine_shipping7information",
+			"main": "./lib/actions/post_checkoutShippingInformationManagementV1_V1_carts_mine_shipping7information.js",
+			"metadata": {
+				"in": "./lib/schemas/post_checkoutShippingInformationManagementV1_V1_carts_mine_shipping7information.in.json",
+				"out": "./lib/schemas/post_checkoutShippingInformationManagementV1_V1_carts_mine_shipping7information.out.json"
+			}
+		},
+		"post_checkoutShippingInformationManagementV1_V1_carts_8cartId8_shipping7information": {
+			"title": "post_checkoutShippingInformationManagementV1_V1_carts_8cartId8_shipping7information",
+			"main": "./lib/actions/post_checkoutShippingInformationManagementV1_V1_carts_8cartId8_shipping7information.js",
+			"metadata": {
+				"in": "./lib/schemas/post_checkoutShippingInformationManagementV1_V1_carts_8cartId8_shipping7information.in.json",
+				"out": "./lib/schemas/post_checkoutShippingInformationManagementV1_V1_carts_8cartId8_shipping7information.out.json"
+			}
+		},
+		"post_checkoutTotalsInformationManagementV1_V1_carts_8cartId8_totals7information": {
+			"title": "post_checkoutTotalsInformationManagementV1_V1_carts_8cartId8_totals7information",
+			"main": "./lib/actions/post_checkoutTotalsInformationManagementV1_V1_carts_8cartId8_totals7information.js",
+			"metadata": {
+				"in": "./lib/schemas/post_checkoutTotalsInformationManagementV1_V1_carts_8cartId8_totals7information.in.json",
+				"out": "./lib/schemas/post_checkoutTotalsInformationManagementV1_V1_carts_8cartId8_totals7information.out.json"
+			}
+		},
+		"post_checkoutTotalsInformationManagementV1_V1_carts_mine_totals7information": {
+			"title": "post_checkoutTotalsInformationManagementV1_V1_carts_mine_totals7information",
+			"main": "./lib/actions/post_checkoutTotalsInformationManagementV1_V1_carts_mine_totals7information.js",
+			"metadata": {
+				"in": "./lib/schemas/post_checkoutTotalsInformationManagementV1_V1_carts_mine_totals7information.in.json",
+				"out": "./lib/schemas/post_checkoutTotalsInformationManagementV1_V1_carts_mine_totals7information.out.json"
+			}
+		},
+		"post_checkoutGuestTotalsInformationManagementV1_V1_guest7carts_8cartId8_totals7information": {
+			"title": "post_checkoutGuestTotalsInformationManagementV1_V1_guest7carts_8cartId8_totals7information",
+			"main": "./lib/actions/post_checkoutGuestTotalsInformationManagementV1_V1_guest7carts_8cartId8_totals7information.js",
+			"metadata": {
+				"in": "./lib/schemas/post_checkoutGuestTotalsInformationManagementV1_V1_guest7carts_8cartId8_totals7information.in.json",
+				"out": "./lib/schemas/post_checkoutGuestTotalsInformationManagementV1_V1_guest7carts_8cartId8_totals7information.out.json"
+			}
+		},
+		"post_checkoutGuestPaymentInformationManagementV1_V1_guest7carts_8cartId8_payment7information": {
+			"title": "post_checkoutGuestPaymentInformationManagementV1_V1_guest7carts_8cartId8_payment7information",
+			"main": "./lib/actions/post_checkoutGuestPaymentInformationManagementV1_V1_guest7carts_8cartId8_payment7information.js",
+			"metadata": {
+				"in": "./lib/schemas/post_checkoutGuestPaymentInformationManagementV1_V1_guest7carts_8cartId8_payment7information.in.json",
+				"out": "./lib/schemas/post_checkoutGuestPaymentInformationManagementV1_V1_guest7carts_8cartId8_payment7information.out.json"
+			}
+		},
+		"get_checkoutGuestPaymentInformationManagementV1_V1_guest7carts_8cartId8_payment7information": {
+			"title": "get_checkoutGuestPaymentInformationManagementV1_V1_guest7carts_8cartId8_payment7information",
+			"main": "./lib/actions/get_checkoutGuestPaymentInformationManagementV1_V1_guest7carts_8cartId8_payment7information.js",
+			"metadata": {
+				"in": "./lib/schemas/get_checkoutGuestPaymentInformationManagementV1_V1_guest7carts_8cartId8_payment7information.in.json",
+				"out": "./lib/schemas/get_checkoutGuestPaymentInformationManagementV1_V1_guest7carts_8cartId8_payment7information.out.json"
+			}
+		},
+		"post_checkoutGuestPaymentInformationManagementV1_V1_guest7carts_8cartId8_set7payment7information": {
+			"title": "post_checkoutGuestPaymentInformationManagementV1_V1_guest7carts_8cartId8_set7payment7information",
+			"main": "./lib/actions/post_checkoutGuestPaymentInformationManagementV1_V1_guest7carts_8cartId8_set7payment7information.js",
+			"metadata": {
+				"in": "./lib/schemas/post_checkoutGuestPaymentInformationManagementV1_V1_guest7carts_8cartId8_set7payment7information.in.json",
+				"out": "./lib/schemas/post_checkoutGuestPaymentInformationManagementV1_V1_guest7carts_8cartId8_set7payment7information.out.json"
+			}
+		},
+		"post_checkoutPaymentInformationManagementV1_V1_carts_mine_payment7information": {
+			"title": "post_checkoutPaymentInformationManagementV1_V1_carts_mine_payment7information",
+			"main": "./lib/actions/post_checkoutPaymentInformationManagementV1_V1_carts_mine_payment7information.js",
+			"metadata": {
+				"in": "./lib/schemas/post_checkoutPaymentInformationManagementV1_V1_carts_mine_payment7information.in.json",
+				"out": "./lib/schemas/post_checkoutPaymentInformationManagementV1_V1_carts_mine_payment7information.out.json"
+			}
+		},
+		"get_checkoutPaymentInformationManagementV1_V1_carts_mine_payment7information": {
+			"title": "get_checkoutPaymentInformationManagementV1_V1_carts_mine_payment7information",
+			"main": "./lib/actions/get_checkoutPaymentInformationManagementV1_V1_carts_mine_payment7information.js",
+			"metadata": {
+				"out": "./lib/schemas/get_checkoutPaymentInformationManagementV1_V1_carts_mine_payment7information.out.json"
+			}
+		},
+		"post_checkoutPaymentInformationManagementV1_V1_carts_mine_set7payment7information": {
+			"title": "post_checkoutPaymentInformationManagementV1_V1_carts_mine_set7payment7information",
+			"main": "./lib/actions/post_checkoutPaymentInformationManagementV1_V1_carts_mine_set7payment7information.js",
+			"metadata": {
+				"in": "./lib/schemas/post_checkoutPaymentInformationManagementV1_V1_carts_mine_set7payment7information.in.json",
+				"out": "./lib/schemas/post_checkoutPaymentInformationManagementV1_V1_carts_mine_set7payment7information.out.json"
+			}
+		},
+		"get_giftMessageCartRepositoryV1_V1_carts_8cartId8_gift7message": {
+			"title": "get_giftMessageCartRepositoryV1_V1_carts_8cartId8_gift7message",
+			"main": "./lib/actions/get_giftMessageCartRepositoryV1_V1_carts_8cartId8_gift7message.js",
+			"metadata": {
+				"in": "./lib/schemas/get_giftMessageCartRepositoryV1_V1_carts_8cartId8_gift7message.in.json",
+				"out": "./lib/schemas/get_giftMessageCartRepositoryV1_V1_carts_8cartId8_gift7message.out.json"
+			}
+		},
+		"post_giftMessageCartRepositoryV1_V1_carts_8cartId8_gift7message": {
+			"title": "post_giftMessageCartRepositoryV1_V1_carts_8cartId8_gift7message",
+			"main": "./lib/actions/post_giftMessageCartRepositoryV1_V1_carts_8cartId8_gift7message.js",
+			"metadata": {
+				"in": "./lib/schemas/post_giftMessageCartRepositoryV1_V1_carts_8cartId8_gift7message.in.json",
+				"out": "./lib/schemas/post_giftMessageCartRepositoryV1_V1_carts_8cartId8_gift7message.out.json"
+			}
+		},
+		"get_giftMessageCartRepositoryV1_V1_carts_mine_gift7message": {
+			"title": "get_giftMessageCartRepositoryV1_V1_carts_mine_gift7message",
+			"main": "./lib/actions/get_giftMessageCartRepositoryV1_V1_carts_mine_gift7message.js",
+			"metadata": {
+				"out": "./lib/schemas/get_giftMessageCartRepositoryV1_V1_carts_mine_gift7message.out.json"
+			}
+		},
+		"post_giftMessageCartRepositoryV1_V1_carts_mine_gift7message": {
+			"title": "post_giftMessageCartRepositoryV1_V1_carts_mine_gift7message",
+			"main": "./lib/actions/post_giftMessageCartRepositoryV1_V1_carts_mine_gift7message.js",
+			"metadata": {
+				"in": "./lib/schemas/post_giftMessageCartRepositoryV1_V1_carts_mine_gift7message.in.json",
+				"out": "./lib/schemas/post_giftMessageCartRepositoryV1_V1_carts_mine_gift7message.out.json"
+			}
+		},
+		"get_giftMessageItemRepositoryV1_V1_carts_8cartId8_gift7message_8itemId8": {
+			"title": "get_giftMessageItemRepositoryV1_V1_carts_8cartId8_gift7message_8itemId8",
+			"main": "./lib/actions/get_giftMessageItemRepositoryV1_V1_carts_8cartId8_gift7message_8itemId8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_giftMessageItemRepositoryV1_V1_carts_8cartId8_gift7message_8itemId8.in.json",
+				"out": "./lib/schemas/get_giftMessageItemRepositoryV1_V1_carts_8cartId8_gift7message_8itemId8.out.json"
+			}
+		},
+		"post_giftMessageItemRepositoryV1_V1_carts_8cartId8_gift7message_8itemId8": {
+			"title": "post_giftMessageItemRepositoryV1_V1_carts_8cartId8_gift7message_8itemId8",
+			"main": "./lib/actions/post_giftMessageItemRepositoryV1_V1_carts_8cartId8_gift7message_8itemId8.js",
+			"metadata": {
+				"in": "./lib/schemas/post_giftMessageItemRepositoryV1_V1_carts_8cartId8_gift7message_8itemId8.in.json",
+				"out": "./lib/schemas/post_giftMessageItemRepositoryV1_V1_carts_8cartId8_gift7message_8itemId8.out.json"
+			}
+		},
+		"get_giftMessageItemRepositoryV1_V1_carts_mine_gift7message_8itemId8": {
+			"title": "get_giftMessageItemRepositoryV1_V1_carts_mine_gift7message_8itemId8",
+			"main": "./lib/actions/get_giftMessageItemRepositoryV1_V1_carts_mine_gift7message_8itemId8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_giftMessageItemRepositoryV1_V1_carts_mine_gift7message_8itemId8.in.json",
+				"out": "./lib/schemas/get_giftMessageItemRepositoryV1_V1_carts_mine_gift7message_8itemId8.out.json"
+			}
+		},
+		"post_giftMessageItemRepositoryV1_V1_carts_mine_gift7message_8itemId8": {
+			"title": "post_giftMessageItemRepositoryV1_V1_carts_mine_gift7message_8itemId8",
+			"main": "./lib/actions/post_giftMessageItemRepositoryV1_V1_carts_mine_gift7message_8itemId8.js",
+			"metadata": {
+				"in": "./lib/schemas/post_giftMessageItemRepositoryV1_V1_carts_mine_gift7message_8itemId8.in.json",
+				"out": "./lib/schemas/post_giftMessageItemRepositoryV1_V1_carts_mine_gift7message_8itemId8.out.json"
+			}
+		},
+		"get_giftMessageGuestCartRepositoryV1_V1_guest7carts_8cartId8_gift7message": {
+			"title": "get_giftMessageGuestCartRepositoryV1_V1_guest7carts_8cartId8_gift7message",
+			"main": "./lib/actions/get_giftMessageGuestCartRepositoryV1_V1_guest7carts_8cartId8_gift7message.js",
+			"metadata": {
+				"in": "./lib/schemas/get_giftMessageGuestCartRepositoryV1_V1_guest7carts_8cartId8_gift7message.in.json",
+				"out": "./lib/schemas/get_giftMessageGuestCartRepositoryV1_V1_guest7carts_8cartId8_gift7message.out.json"
+			}
+		},
+		"post_giftMessageGuestCartRepositoryV1_V1_guest7carts_8cartId8_gift7message": {
+			"title": "post_giftMessageGuestCartRepositoryV1_V1_guest7carts_8cartId8_gift7message",
+			"main": "./lib/actions/post_giftMessageGuestCartRepositoryV1_V1_guest7carts_8cartId8_gift7message.js",
+			"metadata": {
+				"in": "./lib/schemas/post_giftMessageGuestCartRepositoryV1_V1_guest7carts_8cartId8_gift7message.in.json",
+				"out": "./lib/schemas/post_giftMessageGuestCartRepositoryV1_V1_guest7carts_8cartId8_gift7message.out.json"
+			}
+		},
+		"get_giftMessageGuestItemRepositoryV1_V1_guest7carts_8cartId8_gift7message_8itemId8": {
+			"title": "get_giftMessageGuestItemRepositoryV1_V1_guest7carts_8cartId8_gift7message_8itemId8",
+			"main": "./lib/actions/get_giftMessageGuestItemRepositoryV1_V1_guest7carts_8cartId8_gift7message_8itemId8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_giftMessageGuestItemRepositoryV1_V1_guest7carts_8cartId8_gift7message_8itemId8.in.json",
+				"out": "./lib/schemas/get_giftMessageGuestItemRepositoryV1_V1_guest7carts_8cartId8_gift7message_8itemId8.out.json"
+			}
+		},
+		"post_giftMessageGuestItemRepositoryV1_V1_guest7carts_8cartId8_gift7message_8itemId8": {
+			"title": "post_giftMessageGuestItemRepositoryV1_V1_guest7carts_8cartId8_gift7message_8itemId8",
+			"main": "./lib/actions/post_giftMessageGuestItemRepositoryV1_V1_guest7carts_8cartId8_gift7message_8itemId8.js",
+			"metadata": {
+				"in": "./lib/schemas/post_giftMessageGuestItemRepositoryV1_V1_guest7carts_8cartId8_gift7message_8itemId8.in.json",
+				"out": "./lib/schemas/post_giftMessageGuestItemRepositoryV1_V1_guest7carts_8cartId8_gift7message_8itemId8.out.json"
+			}
+		},
+		"post_taxTaxRateRepositoryV1_V1_taxRates": {
+			"title": "post_taxTaxRateRepositoryV1_V1_taxRates",
+			"main": "./lib/actions/post_taxTaxRateRepositoryV1_V1_taxRates.js",
+			"metadata": {
+				"in": "./lib/schemas/post_taxTaxRateRepositoryV1_V1_taxRates.in.json",
+				"out": "./lib/schemas/post_taxTaxRateRepositoryV1_V1_taxRates.out.json"
+			}
+		},
+		"put_taxTaxRateRepositoryV1_V1_taxRates": {
+			"title": "put_taxTaxRateRepositoryV1_V1_taxRates",
+			"main": "./lib/actions/put_taxTaxRateRepositoryV1_V1_taxRates.js",
+			"metadata": {
+				"in": "./lib/schemas/put_taxTaxRateRepositoryV1_V1_taxRates.in.json",
+				"out": "./lib/schemas/put_taxTaxRateRepositoryV1_V1_taxRates.out.json"
+			}
+		},
+		"get_taxTaxRateRepositoryV1_V1_taxRates_8rateId8": {
+			"title": "get_taxTaxRateRepositoryV1_V1_taxRates_8rateId8",
+			"main": "./lib/actions/get_taxTaxRateRepositoryV1_V1_taxRates_8rateId8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_taxTaxRateRepositoryV1_V1_taxRates_8rateId8.in.json",
+				"out": "./lib/schemas/get_taxTaxRateRepositoryV1_V1_taxRates_8rateId8.out.json"
+			}
+		},
+		"delete_taxTaxRateRepositoryV1_V1_taxRates_8rateId8": {
+			"title": "delete_taxTaxRateRepositoryV1_V1_taxRates_8rateId8",
+			"main": "./lib/actions/delete_taxTaxRateRepositoryV1_V1_taxRates_8rateId8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_taxTaxRateRepositoryV1_V1_taxRates_8rateId8.in.json",
+				"out": "./lib/schemas/delete_taxTaxRateRepositoryV1_V1_taxRates_8rateId8.out.json"
+			}
+		},
+		"get_taxTaxRateRepositoryV1_V1_taxRates_search": {
+			"title": "get_taxTaxRateRepositoryV1_V1_taxRates_search",
+			"main": "./lib/actions/get_taxTaxRateRepositoryV1_V1_taxRates_search.js",
+			"metadata": {
+				"in": "./lib/schemas/get_taxTaxRateRepositoryV1_V1_taxRates_search.in.json",
+				"out": "./lib/schemas/get_taxTaxRateRepositoryV1_V1_taxRates_search.out.json"
+			}
+		},
+		"post_taxTaxRuleRepositoryV1_V1_taxRules": {
+			"title": "post_taxTaxRuleRepositoryV1_V1_taxRules",
+			"main": "./lib/actions/post_taxTaxRuleRepositoryV1_V1_taxRules.js",
+			"metadata": {
+				"in": "./lib/schemas/post_taxTaxRuleRepositoryV1_V1_taxRules.in.json",
+				"out": "./lib/schemas/post_taxTaxRuleRepositoryV1_V1_taxRules.out.json"
+			}
+		},
+		"put_taxTaxRuleRepositoryV1_V1_taxRules": {
+			"title": "put_taxTaxRuleRepositoryV1_V1_taxRules",
+			"main": "./lib/actions/put_taxTaxRuleRepositoryV1_V1_taxRules.js",
+			"metadata": {
+				"in": "./lib/schemas/put_taxTaxRuleRepositoryV1_V1_taxRules.in.json",
+				"out": "./lib/schemas/put_taxTaxRuleRepositoryV1_V1_taxRules.out.json"
+			}
+		},
+		"delete_taxTaxRuleRepositoryV1_V1_taxRules_8ruleId8": {
+			"title": "delete_taxTaxRuleRepositoryV1_V1_taxRules_8ruleId8",
+			"main": "./lib/actions/delete_taxTaxRuleRepositoryV1_V1_taxRules_8ruleId8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_taxTaxRuleRepositoryV1_V1_taxRules_8ruleId8.in.json",
+				"out": "./lib/schemas/delete_taxTaxRuleRepositoryV1_V1_taxRules_8ruleId8.out.json"
+			}
+		},
+		"get_taxTaxRuleRepositoryV1_V1_taxRules_8ruleId8": {
+			"title": "get_taxTaxRuleRepositoryV1_V1_taxRules_8ruleId8",
+			"main": "./lib/actions/get_taxTaxRuleRepositoryV1_V1_taxRules_8ruleId8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_taxTaxRuleRepositoryV1_V1_taxRules_8ruleId8.in.json",
+				"out": "./lib/schemas/get_taxTaxRuleRepositoryV1_V1_taxRules_8ruleId8.out.json"
+			}
+		},
+		"get_taxTaxRuleRepositoryV1_V1_taxRules_search": {
+			"title": "get_taxTaxRuleRepositoryV1_V1_taxRules_search",
+			"main": "./lib/actions/get_taxTaxRuleRepositoryV1_V1_taxRules_search.js",
+			"metadata": {
+				"in": "./lib/schemas/get_taxTaxRuleRepositoryV1_V1_taxRules_search.in.json",
+				"out": "./lib/schemas/get_taxTaxRuleRepositoryV1_V1_taxRules_search.out.json"
+			}
+		},
+		"post_taxTaxClassRepositoryV1_V1_taxClasses": {
+			"title": "post_taxTaxClassRepositoryV1_V1_taxClasses",
+			"main": "./lib/actions/post_taxTaxClassRepositoryV1_V1_taxClasses.js",
+			"metadata": {
+				"in": "./lib/schemas/post_taxTaxClassRepositoryV1_V1_taxClasses.in.json",
+				"out": "./lib/schemas/post_taxTaxClassRepositoryV1_V1_taxClasses.out.json"
+			}
+		},
+		"get_taxTaxClassRepositoryV1_V1_taxClasses_8taxClassId8": {
+			"title": "get_taxTaxClassRepositoryV1_V1_taxClasses_8taxClassId8",
+			"main": "./lib/actions/get_taxTaxClassRepositoryV1_V1_taxClasses_8taxClassId8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_taxTaxClassRepositoryV1_V1_taxClasses_8taxClassId8.in.json",
+				"out": "./lib/schemas/get_taxTaxClassRepositoryV1_V1_taxClasses_8taxClassId8.out.json"
+			}
+		},
+		"delete_taxTaxClassRepositoryV1_V1_taxClasses_8taxClassId8": {
+			"title": "delete_taxTaxClassRepositoryV1_V1_taxClasses_8taxClassId8",
+			"main": "./lib/actions/delete_taxTaxClassRepositoryV1_V1_taxClasses_8taxClassId8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_taxTaxClassRepositoryV1_V1_taxClasses_8taxClassId8.in.json",
+				"out": "./lib/schemas/delete_taxTaxClassRepositoryV1_V1_taxClasses_8taxClassId8.out.json"
+			}
+		},
+		"put_taxTaxClassRepositoryV1_V1_taxClasses_8classId8": {
+			"title": "put_taxTaxClassRepositoryV1_V1_taxClasses_8classId8",
+			"main": "./lib/actions/put_taxTaxClassRepositoryV1_V1_taxClasses_8classId8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_taxTaxClassRepositoryV1_V1_taxClasses_8classId8.in.json",
+				"out": "./lib/schemas/put_taxTaxClassRepositoryV1_V1_taxClasses_8classId8.out.json"
+			}
+		},
+		"get_taxTaxClassRepositoryV1_V1_taxClasses_search": {
+			"title": "get_taxTaxClassRepositoryV1_V1_taxClasses_search",
+			"main": "./lib/actions/get_taxTaxClassRepositoryV1_V1_taxClasses_search.js",
+			"metadata": {
+				"in": "./lib/schemas/get_taxTaxClassRepositoryV1_V1_taxClasses_search.in.json",
+				"out": "./lib/schemas/get_taxTaxClassRepositoryV1_V1_taxClasses_search.out.json"
+			}
+		},
+		"get_configurableProductLinkManagementV1_V1_configurable7products_8sku8_children": {
+			"title": "get_configurableProductLinkManagementV1_V1_configurable7products_8sku8_children",
+			"main": "./lib/actions/get_configurableProductLinkManagementV1_V1_configurable7products_8sku8_children.js",
+			"metadata": {
+				"in": "./lib/schemas/get_configurableProductLinkManagementV1_V1_configurable7products_8sku8_children.in.json",
+				"out": "./lib/schemas/get_configurableProductLinkManagementV1_V1_configurable7products_8sku8_children.out.json"
+			}
+		},
+		"delete_configurableProductLinkManagementV1_V1_configurable7products_8sku8_children_8childSku8": {
+			"title": "delete_configurableProductLinkManagementV1_V1_configurable7products_8sku8_children_8childSku8",
+			"main": "./lib/actions/delete_configurableProductLinkManagementV1_V1_configurable7products_8sku8_children_8childSku8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_configurableProductLinkManagementV1_V1_configurable7products_8sku8_children_8childSku8.in.json",
+				"out": "./lib/schemas/delete_configurableProductLinkManagementV1_V1_configurable7products_8sku8_children_8childSku8.out.json"
+			}
+		},
+		"post_configurableProductLinkManagementV1_V1_configurable7products_8sku8_child": {
+			"title": "post_configurableProductLinkManagementV1_V1_configurable7products_8sku8_child",
+			"main": "./lib/actions/post_configurableProductLinkManagementV1_V1_configurable7products_8sku8_child.js",
+			"metadata": {
+				"in": "./lib/schemas/post_configurableProductLinkManagementV1_V1_configurable7products_8sku8_child.in.json",
+				"out": "./lib/schemas/post_configurableProductLinkManagementV1_V1_configurable7products_8sku8_child.out.json"
+			}
+		},
+		"put_configurableProductConfigurableProductManagementV1_V1_configurable7products_variation": {
+			"title": "put_configurableProductConfigurableProductManagementV1_V1_configurable7products_variation",
+			"main": "./lib/actions/put_configurableProductConfigurableProductManagementV1_V1_configurable7products_variation.js",
+			"metadata": {
+				"in": "./lib/schemas/put_configurableProductConfigurableProductManagementV1_V1_configurable7products_variation.in.json",
+				"out": "./lib/schemas/put_configurableProductConfigurableProductManagementV1_V1_configurable7products_variation.out.json"
+			}
+		},
+		"get_configurableProductOptionRepositoryV1_V1_configurable7products_8sku8_options_8id8": {
+			"title": "get_configurableProductOptionRepositoryV1_V1_configurable7products_8sku8_options_8id8",
+			"main": "./lib/actions/get_configurableProductOptionRepositoryV1_V1_configurable7products_8sku8_options_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_configurableProductOptionRepositoryV1_V1_configurable7products_8sku8_options_8id8.in.json",
+				"out": "./lib/schemas/get_configurableProductOptionRepositoryV1_V1_configurable7products_8sku8_options_8id8.out.json"
+			}
+		},
+		"put_configurableProductOptionRepositoryV1_V1_configurable7products_8sku8_options_8id8": {
+			"title": "put_configurableProductOptionRepositoryV1_V1_configurable7products_8sku8_options_8id8",
+			"main": "./lib/actions/put_configurableProductOptionRepositoryV1_V1_configurable7products_8sku8_options_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_configurableProductOptionRepositoryV1_V1_configurable7products_8sku8_options_8id8.in.json",
+				"out": "./lib/schemas/put_configurableProductOptionRepositoryV1_V1_configurable7products_8sku8_options_8id8.out.json"
+			}
+		},
+		"delete_configurableProductOptionRepositoryV1_V1_configurable7products_8sku8_options_8id8": {
+			"title": "delete_configurableProductOptionRepositoryV1_V1_configurable7products_8sku8_options_8id8",
+			"main": "./lib/actions/delete_configurableProductOptionRepositoryV1_V1_configurable7products_8sku8_options_8id8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_configurableProductOptionRepositoryV1_V1_configurable7products_8sku8_options_8id8.in.json",
+				"out": "./lib/schemas/delete_configurableProductOptionRepositoryV1_V1_configurable7products_8sku8_options_8id8.out.json"
+			}
+		},
+		"get_configurableProductOptionRepositoryV1_V1_configurable7products_8sku8_options_all": {
+			"title": "get_configurableProductOptionRepositoryV1_V1_configurable7products_8sku8_options_all",
+			"main": "./lib/actions/get_configurableProductOptionRepositoryV1_V1_configurable7products_8sku8_options_all.js",
+			"metadata": {
+				"in": "./lib/schemas/get_configurableProductOptionRepositoryV1_V1_configurable7products_8sku8_options_all.in.json",
+				"out": "./lib/schemas/get_configurableProductOptionRepositoryV1_V1_configurable7products_8sku8_options_all.out.json"
+			}
+		},
+		"post_configurableProductOptionRepositoryV1_V1_configurable7products_8sku8_options": {
+			"title": "post_configurableProductOptionRepositoryV1_V1_configurable7products_8sku8_options",
+			"main": "./lib/actions/post_configurableProductOptionRepositoryV1_V1_configurable7products_8sku8_options.js",
+			"metadata": {
+				"in": "./lib/schemas/post_configurableProductOptionRepositoryV1_V1_configurable7products_8sku8_options.in.json",
+				"out": "./lib/schemas/post_configurableProductOptionRepositoryV1_V1_configurable7products_8sku8_options.out.json"
+			}
+		},
+		"get_salesRuleRuleRepositoryV1_V1_salesRules_8ruleId8": {
+			"title": "get_salesRuleRuleRepositoryV1_V1_salesRules_8ruleId8",
+			"main": "./lib/actions/get_salesRuleRuleRepositoryV1_V1_salesRules_8ruleId8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_salesRuleRuleRepositoryV1_V1_salesRules_8ruleId8.in.json",
+				"out": "./lib/schemas/get_salesRuleRuleRepositoryV1_V1_salesRules_8ruleId8.out.json"
+			}
+		},
+		"put_salesRuleRuleRepositoryV1_V1_salesRules_8ruleId8": {
+			"title": "put_salesRuleRuleRepositoryV1_V1_salesRules_8ruleId8",
+			"main": "./lib/actions/put_salesRuleRuleRepositoryV1_V1_salesRules_8ruleId8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_salesRuleRuleRepositoryV1_V1_salesRules_8ruleId8.in.json",
+				"out": "./lib/schemas/put_salesRuleRuleRepositoryV1_V1_salesRules_8ruleId8.out.json"
+			}
+		},
+		"delete_salesRuleRuleRepositoryV1_V1_salesRules_8ruleId8": {
+			"title": "delete_salesRuleRuleRepositoryV1_V1_salesRules_8ruleId8",
+			"main": "./lib/actions/delete_salesRuleRuleRepositoryV1_V1_salesRules_8ruleId8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_salesRuleRuleRepositoryV1_V1_salesRules_8ruleId8.in.json",
+				"out": "./lib/schemas/delete_salesRuleRuleRepositoryV1_V1_salesRules_8ruleId8.out.json"
+			}
+		},
+		"get_salesRuleRuleRepositoryV1_V1_salesRules_search": {
+			"title": "get_salesRuleRuleRepositoryV1_V1_salesRules_search",
+			"main": "./lib/actions/get_salesRuleRuleRepositoryV1_V1_salesRules_search.js",
+			"metadata": {
+				"in": "./lib/schemas/get_salesRuleRuleRepositoryV1_V1_salesRules_search.in.json",
+				"out": "./lib/schemas/get_salesRuleRuleRepositoryV1_V1_salesRules_search.out.json"
+			}
+		},
+		"post_salesRuleRuleRepositoryV1_V1_salesRules": {
+			"title": "post_salesRuleRuleRepositoryV1_V1_salesRules",
+			"main": "./lib/actions/post_salesRuleRuleRepositoryV1_V1_salesRules.js",
+			"metadata": {
+				"in": "./lib/schemas/post_salesRuleRuleRepositoryV1_V1_salesRules.in.json",
+				"out": "./lib/schemas/post_salesRuleRuleRepositoryV1_V1_salesRules.out.json"
+			}
+		},
+		"get_salesRuleCouponRepositoryV1_V1_coupons_8couponId8": {
+			"title": "get_salesRuleCouponRepositoryV1_V1_coupons_8couponId8",
+			"main": "./lib/actions/get_salesRuleCouponRepositoryV1_V1_coupons_8couponId8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_salesRuleCouponRepositoryV1_V1_coupons_8couponId8.in.json",
+				"out": "./lib/schemas/get_salesRuleCouponRepositoryV1_V1_coupons_8couponId8.out.json"
+			}
+		},
+		"put_salesRuleCouponRepositoryV1_V1_coupons_8couponId8": {
+			"title": "put_salesRuleCouponRepositoryV1_V1_coupons_8couponId8",
+			"main": "./lib/actions/put_salesRuleCouponRepositoryV1_V1_coupons_8couponId8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_salesRuleCouponRepositoryV1_V1_coupons_8couponId8.in.json",
+				"out": "./lib/schemas/put_salesRuleCouponRepositoryV1_V1_coupons_8couponId8.out.json"
+			}
+		},
+		"delete_salesRuleCouponRepositoryV1_V1_coupons_8couponId8": {
+			"title": "delete_salesRuleCouponRepositoryV1_V1_coupons_8couponId8",
+			"main": "./lib/actions/delete_salesRuleCouponRepositoryV1_V1_coupons_8couponId8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_salesRuleCouponRepositoryV1_V1_coupons_8couponId8.in.json",
+				"out": "./lib/schemas/delete_salesRuleCouponRepositoryV1_V1_coupons_8couponId8.out.json"
+			}
+		},
+		"get_salesRuleCouponRepositoryV1_V1_coupons_search": {
+			"title": "get_salesRuleCouponRepositoryV1_V1_coupons_search",
+			"main": "./lib/actions/get_salesRuleCouponRepositoryV1_V1_coupons_search.js",
+			"metadata": {
+				"in": "./lib/schemas/get_salesRuleCouponRepositoryV1_V1_coupons_search.in.json",
+				"out": "./lib/schemas/get_salesRuleCouponRepositoryV1_V1_coupons_search.out.json"
+			}
+		},
+		"post_salesRuleCouponRepositoryV1_V1_coupons": {
+			"title": "post_salesRuleCouponRepositoryV1_V1_coupons",
+			"main": "./lib/actions/post_salesRuleCouponRepositoryV1_V1_coupons.js",
+			"metadata": {
+				"in": "./lib/schemas/post_salesRuleCouponRepositoryV1_V1_coupons.in.json",
+				"out": "./lib/schemas/post_salesRuleCouponRepositoryV1_V1_coupons.out.json"
+			}
+		},
+		"post_salesRuleCouponManagementV1_V1_coupons_generate": {
+			"title": "post_salesRuleCouponManagementV1_V1_coupons_generate",
+			"main": "./lib/actions/post_salesRuleCouponManagementV1_V1_coupons_generate.js",
+			"metadata": {
+				"in": "./lib/schemas/post_salesRuleCouponManagementV1_V1_coupons_generate.in.json",
+				"out": "./lib/schemas/post_salesRuleCouponManagementV1_V1_coupons_generate.out.json"
+			}
+		},
+		"post_salesRuleCouponManagementV1_V1_coupons_deleteByIds": {
+			"title": "post_salesRuleCouponManagementV1_V1_coupons_deleteByIds",
+			"main": "./lib/actions/post_salesRuleCouponManagementV1_V1_coupons_deleteByIds.js",
+			"metadata": {
+				"in": "./lib/schemas/post_salesRuleCouponManagementV1_V1_coupons_deleteByIds.in.json",
+				"out": "./lib/schemas/post_salesRuleCouponManagementV1_V1_coupons_deleteByIds.out.json"
+			}
+		},
+		"post_salesRuleCouponManagementV1_V1_coupons_deleteByCodes": {
+			"title": "post_salesRuleCouponManagementV1_V1_coupons_deleteByCodes",
+			"main": "./lib/actions/post_salesRuleCouponManagementV1_V1_coupons_deleteByCodes.js",
+			"metadata": {
+				"in": "./lib/schemas/post_salesRuleCouponManagementV1_V1_coupons_deleteByCodes.in.json",
+				"out": "./lib/schemas/post_salesRuleCouponManagementV1_V1_coupons_deleteByCodes.out.json"
+			}
+		},
+		"post_integrationAdminTokenServiceV1_V1_integration_admin_token": {
+			"title": "post_integrationAdminTokenServiceV1_V1_integration_admin_token",
+			"main": "./lib/actions/post_integrationAdminTokenServiceV1_V1_integration_admin_token.js",
+			"metadata": {
+				"in": "./lib/schemas/post_integrationAdminTokenServiceV1_V1_integration_admin_token.in.json",
+				"out": "./lib/schemas/post_integrationAdminTokenServiceV1_V1_integration_admin_token.out.json"
+			}
+		},
+		"post_integrationCustomerTokenServiceV1_V1_integration_customer_token": {
+			"title": "post_integrationCustomerTokenServiceV1_V1_integration_customer_token",
+			"main": "./lib/actions/post_integrationCustomerTokenServiceV1_V1_integration_customer_token.js",
+			"metadata": {
+				"in": "./lib/schemas/post_integrationCustomerTokenServiceV1_V1_integration_customer_token.in.json",
+				"out": "./lib/schemas/post_integrationCustomerTokenServiceV1_V1_integration_customer_token.out.json"
+			}
+		}
+	}
+}

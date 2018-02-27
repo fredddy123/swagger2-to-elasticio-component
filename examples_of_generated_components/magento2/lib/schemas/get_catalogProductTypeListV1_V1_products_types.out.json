@@ -1,0 +1,23 @@
+{
+	"type": "array",
+	"items": {
+		"type": "object",
+		"description": "Product type details",
+		"properties": {
+			"name": {
+				"type": "string",
+				"description": "Product type code",
+				"required": true
+			},
+			"label": {
+				"type": "string",
+				"description": "Product type label",
+				"required": true
+			},
+			"extension_attributes": {
+				"type": "object",
+				"description": "ExtensionInterface class for @see \\Magento\\Catalog\\Api\\Data\\ProductTypeInterface"
+			}
+		}
+	}
+}

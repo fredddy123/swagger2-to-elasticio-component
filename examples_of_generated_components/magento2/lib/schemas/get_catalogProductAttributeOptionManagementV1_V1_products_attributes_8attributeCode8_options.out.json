@@ -1,0 +1,45 @@
+{
+	"type": "array",
+	"items": {
+		"type": "object",
+		"description": "Created from:",
+		"properties": {
+			"label": {
+				"type": "string",
+				"description": "Option label",
+				"required": true
+			},
+			"value": {
+				"type": "string",
+				"description": "Option value",
+				"required": true
+			},
+			"sort_order": {
+				"type": "integer",
+				"description": "Option order"
+			},
+			"is_default": {
+				"type": "boolean",
+				"description": "Default"
+			},
+			"store_labels": {
+				"type": "array",
+				"description": "Option label for store scopes",
+				"items": {
+					"type": "object",
+					"description": "Interface AttributeOptionLabelInterface",
+					"properties": {
+						"store_id": {
+							"type": "integer",
+							"description": "Store id"
+						},
+						"label": {
+							"type": "string",
+							"description": "Option label"
+						}
+					}
+				}
+			}
+		}
+	}
+}

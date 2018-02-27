@@ -1,0 +1,241 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"path": {
+			"type": "object",
+			"properties": {
+				"list_id": {
+					"type": "string",
+					"required": true
+				},
+				"customer_no": {
+					"type": "string",
+					"required": true
+				},
+				"address_id": {
+					"type": "string",
+					"required": true
+				}
+			}
+		},
+		"body": {
+			"description": "Document representing a customer address.",
+			"properties": {
+				"address1": {
+					"description": "The customer's first address.",
+					"x-label": {
+						"default": "Address 1"
+					},
+					"maxLength": 256,
+					"type": "string"
+				},
+				"address2": {
+					"description": "The customer's second address value.",
+					"x-label": {
+						"default": "Address 2"
+					},
+					"maxLength": 256,
+					"type": "string"
+				},
+				"address_id": {
+					"description": "The customer address id.",
+					"x-label": {
+						"default": "Address ID"
+					},
+					"maxLength": 256,
+					"type": "string",
+					"required": true
+				},
+				"city": {
+					"description": "The customer's city.",
+					"x-label": {
+						"default": "City"
+					},
+					"maxLength": 256,
+					"type": "string"
+				},
+				"company_name": {
+					"description": "The customer's company name.",
+					"x-label": {
+						"default": "Company"
+					},
+					"maxLength": 256,
+					"type": "string"
+				},
+				"country_code": {
+					"description": "The customer's two-character country code per ISO 3166-1 alpha-2.",
+					"enum": [
+						"US",
+						"FR",
+						"IT",
+						"JP",
+						"CN",
+						"GB"
+					],
+					"x-enum-labels": [
+						{
+							"default": "United States"
+						},
+						{
+							"default": "France"
+						},
+						{
+							"default": "Italy"
+						},
+						{
+							"default": "Japan"
+						},
+						{
+							"default": "China"
+						},
+						{
+							"default": "United Kingdom"
+						}
+					],
+					"x-label": {
+						"default": "Country"
+					},
+					"maxLength": 2,
+					"type": "string",
+					"required": true
+				},
+				"creation_date": {
+					"description": "Returns the value of attribute 'creationDate'.",
+					"format": "date-time",
+					"x-label": {
+						"default": "Creation Date"
+					},
+					"type": "string"
+				},
+				"etag": {
+					"description": "The generated eTag representing the state of the customer address.",
+					"type": "string"
+				},
+				"first_name": {
+					"description": "The customer's first name.",
+					"x-label": {
+						"default": "First Name"
+					},
+					"maxLength": 256,
+					"type": "string"
+				},
+				"full_name": {
+					"description": "The concatenation of the customer's first, middle, and last names and its suffix.",
+					"type": "string"
+				},
+				"job_title": {
+					"description": "The customer's job title.",
+					"x-label": {
+						"default": "Job Title"
+					},
+					"maxLength": 256,
+					"type": "string"
+				},
+				"last_modified": {
+					"description": "Returns the value of attribute 'lastModified'.",
+					"format": "date-time",
+					"x-label": {
+						"default": "Last Modified"
+					},
+					"type": "string"
+				},
+				"last_name": {
+					"description": "The customer's last name.",
+					"x-label": {
+						"default": "Last Name"
+					},
+					"maxLength": 256,
+					"type": "string",
+					"required": true
+				},
+				"phone": {
+					"description": "The customer's phone number.",
+					"x-label": {
+						"default": "Contact Phone"
+					},
+					"maxLength": 32,
+					"type": "string"
+				},
+				"post_box": {
+					"description": "The customer's post box.",
+					"x-label": {
+						"default": "Post Box"
+					},
+					"maxLength": 256,
+					"type": "string"
+				},
+				"postal_code": {
+					"description": "The customer's postal code.",
+					"x-label": {
+						"default": "Postal Code"
+					},
+					"maxLength": 256,
+					"type": "string"
+				},
+				"salutation": {
+					"description": "The customer's salutation.",
+					"x-label": {
+						"default": "Salutation"
+					},
+					"maxLength": 256,
+					"type": "string"
+				},
+				"second_name": {
+					"description": "The customer's second name.",
+					"x-label": {
+						"default": "Second Name"
+					},
+					"maxLength": 256,
+					"type": "string"
+				},
+				"state_code": {
+					"description": "The customer's state.",
+					"x-label": {
+						"default": "State"
+					},
+					"maxLength": 256,
+					"type": "string"
+				},
+				"suffix": {
+					"description": "The customer's suffix.",
+					"x-label": {
+						"default": "Suffix"
+					},
+					"maxLength": 256,
+					"type": "string"
+				},
+				"suite": {
+					"description": "The customer's suite.",
+					"x-label": {
+						"default": "Suite No"
+					},
+					"maxLength": 32,
+					"type": "string"
+				},
+				"title": {
+					"description": "The customer's title.",
+					"x-label": {
+						"default": "Title"
+					},
+					"maxLength": 256,
+					"type": "string"
+				}
+			},
+			"type": "object"
+		}
+	}
+}

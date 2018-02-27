@@ -1,0 +1,95 @@
+{
+	"description": "Document representing an unfiltered list of system object types.",
+	"properties": {
+		"count": {
+			"description": "The number of returned documents.",
+			"format": "int32",
+			"type": "integer"
+		},
+		"data": {
+			"description": "",
+			"items": {
+				"description": "Document representing a object type definition",
+				"properties": {
+					"attribute_definition_count": {
+						"description": "Returns the number of attribute definitions contained by the type.  This is a computed attribute and cannot be changed.",
+						"format": "int32",
+						"type": "integer"
+					},
+					"attribute_group_count": {
+						"description": "Returns the number of attribute groups contained by the type.  This is a computed attribute and cannot be changed.",
+						"format": "int32",
+						"type": "integer"
+					},
+					"content_object": {
+						"description": "True if the object type definition is marked as a content object",
+						"type": "boolean"
+					},
+					"description": {
+						"additionalProperties": {
+							"type": "string"
+						},
+						"description": "The user entered description for the type (localizable)",
+						"format": "localized",
+						"type": "object"
+					},
+					"display_name": {
+						"additionalProperties": {
+							"type": "string"
+						},
+						"description": "The user entered display name (localizable)",
+						"format": "localized",
+						"type": "object"
+					},
+					"link": {
+						"description": "URL that is used to get this instance.  This is a computed attribute and cannot be changed.",
+						"type": "string"
+					},
+					"object_type": {
+						"description": "The object type identifier",
+						"type": "string"
+					},
+					"queryable": {
+						"description": "True if the system object type is queryable, false otherwise.  Default is true.",
+						"type": "boolean"
+					},
+					"read_only": {
+						"description": "True if the system object is read-only, false otherwise.  This is a computed attribute and cannot be changed.",
+						"type": "boolean"
+					}
+				}
+			},
+			"type": "array"
+		},
+		"expand": {
+			"description": "The list of expands set for the search request. Expands are optional.",
+			"items": {
+				"type": "string"
+			},
+			"type": "array"
+		},
+		"next": {
+			"description": "The URL of the next result page.",
+			"type": "string"
+		},
+		"previous": {
+			"description": "The URL of the previous result page.",
+			"type": "string"
+		},
+		"select": {
+			"description": "The fields that you want to select.",
+			"type": "string"
+		},
+		"start": {
+			"description": "The zero-based index of the first search hit to include in the result.",
+			"format": "int32",
+			"minimum": 0,
+			"type": "integer"
+		},
+		"total": {
+			"description": "The total number of documents.",
+			"format": "int32",
+			"type": "integer"
+		}
+	}
+}

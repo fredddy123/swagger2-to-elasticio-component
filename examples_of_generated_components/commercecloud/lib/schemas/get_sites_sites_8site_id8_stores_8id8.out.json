@@ -1,0 +1,272 @@
+{
+	"description": "Document representing a store",
+	"properties": {
+		"address1": {
+			"description": "Returns the first address.",
+			"x-label": {
+				"default": "Address1"
+			},
+			"maxLength": 256,
+			"type": "string"
+		},
+		"address2": {
+			"description": "Returns the second address value.",
+			"x-label": {
+				"default": "Address2"
+			},
+			"maxLength": 256,
+			"type": "string"
+		},
+		"c_TestAttribute": {
+			"items": {
+				"type": "string"
+			},
+			"x-label": {
+				"en-US": "Test Attribute"
+			},
+			"type": "array"
+		},
+		"c_countryCodeValue": {
+			"description": "Country Code Value - for the form values",
+			"x-label": {
+				"default": "Country Code Value"
+			},
+			"type": "string"
+		},
+		"c_inventoryListId": {
+			"description": "Store Inventory List ID",
+			"x-label": {
+				"default": "Store Inventory List ID"
+			},
+			"type": "string"
+		},
+		"city": {
+			"description": "Returns the city.",
+			"x-label": {
+				"default": "City"
+			},
+			"maxLength": 256,
+			"type": "string"
+		},
+		"country_code": {
+			"description": "The two-character country code per ISO 3166-1 alpha-2.",
+			"enum": [
+				"US",
+				"CA",
+				"DE"
+			],
+			"x-enum-labels": [
+				{
+					"default": "United States"
+				},
+				{
+					"default": "Canada"
+				},
+				{
+					"default": "Germany"
+				}
+			],
+			"x-label": {
+				"default": "Country"
+			},
+			"maxLength": 2,
+			"type": "string"
+		},
+		"creation_date": {
+			"description": "Returns the value of attribute 'creationDate'.",
+			"format": "date-time",
+			"x-label": {
+				"default": "Creation Date"
+			},
+			"type": "string"
+		},
+		"email": {
+			"description": "Email address to contact the store",
+			"x-label": {
+				"default": "Email"
+			},
+			"maxLength": 256,
+			"type": "string"
+		},
+		"fax": {
+			"description": "Returns the fax number .",
+			"x-label": {
+				"default": "Fax"
+			},
+			"maxLength": 256,
+			"type": "string"
+		},
+		"id": {
+			"description": "The id for the store",
+			"x-label": {
+				"default": "ID"
+			},
+			"maxLength": 256,
+			"type": "string"
+		},
+		"image": {
+			"properties": {
+				"abs_url": {
+					"description": "The absolute URL with request protocol",
+					"type": "string"
+				},
+				"alt": {
+					"additionalProperties": {
+						"type": "string"
+					},
+					"description": "The alternative image text",
+					"format": "localized",
+					"type": "object"
+				},
+				"dis_base_url": {
+					"description": "The DIS base URL only for product images",
+					"type": "string"
+				},
+				"path": {
+					"description": "The raw media file path",
+					"type": "string"
+				},
+				"title": {
+					"additionalProperties": {
+						"type": "string"
+					},
+					"description": "The image title",
+					"format": "localized",
+					"type": "object"
+				}
+			},
+			"description": "The image associated with the store",
+			"x-label": {
+				"default": "Image"
+			}
+		},
+		"inventory_id": {
+			"description": "The inventory list associated with the store",
+			"x-label": {
+				"default": "Inventory List"
+			},
+			"maxLength": 256,
+			"type": "string"
+		},
+		"last_modified": {
+			"description": "Returns the value of attribute 'lastModified'.",
+			"format": "date-time",
+			"x-label": {
+				"default": "Last Modified"
+			},
+			"type": "string"
+		},
+		"latitude": {
+			"description": "The latitude of the store",
+			"format": "double",
+			"x-label": {
+				"default": "Latitude"
+			},
+			"maximum": 90,
+			"minimum": -90,
+			"type": "number"
+		},
+		"link": {
+			"description": "a URL that is used to get this instance.  The property is computed and cannot be changed.",
+			"x-label": {
+				"default": "Store document link"
+			},
+			"type": "string"
+		},
+		"longitude": {
+			"description": "The longitude of the store",
+			"format": "double",
+			"x-label": {
+				"default": "Longitude"
+			},
+			"maximum": 180,
+			"minimum": -180,
+			"type": "number"
+		},
+		"name": {
+			"description": "The name of the store",
+			"x-label": {
+				"default": "Name"
+			},
+			"type": "string"
+		},
+		"phone": {
+			"description": "Returns the phone number.",
+			"x-label": {
+				"default": "Phone"
+			},
+			"maxLength": 256,
+			"type": "string"
+		},
+		"pos_enabled": {
+			"description": "Whether this store uses our Store product for Point-of-Sale",
+			"x-label": {
+				"default": "Uses Commerce Cloud Store for Point-of-Sale"
+			},
+			"type": "boolean"
+		},
+		"postal_code": {
+			"description": "The postal code for the store",
+			"x-label": {
+				"default": "Postal Code"
+			},
+			"maxLength": 10,
+			"type": "string"
+		},
+		"state_code": {
+			"description": "Returns the customer's state.",
+			"x-label": {
+				"default": "State"
+			},
+			"maxLength": 256,
+			"type": "string"
+		},
+		"store_events": {
+			"additionalProperties": {
+				"properties": {
+					"markup": {
+						"description": "The rendered HTML",
+						"type": "string"
+					},
+					"source": {
+						"description": "The raw markup text",
+						"type": "string"
+					}
+				}
+			},
+			"description": "The store events (localized)",
+			"format": "localized",
+			"x-label": {
+				"default": "Store Events"
+			},
+			"type": "object"
+		},
+		"store_hours": {
+			"additionalProperties": {
+				"properties": {
+					"markup": {
+						"description": "The rendered HTML",
+						"type": "string"
+					},
+					"source": {
+						"description": "The raw markup text",
+						"type": "string"
+					}
+				}
+			},
+			"description": "The store opening hours (localized)",
+			"format": "localized",
+			"x-label": {
+				"default": "Store Hours"
+			},
+			"type": "object"
+		},
+		"store_locator_enabled": {
+			"description": "Whether this store should appear in store locator searches",
+			"x-label": {
+				"default": "Store Locator Enabled"
+			},
+			"type": "boolean"
+		}
+	}
+}

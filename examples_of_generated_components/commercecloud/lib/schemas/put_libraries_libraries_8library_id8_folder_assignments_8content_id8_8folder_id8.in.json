@@ -1,0 +1,70 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"path": {
+			"type": "object",
+			"properties": {
+				"library_id": {
+					"type": "string",
+					"required": true
+				},
+				"content_id": {
+					"type": "string",
+					"required": true
+				},
+				"folder_id": {
+					"type": "string",
+					"required": true
+				}
+			}
+		},
+		"body": {
+			"description": "Document representing a content folder assignment.",
+			"properties": {
+				"content_id": {
+					"description": "The content id.",
+					"maxLength": 256,
+					"type": "string"
+				},
+				"content_link": {
+					"description": "The content link.",
+					"type": "string"
+				},
+				"default": {
+					"description": "A flag indicating whether the assignment is the default one.",
+					"type": "boolean"
+				},
+				"folder_id": {
+					"description": "The folder id.",
+					"maxLength": 256,
+					"type": "string"
+				},
+				"folder_link": {
+					"description": "The folder link.",
+					"type": "string"
+				},
+				"position": {
+					"description": "The position of the content asset in the folder.",
+					"format": "double",
+					"minimum": 0,
+					"type": "number"
+				}
+			},
+			"type": "object"
+		}
+	}
+}

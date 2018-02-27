@@ -1,0 +1,22 @@
+{
+	"description": "Document representing a custom object that contains all defined custom attributes for its\n object type.",
+	"properties": {
+		"key_property": {
+			"description": "The name of the key property for the custom object. This is ignored in input documents.",
+			"type": "string"
+		},
+		"key_value_integer": {
+			"description": "The id of the custom object when the type of the key is Integer. This is\n ignored in input documents.",
+			"format": "int32",
+			"type": "integer"
+		},
+		"key_value_string": {
+			"description": "The id of the custom object when the type of the key is String. This is\n ignored in input documents.",
+			"type": "string"
+		},
+		"object_type": {
+			"description": "The id of the object type. This is ignored in input documents.",
+			"type": "string"
+		}
+	}
+}

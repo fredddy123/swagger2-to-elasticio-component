@@ -1,0 +1,83 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"path": {
+			"type": "object",
+			"properties": {
+				"sku": {
+					"type": "string",
+					"required": true
+				},
+				"id": {
+					"type": "string",
+					"required": true
+				}
+			}
+		},
+		"body": {
+			"properties": {
+				"option": {
+					"type": "object",
+					"description": "Interface OptionInterface",
+					"properties": {
+						"id": {
+							"type": "integer"
+						},
+						"attribute_id": {
+							"type": "string"
+						},
+						"label": {
+							"type": "string"
+						},
+						"position": {
+							"type": "integer"
+						},
+						"is_use_default": {
+							"type": "boolean"
+						},
+						"values": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"description": "Interface OptionValueInterface",
+								"properties": {
+									"value_index": {
+										"type": "integer",
+										"required": true
+									},
+									"extension_attributes": {
+										"type": "object",
+										"description": "ExtensionInterface class for @see \\Magento\\ConfigurableProduct\\Api\\Data\\OptionValueInterface"
+									}
+								}
+							}
+						},
+						"extension_attributes": {
+							"type": "object",
+							"description": "ExtensionInterface class for @see \\Magento\\ConfigurableProduct\\Api\\Data\\OptionInterface"
+						},
+						"product_id": {
+							"type": "integer"
+						}
+					},
+					"required": true
+				}
+			},
+			"type": "object"
+		}
+	}
+}

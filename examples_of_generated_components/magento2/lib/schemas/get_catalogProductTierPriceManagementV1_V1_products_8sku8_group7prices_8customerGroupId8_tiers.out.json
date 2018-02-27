@@ -1,0 +1,28 @@
+{
+	"type": "array",
+	"items": {
+		"type": "object",
+		"description": "",
+		"properties": {
+			"customer_group_id": {
+				"type": "integer",
+				"description": "Customer group id",
+				"required": true
+			},
+			"qty": {
+				"type": "number",
+				"description": "Tier qty",
+				"required": true
+			},
+			"value": {
+				"type": "number",
+				"description": "Price value",
+				"required": true
+			},
+			"extension_attributes": {
+				"type": "object",
+				"description": "ExtensionInterface class for @see \\Magento\\Catalog\\Api\\Data\\ProductTierPriceInterface"
+			}
+		}
+	}
+}

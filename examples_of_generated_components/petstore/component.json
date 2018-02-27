@@ -1,0 +1,182 @@
+{
+	"title": "Swagger Petstore",
+	"description": "This is a sample server Petstore server.  You can find out more about Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).  For this sample, you can use the api key `special-key` to test the authorization filters.",
+	"credentials": {
+		"fields": {
+			"headers": {
+				"label": "Headers",
+				"viewClass": "TextFieldView"
+			},
+			"queryString": {
+				"label": "Querystring",
+				"viewClass": "TextFieldView"
+			},
+			"apiURI": {
+				"label": "API URI",
+				"viewClass": "TextFieldView"
+			}
+		}
+	},
+	"actions": {
+		"post_pet_pet": {
+			"title": "post_pet_pet",
+			"main": "./lib/actions/post_pet_pet.js",
+			"metadata": {
+				"in": "./lib/schemas/post_pet_pet.in.json",
+				"out": "./lib/schemas/post_pet_pet.out.json"
+			}
+		},
+		"put_pet_pet": {
+			"title": "put_pet_pet",
+			"main": "./lib/actions/put_pet_pet.js",
+			"metadata": {
+				"in": "./lib/schemas/put_pet_pet.in.json",
+				"out": "./lib/schemas/put_pet_pet.out.json"
+			}
+		},
+		"get_pet_pet_findByStatus": {
+			"title": "get_pet_pet_findByStatus",
+			"main": "./lib/actions/get_pet_pet_findByStatus.js",
+			"metadata": {
+				"in": "./lib/schemas/get_pet_pet_findByStatus.in.json",
+				"out": "./lib/schemas/get_pet_pet_findByStatus.out.json"
+			}
+		},
+		"get_pet_pet_findByTags": {
+			"title": "get_pet_pet_findByTags",
+			"main": "./lib/actions/get_pet_pet_findByTags.js",
+			"metadata": {
+				"in": "./lib/schemas/get_pet_pet_findByTags.in.json",
+				"out": "./lib/schemas/get_pet_pet_findByTags.out.json"
+			}
+		},
+		"get_pet_pet_8petId8": {
+			"title": "get_pet_pet_8petId8",
+			"main": "./lib/actions/get_pet_pet_8petId8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_pet_pet_8petId8.in.json",
+				"out": "./lib/schemas/get_pet_pet_8petId8.out.json"
+			}
+		},
+		"post_pet_pet_8petId8": {
+			"title": "post_pet_pet_8petId8",
+			"main": "./lib/actions/post_pet_pet_8petId8.js",
+			"metadata": {
+				"in": "./lib/schemas/post_pet_pet_8petId8.in.json",
+				"out": "./lib/schemas/post_pet_pet_8petId8.out.json"
+			}
+		},
+		"delete_pet_pet_8petId8": {
+			"title": "delete_pet_pet_8petId8",
+			"main": "./lib/actions/delete_pet_pet_8petId8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_pet_pet_8petId8.in.json",
+				"out": "./lib/schemas/delete_pet_pet_8petId8.out.json"
+			}
+		},
+		"post_pet_pet_8petId8_uploadImage": {
+			"title": "post_pet_pet_8petId8_uploadImage",
+			"main": "./lib/actions/post_pet_pet_8petId8_uploadImage.js",
+			"metadata": {
+				"in": "./lib/schemas/post_pet_pet_8petId8_uploadImage.in.json",
+				"out": "./lib/schemas/post_pet_pet_8petId8_uploadImage.out.json"
+			}
+		},
+		"get_store_store_inventory": {
+			"title": "get_store_store_inventory",
+			"main": "./lib/actions/get_store_store_inventory.js",
+			"metadata": {
+				"in": "./lib/schemas/get_store_store_inventory.in.json",
+				"out": "./lib/schemas/get_store_store_inventory.out.json"
+			}
+		},
+		"post_store_store_order": {
+			"title": "post_store_store_order",
+			"main": "./lib/actions/post_store_store_order.js",
+			"metadata": {
+				"in": "./lib/schemas/post_store_store_order.in.json",
+				"out": "./lib/schemas/post_store_store_order.out.json"
+			}
+		},
+		"get_store_store_order_8orderId8": {
+			"title": "get_store_store_order_8orderId8",
+			"main": "./lib/actions/get_store_store_order_8orderId8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_store_store_order_8orderId8.in.json",
+				"out": "./lib/schemas/get_store_store_order_8orderId8.out.json"
+			}
+		},
+		"delete_store_store_order_8orderId8": {
+			"title": "delete_store_store_order_8orderId8",
+			"main": "./lib/actions/delete_store_store_order_8orderId8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_store_store_order_8orderId8.in.json",
+				"out": "./lib/schemas/delete_store_store_order_8orderId8.out.json"
+			}
+		},
+		"post_user_user": {
+			"title": "post_user_user",
+			"main": "./lib/actions/post_user_user.js",
+			"metadata": {
+				"in": "./lib/schemas/post_user_user.in.json",
+				"out": "./lib/schemas/post_user_user.out.json"
+			}
+		},
+		"post_user_user_createWithArray": {
+			"title": "post_user_user_createWithArray",
+			"main": "./lib/actions/post_user_user_createWithArray.js",
+			"metadata": {
+				"in": "./lib/schemas/post_user_user_createWithArray.in.json",
+				"out": "./lib/schemas/post_user_user_createWithArray.out.json"
+			}
+		},
+		"post_user_user_createWithList": {
+			"title": "post_user_user_createWithList",
+			"main": "./lib/actions/post_user_user_createWithList.js",
+			"metadata": {
+				"in": "./lib/schemas/post_user_user_createWithList.in.json",
+				"out": "./lib/schemas/post_user_user_createWithList.out.json"
+			}
+		},
+		"get_user_user_login": {
+			"title": "get_user_user_login",
+			"main": "./lib/actions/get_user_user_login.js",
+			"metadata": {
+				"in": "./lib/schemas/get_user_user_login.in.json",
+				"out": "./lib/schemas/get_user_user_login.out.json"
+			}
+		},
+		"get_user_user_logout": {
+			"title": "get_user_user_logout",
+			"main": "./lib/actions/get_user_user_logout.js",
+			"metadata": {
+				"in": "./lib/schemas/get_user_user_logout.in.json",
+				"out": "./lib/schemas/get_user_user_logout.out.json"
+			}
+		},
+		"get_user_user_8username8": {
+			"title": "get_user_user_8username8",
+			"main": "./lib/actions/get_user_user_8username8.js",
+			"metadata": {
+				"in": "./lib/schemas/get_user_user_8username8.in.json",
+				"out": "./lib/schemas/get_user_user_8username8.out.json"
+			}
+		},
+		"put_user_user_8username8": {
+			"title": "put_user_user_8username8",
+			"main": "./lib/actions/put_user_user_8username8.js",
+			"metadata": {
+				"in": "./lib/schemas/put_user_user_8username8.in.json",
+				"out": "./lib/schemas/put_user_user_8username8.out.json"
+			}
+		},
+		"delete_user_user_8username8": {
+			"title": "delete_user_user_8username8",
+			"main": "./lib/actions/delete_user_user_8username8.js",
+			"metadata": {
+				"in": "./lib/schemas/delete_user_user_8username8.in.json",
+				"out": "./lib/schemas/delete_user_user_8username8.out.json"
+			}
+		}
+	}
+}

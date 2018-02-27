@@ -1,0 +1,31 @@
+{
+	"description": "Document representing a variation group.",
+	"properties": {
+		"link": {
+			"description": "The URL addressing the product.",
+			"type": "string"
+		},
+		"orderable": {
+			"description": "A flag indicating whether the variation group is orderable.",
+			"type": "boolean"
+		},
+		"price": {
+			"description": "The sales price of the variation group.",
+			"format": "double",
+			"type": "number"
+		},
+		"product_id": {
+			"description": "The id (SKU) of the variation group.",
+			"maxLength": 100,
+			"minLength": 1,
+			"type": "string"
+		},
+		"variation_values": {
+			"additionalProperties": {
+				"type": "string"
+			},
+			"description": "The actual variation attribute id - value pairs.",
+			"type": "object"
+		}
+	}
+}

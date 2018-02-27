@@ -1,0 +1,62 @@
+{
+	"type": "array",
+	"description": "An array of shipping methods.",
+	"items": {
+		"type": "object",
+		"description": "Interface ShippingMethodInterface",
+		"properties": {
+			"carrier_code": {
+				"type": "string",
+				"description": "Shipping carrier code.",
+				"required": true
+			},
+			"method_code": {
+				"type": "string",
+				"description": "Shipping method code.",
+				"required": true
+			},
+			"carrier_title": {
+				"type": "string",
+				"description": "Shipping carrier title. Otherwise, null."
+			},
+			"method_title": {
+				"type": "string",
+				"description": "Shipping method title. Otherwise, null."
+			},
+			"amount": {
+				"type": "number",
+				"description": "Shipping amount in store currency.",
+				"required": true
+			},
+			"base_amount": {
+				"type": "number",
+				"description": "Shipping amount in base currency.",
+				"required": true
+			},
+			"available": {
+				"type": "boolean",
+				"description": "The value of the availability flag for the current shipping method.",
+				"required": true
+			},
+			"extension_attributes": {
+				"type": "object",
+				"description": "ExtensionInterface class for @see \\Magento\\Quote\\Api\\Data\\ShippingMethodInterface"
+			},
+			"error_message": {
+				"type": "string",
+				"description": "Shipping Error message.",
+				"required": true
+			},
+			"price_excl_tax": {
+				"type": "number",
+				"description": "Shipping price excl tax.",
+				"required": true
+			},
+			"price_incl_tax": {
+				"type": "number",
+				"description": "Shipping price incl tax.",
+				"required": true
+			}
+		}
+	}
+}

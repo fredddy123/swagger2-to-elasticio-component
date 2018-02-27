@@ -1,0 +1,52 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"query": {
+			"type": "object",
+			"properties": {
+				"searchCriteria[filterGroups][][filters][][field]": {
+					"type": "string",
+					"required": false
+				},
+				"searchCriteria[filterGroups][][filters][][value]": {
+					"type": "string",
+					"required": false
+				},
+				"searchCriteria[filterGroups][][filters][][conditionType]": {
+					"type": "string",
+					"required": false
+				},
+				"searchCriteria[sortOrders][][field]": {
+					"type": "string",
+					"required": false
+				},
+				"searchCriteria[sortOrders][][direction]": {
+					"type": "string",
+					"required": false
+				},
+				"searchCriteria[pageSize]": {
+					"type": "integer",
+					"required": false
+				},
+				"searchCriteria[currentPage]": {
+					"type": "integer",
+					"required": false
+				}
+			}
+		}
+	}
+}

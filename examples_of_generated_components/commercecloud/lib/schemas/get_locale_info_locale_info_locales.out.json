@@ -1,0 +1,100 @@
+{
+	"description": "Contains the result of getting the system locales.",
+	"properties": {
+		"count": {
+			"description": "The number of returned documents.",
+			"format": "int32",
+			"type": "integer"
+		},
+		"data": {
+			"items": {
+				"type": "object"
+			},
+			"type": "array"
+		},
+		"hits": {
+			"description": "The locales found by the request",
+			"items": {
+				"description": "Document that describes a single locale.",
+				"properties": {
+					"active": {
+						"description": "Flag that is true if the locale is currently active in the system",
+						"type": "boolean"
+					},
+					"country": {
+						"description": "The country/region code for this Locale, which will\n either be the empty string or an upercase ISO 3166 2-letter code.",
+						"type": "string"
+					},
+					"default": {
+						"description": "Flag that is true if the locale is the default one to use if an explicit locale is not specified.",
+						"type": "boolean"
+					},
+					"display_country": {
+						"description": "The name for the Locale's country that is appropriate for\n display to the user, or an empty string if no country has been specified\n for the Locale.\n The display country is returned in the language defined for this locale,\n and not in the language of the session locale.",
+						"type": "string"
+					},
+					"display_language": {
+						"description": "The name for the Locale's language that is appropriate for\n display to the user, or an empty string if no language has been specified\n for the Locale.\n The display language is returned in the language defined for this locale,\n and not in the language of the session locale.",
+						"type": "string"
+					},
+					"display_name": {
+						"description": "The name for the Locale that is appropriate for\n display to the user, or an empty string if no display name has been\n specified for the Locale.\n The display name is returned in the language defined for this locale,\n and not in the language of the session locale.",
+						"type": "string"
+					},
+					"id": {
+						"description": "The identifier of the Locale. Contains a combination of the\n language and the country key, concatenated by \"-\", e.g. \"en-US\". This\n attribute is the primary key of the class.",
+						"type": "string"
+					},
+					"iso3_country": {
+						"description": "The three-letter abbreviation for this Locale's country, or an\n empty string if no country has been specified for the Locale.",
+						"type": "string"
+					},
+					"iso3_language": {
+						"description": "The three-letter abbreviation for this Locale's language, or an\n empty string if no language has been specified for the\n Locale.",
+						"type": "string"
+					},
+					"language": {
+						"description": "The language code for this Locale, which will either\n be the empty string or a lowercase ISO 639 code.",
+						"type": "string"
+					},
+					"name": {
+						"description": "The display name of the Locale. This uses the current\n request locale to localize the value.",
+						"type": "string"
+					}
+				}
+			},
+			"type": "array"
+		},
+		"id": {
+			"description": "The input locale (none specifies get all locales)",
+			"type": "string"
+		},
+		"include_all": {
+			"description": "True to get the all the hits for all the locales, not just the active allowed ones",
+			"type": "boolean"
+		},
+		"next": {
+			"description": "The URL of the next result page.",
+			"type": "string"
+		},
+		"previous": {
+			"description": "The URL of the previous result page.",
+			"type": "string"
+		},
+		"select": {
+			"description": "The string describing the set of fields to return in the result.",
+			"type": "string"
+		},
+		"start": {
+			"description": "The zero-based index of the first search hit to include in the result.",
+			"format": "int32",
+			"minimum": 0,
+			"type": "integer"
+		},
+		"total": {
+			"description": "The total number of documents.",
+			"format": "int32",
+			"type": "integer"
+		}
+	}
+}

@@ -1,0 +1,100 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"body": {
+			"properties": {
+				"category": {
+					"type": "object",
+					"description": "",
+					"properties": {
+						"id": {
+							"type": "integer"
+						},
+						"parent_id": {
+							"type": "integer",
+							"description": "Parent category ID"
+						},
+						"name": {
+							"type": "string",
+							"description": "Category name",
+							"required": true
+						},
+						"is_active": {
+							"type": "boolean",
+							"description": "Whether category is active"
+						},
+						"position": {
+							"type": "integer",
+							"description": "Category position"
+						},
+						"level": {
+							"type": "integer",
+							"description": "Category level"
+						},
+						"children": {
+							"type": "string"
+						},
+						"created_at": {
+							"type": "string"
+						},
+						"updated_at": {
+							"type": "string"
+						},
+						"path": {
+							"type": "string"
+						},
+						"available_sort_by": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"include_in_menu": {
+							"type": "boolean"
+						},
+						"extension_attributes": {
+							"type": "object",
+							"description": "ExtensionInterface class for @see \\Magento\\Catalog\\Api\\Data\\CategoryInterface"
+						},
+						"custom_attributes": {
+							"type": "array",
+							"description": "Custom attributes values.",
+							"items": {
+								"type": "object",
+								"description": "Interface for custom attribute value.",
+								"properties": {
+									"attribute_code": {
+										"type": "string",
+										"description": "Attribute code",
+										"required": true
+									},
+									"value": {
+										"type": "string",
+										"description": "Attribute value",
+										"required": true
+									}
+								}
+							}
+						}
+					},
+					"required": true
+				}
+			},
+			"type": "object"
+		}
+	}
+}

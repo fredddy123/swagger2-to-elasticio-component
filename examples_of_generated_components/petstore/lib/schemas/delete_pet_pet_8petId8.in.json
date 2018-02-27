@@ -1,0 +1,37 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"header": {
+			"type": "object",
+			"properties": {
+				"api_key": {
+					"type": "string",
+					"required": false
+				}
+			}
+		},
+		"path": {
+			"type": "object",
+			"properties": {
+				"petId": {
+					"type": "integer",
+					"required": true
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,293 @@
+{
+	"type": "object",
+	"description": "Interface TotalsInterface",
+	"properties": {
+		"grand_total": {
+			"type": "number",
+			"description": "Grand total in quote currency"
+		},
+		"base_grand_total": {
+			"type": "number",
+			"description": "Grand total in base currency"
+		},
+		"subtotal": {
+			"type": "number",
+			"description": "Subtotal in quote currency"
+		},
+		"base_subtotal": {
+			"type": "number",
+			"description": "Subtotal in base currency"
+		},
+		"discount_amount": {
+			"type": "number",
+			"description": "Discount amount in quote currency"
+		},
+		"base_discount_amount": {
+			"type": "number",
+			"description": "Discount amount in base currency"
+		},
+		"subtotal_with_discount": {
+			"type": "number",
+			"description": "Subtotal in quote currency with applied discount"
+		},
+		"base_subtotal_with_discount": {
+			"type": "number",
+			"description": "Subtotal in base currency with applied discount"
+		},
+		"shipping_amount": {
+			"type": "number",
+			"description": "Shipping amount in quote currency"
+		},
+		"base_shipping_amount": {
+			"type": "number",
+			"description": "Shipping amount in base currency"
+		},
+		"shipping_discount_amount": {
+			"type": "number",
+			"description": "Shipping discount amount in quote currency"
+		},
+		"base_shipping_discount_amount": {
+			"type": "number",
+			"description": "Shipping discount amount in base currency"
+		},
+		"tax_amount": {
+			"type": "number",
+			"description": "Tax amount in quote currency"
+		},
+		"base_tax_amount": {
+			"type": "number",
+			"description": "Tax amount in base currency"
+		},
+		"weee_tax_applied_amount": {
+			"type": "number",
+			"description": "Item weee tax applied amount in quote currency.",
+			"required": true
+		},
+		"shipping_tax_amount": {
+			"type": "number",
+			"description": "Shipping tax amount in quote currency"
+		},
+		"base_shipping_tax_amount": {
+			"type": "number",
+			"description": "Shipping tax amount in base currency"
+		},
+		"subtotal_incl_tax": {
+			"type": "number",
+			"description": "Subtotal including tax in quote currency"
+		},
+		"base_subtotal_incl_tax": {
+			"type": "number",
+			"description": "Subtotal including tax in base currency"
+		},
+		"shipping_incl_tax": {
+			"type": "number",
+			"description": "Shipping including tax in quote currency"
+		},
+		"base_shipping_incl_tax": {
+			"type": "number",
+			"description": "Shipping including tax in base currency"
+		},
+		"base_currency_code": {
+			"type": "string",
+			"description": "Base currency code"
+		},
+		"quote_currency_code": {
+			"type": "string",
+			"description": "Quote currency code"
+		},
+		"coupon_code": {
+			"type": "string",
+			"description": "Applied coupon code"
+		},
+		"items_qty": {
+			"type": "integer",
+			"description": "Items qty"
+		},
+		"items": {
+			"type": "array",
+			"description": "Totals by items",
+			"items": {
+				"type": "object",
+				"description": "Interface TotalsItemInterface",
+				"properties": {
+					"item_id": {
+						"type": "integer",
+						"description": "Item id",
+						"required": true
+					},
+					"price": {
+						"type": "number",
+						"description": "Item price in quote currency.",
+						"required": true
+					},
+					"base_price": {
+						"type": "number",
+						"description": "Item price in base currency.",
+						"required": true
+					},
+					"qty": {
+						"type": "number",
+						"description": "Item quantity.",
+						"required": true
+					},
+					"row_total": {
+						"type": "number",
+						"description": "Row total in quote currency.",
+						"required": true
+					},
+					"base_row_total": {
+						"type": "number",
+						"description": "Row total in base currency.",
+						"required": true
+					},
+					"row_total_with_discount": {
+						"type": "number",
+						"description": "Row total with discount in quote currency. Otherwise, null."
+					},
+					"tax_amount": {
+						"type": "number",
+						"description": "Tax amount in quote currency. Otherwise, null."
+					},
+					"base_tax_amount": {
+						"type": "number",
+						"description": "Tax amount in base currency. Otherwise, null."
+					},
+					"tax_percent": {
+						"type": "number",
+						"description": "Tax percent. Otherwise, null."
+					},
+					"discount_amount": {
+						"type": "number",
+						"description": "Discount amount in quote currency. Otherwise, null."
+					},
+					"base_discount_amount": {
+						"type": "number",
+						"description": "Discount amount in base currency. Otherwise, null."
+					},
+					"discount_percent": {
+						"type": "number",
+						"description": "Discount percent. Otherwise, null."
+					},
+					"price_incl_tax": {
+						"type": "number",
+						"description": "Price including tax in quote currency. Otherwise, null."
+					},
+					"base_price_incl_tax": {
+						"type": "number",
+						"description": "Price including tax in base currency. Otherwise, null."
+					},
+					"row_total_incl_tax": {
+						"type": "number",
+						"description": "Row total including tax in quote currency. Otherwise, null."
+					},
+					"base_row_total_incl_tax": {
+						"type": "number",
+						"description": "Row total including tax in base currency. Otherwise, null."
+					},
+					"options": {
+						"type": "string",
+						"description": "Item price in quote currency.",
+						"required": true
+					},
+					"weee_tax_applied_amount": {
+						"type": "number",
+						"description": "Item weee tax applied amount in quote currency.",
+						"required": true
+					},
+					"weee_tax_applied": {
+						"type": "string",
+						"description": "Item weee tax applied in quote currency.",
+						"required": true
+					},
+					"extension_attributes": {
+						"type": "object",
+						"description": "ExtensionInterface class for @see \\Magento\\Quote\\Api\\Data\\TotalsItemInterface"
+					},
+					"name": {
+						"type": "string",
+						"description": "Product name. Otherwise, null."
+					}
+				}
+			}
+		},
+		"total_segments": {
+			"type": "array",
+			"description": "Dynamically calculated totals",
+			"items": {
+				"type": "object",
+				"description": "Interface TotalsInterface",
+				"properties": {
+					"code": {
+						"type": "string",
+						"description": "Code",
+						"required": true
+					},
+					"title": {
+						"type": "string",
+						"description": "Total title"
+					},
+					"value": {
+						"type": "number",
+						"description": "Total value",
+						"required": true
+					},
+					"area": {
+						"type": "string",
+						"description": "Display area code."
+					},
+					"extension_attributes": {
+						"type": "object",
+						"description": "ExtensionInterface class for @see \\Magento\\Quote\\Api\\Data\\TotalSegmentInterface",
+						"properties": {
+							"tax_grandtotal_details": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"description": "Interface GrandTotalDetailsInterface",
+									"properties": {
+										"amount": {
+											"type": "number",
+											"description": "Tax amount value",
+											"required": true
+										},
+										"rates": {
+											"type": "array",
+											"description": "Tax rates info",
+											"items": {
+												"type": "object",
+												"description": "Interface GrandTotalRatesInterface",
+												"properties": {
+													"percent": {
+														"type": "string",
+														"description": "Tax percentage value",
+														"required": true
+													},
+													"title": {
+														"type": "string",
+														"description": "Rate title",
+														"required": true
+													}
+												}
+											},
+											"required": true
+										},
+										"group_id": {
+											"type": "integer",
+											"description": "Group identifier",
+											"required": true
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			},
+			"required": true
+		},
+		"extension_attributes": {
+			"type": "object",
+			"description": "ExtensionInterface class for @see \\Magento\\Quote\\Api\\Data\\TotalsInterface"
+		}
+	}
+}

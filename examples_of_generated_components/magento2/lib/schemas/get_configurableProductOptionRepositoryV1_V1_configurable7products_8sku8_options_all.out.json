@@ -1,0 +1,48 @@
+{
+	"type": "array",
+	"items": {
+		"type": "object",
+		"description": "Interface OptionInterface",
+		"properties": {
+			"id": {
+				"type": "integer"
+			},
+			"attribute_id": {
+				"type": "string"
+			},
+			"label": {
+				"type": "string"
+			},
+			"position": {
+				"type": "integer"
+			},
+			"is_use_default": {
+				"type": "boolean"
+			},
+			"values": {
+				"type": "array",
+				"items": {
+					"type": "object",
+					"description": "Interface OptionValueInterface",
+					"properties": {
+						"value_index": {
+							"type": "integer",
+							"required": true
+						},
+						"extension_attributes": {
+							"type": "object",
+							"description": "ExtensionInterface class for @see \\Magento\\ConfigurableProduct\\Api\\Data\\OptionValueInterface"
+						}
+					}
+				}
+			},
+			"extension_attributes": {
+				"type": "object",
+				"description": "ExtensionInterface class for @see \\Magento\\ConfigurableProduct\\Api\\Data\\OptionInterface"
+			},
+			"product_id": {
+				"type": "integer"
+			}
+		}
+	}
+}

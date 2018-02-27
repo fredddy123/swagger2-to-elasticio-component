@@ -1,0 +1,58 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"path": {
+			"type": "object",
+			"properties": {
+				"job_id": {
+					"type": "string",
+					"required": true
+				}
+			}
+		},
+		"body": {
+			"description": "Specification of a parameter for a job execution.",
+			"properties": {
+				"parameters": {
+					"description": "",
+					"items": {
+						"description": "Specification of a parameter for a job execution.",
+						"properties": {
+							"name": {
+								"description": "The name of the parameter.",
+								"maxLength": 256,
+								"minLength": 1,
+								"pattern": "\\S|(\\S(.*)\\S)",
+								"type": "string",
+								"required": true
+							},
+							"value": {
+								"description": "The value of the parameter.",
+								"maxLength": 1000,
+								"pattern": "\\S|(\\S(.*)\\S)",
+								"type": "string",
+								"required": true
+							}
+						}
+					},
+					"type": "array"
+				}
+			},
+			"type": "object"
+		}
+	}
+}

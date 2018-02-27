@@ -1,0 +1,84 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"path": {
+			"type": "object",
+			"properties": {
+				"catalog_id": {
+					"type": "string",
+					"required": true
+				},
+				"option_id": {
+					"type": "string",
+					"required": true
+				},
+				"id": {
+					"type": "string",
+					"required": true
+				}
+			}
+		},
+		"body": {
+			"description": "Document representing a product option Value",
+			"properties": {
+				"default_product_option_value": {
+					"description": "Flag indicating if the product option value is the default value for the product option.",
+					"type": "boolean"
+				},
+				"id": {
+					"description": "The id of the product option value.",
+					"minLength": 1,
+					"type": "string"
+				},
+				"link": {
+					"description": "The URL link to the product option value.",
+					"type": "string"
+				},
+				"option_prices": {
+					"description": "The list of prices in the product option value.",
+					"items": {
+						"properties": {
+							"currency_mnemonic": {
+								"description": "The mnemonic for the money.",
+								"type": "string"
+							},
+							"value": {
+								"description": "The value for the money.",
+								"format": "double",
+								"type": "number"
+							}
+						}
+					},
+					"type": "array"
+				},
+				"sku_extension": {
+					"description": "The sku extension of the product option value.",
+					"type": "string"
+				},
+				"value": {
+					"additionalProperties": {
+						"type": "string"
+					},
+					"description": "The localized value of the product option.",
+					"format": "localized",
+					"type": "object"
+				}
+			},
+			"type": "object"
+		}
+	}
+}

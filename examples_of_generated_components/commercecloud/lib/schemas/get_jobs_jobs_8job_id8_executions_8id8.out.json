@@ -1,0 +1,235 @@
+{
+	"properties": {
+		"client_id": {
+			"description": "When the execution was started by a client, this represents the client's id.",
+			"type": "string"
+		},
+		"duration": {
+			"description": "Time in milliseconds, the job needed to be finished.",
+			"format": "int64",
+			"type": "integer"
+		},
+		"end_time": {
+			"description": "Timestamp, when execution was finished.",
+			"format": "date-time",
+			"type": "string"
+		},
+		"execution_scopes": {
+			"description": "Sorted set of all execution scopes, used by individual steps.",
+			"items": {
+				"type": "string"
+			},
+			"type": "array"
+		},
+		"execution_status": {
+			"description": "Current execution status. If the execution is running 'running' is returned. If the execution is pending\n 'pending' is returned. If the execution is finished 'finished' is returned.",
+			"enum": [
+				"pending",
+				"running",
+				"finished"
+			],
+			"type": "string"
+		},
+		"exit_status": {
+			"properties": {
+				"code": {
+					"description": "Status code.",
+					"type": "string"
+				},
+				"message": {
+					"description": "Status message.",
+					"type": "string"
+				},
+				"status": {
+					"description": "Status shows successful operation end.",
+					"enum": [
+						"ok",
+						"error"
+					],
+					"type": "string"
+				}
+			},
+			"description": "The exit status of the execution, if already finished."
+		},
+		"id": {
+			"description": "ID of the execution object.",
+			"type": "string"
+		},
+		"is_log_file_existing": {
+			"description": "True if the log file exists, otherwise false.",
+			"type": "boolean"
+		},
+		"is_restart": {
+			"description": "True if this execution represents a job restart.",
+			"type": "boolean"
+		},
+		"job_description": {
+			"description": "Description of the job, this execution belongs to.",
+			"type": "string"
+		},
+		"job_id": {
+			"description": "ID of the job, this execution belongs to.",
+			"type": "string"
+		},
+		"log_file_name": {
+			"description": "Name of the log file, containing execution log.",
+			"type": "string"
+		},
+		"modification_time": {
+			"description": "Timestamp of the last modification time for the execution.",
+			"format": "date-time",
+			"type": "string"
+		},
+		"parameters": {
+			"description": "List of all job execution parameters.",
+			"items": {
+				"description": "Specification of a parameter for a job execution.",
+				"properties": {
+					"name": {
+						"description": "The name of the parameter.",
+						"maxLength": 256,
+						"minLength": 1,
+						"pattern": "\\S|(\\S(.*)\\S)",
+						"type": "string",
+						"required": true
+					},
+					"value": {
+						"description": "The value of the parameter.",
+						"maxLength": 1000,
+						"pattern": "\\S|(\\S(.*)\\S)",
+						"type": "string",
+						"required": true
+					}
+				}
+			},
+			"type": "array"
+		},
+		"start_time": {
+			"description": "Timestamp, when execution was started.",
+			"format": "date-time",
+			"type": "string"
+		},
+		"status": {
+			"description": "Current status. If the execution is running 'running' is returned. If the execution is pending 'pending' is\n returned. If the execution is finished the exit status code of the execution is returned.",
+			"type": "string"
+		},
+		"step_executions": {
+			"description": "List of all steps, called for job execution.",
+			"items": {
+				"properties": {
+					"chunk_size": {
+						"description": "The chunk size for a chunk oriented step execution, otherwise null.",
+						"format": "int32",
+						"type": "integer"
+					},
+					"duration": {
+						"description": "Time in milliseconds, the job needed to be finished.",
+						"format": "int64",
+						"type": "integer"
+					},
+					"end_time": {
+						"description": "Timestamp, when execution was finished.",
+						"format": "date-time",
+						"type": "string"
+					},
+					"execution_scope": {
+						"description": "The ID of the scope this step is or was executed for.",
+						"type": "string"
+					},
+					"execution_status": {
+						"description": "Current execution status. If the execution is running 'running' is returned. If the execution is pending\n 'pending' is returned. If the execution is finished 'finished' is returned.",
+						"enum": [
+							"pending",
+							"running",
+							"finished"
+						],
+						"type": "string"
+					},
+					"exit_status": {
+						"properties": {
+							"code": {
+								"description": "Status code.",
+								"type": "string"
+							},
+							"message": {
+								"description": "Status message.",
+								"type": "string"
+							},
+							"status": {
+								"description": "Status shows successful operation end.",
+								"enum": [
+									"ok",
+									"error"
+								],
+								"type": "string"
+							}
+						},
+						"description": "The exit status of the execution, if already finished."
+					},
+					"id": {
+						"description": "ID of the execution object.",
+						"type": "string"
+					},
+					"include_steps_from_job_id": {
+						"description": "ID of the job the step of this step execution was included from, if the step was included from another job.",
+						"type": "string"
+					},
+					"is_chunk_oriented": {
+						"description": "True if this execution represents a chunk oriented step execution.",
+						"type": "boolean"
+					},
+					"item_filter_count": {
+						"description": "The current number of items that have been filtered for a chunk oriented step execution, otherwise null.",
+						"format": "int32",
+						"type": "integer"
+					},
+					"item_write_count": {
+						"description": "The current number of items that have been written for a chunk oriented step execution, otherwise null.",
+						"format": "int32",
+						"type": "integer"
+					},
+					"modification_time": {
+						"description": "Timestamp of the last modification time for the execution.",
+						"format": "date-time",
+						"type": "string"
+					},
+					"start_time": {
+						"description": "Timestamp, when execution was started.",
+						"format": "date-time",
+						"type": "string"
+					},
+					"status": {
+						"description": "Current status. If the execution is running 'running' is returned. If the execution is pending 'pending' is\n returned. If the execution is finished the exit status code of the execution is returned.",
+						"type": "string"
+					},
+					"step_description": {
+						"description": "Description of the step, this execution belongs to.ID of the step",
+						"type": "string"
+					},
+					"step_id": {
+						"description": "ID of the step, this execution belongs to.ID of the step",
+						"type": "string"
+					},
+					"step_type_id": {
+						"description": "ID of the step's type at the time it is or was executed.",
+						"type": "string"
+					},
+					"step_type_info": {
+						"description": "Additional information regarding the step's type at the time it is or was executed (e.g. name of a script module\n and function).",
+						"type": "string"
+					},
+					"total_item_count": {
+						"description": "The total number of items that will be processed for a chunk oriented step execution (null if unknown), otherwise\n null.",
+						"format": "int64",
+						"type": "integer"
+					}
+				}
+			},
+			"type": "array"
+		},
+		"user_login": {
+			"description": "When the execution was started by a registered user, this represents the user's login.",
+			"type": "string"
+		}
+	}
+}

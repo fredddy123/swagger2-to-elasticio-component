@@ -1,0 +1,33 @@
+{
+	"description": "Document representing a content folder assignment.",
+	"properties": {
+		"content_id": {
+			"description": "The content id.",
+			"maxLength": 256,
+			"type": "string"
+		},
+		"content_link": {
+			"description": "The content link.",
+			"type": "string"
+		},
+		"default": {
+			"description": "A flag indicating whether the assignment is the default one.",
+			"type": "boolean"
+		},
+		"folder_id": {
+			"description": "The folder id.",
+			"maxLength": 256,
+			"type": "string"
+		},
+		"folder_link": {
+			"description": "The folder link.",
+			"type": "string"
+		},
+		"position": {
+			"description": "The position of the content asset in the folder.",
+			"format": "double",
+			"minimum": 0,
+			"type": "number"
+		}
+	}
+}

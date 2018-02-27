@@ -1,0 +1,222 @@
+{
+	"description": "Document representing a source code group search result.",
+	"properties": {
+		"count": {
+			"description": "The number of returned documents.",
+			"format": "int32",
+			"type": "integer"
+		},
+		"data": {
+			"items": {
+				"type": "object"
+			},
+			"type": "array"
+		},
+		"expand": {
+			"description": "The list of expands set for the search request. Expands are optional.",
+			"items": {
+				"type": "string"
+			},
+			"type": "array"
+		},
+		"hits": {
+			"description": "The sorted array of search hits. Can be empty.",
+			"items": {
+				"description": "Document representing a source code group",
+				"properties": {
+					"active": {
+						"description": "The active flag, a computed value based on start and end time",
+						"type": "boolean"
+					},
+					"active_redirect": {
+						"description": "The active redirect information",
+						"properties": {
+							"location": {
+								"description": "The location of redirect, based on the type, this can be a product location, category location, home page, content page, or just a URL",
+								"type": "string"
+							},
+							"location_type": {
+								"description": "The type of redirect location, e.g. product (for a product page), category (a category page), home (for home page), page (for content), url (for a URL location)",
+								"enum": [
+									"default",
+									"home",
+									"product",
+									"category",
+									"page",
+									"url"
+								],
+								"type": "string"
+							}
+						}
+					},
+					"cookie_duration": {
+						"description": "The cookie duration in days",
+						"format": "int32",
+						"maximum": 999,
+						"minimum": 0,
+						"type": "integer"
+					},
+					"creation_date": {
+						"description": "Returns the value of attribute 'creationDate'.",
+						"format": "date-time",
+						"x-label": {
+							"default": "Creation Date"
+						},
+						"type": "string"
+					},
+					"description": {
+						"description": "The description",
+						"type": "string"
+					},
+					"enabled": {
+						"description": "The enabled flag for storefront to consider the source code group, default to false.",
+						"type": "boolean"
+					},
+					"end_time": {
+						"description": "The end time",
+						"format": "date-time",
+						"type": "string"
+					},
+					"id": {
+						"description": "The id of source code group",
+						"x-label": {
+							"default": "ID"
+						},
+						"maxLength": 28,
+						"minLength": 1,
+						"type": "string"
+					},
+					"inactive_redirect": {
+						"description": "The inactive redirect information",
+						"properties": {
+							"location": {
+								"description": "The location of redirect, based on the type, this can be a product location, category location, home page, content page, or just a URL",
+								"type": "string"
+							},
+							"location_type": {
+								"description": "The type of redirect location, e.g. product (for a product page), category (a category page), home (for home page), page (for content), url (for a URL location)",
+								"enum": [
+									"default",
+									"home",
+									"product",
+									"category",
+									"page",
+									"url"
+								],
+								"type": "string"
+							}
+						}
+					},
+					"last_modified": {
+						"description": "Returns the value of attribute 'lastModified'.",
+						"format": "date-time",
+						"x-label": {
+							"default": "Last Modified"
+						},
+						"type": "string"
+					},
+					"link": {
+						"description": "URL that is used to get this instance, read only",
+						"type": "string"
+					},
+					"specifications": {
+						"description": "Source Code specifications",
+						"items": {
+							"description": "Document representing a source code specification",
+							"properties": {
+								"expression": {
+									"description": "Expression is a value for the \"Source Code Specification\" may be a literal source code, or it may contain wildcards.\n A literal code is simply the literal code. Valid characters are letters and numbers (no spaces).\n A wildcard allows a single source code specification to match multiple source codes. The following wildcards are supported:\n ? - Matches any single alpha-numeric character. For example: the source code specification 'ABC?' would match 'ABCD' or 'ABC3', but not 'ABCDE'.\n * - Matches any sequence of alpha-numeric characters. For example: the source code specification 'ABC*' would match 'ABCD', 'ABCDE', or 'ABC123'.\n [n1..n2] - Matches any number from n1 through and including n2.\n For example: the source code specification 'ABC[3..22]' would match 'ABC3', 'ABC4' or 'ABC22', but not 'ABC33' or 'ABCD'.",
+									"type": "string"
+								}
+							}
+						},
+						"type": "array"
+					},
+					"start_time": {
+						"description": "The start time",
+						"format": "date-time",
+						"type": "string"
+					}
+				}
+			},
+			"type": "array"
+		},
+		"next": {
+			"description": "The URL of the next result page.",
+			"properties": {
+				"count": {
+					"description": "Returns the count of search hits to include in the page.",
+					"format": "int32",
+					"type": "integer"
+				},
+				"start": {
+					"description": "Returns the zero-based index of the first search hit in the page.",
+					"format": "int32",
+					"type": "integer"
+				}
+			}
+		},
+		"previous": {
+			"description": "The URL of the previous result page.",
+			"properties": {
+				"count": {
+					"description": "Returns the count of search hits to include in the page.",
+					"format": "int32",
+					"type": "integer"
+				},
+				"start": {
+					"description": "Returns the zero-based index of the first search hit in the page.",
+					"format": "int32",
+					"type": "integer"
+				}
+			}
+		},
+		"query": {
+			"description": "The query passed into the search",
+			"x-sub_types": {
+				"nested_query": "#/definitions/nested_query",
+				"filtered_query": "#/definitions/filtered_query",
+				"text_query": "#/definitions/text_query",
+				"term_query": "#/definitions/term_query",
+				"match_all_query": "#/definitions/match_all_query",
+				"bool_query": "#/definitions/bool_query"
+			}
+		},
+		"select": {
+			"description": "The fields that you want to select.",
+			"type": "string"
+		},
+		"sorts": {
+			"description": "The list of sort clauses configured for the search request. Sort clauses are optional.",
+			"items": {
+				"description": "Document representing a sort request.",
+				"properties": {
+					"field": {
+						"description": "The name of the field to sort on.",
+						"type": "string"
+					},
+					"sort_order": {
+						"description": "The sort order to be applied when sorting. When omitted, the default sort order (ASC) is used.",
+						"enum": [
+							"asc",
+							"desc"
+						],
+						"type": "string"
+					}
+				}
+			},
+			"type": "array"
+		},
+		"start": {
+			"description": "The zero-based index of the first search hit to include in the result.",
+			"format": "int32",
+			"minimum": 0,
+			"type": "integer"
+		},
+		"total": {
+			"description": "The total number of documents.",
+			"format": "int32",
+			"type": "integer"
+		}
+	}
+}

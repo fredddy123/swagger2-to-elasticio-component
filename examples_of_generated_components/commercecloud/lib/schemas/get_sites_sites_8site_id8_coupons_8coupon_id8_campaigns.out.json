@@ -1,0 +1,128 @@
+{
+	"description": "Document representing an unfiltered list of campaigns.",
+	"properties": {
+		"count": {
+			"description": "The number of returned documents.",
+			"format": "int32",
+			"type": "integer"
+		},
+		"data": {
+			"description": "",
+			"items": {
+				"description": "Document representing a campaign.",
+				"properties": {
+					"campaign_id": {
+						"description": "The ID of the campaign.",
+						"x-label": {
+							"default": "ID"
+						},
+						"maxLength": 256,
+						"minLength": 1,
+						"type": "string"
+					},
+					"coupons": {
+						"description": "The array of assigned coupon IDs, not sorted",
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"creation_date": {
+						"description": "Returns the value of attribute 'creationDate'.",
+						"format": "date-time",
+						"x-label": {
+							"default": "Creation Date"
+						},
+						"type": "string"
+					},
+					"customer_groups": {
+						"description": "The array of assigned customer groups, not sorted",
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"description": {
+						"description": "The description of the campaign.",
+						"format": "text",
+						"x-label": {
+							"default": "Description"
+						},
+						"maxLength": 4000,
+						"type": "string"
+					},
+					"enabled": {
+						"description": "The enabled flag for campaign.",
+						"type": "boolean"
+					},
+					"end_date": {
+						"description": "The date that the Scenario ends",
+						"format": "date-time",
+						"x-label": {
+							"default": "End Date"
+						},
+						"type": "string"
+					},
+					"last_modified": {
+						"description": "Returns the value of attribute 'lastModified'.",
+						"format": "date-time",
+						"x-label": {
+							"default": "Last Modified"
+						},
+						"type": "string"
+					},
+					"link": {
+						"description": "link for convenience",
+						"type": "string"
+					},
+					"source_code_groups": {
+						"description": "The array of assigned source code groups, not sorted",
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"start_date": {
+						"description": "The date that the Scenario begins",
+						"format": "date-time",
+						"x-label": {
+							"default": "Start Date"
+						},
+						"type": "string"
+					}
+				}
+			},
+			"type": "array"
+		},
+		"expand": {
+			"description": "The list of expands set for the search request. Expands are optional.",
+			"items": {
+				"type": "string"
+			},
+			"type": "array"
+		},
+		"next": {
+			"description": "The URL of the next result page.",
+			"type": "string"
+		},
+		"previous": {
+			"description": "The URL of the previous result page.",
+			"type": "string"
+		},
+		"select": {
+			"description": "The fields that you want to select.",
+			"type": "string"
+		},
+		"start": {
+			"description": "The zero-based index of the first search hit to include in the result.",
+			"format": "int32",
+			"minimum": 0,
+			"type": "integer"
+		},
+		"total": {
+			"description": "The total number of documents.",
+			"format": "int32",
+			"type": "integer"
+		}
+	}
+}

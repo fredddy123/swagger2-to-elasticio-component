@@ -1,0 +1,51 @@
+{
+	"description": "Document representing a object type definition",
+	"properties": {
+		"attribute_definition_count": {
+			"description": "Returns the number of attribute definitions contained by the type.  This is a computed attribute and cannot be changed.",
+			"format": "int32",
+			"type": "integer"
+		},
+		"attribute_group_count": {
+			"description": "Returns the number of attribute groups contained by the type.  This is a computed attribute and cannot be changed.",
+			"format": "int32",
+			"type": "integer"
+		},
+		"content_object": {
+			"description": "True if the object type definition is marked as a content object",
+			"type": "boolean"
+		},
+		"description": {
+			"additionalProperties": {
+				"type": "string"
+			},
+			"description": "The user entered description for the type (localizable)",
+			"format": "localized",
+			"type": "object"
+		},
+		"display_name": {
+			"additionalProperties": {
+				"type": "string"
+			},
+			"description": "The user entered display name (localizable)",
+			"format": "localized",
+			"type": "object"
+		},
+		"link": {
+			"description": "URL that is used to get this instance.  This is a computed attribute and cannot be changed.",
+			"type": "string"
+		},
+		"object_type": {
+			"description": "The object type identifier",
+			"type": "string"
+		},
+		"queryable": {
+			"description": "True if the system object type is queryable, false otherwise.  Default is true.",
+			"type": "boolean"
+		},
+		"read_only": {
+			"description": "True if the system object is read-only, false otherwise.  This is a computed attribute and cannot be changed.",
+			"type": "boolean"
+		}
+	}
+}

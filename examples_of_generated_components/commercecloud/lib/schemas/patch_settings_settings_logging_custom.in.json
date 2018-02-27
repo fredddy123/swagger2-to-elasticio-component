@@ -1,0 +1,79 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"body": {
+			"description": "Document representing custom logging settings.",
+			"properties": {
+				"debug_permitted": {
+					"description": "False if the current instance is production.",
+					"type": "boolean"
+				},
+				"debug_to_file": {
+					"description": "Indicates if custom debug logs are written to file.",
+					"type": "boolean"
+				},
+				"email_to": {
+					"description": "Email addresses for fatal log messages with a maximum length of 1000 characters.",
+					"maxLength": 1000,
+					"type": "string"
+				},
+				"error_to_file": {
+					"description": "Indicates if custom error logs are written to file.",
+					"type": "boolean"
+				},
+				"fatal_to_file": {
+					"description": "Indicates if custom fatal logs are written to file.",
+					"type": "boolean"
+				},
+				"info_to_file": {
+					"description": "Indicates if custom info logs are written to file.",
+					"type": "boolean"
+				},
+				"log_categories": {
+					"description": "Defined custom log categories.",
+					"items": {
+						"description": "Document representing log category settings.",
+						"properties": {
+							"enabled": {
+								"description": "Returns true if the log category is enabled.",
+								"type": "boolean"
+							},
+							"level": {
+								"description": "Level of the log category.",
+								"type": "string"
+							},
+							"name": {
+								"description": "Log category name.",
+								"type": "string"
+							}
+						}
+					},
+					"type": "array"
+				},
+				"root_level": {
+					"description": "Custom root category log level.",
+					"type": "string"
+				},
+				"warn_to_file": {
+					"description": "Indicates if custom warn logs are written to file.",
+					"type": "boolean"
+				}
+			},
+			"type": "object"
+		}
+	}
+}

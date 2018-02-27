@@ -1,0 +1,150 @@
+{
+	"description": "Document representing an unfiltered list of variation attribute values.",
+	"properties": {
+		"count": {
+			"description": "The number of returned documents.",
+			"format": "int32",
+			"type": "integer"
+		},
+		"data": {
+			"description": "",
+			"items": {
+				"description": "Document representing a variation attribute value.",
+				"properties": {
+					"description": {
+						"additionalProperties": {
+							"type": "string"
+						},
+						"description": "The localized description of the variation value.",
+						"format": "localized",
+						"type": "object"
+					},
+					"image": {
+						"properties": {
+							"abs_url": {
+								"description": "The absolute URL with request protocol",
+								"type": "string"
+							},
+							"alt": {
+								"additionalProperties": {
+									"type": "string"
+								},
+								"description": "The alternative image text",
+								"format": "localized",
+								"type": "object"
+							},
+							"dis_base_url": {
+								"description": "The DIS base URL only for product images",
+								"type": "string"
+							},
+							"path": {
+								"description": "The raw media file path",
+								"type": "string"
+							},
+							"title": {
+								"additionalProperties": {
+									"type": "string"
+								},
+								"description": "The image title",
+								"format": "localized",
+								"type": "object"
+							}
+						},
+						"description": "The first product image for the configured viewtype and this variation value."
+					},
+					"image_swatch": {
+						"properties": {
+							"abs_url": {
+								"description": "The absolute URL with request protocol",
+								"type": "string"
+							},
+							"alt": {
+								"additionalProperties": {
+									"type": "string"
+								},
+								"description": "The alternative image text",
+								"format": "localized",
+								"type": "object"
+							},
+							"dis_base_url": {
+								"description": "The DIS base URL only for product images",
+								"type": "string"
+							},
+							"path": {
+								"description": "The raw media file path",
+								"type": "string"
+							},
+							"title": {
+								"additionalProperties": {
+									"type": "string"
+								},
+								"description": "The image title",
+								"format": "localized",
+								"type": "object"
+							}
+						},
+						"description": "The first product image for the configured viewtype and this variation value. (typically the swatch image)"
+					},
+					"link": {
+						"description": "",
+						"type": "string"
+					},
+					"name": {
+						"additionalProperties": {
+							"type": "string"
+						},
+						"description": "The localized display name of the variation value.",
+						"format": "localized",
+						"type": "object"
+					},
+					"orderable": {
+						"description": "A flag indicating whether at least one variant with this variation attribute value is available to sell.",
+						"type": "boolean"
+					},
+					"position": {
+						"description": "The position of the value among all values of a variation attribute.",
+						"format": "double",
+						"type": "number"
+					},
+					"value": {
+						"description": "The actual variation value.",
+						"minLength": 1,
+						"type": "string",
+						"required": true
+					}
+				}
+			},
+			"type": "array"
+		},
+		"expand": {
+			"description": "The list of expands set for the search request. Expands are optional.",
+			"items": {
+				"type": "string"
+			},
+			"type": "array"
+		},
+		"next": {
+			"description": "The URL of the next result page.",
+			"type": "string"
+		},
+		"previous": {
+			"description": "The URL of the previous result page.",
+			"type": "string"
+		},
+		"select": {
+			"description": "The fields that you want to select.",
+			"type": "string"
+		},
+		"start": {
+			"description": "The zero-based index of the first search hit to include in the result.",
+			"format": "int32",
+			"minimum": 0,
+			"type": "integer"
+		},
+		"total": {
+			"description": "The total number of documents.",
+			"format": "int32",
+			"type": "integer"
+		}
+	}
+}

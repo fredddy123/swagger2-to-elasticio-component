@@ -1,0 +1,40 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"body": {
+			"properties": {
+				"attributeSetId": {
+					"type": "integer",
+					"required": true
+				},
+				"attributeGroupId": {
+					"type": "integer",
+					"required": true
+				},
+				"attributeCode": {
+					"type": "string",
+					"required": true
+				},
+				"sortOrder": {
+					"type": "integer",
+					"required": true
+				}
+			},
+			"type": "object"
+		}
+	}
+}

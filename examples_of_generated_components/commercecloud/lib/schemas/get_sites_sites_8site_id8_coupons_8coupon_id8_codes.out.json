@@ -1,0 +1,62 @@
+{
+	"description": "Document representing a set of coupon codes.",
+	"properties": {
+		"count": {
+			"description": "The number of returned documents.",
+			"format": "int32",
+			"type": "integer"
+		},
+		"data": {
+			"description": "The collection of coupon codes",
+			"items": {
+				"description": "A coupon code with accompanying stats for redemptions and issued.",
+				"properties": {
+					"code": {
+						"description": "The code used to redeem the coupon",
+						"type": "string"
+					},
+					"issued": {
+						"description": "Flag indicating if the coupon code has been issued",
+						"type": "boolean"
+					},
+					"redemption_count": {
+						"description": "The count of the number of redemptions associated with the code",
+						"format": "int32",
+						"type": "integer"
+					}
+				}
+			},
+			"type": "array"
+		},
+		"expand": {
+			"description": "The list of expands set for the search request. Expands are optional.",
+			"items": {
+				"type": "string"
+			},
+			"type": "array"
+		},
+		"next": {
+			"description": "The URL of the next result page.",
+			"type": "string"
+		},
+		"previous": {
+			"description": "The URL of the previous result page.",
+			"type": "string"
+		},
+		"select": {
+			"description": "The fields that you want to select.",
+			"type": "string"
+		},
+		"start": {
+			"description": "The zero-based index of the first search hit to include in the result.",
+			"format": "int32",
+			"minimum": 0,
+			"type": "integer"
+		},
+		"total": {
+			"description": "The total number of documents.",
+			"format": "int32",
+			"type": "integer"
+		}
+	}
+}

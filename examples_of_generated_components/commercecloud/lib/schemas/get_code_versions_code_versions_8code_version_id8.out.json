@@ -1,0 +1,47 @@
+{
+	"description": "Document representing a code version",
+	"properties": {
+		"activation_time": {
+			"description": "The code version activation time.",
+			"format": "date-time",
+			"type": "string"
+		},
+		"active": {
+			"description": "Use this method to determine, if this code version is currently active.",
+			"type": "boolean"
+		},
+		"cartridges": {
+			"description": "A list containing the names of all cartridges participating in this code version.",
+			"items": {
+				"type": "string"
+			},
+			"type": "array"
+		},
+		"compatibility_mode": {
+			"description": "The code version compatibility mode.",
+			"type": "string"
+		},
+		"id": {
+			"description": "The code version id.",
+			"type": "string"
+		},
+		"last_modification_time": {
+			"description": "The last time, when the code version was changed.",
+			"format": "date-time",
+			"type": "string"
+		},
+		"rollback": {
+			"description": "Use this method to determine, if this code version is the current rollback version.",
+			"type": "boolean"
+		},
+		"total_size": {
+			"description": "Returns the total size of the file system content of this code version in bytes.",
+			"format": "int64",
+			"type": "integer"
+		},
+		"web_dav_url": {
+			"description": "Returns the HTTPS based WebDAV URL that can be used to access the code version resources.",
+			"type": "string"
+		}
+	}
+}

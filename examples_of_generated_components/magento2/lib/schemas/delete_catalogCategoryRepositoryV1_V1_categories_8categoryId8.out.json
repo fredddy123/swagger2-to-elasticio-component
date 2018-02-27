@@ -1,0 +1,4 @@
+{
+	"type": "boolean",
+	"description": "Will returned True if deleted"
+}

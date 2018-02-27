@@ -1,0 +1,23 @@
+{
+	"type": "array",
+	"items": {
+		"type": "object",
+		"description": "",
+		"properties": {
+			"code": {
+				"type": "string",
+				"description": "Attribute code",
+				"required": true
+			},
+			"type": {
+				"type": "string",
+				"description": "Attribute type",
+				"required": true
+			},
+			"extension_attributes": {
+				"type": "object",
+				"description": "ExtensionInterface class for @see \\Magento\\Catalog\\Api\\Data\\ProductLinkAttributeInterface"
+			}
+		}
+	}
+}

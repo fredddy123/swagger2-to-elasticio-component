@@ -1,0 +1,76 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"path": {
+			"type": "object",
+			"properties": {
+				"attributeCode": {
+					"type": "string",
+					"required": true
+				}
+			}
+		},
+		"body": {
+			"properties": {
+				"option": {
+					"type": "object",
+					"description": "Created from:",
+					"properties": {
+						"label": {
+							"type": "string",
+							"description": "Option label",
+							"required": true
+						},
+						"value": {
+							"type": "string",
+							"description": "Option value",
+							"required": true
+						},
+						"sort_order": {
+							"type": "integer",
+							"description": "Option order"
+						},
+						"is_default": {
+							"type": "boolean",
+							"description": "Default"
+						},
+						"store_labels": {
+							"type": "array",
+							"description": "Option label for store scopes",
+							"items": {
+								"type": "object",
+								"description": "Interface AttributeOptionLabelInterface",
+								"properties": {
+									"store_id": {
+										"type": "integer",
+										"description": "Store id"
+									},
+									"label": {
+										"type": "string",
+										"description": "Option label"
+									}
+								}
+							}
+						}
+					},
+					"required": true
+				}
+			},
+			"type": "object"
+		}
+	}
+}

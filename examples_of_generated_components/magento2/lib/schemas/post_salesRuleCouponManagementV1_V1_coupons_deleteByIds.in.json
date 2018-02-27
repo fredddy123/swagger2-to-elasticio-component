@@ -1,0 +1,34 @@
+{
+	"type": "object",
+	"properties": {
+		"additionalCreds": {
+			"type": "object",
+			"properties": {
+				"headers": {
+					"type": "string"
+				},
+				"queryString": {
+					"type": "string"
+				},
+				"apiURI": {
+					"type": "string"
+				}
+			}
+		},
+		"body": {
+			"properties": {
+				"ids": {
+					"type": "array",
+					"items": {
+						"type": "integer"
+					},
+					"required": true
+				},
+				"ignoreInvalidCoupons": {
+					"type": "boolean"
+				}
+			},
+			"type": "object"
+		}
+	}
+}

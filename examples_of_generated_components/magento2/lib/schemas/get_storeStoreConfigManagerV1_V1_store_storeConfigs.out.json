@@ -1,0 +1,93 @@
+{
+	"type": "array",
+	"items": {
+		"type": "object",
+		"description": "StoreConfig interface",
+		"properties": {
+			"id": {
+				"type": "integer",
+				"description": "Store id",
+				"required": true
+			},
+			"code": {
+				"type": "string",
+				"description": "Store code",
+				"required": true
+			},
+			"website_id": {
+				"type": "integer",
+				"description": "Website id of the store",
+				"required": true
+			},
+			"locale": {
+				"type": "string",
+				"description": "Store locale",
+				"required": true
+			},
+			"base_currency_code": {
+				"type": "string",
+				"description": "Base currency code",
+				"required": true
+			},
+			"default_display_currency_code": {
+				"type": "string",
+				"description": "Default display currency code",
+				"required": true
+			},
+			"timezone": {
+				"type": "string",
+				"description": "Timezone of the store",
+				"required": true
+			},
+			"weight_unit": {
+				"type": "string",
+				"description": "The unit of weight",
+				"required": true
+			},
+			"base_url": {
+				"type": "string",
+				"description": "Base URL for the store",
+				"required": true
+			},
+			"base_link_url": {
+				"type": "string",
+				"description": "Base link URL for the store",
+				"required": true
+			},
+			"base_static_url": {
+				"type": "string",
+				"description": "Base static URL for the store",
+				"required": true
+			},
+			"base_media_url": {
+				"type": "string",
+				"description": "Base media URL for the store",
+				"required": true
+			},
+			"secure_base_url": {
+				"type": "string",
+				"description": "Secure base URL for the store",
+				"required": true
+			},
+			"secure_base_link_url": {
+				"type": "string",
+				"description": "Secure base link URL for the store",
+				"required": true
+			},
+			"secure_base_static_url": {
+				"type": "string",
+				"description": "Secure base static URL for the store",
+				"required": true
+			},
+			"secure_base_media_url": {
+				"type": "string",
+				"description": "Secure base media URL for the store",
+				"required": true
+			},
+			"extension_attributes": {
+				"type": "object",
+				"description": "ExtensionInterface class for @see \\Magento\\Store\\Api\\Data\\StoreConfigInterface"
+			}
+		}
+	}
+}

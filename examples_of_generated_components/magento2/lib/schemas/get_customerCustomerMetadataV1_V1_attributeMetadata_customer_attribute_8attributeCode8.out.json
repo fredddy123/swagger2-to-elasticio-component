@@ -1,0 +1,146 @@
+{
+	"type": "object",
+	"description": "Customer attribute metadata interface.",
+	"properties": {
+		"frontend_input": {
+			"type": "string",
+			"description": "HTML for input element.",
+			"required": true
+		},
+		"input_filter": {
+			"type": "string",
+			"description": "Template used for input (e.g. \"date\")",
+			"required": true
+		},
+		"store_label": {
+			"type": "string",
+			"description": "Label of the store.",
+			"required": true
+		},
+		"validation_rules": {
+			"type": "array",
+			"description": "Validation rules.",
+			"items": {
+				"type": "object",
+				"description": "Validation rule interface.",
+				"properties": {
+					"name": {
+						"type": "string",
+						"description": "Validation rule name",
+						"required": true
+					},
+					"value": {
+						"type": "string",
+						"description": "Validation rule value",
+						"required": true
+					}
+				}
+			},
+			"required": true
+		},
+		"multiline_count": {
+			"type": "integer",
+			"description": "Of lines of the attribute value.",
+			"required": true
+		},
+		"visible": {
+			"type": "boolean",
+			"description": "Attribute is visible on frontend.",
+			"required": true
+		},
+		"required": {
+			"type": "boolean",
+			"description": "Attribute is required.",
+			"required": true
+		},
+		"data_model": {
+			"type": "string",
+			"description": "Data model for attribute.",
+			"required": true
+		},
+		"options": {
+			"type": "array",
+			"description": "Options of the attribute (key => value pairs for select)",
+			"items": {
+				"type": "object",
+				"description": "Option interface.",
+				"properties": {
+					"label": {
+						"type": "string",
+						"description": "Option label",
+						"required": true
+					},
+					"value": {
+						"type": "string",
+						"description": "Option value"
+					},
+					"options": {
+						"type": "array",
+						"description": "Nested options",
+						"items": {
+							"type": "object",
+							"description": "this field is the reference to customer-data-option-interface"
+						}
+					}
+				}
+			},
+			"required": true
+		},
+		"frontend_class": {
+			"type": "string",
+			"description": "Class which is used to display the attribute on frontend.",
+			"required": true
+		},
+		"user_defined": {
+			"type": "boolean",
+			"description": "Current attribute has been defined by a user.",
+			"required": true
+		},
+		"sort_order": {
+			"type": "integer",
+			"description": "Attributes sort order.",
+			"required": true
+		},
+		"frontend_label": {
+			"type": "string",
+			"description": "Label which supposed to be displayed on frontend.",
+			"required": true
+		},
+		"note": {
+			"type": "string",
+			"description": "The note attribute for the element.",
+			"required": true
+		},
+		"system": {
+			"type": "boolean",
+			"description": "This is a system attribute.",
+			"required": true
+		},
+		"backend_type": {
+			"type": "string",
+			"description": "Backend type.",
+			"required": true
+		},
+		"is_used_in_grid": {
+			"type": "boolean",
+			"description": "It is used in customer grid"
+		},
+		"is_visible_in_grid": {
+			"type": "boolean",
+			"description": "It is visible in customer grid"
+		},
+		"is_filterable_in_grid": {
+			"type": "boolean",
+			"description": "It is filterable in customer grid"
+		},
+		"is_searchable_in_grid": {
+			"type": "boolean",
+			"description": "It is searchable in customer grid"
+		},
+		"attribute_code": {
+			"type": "string",
+			"description": "Code of the attribute.",
+			"required": true
+		}
+	}
+}

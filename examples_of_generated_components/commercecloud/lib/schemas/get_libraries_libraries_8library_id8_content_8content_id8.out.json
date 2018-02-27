@@ -1,0 +1,276 @@
+{
+	"description": "Document representing a content asset.",
+	"properties": {
+		"c_Year": {
+			"x-label": {
+				"default": "Year"
+			},
+			"type": "string"
+		},
+		"c_body": {
+			"additionalProperties": {
+				"properties": {
+					"markup": {
+						"description": "The rendered HTML",
+						"type": "string"
+					},
+					"source": {
+						"description": "The raw markup text",
+						"type": "string"
+					}
+				}
+			},
+			"format": "localized",
+			"x-label": {
+				"default": "Body"
+			},
+			"type": "object"
+		},
+		"c_customCSSFile": {
+			"properties": {
+				"abs_url": {
+					"description": "The absolute URL with request protocol",
+					"type": "string"
+				},
+				"alt": {
+					"additionalProperties": {
+						"type": "string"
+					},
+					"description": "The alternative image text",
+					"format": "localized",
+					"type": "object"
+				},
+				"dis_base_url": {
+					"description": "The DIS base URL only for product images",
+					"type": "string"
+				},
+				"path": {
+					"description": "The raw media file path",
+					"type": "string"
+				},
+				"title": {
+					"additionalProperties": {
+						"type": "string"
+					},
+					"description": "The image title",
+					"format": "localized",
+					"type": "object"
+				}
+			},
+			"description": "Use this attribute to apply custom styles for this content asset.",
+			"x-label": {
+				"default": "Custom CSS File"
+			}
+		},
+		"classification_folder_id": {
+			"description": "The ID of the classification folder. It is only part of the response, if the assignment from  this content asset to the folder is marked as 'default'. The property is read-only. To  set the classification folder just create/update an assignment between this content asset and  a folder and mark it as 'default'. See details in  /libraries/{library_id}/folder_assignments/{content_id}/{folder_id} resource.",
+			"type": "string"
+		},
+		"classification_folder_link": {
+			"description": "The link to the classification folder. It is only part of the response, if the assignment from  this content asset to the folder is marked as 'default'. The property is read-only. To  set the classification folder just create/update an assignment between this content asset and  a folder and mark it as 'default'. See details in  /libraries/{library_id}/folder_assignments/{content_id}/{folder_id} resource.",
+			"type": "string"
+		},
+		"creation_date": {
+			"description": "Returns the value of attribute 'creationDate'.",
+			"format": "date-time",
+			"x-label": {
+				"default": "Creation Date"
+			},
+			"type": "string"
+		},
+		"description": {
+			"additionalProperties": {
+				"type": "string"
+			},
+			"description": "The localized content asset description.",
+			"format": "localized",
+			"x-label": {
+				"default": "Description"
+			},
+			"type": "object"
+		},
+		"id": {
+			"description": "The id of the content asset.",
+			"x-label": {
+				"default": "ID"
+			},
+			"maxLength": 256,
+			"minLength": 1,
+			"type": "string"
+		},
+		"last_modified": {
+			"description": "Returns the value of attribute 'lastModified'.",
+			"format": "date-time",
+			"x-label": {
+				"default": "Last Modified"
+			},
+			"type": "string"
+		},
+		"link": {
+			"description": "The link to the content asset resource.",
+			"type": "string"
+		},
+		"name": {
+			"additionalProperties": {
+				"type": "string"
+			},
+			"description": "The localized content asset name.",
+			"format": "localized",
+			"x-label": {
+				"default": "Name"
+			},
+			"type": "object"
+		},
+		"online": {
+			"additionalProperties": {
+				"type": "boolean"
+			},
+			"description": "Is the asset online?",
+			"format": "site-specific",
+			"x-label": {
+				"default": "Online"
+			},
+			"type": "object"
+		},
+		"page_description": {
+			"additionalProperties": {
+				"type": "string"
+			},
+			"description": "The localized content asset page description.",
+			"format": "localized",
+			"x-label": {
+				"default": "Page Description"
+			},
+			"type": "object"
+		},
+		"page_keywords": {
+			"additionalProperties": {
+				"type": "string"
+			},
+			"description": "The localized content asset page keywords.",
+			"format": "localized",
+			"x-label": {
+				"default": "Page Keywords"
+			},
+			"type": "object"
+		},
+		"page_title": {
+			"additionalProperties": {
+				"type": "string"
+			},
+			"description": "The localized content asset page title.",
+			"format": "localized",
+			"x-label": {
+				"default": "Page Title"
+			},
+			"type": "object"
+		},
+		"page_url": {
+			"additionalProperties": {
+				"type": "string"
+			},
+			"description": "The localized content asset page url.",
+			"format": "localized",
+			"x-label": {
+				"default": "Page URL"
+			},
+			"type": "object"
+		},
+		"searchable": {
+			"additionalProperties": {
+				"type": "boolean"
+			},
+			"description": "Is the asset searchable?",
+			"format": "site-specific",
+			"type": "object"
+		},
+		"site_map_change_frequency": {
+			"additionalProperties": {
+				"enum": [
+					"always",
+					"hourly",
+					"daily",
+					"weekly",
+					"monthly",
+					"yearly",
+					"never"
+				],
+				"x-enum-labels": [
+					{
+						"default": "always"
+					},
+					{
+						"default": "hourly"
+					},
+					{
+						"default": "daily"
+					},
+					{
+						"default": "weekly"
+					},
+					{
+						"default": "monthly"
+					},
+					{
+						"default": "yearly"
+					},
+					{
+						"default": "never"
+					}
+				],
+				"type": "string"
+			},
+			"description": "The content assets change frequency needed for the sitemap creation  (always, hourly, daily, weekly, monthly, yearly, never).",
+			"format": "site-specific",
+			"x-label": {
+				"default": "Change Frequency"
+			},
+			"type": "object"
+		},
+		"site_map_included": {
+			"additionalProperties": {
+				"enum": [
+					1,
+					0
+				],
+				"x-enum-labels": [
+					{
+						"default": "YES"
+					},
+					{
+						"default": "NO"
+					}
+				],
+				"format": "int32",
+				"maximum": 1,
+				"minimum": 0,
+				"type": "integer"
+			},
+			"description": "The status if the content asset is included into the sitemap (either 0 or  1).",
+			"format": "site-specific",
+			"x-label": {
+				"default": "Included"
+			},
+			"type": "object"
+		},
+		"site_map_priority": {
+			"additionalProperties": {
+				"format": "double",
+				"type": "number"
+			},
+			"description": "The content assets priority needed for the sitemap creation (0.0 for no  priority defined).",
+			"format": "site-specific",
+			"x-label": {
+				"default": "Priority"
+			},
+			"type": "object"
+		},
+		"template": {
+			"description": "The rendering template.",
+			"x-label": {
+				"default": "Rendering Template"
+			},
+			"type": "string"
+		}
+	}
+}

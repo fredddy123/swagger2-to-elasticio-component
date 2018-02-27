@@ -14,7 +14,7 @@ const errors = [];
 (async () => {
     await createComponentDir();
 
-    swaggerFile = require('./schema.json');
+    swaggerFile = require('./spec.json');
 
     fillDescriptorInfo();
     await writeMetaToPackageJson({

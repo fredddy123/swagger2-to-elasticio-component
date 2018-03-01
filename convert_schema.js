@@ -32,41 +32,8 @@ function replaceRequireds(schema) {
     return newSchema;
 }
 
-function resolveRefs(commonSchema, schema) {
-    const newSchema = JSON.parse(JSON.stringify(schema));
-
-    if (newSchema.required) {
-        const isArray = Array.isArray(newSchema.required);
-
-        if (isArray) {
-            newSchema.required.forEach(requiredPropName => {
-                newSchema.properties[requiredPropName].required1 = true;
-            });
-        }
-    }
-
-    return Object.keys(newSchema).reduce((obj, key) => {
-        if (typeof newSchema[key] === 'object' && !Array.isArray(newSchema[key])) {
-            obj[key] = resolveRefs(commonSchema, newSchema[key]);
-
-            return obj;
-        }
-
-        if (key !== '$ref') {
-            obj[key] = newSchema[key];
-
-            return obj;
-        }
-
-        return resolveRefs(commonSchema, commonSchema.definitions[
-            newSchema[key].replace('#/definitions/', '')
-        ]);
-    }, {});
-}
-
 module.exports = (schema, innerSchema) => {
     let resolvedRefs;
-
 
     try {
         // declared here because it can fail with "stackoverflow error. these errors can be catched only in such way"
@@ -88,6 +55,10 @@ module.exports = (schema, innerSchema) => {
                 if (typeof newSchema[key] === 'object' && !Array.isArray(newSchema[key])) {
                     obj[key] = resolveRefs(commonSchema, newSchema[key], cachedRefs);
 
+                    if (!obj[key].type && obj[key].properties) {
+                        obj[key].type = 'object';
+                    }
+
                     return obj;
                 }
 
@@ -107,7 +78,13 @@ module.exports = (schema, innerSchema) => {
                     };
                 }
 
-                return resolveRefs(commonSchema, referedObj, cachedRefs.concat([referedObjName]));
+                const resolvedRef = resolveRefs(commonSchema, referedObj, cachedRefs.concat([referedObjName]));
+
+                if (!resolvedRef.type && resolvedRef.properties) {
+                    resolvedRef.type = 'object';
+                }
+
+                return resolvedRef;
             }, {});
         })(schema, innerSchema);
 

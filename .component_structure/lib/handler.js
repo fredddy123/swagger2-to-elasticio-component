@@ -3,10 +3,31 @@ const { messages } = require('elasticio-node');
 const request = require('request');
 const querystring = require('querystring');
 
+const { applyMiddlewares } = require('./utils.js');
+const middlewares = require('./customMiddlewares.js');
+
+// below code is the example of middlewares usage
+
+// (async () => {
+//     console.log('middlewares', middlewares);
+//     const { msg, cfg } = await applyMiddlewares({
+//
+//     }, {
+//         clientId: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+//         clientPassword: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+//         headers: '{ "asd": "qwe", "zxc": 123 }'
+//     }, middlewares);
+//
+//     console.log('msg', msg);
+//     console.log('cfg', cfg);
+// })().then(process.exit, console.error);
+
 module.exports = (uri, method) => {
-    async function exec(msg, cfg) {
-        console.log('msg', JSON.stringify(msg));
-        console.log('cfg', JSON.stringify(cfg));
+    async function exec(_msg, _cfg) {
+        console.log('_msg', JSON.stringify(_msg));
+        console.log('_cfg', JSON.stringify(_cfg));
+
+        const { msg, cfg } = await applyMiddlewares(_msg, _cfg, middlewares);
 
         const headers = cfg.headers;
         const credQueryString = cfg.queryString;

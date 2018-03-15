@@ -13,7 +13,7 @@
         "npm": "5.4"
     },
     "dependencies": {
-        "elasticio-node": "0.0.7",
+        "elasticio-node": "0.0.8",
         "elasticio-sailor-nodejs": "2.2.1",
         "request": "2.83.0"
     }

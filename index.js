@@ -65,14 +65,15 @@ async function createComponentDir() {
 }
 
 async function setupFunction({data, httpMethod, path}) {
-    const capitalizedTag = data.tags[0]; // `${data.tags[0][0].toUpperCase()}${data.tags[0].slice(1)}`;
+    const tag = data.tags[0]; // `${data.tags[0][0].toUpperCase()}${data.tags[0].slice(1)}`;
 
-    const pathForName = path
+    const pathForFileName = path
         .replace(/\//g, '_')
         .replace(/[\{\}]/g, '8')
         .replace(/\-/g, '7');
 
-    const functionName = `${httpMethod}_${capitalizedTag}${pathForName}`;
+    const functionName = `${httpMethod}_${tag}${pathForFileName}`;
+    const functionLabel = `${httpMethod.toUpperCase()} ${tag} ${path}`;
     console.log('       functionName', functionName);
 
     // const funcType = httpMethod === 'get' ? 'triggers' : 'actions';
@@ -94,7 +95,8 @@ async function setupFunction({data, httpMethod, path}) {
         mainFileName,
         metadataInFileName,
         metadataOutFileName,
-        schemasToSkip
+        schemasToSkip,
+        functionLabel
     });
 
     await createScript({
@@ -120,7 +122,8 @@ async function writeMetaToDescriptor(opts) {
         mainFileName,
         metadataInFileName,
         metadataOutFileName,
-        schemasToSkip
+        schemasToSkip,
+        functionLabel
     } = opts;
 
     const descriptor = require(DESCRIPTOR_PATH);
@@ -138,7 +141,7 @@ async function writeMetaToDescriptor(opts) {
     }
 
     descriptor[funcType][functionName] = {
-        title: functionName,
+        title: functionLabel,
         main: mainFileName,
         metadata
     }
